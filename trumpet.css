@@ -54,8 +54,13 @@ footer {
     font-size: 14pt;
 }
 
-#img1-comparison .fig1-p1 {
+#img1-comparison {
+    float: left;
+}
+#img1-explanation {
     font-size: 12pt;
+    color: #373737;
+    float: right;
 }
 
 #fourier .fourierbullet{
