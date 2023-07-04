@@ -1,0 +1,48 @@
+#header {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    text-align: center;
+}
+
+#content {
+    padding: 10px;
+}
+
+#container {
+    background-color: #FFFFF0;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer {
+    clear: both;
+    background-color: #FFFFF0;
+    text-align: center;
+    font-size: 12;
+}
+
+#index .selected{
+    color: rebeccapurple;
+}
+
+#index ul {
+    text-decoration: none;
+    list-style-type: square;
+}
+a {
+    text-decoration: none;
+    color: rebeccapurple;
+}
+
+#mj {
+    text-align: center;
+}
+
+#main {
+    text-align: center;
+}
+
+#index .index_header {
+    text-align: center;
+}
