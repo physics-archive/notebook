@@ -4,14 +4,17 @@
         
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
+              extensions: ["tex2jax.js"],
+              jax: ["input/TeX", "output/HTML-CSS"],
               tex2jax: {
                 inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
                 processEscapes: true
-              }
+              },
+              "HTML-CSS": { fonts: ["TeX"] }
             });
-          </script>
-
-          <script type="text/javascript" src="mj2.6/MathJax.js"></script>
+        </script>
+        <script type="text/javascript" src="mj2.6/MathJax.js"></script>
         
         <title>Calculus I</title>
         <link rel="stylesheet" type="text/css" href="trumpet.css" /> <!--links CSS style sheet-->
@@ -55,7 +58,7 @@
                     \int_{0}^{t}\frac{1}{x^2} = \lim_{t \rightarrow \infty} 
                     \left[1 - \frac{1}{t}\right] 
                     = 1 - \lim_{t \rightarrow \infty} \left[\frac{1}{t}\right] = 
-                    \bbox[#FF1,8px,border:0px solid red]{1} } \tag{Eq. 4} $$
+                    \bbox[#FF1,8px,border:0px solid red]{1 } } \tag{Eq. 4} $$
                 </p>
                 
                 <p class="p_solution">If $t \rightarrow \infty$, then the denomenator in $\frac{1}{t}$ approaches infinity. Therefore our quotient approaches zero and $(Eq. 4) = 1$</p>
