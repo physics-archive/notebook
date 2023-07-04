@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+              extensions: ["tex2jax.js"],
+              jax: ["input/TeX", "output/HTML-CSS"],
+              tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                processEscapes: true
+              },
+              "HTML-CSS": { fonts: ["TeX"] }
+            });
+        </script>
+        <script type="text/javascript" src="mj2.6/MathJax.js"></script>
+        <title>Calculus I</title>
+        <link rel="stylesheet" type="text/css" href="trumpet.css" /> <!--links CSS style sheet-->
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="header"> <!--Let's work a list into here instead-->
+                <h2 class="title">Convergence -- Infinite Sums Can Converge to a Finite Value $S_{total}$</h2>
+            </div>
+            <div id="problem">
+                <p class="preface">Demonstrated here: the power of calculus in resolving problems created by infinity, and in obtaining analytical solutions to infinite sums.
+                    The following mathematical concept is convergence. Arrays (or series) of infinitely-many values will either a) diverge towards infinity or b) converge to an exact value.
+                </p> <!--Reorganize to be a list of bullets and structure at the top for a preface-->
+                <p class="pp1">Take a look at the following series: Expanded, this series has values:</p>
+                
+                <p class="s1">
+                    $$\bbox[8px,border:1px solid black] {
+                        S_1 = \frac{1}{n^2}\,\ \,\text{where} \,\,n \in \Bbb{I}} \tag{Eq. 1}\label{s1}$$
+                </p> <!--Closes S1-->
+                <p>We can expand this series to show that it is a <u>very simple list of fractions.</u></p>
+                <p class="s1.1">$$\bbox[8px,border:1px solid black] {
+                    S_1=\frac{1}{n^2} = 1,\,\frac{1}{4},\,\frac{1}{9},\,\frac{1}{16},\,\frac{1}{25},\,\frac{1}{36},\,...} \tag{Eq. 1.2}\label{1.1}$$</p>
+                <p>Now consider the following sum over index $n \rightarrow \infty$:</p>
+                <p>$$\bbox[8px,border:1px solid black] {
+                    \sum_{n=1}^\infty = \frac{1}{n^2} = 1 + \frac{1}{4} + \frac{1}{16} + \frac{1}{25} +\,...\ } \tag{Eq. 2}\label{2}$$</p>
+                
+                <p>In (Eq. 2), we are summing over index $n$ of infinite length. 
+                    On the surface, we should be summing to infinity regardless of how small these additions become as $n$ grows. 
+                    If an infinite sum will not return an infinite value, what value will it return and how do we even attempt a determination?</p>
+                <p>Drop the discrete notation, for now, in favor of a continuous function over domain $x \in [1,\infty)$. The discrete $S_1(n)$ becomes continuous:</p>
+                
+                <p>$$\bbox[8px,border:1px solid black]{
+                    f(x)=\int_{0}^{x}\frac{1}{x^2}} \tag{Eq. 3}\label{3}$$
+                </p>
+                <p>Here is a plot of $f(x)$ with its underside shaded to represent the value of $\int{f(x)}$. This is the common "area-under-the-function" interpration of a function's antiderivative. This graphical interpretation aims to resolve a finite area enclosed under an infinite parameter that never self-intersects.</p>
+                <p>So, we need to integrate $f(x)$ over our domain $[1,\infty)$ and see what analytical solutions - if any - result.<br />Since $\infty$ is not itself a value, we should rewrite our <u>indefinite integral</u> using limits and a dummy variable $t$, and evaluate:</p>
+
+                <p>$$\bbox[8px,border:1px solid black]{
+                    \lim_{t \rightarrow \infty} 
+                    \int_{0}^{t}\frac{1}{x^2} = \lim_{t \rightarrow \infty} 
+                    \left[1 - \frac{1}{t}\right] 
+                    = 1 - \lim_{t \rightarrow \infty} \left[\frac{1}{t}\right] = 
+                    \bbox[#FF1,8px,border:0px solid red]{1} } \tag{Eq. 4} $$
+                </p>
+                
+                <p class="p_solution">If $t \rightarrow \infty$, then the denomenator in $\frac{1}{t}$ approaches infinity. Therefore our quotient approaches zero and $(Eq. 4) = 1$</p>
+            
+            </div>
+
+            <div id="solution">
+                <p>Over the domain $[1,\infty)$, $f(x)$ encloses an area of exactly $1$. Determining that this infinite sum converges is not trivia; obtaining an analytical solution so easily by applying entry-level calculus is astonishing.</p>
+                
+                <p class="question2"><br /><br /><b>How can we demonstrate that this solution is not trivial?</b></p>
+                <p>Ask: if $\int_{1}^{\infty} \left[\frac{1}{x^2}\right]$ converges to a real value, then will $\int_{1}^{\infty} \left[\frac{1}{x}\right]$ also converge? Each function is a) rational, and b) outputs values in-between 0 and 1 for $x \in [1,\infty)$:</p>
+                <p>Mutual characteristics between $\frac{1}{x^2}$ and $\frac{1}{x}$ are graphically demonstrable:</p>
+
+                <div id="img1-comparison">
+
+                    <img src="./resources/fig1.bmp" alt="Figure 1"  width="300px" height="165px" /> 
+                    <p class="fig1-p1"><b>Fig. 1</b> - Plot of $f_1(x)$ and $f_2(x)$ over the domain $[1,4.5]$. Visually evident: both functions are monotonic over this domain and approach 0 as $x \rightarrow \infty$. This graphical representation doesn't actually give us any information about convergence.</p>
+                </div>
+
+                <p>Let us evaluate our continuous sum for $f(x)=\left[\frac{1}{x}\right]$ and see if we diverge or converge:</p>
+
+                <p class="eq5">
+                    $$\bbox[8px,border:1px solid black]
+                        {
+                        \lim_{t \rightarrow \infty} \int_{1}^{t} \left[\frac{1}{x}\right] 
+                        = \lim_{t \rightarrow \infty} \ln[t]-\ln[1] 
+                        = \infty - 0 
+                        = \bbox[#FF1,8px,border:0px solid red]{\infty} 
+                        } \tag{Eq. 5}$$
+                </p>
+
+                <p>Despite similarities between the functions, $f_1(x)$ converges over $[1,\infty)$ whereas $f_2(x)$ is divergent.</p>
+            </div> <!--Closes "solution"-->
+
+            <div id="fourier">
+                <p>Evaluating a function's outputs over a continuous domain is more obtuse than summing all elements in $S_1(n)$.
+                    Therefore, let us return to our discrete series $S_1$ and attempt an evaluation using <u>Fourier Analysis</u>. Invoking Fourier analysis allows us to relate our continous function, $f(x)$, to our discrete infinite series $S_1(n)$. <br /><ul class="fourierbullet"><li>Generally, Fourier analysis allows us to rewrite any function--with arbitrary precision--as an infinite sum of sines and cosines with coefficients.</li></ul>
+                </p>
+                
+                <p>
+                    $$\bbox[8px,border:1px solid black]
+                        {
+                        g(x) = \frac{a_0}{2}
+                            + \sum_{n=1}^{\infty} (a_n \cos(nx)+b_n sin(nx))
+                        } \tag{Eq. 6}$$
+                </p>
+                <p>The coefficients $a_0$, $a_n$ and $b_n$ are related to $g(x)$ via integration:</p>
+
+                <p class="coefficients">
+
+                    $$\bbox[8px,border:1px solid black]
+                        {
+                        a_0 = \frac{1}{2L} \int_{-L}^{L} g(x) dx 
+                        } 
+                        
+                        \bbox[8px,border:1px solid black]
+                        {
+                        a_n = \frac{1}{L} \int_{-L}^{L} g(x) cos\left[nx \frac{\pi}{L}\right]dx 
+                        } 
+
+                        \bbox[8px,border:1px solid black]
+                        {
+                        b_n = \frac{1}{L} \int_{-L}^{L} g(x) sin\left[nx \frac{\pi}{L}\right]dx 
+                        }
+
+                        \tag{Eq.s 7-9}$$
+
+                <p>Evaluating these three integrals yields one independent coefficient $(a_0)$ and two coefficients $(a_n, b_n)$ which vary with Fourier index $n$. The size of $n$ determines the precision of our series approximation of $g(x)$.</p>
+
+                </p>
+                
+                First introduced to me in Electrodyamics I: Parseval's theorem relates our function to the fourier coefficients associated with $g$.
+                <p>
+
+                </p>
+
+
+
+            </div>
+        </div><!--closes container-->
+    </body>
+
+    <footer>
+        <div id="mathtest">
+            <br /><br /><br /><br /><br /><br /><br /><br /><br />$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
+            $$\in$$
+        </div>
+        <br /><br /><br />Copyright &copy; Tyler DeFrancesc, 2023.<br />Verified (Analaytical Solution)
+    </footer>
+</html>
+
+<!--Reorganize to be a list of bullets and structure at the top for a preface-->
