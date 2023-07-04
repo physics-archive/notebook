@@ -18,7 +18,7 @@
           src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML">
         </script>
         
-        <title>Calculus I f1</title>
+        <title>Calculus</title>
         <link rel="stylesheet" type="text/css" href="trumpet.css" /> <!--links CSS style sheet-->
     </head>
 
@@ -128,14 +128,29 @@
 
                         \tag{Eq.s 7-9}$$
 
-                <p>Evaluating these three integrals yields one independent coefficient $(a_0)$ and two coefficients $(a_n, b_n)$ which vary with Fourier index $n$. The size of $n$ determines the precision of our series approximation of $g(x)$.</p>
-
-                </p>
+                <p>Evaluating these three integrals yields one independent coefficient $(a_0)$ and two coefficients $(a_n, b_n)$ which vary with Fourier index $n$. The size of $n$ determines the precision of our series approximation of $g(x)$. Fourier analysis adapts the concept of convergence to fit approximation, computation and analytical purposes.</p>
                 
-                First introduced to me in Electrodyamics I: Parseval's theorem relates our function to the fourier coefficients associated with $g$.
+                First introduced to me in Electrodyamics I: Parseval's theorem relates our function to the fourier coefficients associated with $g(x)$ as such:
+                
                 <p>
 
+                    $$\bbox[8px,border:1px solid black]
+                        {
+                        \frac{1}{L} \int_{-L}^{L} \left[g^2(x)\right] dx
+                        = \frac{a^2_0}{2} + \sum_{n=1}^{\infty} \left[a^2_n+b^2_n\right]
+                        } 
+                        
+
+                        \tag{Thrm. 1 - special case}$$
+
+
                 </p>
+
+                <p>While this form seems useless, let's try a function out and see what kind of numerical analysis follows:</p>
+                <ul id="gx">
+                    <li>Let $g(x)$ = x</li>
+                </ul>
+
 
 
 
