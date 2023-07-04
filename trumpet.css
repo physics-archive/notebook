@@ -60,5 +60,21 @@ footer {
 
 #fourier .fourierbullet{
     list-style-type: "* ";
+    margin-left: auto;
+    margin-right: 100px;
 }
 
+#fourier .link{
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+}
+
+#fourier .f1{
+    text-align: justify;
+}
+
+#solution .untrivial{
+    text-decoration: none;
+    list-style-type: square;
+}

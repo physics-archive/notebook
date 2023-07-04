@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html-css>
 <html>  
     <head>
         
@@ -52,7 +52,7 @@
                 <p>$$\bbox[8px,border:1px solid black]{
                     f(x)=\int_{0}^{x}\frac{1}{x^2}} \tag{Eq. 3}\label{3}$$
                 </p>
-                <p>Here is a plot of $f(x)$ with its underside shaded to represent the value of $\int{f(x)}$. This is the common "area-under-the-function" interpration of a function's antiderivative. This graphical interpretation aims to resolve a finite area enclosed under an infinite parameter that never self-intersects.</p>
+                <p>Here is a plot of $f(x)$ with its underside shaded to represent $\int{f(x)}$. This is the "area-under-the-function" interpration for antiderivatives. This graphical interpretation resolves a finite area under our infinite curve.</p>
                 <p>So, we need to integrate $f(x)$ over our domain $[1,\infty)$ and see what analytical solutions - if any - result.<br />Since $\infty$ is not itself a value, we should rewrite our <u>indefinite integral</u> using limits and a dummy variable $t$, and evaluate:</p>
 
                 <p>$$\bbox[8px,border:1px solid black]{
@@ -71,8 +71,10 @@
                 <p>Over the domain $[1,\infty)$, $f(x)$ encloses an area of exactly $1$. Determining that this infinite sum converges is not trivia; obtaining an analytical solution so easily by applying entry-level calculus is astonishing.</p>
                 
                 <p class="question2"><br /><br /><b>How can we demonstrate that this solution is not trivial?</b></p>
-                <p>Ask: if $\int_{1}^{\infty} \left[\frac{1}{x^2}\right]$ converges to a real value, then will $\int_{1}^{\infty} \left[\frac{1}{x}\right]$ also converge? Each function is a) rational, and b) outputs values in-between 0 and 1 for $x \in [1,\infty)$:</p>
-                <p>Mutual characteristics between $\frac{1}{x^2}$ and $\frac{1}{x}$ are graphically demonstrable:</p>
+                <p>
+                    Ask: if $\int_{1}^{\infty} \left[\frac{1}{x^2}\right]$ converges to a real value, then will $\int_{1}^{\infty} \left[\frac{1}{x}\right]$ also converge? Consider the similarities:
+                    </p><ul class="untrivial"><li> Both are rational expressions in the form $p/q$ </li><li> Monotonically decrasing over $x \in [1,\infty)$</li><li>Has values in-between 0 and 1 over our domain</li><li>Mutual characteristics are graphically demonstrable:</li></ul>
+                <!--</p>-->
 
                 <div id="img1-comparison">
 
@@ -96,8 +98,8 @@
             </div> <!--Closes "solution"-->
 
             <div id="fourier">
-                <p>Evaluating a function's outputs over a continuous domain is more obtuse than summing all elements in $S_1(n)$.
-                    Therefore, let us return to our discrete series $S_1$ and attempt an evaluation using <u>Fourier Analysis</u>. Invoking Fourier analysis allows us to relate our continous function, $f(x)$, to our discrete infinite series $S_1(n)$. <br /><ul class="fourierbullet"><li>Generally, Fourier analysis allows us to rewrite any function--with arbitrary precision--as an infinite sum of sines and cosines with coefficients.</li></ul>
+                <p class="f1">Evaluating a function's outputs over a continuous domain is more obtuse than summing all elements in $S_1(n)$.
+                    Therefore, let us return to our discrete series $S_1$ and attempt an evaluation using <u>Fourier Analysis</u>. Invoking Fourier analysis allows us to relate our continous function, $f(x)$, to our discrete infinite series $S_1(n)$. <br /><ul class="fourierbullet"><li>Generally, <a class="link" href="/.fourier-one.html" target="_blank">Fourier analysis</a> allows us to rewrite any function--with arbitrary precision--as an infinite sum of sines and cosines with coefficients.</li></ul>
                 </p>
                 
                 <p>
@@ -143,10 +145,12 @@
 
                         \tag{Thrm. 1 - special case}$$
 
+                </p> <!--Theorem 1-->
 
-                </p>
-
-                <p>While this form seems useless, let's try a function out and see what kind of numerical analysis follows:</p>
+                <p class="condition"> </p>
+                <p>For certain choices for $g(x)$, Parseval's theorem builds on our ability with Fourier series to determine the value of convergence for infinite sum of discrete set $S_1$.</p> 
+                <li>The primary advantage of (Thrm. 1) over (Eq. 6) is that our Fourier coefficients, $a_n$ and $b_n$, now dominate their terms in the expression for $g(x)$.</li>
+                <p>Let's choose a function for Parseval's Theorem and see if we can extrapolate any information about why and where $S_1$ will converge.</p>
                 <ul id="gx">
                     <li>Let $g(x)$ = x</li>
                 </ul>
