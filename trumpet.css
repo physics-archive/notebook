@@ -55,7 +55,9 @@ footer {
 }
 
 #img1-comparison {
+
 }
+
 #img1-explanation {
     font-size: 12pt;
     color: #373737;
@@ -80,4 +82,8 @@ footer {
 #solution .untrivial{
     text-decoration: none;
     list-style-type: square;
+}
+
+#joshmo {
+    list-style-type: "*"
 }

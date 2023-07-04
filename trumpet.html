@@ -25,7 +25,7 @@
     <body>
         <div id="container">
             <div id="header"> <!--Let's work a list into here instead-->
-                <h2 class="title">Convergence -- Infinite Sums Can Converge to a Finite Value $S_{total}$</h2>
+                <h2 class="title">Convergence -- Infinite Series Can Return a Finite Value</h2>
             </div>
             <div id="problem">
                 <p class="preface">Demonstrated here: the power of calculus in resolving problems created by infinity, and in obtaining analytical solutions to infinite sums.
@@ -101,7 +101,7 @@
 
             <div id="fourier">
                 <p class="f1">Evaluating a function's outputs over a continuous domain is more obtuse than summing all elements in $S_1(n)$.
-                    Therefore, let us return to our discrete series $S_1$ and attempt an evaluation using <u>Fourier Analysis</u>. Invoking Fourier analysis allows us to relate our continous function, $f(x)$, to our discrete infinite series $S_1(n)$. <br /><ul class="fourierbullet"><li>Generally, <a class="link" href="/.fourier-one.html" target="_blank">Fourier analysis</a> allows us to rewrite any function--with arbitrary precision--as an infinite sum of sines and cosines with coefficients.</li></ul>
+                    Therefore, let us return to our discrete series $S_1$ and attempt an evaluation using <u>Fourier Analysis</u>. Invoking Fourier analysis allows us to relate our continous function, $f(x)$, to our discrete infinite series $S_1(n)$. <br /><ul class="fourierbullet"><li>Generally, <a class="link" href="/.fourier-one.html" target="_blank">Fourier analysis</a> allows us to rewrite any function--with arbitrary precision--as an infinite sum of sines and cosines with coefficients. Applicable to periodic functions that are discontinuous over arbitrary period $L$.</li></ul>
                 </p>
                 
                 <p>
@@ -151,7 +151,7 @@
 
                 <p class="condition"> </p>
                 <p>For certain choices for $g(x)$, Parseval's theorem builds on our ability with Fourier series to determine the value of convergence for infinite sum of discrete set $S_1$.</p> 
-                <li>The primary advantage of (Thrm. 1) over (Eq. 6) is that our Fourier coefficients, $a_n$ and $b_n$, now dominate their terms in the expression for $g(x)$.</li>
+                <ul id="joshmo"><li>An advantage of (Thrm. 1) over (Eq. 6): our Fourier coefficients - $a_n$ and $b_n$ - now dominate their terms in the fourier series for $g(x)$. Obtaining an analytical form for $g(x)$, as an infinite series, becomes much simpler.</li></ul>
                 <p>Let's choose a function for Parseval's Theorem and see if we can extrapolate any information about why and where $S_1$ will converge.</p>
                 <ul id="gx">
                     <li>Let $g(x)$ = x</li>
