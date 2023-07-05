@@ -29,7 +29,7 @@
             </div>
             <div id="problem">
                 <p class="preface">Demonstrated here: the power of calculus in resolving problems created by infinity, and in obtaining analytical solutions to infinite sums.
-                    The following mathematical concept is convergence. Arrays (or series) of infinitely-many values will either a) diverge towards infinity or b) converge to an exact value.
+                    The following mathematical concept is convergence. Arrays (or series) of infinitely-many values will either a) diverge towards infinity or b) converge to an exact value. We require mathematical tools to make these determinations, however. 
                 </p> <!--Reorganize to be a list of bullets and structure at the top for a preface-->
                 <p class="pp1">Take a look at the following series: Expanded, this series has values:</p>
                 
@@ -52,7 +52,7 @@
                 <p>$$\bbox[8px,border:1px solid black]{
                     f(x)=\int_{0}^{x}\frac{1}{x^2} \ dx} \tag{Eq. 3}\label{3}$$
                 </p>
-                <p>Here is a plot of $x^{-2}$ with its underside shaded to represent $\int{x^{-2}dx}$. This is the "area-under-the-function" interpration for antiderivatives. This graphical interpretation resolves a finite area under our infinite curve.</p>
+                <p>Here is a plot of $x^{-2}$ with its underside shaded to represent $\int{x^{-2}dx}$. This is the "area-under-the-function" interpration for antiderivatives. This graphical interpretation can resolve a finite area under our infinite curve.</p>
                 
                 <div id="fig1-img">
 
@@ -72,7 +72,7 @@
                     \bbox[#FF1,8px,border:0px solid red]{1}\ } \tag{Eq. 4} $$
                 </p>
                 
-                <p class="p_solution">If $t \rightarrow \infty$, then the denomenator in $\frac{1}{t}$ approaches infinity. Therefore our quotient approaches zero and $(Eq. 4) = 1$</p>
+                <p class="p_solution"><b>Eq. 4</b> - If $t \rightarrow \infty$, then the denomenator in $\frac{1}{t}$ approaches infinity. Therefore our quotient approaches zero -- and our integral is equal to 1.</p>
             
             </div>
 
@@ -109,8 +109,8 @@
             </div> <!--Closes "solution"-->
 
             <div id="fourier">
-                <p class="f1">Evaluating a function's outputs over a continuous domain is more obtuse than summing all elements in $S_1(n)$.
-                    Therefore, let us return to our discrete series $S_1$ and attempt an evaluation using <u>Fourier Analysis</u>. Invoking Fourier analysis allows us to relate our continous function, $f(x)$, to our discrete infinite series $S_1(n)$. <br /><ul class="fourierbullet"><li>Generally, <a class="link" href="/.fourier-one.html" target="_blank">Fourier analysis</a> allows us to rewrite any function--with arbitrary precision--as an infinite sum of sines and cosines with coefficients. Convenient for periodic functions that are discontinuous over arbitrary period $L$.</li></ul>
+                <p class="f1">Evaluating a function's outputs over a continuous domain is less straight-forward than summing all fractions in our infinite-size list (Eq. 1.2).
+                    Therefore, let us return to our discrete series $S_1$ and attempt an evaluation using <a class="link" href="/.fourier-one.html" target="_blank">Fourier analysis</a>. We can relate our continous function, $f(x)$, to our discrete infinite series $S_1(n)$. <br /><ul class="fourierbullet"><li>Generally, <a class="link" href="/.fourier-one.html" target="_blank">Fourier analysis</a> allows us to rewrite any function--with arbitrary precision--as an infinite sum of sines and cosines with coefficients. Convenient for periodic functions that are discontinuous over arbitrary period $L$.</li></ul>
                 </p>
                 
                 <p>
