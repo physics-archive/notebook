@@ -110,7 +110,7 @@
 
             <div id="fourier">
                 <p class="f1">Evaluating function outputs over a continuous domain is less straight-forward, as a concept, than summing fractions in an infinite sequence (Eq. 1.2). Reason: integrating a function is far more abstract as a concept than adding a list of fractions together.
-                    <br \><br \>Therefore, let us return to our discrete series $S_1$ and attempt an evaluation using <a class="link" href="fourier-one.html" target="_blank">Fourier analysis</a>. We can relate our continous function, $f(x)$, to our discrete infinite series $S_1(n)$. <br /><ul class="fourierbullet"><li>Generally, <a class="link" href="./fourier-one.html" target="_blank">Fourier analysis</a> allows us to rewrite any function--with arbitrary precision--as an infinite sum of sines and cosines with coefficients. Convenient for periodic functions that are discontinuous over arbitrary period $L$.</li></ul>
+                    <br \><br \>Therefore, let us return to our discrete series $S_1$ and attempt an evaluation using <a class="link" href="fourier-one.html" target="_blank">Fourier analysis</a>. We can relate our continous function, $f(x)$, to our discrete infinite series $S_1(n)$. <br /><ul class="fourierbullet"><li>Generally, <a class="link" href="./fourier-one.html" target="_blank">Fourier analysis</a> allows us to rewrite any function--with arbitrary precision--as an infinite sum of sines, cosines and coefficients. Convenient for periodic functions that are discontinuous over arbitrary period $L$.</li></ul>
                 </p>
                 
                 <p>
@@ -161,19 +161,20 @@
                 <p class="condition"> </p>
                 <p>Given clever choices for $g(x)$, Parseval's theorem simplifies our mathematical approach to determining the value for a converging series.</p> 
                 <ul id="joshmo"><li>An advantage of (Thrm. 1) over (Eq. 6): our Fourier coefficients - $a_n$ and $b_n$ - now dominate their terms in the fourier series of $g(x)$. Integration terms simplify--therefore, our analysis and computational demands do as well.</li></ul>
-                <p>Let's choose a function and analyze it with Parseval's Theorem to see if we can extrapolate information regarding why and where $S_1$ will converge.</p>
+                <p>Let's choose a function and analyze it with Parseval's Theorem to see if we can extrapolate information regarding why - and at what value - $S_1$ will converge.</p>
                 <ul id="gx">
                     <li>Let $g(x)$ = x</li>
+                    <li>Periodicity: $L= \pi$</li>
                 </ul>
 
 
             </div> <!--Closes Fourier-->
 
             <div id="fourier2">
-                $$\bbox[8px,border:1px solid black]
+                <p>$$\bbox[8px,border:1px solid black]
                 {
                 
-                    \frac{1}{L} \int_{-L}^{L} \left[g^2(x)\right] dx
+                    \frac{1}{\pi} \int_{- \pi}^{\pi} x\ dx
                     = \frac{a^2_0}{2} + \sum_{n=1}^{\infty} \left[a^2_n+b^2_n\right]
                 
                 }
@@ -181,6 +182,14 @@
 
                 \tag{line1. 1}$$</p> <!--closes term box-->
 
+                <p>$$ \begin{align*}
+                a_0 &= \frac{1}{\pi} \int_{- \pi}^{\pi} x\ dx\\
+                &= \frac{1}{\pi} \left[ \frac{x^2}{2} \right]\Bigg|_{-\pi}^{+\pi}\\
+                &= \frac{1}{\pi} \left[ \frac{\pi^2}{2} - \frac{(- \pi)^2}{2}\right]\\
+                
+                & \bbox[8px,border:1px solid black] { a_0 = 0 }
+
+                \end{align*} $$</p>
                 <p>Placeholder Paragraph.</p>
 
 
