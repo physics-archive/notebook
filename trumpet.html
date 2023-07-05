@@ -50,9 +50,18 @@
                 <p>Drop the discrete notation, for now, in favor of a continuous function over domain $x \in [1,\infty)$. The discrete $S_1(n)$ becomes continuous:</p>
                 
                 <p>$$\bbox[8px,border:1px solid black]{
-                    f(x)=\int_{0}^{x}\frac{1}{x^2}} \tag{Eq. 3}\label{3}$$
+                    f(x)=\int_{0}^{x}\frac{1}{x^2} \ dx} \tag{Eq. 3}\label{3}$$
                 </p>
-                <p>Here is a plot of $f(x)$ with its underside shaded to represent $\int{f(x)}$. This is the "area-under-the-function" interpration for antiderivatives. This graphical interpretation resolves a finite area under our infinite curve.</p>
+                <p>Here is a plot of $x^{-2}$ with its underside shaded to represent $\int{x^{-2}dx}$. This is the "area-under-the-function" interpration for antiderivatives. This graphical interpretation resolves a finite area under our infinite curve.</p>
+                
+                <div id="fig1-img">
+
+                    <img src="./Index/calc/trumpet/fig1.bmp" alt="Figure 0" width="300px" height="165px" /> <!--FIGURE 1 IMG-->
+
+                </div>
+                
+                <div id="img1-explanation"><b>Fig. 1</b> - Plot of $1/x^2$ over domain $[1,4.5]$. This function monotonically decreases on $(0, \infty)$ such that $f(x \rightarrow \infty) \rightarrow 0$.</div>
+
                 <p>So, we need to integrate $f(x)$ over our domain $[1,\infty)$ and see what analytical solutions - if any - result.<br />Since $\infty$ is not itself a value, we should rewrite our <u>indefinite integral</u> using limits and a dummy variable $t$, and evaluate:</p>
 
                 <p>$$\bbox[8px,border:1px solid black]{
@@ -101,7 +110,7 @@
 
             <div id="fourier">
                 <p class="f1">Evaluating a function's outputs over a continuous domain is more obtuse than summing all elements in $S_1(n)$.
-                    Therefore, let us return to our discrete series $S_1$ and attempt an evaluation using <u>Fourier Analysis</u>. Invoking Fourier analysis allows us to relate our continous function, $f(x)$, to our discrete infinite series $S_1(n)$. <br /><ul class="fourierbullet"><li>Generally, <a class="link" href="/.fourier-one.html" target="_blank">Fourier analysis</a> allows us to rewrite any function--with arbitrary precision--as an infinite sum of sines and cosines with coefficients. Applicable to periodic functions that are discontinuous over arbitrary period $L$.</li></ul>
+                    Therefore, let us return to our discrete series $S_1$ and attempt an evaluation using <u>Fourier Analysis</u>. Invoking Fourier analysis allows us to relate our continous function, $f(x)$, to our discrete infinite series $S_1(n)$. <br /><ul class="fourierbullet"><li>Generally, <a class="link" href="/.fourier-one.html" target="_blank">Fourier analysis</a> allows us to rewrite any function--with arbitrary precision--as an infinite sum of sines and cosines with coefficients. Convenient for periodic functions that are discontinuous over arbitrary period $L$.</li></ul>
                 </p>
                 
                 <p>
@@ -115,26 +124,26 @@
 
                 <p class="coefficients">
 
-                    $$\bbox[8px,border:1px solid black]
+                    $$\bbox[8px,border:1px solid black] 
                         {
                         a_0 = \frac{1}{2L} \int_{-L}^{L} g(x) dx 
                         } 
                         
                         \bbox[8px,border:1px solid black]
                         {
-                        a_n = \frac{1}{L} \int_{-L}^{L} g(x) cos\left[nx \frac{\pi}{L}\right]dx 
+                        a_n = \frac{1}{L} \int_{-L}^{L} g(x) cos\left[n \frac{x}{L}\right]dx 
                         } 
 
                         \bbox[8px,border:1px solid black]
                         {
-                        b_n = \frac{1}{L} \int_{-L}^{L} g(x) sin\left[nx \frac{\pi}{L}\right]dx 
-                        }
+                        b_n = \frac{1}{L} \int_{-L}^{L} g(x) sin\left[n \frac{x}{L}\right]dx 
+                        } 
 
                         \tag{Eq.s 7-9}$$
 
                 <p>Evaluating these three integrals yields one independent coefficient $(a_0)$ and two coefficients $(a_n, b_n)$ which vary with Fourier index $n$. The size of $n$ determines the precision of our series approximation of $g(x)$. Fourier analysis adapts the concept of convergence to fit approximation, computation and analytical purposes.</p>
                 
-                First introduced to me in Electrodyamics I: Parseval's theorem relates our function to the fourier coefficients associated with $g(x)$ as such:
+                First introduced to me in Electrodyamics I: Parseval's theorem relates our (continuous, square-integrable) function to the fourier coefficients associated with $g(x)$ as such:
                 
                 <p>
 
@@ -145,22 +154,33 @@
                         } 
                         
 
-                        \tag{Thrm. 1 - special case}$$
+                        \tag{Thrm. 1}$$
 
                 </p> <!--Theorem 1-->
 
                 <p class="condition"> </p>
                 <p>For certain choices for $g(x)$, Parseval's theorem builds on our ability with Fourier series to determine the value of convergence for infinite sum of discrete set $S_1$.</p> 
-                <ul id="joshmo"><li>An advantage of (Thrm. 1) over (Eq. 6): our Fourier coefficients - $a_n$ and $b_n$ - now dominate their terms in the fourier series for $g(x)$. Obtaining an analytical form for $g(x)$, as an infinite series, becomes much simpler.</li></ul>
-                <p>Let's choose a function for Parseval's Theorem and see if we can extrapolate any information about why and where $S_1$ will converge.</p>
+                <ul id="joshmo"><li>An advantage of (Thrm. 1) over (Eq. 6): our Fourier coefficients - $a_n$ and $b_n$ - now dominate their terms in the fourier series for $g(x)$. Obtaining an exact form for any $g(x)$ as an infinite series becomes much simpler.</li></ul>
+                <p>Let's choose a function and analyze it with Parseval's Theorem to see if we can extrapolate information regarding why and where $S_1$ will converge.</p>
                 <ul id="gx">
                     <li>Let $g(x)$ = x</li>
                 </ul>
 
 
+            </div> <!--Closes Fourier-->
 
+            <div id="fourier2">
 
-            </div>
+                $$\bbox[8px,border:1px solid black]
+                {
+                \frac{1}{L} \int_{-L}^{L} \left[g^2(x)\right] dx
+                = \frac{a^2_0}{2} + \sum_{n=1}^{\infty} \left[a^2_n+b^2_n\right]
+                } 
+                
+
+                \tag{line1. 1}$$
+
+            </div> <!--Closes Fourier2-->
         </div><!--closes container-->
     </body>
 

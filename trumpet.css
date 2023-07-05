@@ -55,7 +55,7 @@ footer {
 }
 
 #img1-comparison {
-
+    font-style: none;
 }
 
 #img1-explanation {
@@ -87,3 +87,4 @@ footer {
 #joshmo {
     list-style-type: "*"
 }
+
