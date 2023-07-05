@@ -61,6 +61,7 @@ footer {
 #img1-explanation {
     font-size: 12pt;
     color: #373737;
+    text-align: center;
 }
 
 #fourier .fourierbullet{
@@ -88,3 +89,7 @@ footer {
     list-style-type: "*"
 }
 
+#problem .p_solution{
+    font-size: 12pt;
+    text-align: center;
+}
