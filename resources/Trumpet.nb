@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     45224,       1077]
-NotebookOptionsPosition[     41461,       1005]
-NotebookOutlinePosition[     41897,       1022]
-CellTagsIndexPosition[     41854,       1019]
+NotebookDataLength[     50007,       1222]
+NotebookOptionsPosition[     45247,       1133]
+NotebookOutlinePosition[     45683,       1150]
+CellTagsIndexPosition[     45640,       1147]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1001,6 +1001,134 @@ Cell[BoxData[
    RowBox[{"Sin", "[", "x", "]"}]}]}]], "Output",
  CellChangeTimes->{3.897591788462222*^9},
  CellLabel->"Out[8]=",ExpressionUUID->"6d07b570-f43d-46ff-a1dc-9a62fd8a72b6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"1", "/", "Pi"}], "*", 
+  RowBox[{"Integrate", "[", 
+   RowBox[{
+    RowBox[{"x", "*", 
+     RowBox[{"Sin", "[", 
+      RowBox[{"n", "*", "x"}], "]"}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", 
+      RowBox[{"-", "Pi"}], ",", "Pi"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.897666856937998*^9, 3.897666903285202*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"1ea03910-c75e-40f3-aa93-56ed7a367b5a"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"-", "2"}], " ", "n", " ", "\[Pi]", " ", 
+    RowBox[{"Cos", "[", 
+     RowBox[{"n", " ", "\[Pi]"}], "]"}]}], "+", 
+   RowBox[{"2", " ", 
+    RowBox[{"Sin", "[", 
+     RowBox[{"n", " ", "\[Pi]"}], "]"}]}]}], 
+  RowBox[{
+   SuperscriptBox["n", "2"], " ", "\[Pi]"}]]], "Output",
+ CellChangeTimes->{3.897666903719043*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"2683ccbf-3974-4b0c-8468-75689bf7c119"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"FullSimplify", "[", 
+  FractionBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", "2"}], " ", "n", " ", "\[Pi]", " ", 
+     RowBox[{"Cos", "[", 
+      RowBox[{"n", " ", "\[Pi]"}], "]"}]}], "+", 
+    RowBox[{"2", " ", 
+     RowBox[{"Sin", "[", 
+      RowBox[{"n", " ", "\[Pi]"}], "]"}]}]}], 
+   RowBox[{
+    SuperscriptBox["n", "2"], " ", "\[Pi]"}]], "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[5]:=",ExpressionUUID->"015f0443-244d-4359-8d38-dddfb867a71a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"2", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", "n"}], " ", "\[Pi]", " ", 
+     RowBox[{"Cos", "[", 
+      RowBox[{"n", " ", "\[Pi]"}], "]"}]}], ")"}]}], 
+  RowBox[{
+   SuperscriptBox["n", "2"], " ", "\[Pi]"}]]], "Input",
+ CellChangeTimes->{{3.8976669109359283`*^9, 3.89766691093731*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"1df16e04-fa9b-4c29-93c2-b897cca2b705"],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox[
+   RowBox[{"2", " ", 
+    RowBox[{"Cos", "[", 
+     RowBox[{"n", " ", "\[Pi]"}], "]"}]}], "n"]}]], "Output",
+ CellChangeTimes->{3.897666916019525*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"9ce2b4a4-16c7-4bbe-bbaf-d327c629a5a1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   RowBox[{"-", "2"}], " ", "n", " ", "\[Pi]", " ", 
+   RowBox[{"Cos", "[", 
+    RowBox[{"n", " ", "\[Pi]"}], "]"}]}], 
+  SuperscriptBox["n", "2"]]], "Input",
+ CellChangeTimes->{{3.897666883262178*^9, 3.897666883668186*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"1e16242a-304b-48ad-950f-fe4445858286"],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox[
+   RowBox[{"2", " ", "\[Pi]", " ", 
+    RowBox[{"Cos", "[", 
+     RowBox[{"n", " ", "\[Pi]"}], "]"}]}], "n"]}]], "Output",
+ CellChangeTimes->{3.8976668850007133`*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"ead38e9c-87ce-49a2-9856-e1769784b5b5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FullSimplify", "[", 
+  FractionBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", "2"}], " ", "n", " ", "\[Pi]", " ", 
+     RowBox[{"Cos", "[", 
+      RowBox[{"n", " ", "\[Pi]"}], "]"}]}], "+", 
+    RowBox[{"2", " ", 
+     RowBox[{"Sin", "[", 
+      RowBox[{"n", " ", "\[Pi]"}], "]"}]}]}], 
+   SuperscriptBox["n", "2"]], "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[2]:=",ExpressionUUID->"fe5578c5-47ce-4c39-ba5d-320c271727b3"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"2", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "n"}], " ", "\[Pi]", " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"n", " ", "\[Pi]"}], "]"}]}], "+", 
+     RowBox[{"Sin", "[", 
+      RowBox[{"n", " ", "\[Pi]"}], "]"}]}], ")"}]}], 
+  SuperscriptBox["n", "2"]]], "Output",
+ CellChangeTimes->{3.8976668744099207`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"961170b6-d70b-4ed8-b87d-936b2e7a5b1b"]
 }, Open  ]]
 },
 WindowSize->{808, 753},
@@ -1077,7 +1205,24 @@ Cell[40716, 981, 148, 2, 34, "Output",ExpressionUUID->"6082659b-21f3-4902-8303-5
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[40901, 988, 287, 6, 30, "Input",ExpressionUUID->"493f6a25-5d12-4b14-9253-030b656a607e"],
-Cell[41191, 996, 254, 6, 57, "Output",ExpressionUUID->"6d07b570-f43d-46ff-a1dc-9a62fd8a72b6"]
+Cell[41191, 996, 254, 6, 34, "Output",ExpressionUUID->"6d07b570-f43d-46ff-a1dc-9a62fd8a72b6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[41482, 1007, 447, 12, 30, "Input",ExpressionUUID->"1ea03910-c75e-40f3-aa93-56ed7a367b5a"],
+Cell[41932, 1021, 459, 13, 53, "Output",ExpressionUUID->"2683ccbf-3974-4b0c-8468-75689bf7c119"]
+}, Open  ]],
+Cell[42406, 1037, 486, 14, 51, "Input",ExpressionUUID->"015f0443-244d-4359-8d38-dddfb867a71a"],
+Cell[CellGroupData[{
+Cell[42917, 1055, 415, 11, 50, "Input",ExpressionUUID->"1df16e04-fa9b-4c29-93c2-b897cca2b705"],
+Cell[43335, 1068, 272, 7, 72, "Output",ExpressionUUID->"9ce2b4a4-16c7-4bbe-bbaf-d327c629a5a1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[43644, 1080, 341, 8, 49, "Input",ExpressionUUID->"1e16242a-304b-48ad-950f-fe4445858286"],
+Cell[43988, 1090, 288, 7, 49, "Output",ExpressionUUID->"ead38e9c-87ce-49a2-9856-e1769784b5b5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44313, 1102, 457, 13, 50, "Input",ExpressionUUID->"fe5578c5-47ce-4c39-ba5d-320c271727b3"],
+Cell[44773, 1117, 458, 13, 52, "Output",ExpressionUUID->"961170b6-d70b-4ed8-b87d-936b2e7a5b1b"]
 }, Open  ]]
 }
 ]
