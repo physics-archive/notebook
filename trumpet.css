@@ -57,6 +57,7 @@ footer {
 
 #img1-comparison {
     font-style: none;
+    float:left;
 }
 
 #img1-explanation {
@@ -102,16 +103,19 @@ footer {
 #fourier2 .ao {
     float: left;
     width: 180px;
+    background-color:lightyellow;
 }
 
 #fourier2 .an { /* FIX THIS SHITTY FUCKING CODE WITH PADDING*/
     float: left;
     padding-left: 100px;
+    background-color:lightyellow;
 }
 
 #fourier2 .bn {
     float: left;
     padding-left: 40px;
+    background-color:lightyellow;
 }
 
 #fourier2 .an-notes {
