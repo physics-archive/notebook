@@ -97,3 +97,18 @@ footer {
 #fourier2 {
     font-size: 14pt;
 }
+
+#fourier2 .ao {
+    float: left;
+    width: 290px;
+}
+
+#fourier2 .an {
+    float: left;
+    width: 390px;
+}
+
+#fourier2 .bn {
+    float: right;
+    width: 200px
+}
