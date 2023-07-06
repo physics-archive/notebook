@@ -104,7 +104,7 @@ footer {
     width: 180px;
 }
 
-#fourier2 .an {
+#fourier2 .an { /* FIX THIS SHITTY FUCKING CODE WITH PADDING*/
     float: left;
     width: 490px;
 }
@@ -112,4 +112,23 @@ footer {
 #fourier2 .bn {
     float: left;
     width: 1px;
+}
+
+#fourier2 .an-notes {
+    clear: both;
+    font-size: 14pt;
+}
+
+#fig3 {
+    float:left;
+}
+
+#fig3-2 {
+    float:left;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#fig3-3 {
+    clear:right;
 }
