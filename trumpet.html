@@ -78,7 +78,6 @@
 
             <div id="solution">
                 <p>Over the domain $[1,\infty)$, $f(x)$ encloses an area of exactly $1$. Determining that this infinite sum converges is not trivia; obtaining an analytical solution so easily by applying entry-level calculus is astonishing.</p>
-                
                 <p class="question2"><br /><br /><b>How can we demonstrate that this solution is not trivial?</b></p>
                 <p>
                     Ask: if $\int_{1}^{\infty} \left[\frac{1}{x^2}\right]$ converges to a real value, then will $\int_{1}^{\infty} \left[\frac{1}{x}\right]$ also converge? Consider the similarities:
@@ -181,25 +180,33 @@
                 
 
                 \tag{line1. 1}$$</p> <!--closes term box-->
-
-                <p>$$ \begin{align*}
-                    a_n &= \frac{1}{\pi} \int_{- \pi}^{\pi} x\ dx\\
+                <hr \>
+                <p class="ao">$$ \begin{align*}
+                    a_0 &= \frac{1}{\pi} \int_{- \pi}^{\pi} x\ dx\\
                     &= \frac{1}{\pi} \left[ \frac{x^2}{2} \right]\Bigg|_{-\pi}^{+\pi}\\
                     &= \frac{1}{\pi} \left[ \frac{\pi^2}{2} - \frac{(- \pi)^2}{2}\right]\\
                     
-                    & \bbox[8px,border:1px solid black] { a_0 = \bbox[#FF1,8px,border:0px solid red]{0} }
+                    & \bbox[8px,border:0px solid black] {= \bbox[#FF1,8px,border:0px solid red]{0} }
     
                     \end{align*} $$</p> <!--nested equation-->
-
-                <p>$$ \begin{align*}
-                    a_n &= \frac{1}{\pi} \int_{- \pi}^{\pi} x \cos{x}\ dx\\
+                
+                <p class="an">$$ \begin{align*}
+                    a_n &= \frac{1}{\pi} \int_{- \pi}^{\pi} x \cos{\left(n x\right)}\ dx\\
                     
-                    
-                    & \bbox[8px,border:1px solid black] { a_0 = \bbox[#FF1,8px,border:0px solid red]{0} }
+                    &= \frac {1}{\pi} 
+                    \left[ \frac{\cos{\left(n x\right)}}{n^2} 
+                        + \frac{ x \sin{\left(n x\right)}}{n} \right]\Bigg|_{-\pi}^{+\pi}\\
+                    & \bbox[8px,border:0px solid black] {= \bbox[#FF1,8px,border:0px solid red]{0} }
     
                     \end{align*} $$</p>
-                
-                <p>Placeholder Paragraph.</p>
+                <p class="bn">$$ \begin{align*}
+                    b_n &= \frac{1}{\pi} \int_{- \pi}^{ \pi} x \sin{\left(n x\right)}\ dx\\
+                        
+                    &= \\
+                    & \bbox[8px,border:0px solid black] {= \bbox[#FF1,8px,border:0px solid red]{0} }
+        
+                    \end{align*} $$</p>
+               
 
 
             </div> <!--Closes Fourier2-->
