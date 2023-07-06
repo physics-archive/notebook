@@ -106,12 +106,12 @@ footer {
 
 #fourier2 .an { /* FIX THIS SHITTY FUCKING CODE WITH PADDING*/
     float: left;
-    width: 490px;
+    padding-left: 100px;
 }
 
 #fourier2 .bn {
     float: left;
-    width: 1px;
+    padding-left: 50px;
 }
 
 #fourier2 .an-notes {
