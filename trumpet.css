@@ -101,15 +101,15 @@ footer {
 
 #fourier2 .ao {
     float: left;
-    width: 250px;
+    width: 180px;
 }
 
 #fourier2 .an {
     float: left;
-    width: 430px;
+    width: 490px;
 }
 
 #fourier2 .bn {
-    float: right;
-    width: 200px
+    float: left;
+    width: 1px;
 }
