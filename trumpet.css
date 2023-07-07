@@ -114,13 +114,13 @@ footer {
 
 #fourier2 .an { /* FIX THIS SHITTY FUCKING CODE WITH PADDING*/
     float: left;
-    padding-left: 100px;
+    padding-left: 90px;
     background-color:lightyellow;
 }
 
 #fourier2 .bn {
     float: left;
-    padding-left: 40px;
+    padding-left: 50px;
     background-color:lightyellow;
 }
 
@@ -149,7 +149,7 @@ footer {
     font-weight:bold;
 }
 
-#fourier .htitle{
+#htitle{
     text-align: center;
     font-size: 16pt;
     font-weight:bold;
