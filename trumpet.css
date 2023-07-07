@@ -148,3 +148,9 @@ footer {
     font-size: 15pt;
     font-weight:bold;
 }
+
+#fourier .htitle{
+    text-align: center;
+    font-size: 16pt;
+    font-weight:bold;
+}
