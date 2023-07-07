@@ -115,7 +115,7 @@
                 <hr />
                 <p id="htitle">Evaluating Infinite Series Using Fourier Analysis</p>
                 <p class="f1">Integration of a function over $[1, \infty)$ is far more abstract as a concept than summing a list of fractions.
-                    Therefore, let us return to our discrete series $S_1$ and attempt an evaluation using <a class="link" href="fourier-one.html" target="_blank">Fourier analysis</a>. We can relate our continous function, $f(x)$, to our discrete infinite series $S_1(n)$. <br /><ul class="fourierbullet"><li>Generally, <a class="link" href="./fourier-one.html" target="_blank">Fourier analysis</a> allows us to rewrite any function--with arbitrary precision--as an infinite sum of sines, cosines and coefficients. Convenient for periodic functions that are discontinuous over arbitrary period $L$.</li></ul>
+                    Therefore, let us return to our discrete series $S_1$ and attempt an evaluation using <a class="link" href="fourier-one.html" target="_blank">Fourier analysis</a>. We can relate our continous function, $f(x)$, to our discrete infinite series $S_1(n)$. <br /><ul class="fourierbullet"><li>Generally, <a class="link" href="./fourier-one.html" target="_blank">Fourier analysis</a> allows us to rewrite any continuous function--with arbitrary precision--as an infinite sum of sines, cosines and coefficients. Convenient for functions that are discontinuous (i.e. electrical signals, environmental vibrations).</li><br /><li>For a function $g(x)$ to have an associated Fourier Series, it must meet the Strong Dirichlet Conditions. Real (physical) signals will always satisfy these conditions! [Citation Required.]</li></ul>
                 </p> <!--Maybe put a break here for the Fourier section.-->
                 
                 <p>
@@ -148,7 +148,7 @@
 
                 <p>Evaluating these three integrals yields one independent coefficient $(a_0)$ and two coefficients $(a_n, b_n)$ which vary with Fourier index $n$. The size of $n$ determines the precision of our series approximation of $g(x)$. Fourier analysis adapts the concept of convergence to fit approximation, computation and analytical purposes.</p>
                 
-                First introduced to me in Electrodyamics I: Parseval's theorem relates our (continuous, square-integrable) function to the fourier coefficients associated with $g(x)$ as such:
+                First introduced to me in Electrodyamics I: Parseval's theorem - valid only for square-integrable $g(x)$ - relates our function to the fourier coefficients associated with $g(x)$ as such:
                 
                 <p>
 
@@ -235,16 +235,13 @@
                     {
                     
                         \frac{1}{\pi} \int_{- \pi}^{\pi} x^2\ dx
-                        = \frac{2 \pi^3}{3}
                         = \sum_{n=1}^{\infty} \left[ \frac{ -2 \cos{(n \pi)}}{n} \right]
-
-                        
-                    
+                        = \frac{2 \pi^3}{3}
                     }
                     \tag{Eq. 11}$$</p> <!--working on the bn only expression-->
                     
-                <p>Excellent--we have determined that this infinite sum of $cos{(n \pi)}/ n$ for $n = 1, 2, 3, 4... \infty$ is equal to a real value!</p>
-                <ul class="fourierbullet"><li>We can take this a step further to actually solve (Eq. 2) by analyzing $cos(n \pi)$ a little closer. Consider a table of values for different $n$:</li></ul>
+                <p>Encoded in (Eq. 11): the infinite sum of $cos{(n \pi)}/ n$ for $n = 1, 2, 3, 4... \infty$ is equal to a real value! Equal to $\frac{2 \pi^3}{3}.$</p>
+                <ul class="fourierbullet"><li>Congratulations! We have proven that infinite sums can converge to a real value.</li><li>We can take this a step further to actually solve (Eq. 2) by analyzing $cos(n \pi)$ a little closer. Consider a table of values for different $n$:</li></ul>
                     
                 <p>This page is a work in progress. It is my first page.</p>
                     <!--<p>$$but$$</p>
