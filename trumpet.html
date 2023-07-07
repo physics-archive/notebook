@@ -78,7 +78,10 @@
 
             <div id="solution">
                 <p>Over the domain $[1,\infty)$, $f(x)$ encloses an area of exactly $1$. Determining that this infinite sum converges is not trivia; obtaining an analytical solution so easily by applying entry-level calculus is astonishing.</p>
-                <p class="question2"><br /><br /><b>How can we demonstrate that this solution is not trivial?</b></p>
+                
+                <br /><hr />
+                
+                <p class="question2"><b>How can we demonstrate that this solution is not trivial?</b></p>
                 <p>
                     Ask: if $\int_{1}^{\infty} \left[\frac{1}{x^2}\right] dx$ converges to a real value, then will $\int_{1}^{\infty} \left[\frac{1}{x}\right] dx$ also converge? Consider the similarities:
                     </p><ul class="untrivial"><li> Both are rational expressions in the form $p/q$ </li><li> Monotonically decrasing over $x \in [1,\infty)$</li><li>Has values in-between 0 and 1 over our domain</li><li>Mutual characteristics are graphically demonstrable:</li></ul>
@@ -110,7 +113,7 @@
             <div id="fourier">
                 <p class="f1">Evaluating function outputs over a continuous domain is less straight-forward, as a concept, than summing fractions in an infinite sequence (Eq. 1.2). Reason: integrating a function is far more abstract as a concept than adding a list of fractions together.
                     <br \><br \>Therefore, let us return to our discrete series $S_1$ and attempt an evaluation using <a class="link" href="fourier-one.html" target="_blank">Fourier analysis</a>. We can relate our continous function, $f(x)$, to our discrete infinite series $S_1(n)$. <br /><ul class="fourierbullet"><li>Generally, <a class="link" href="./fourier-one.html" target="_blank">Fourier analysis</a> allows us to rewrite any function--with arbitrary precision--as an infinite sum of sines, cosines and coefficients. Convenient for periodic functions that are discontinuous over arbitrary period $L$.</li></ul>
-                </p>
+                </p> <!--Maybe put a break here for the Fourier section.-->
                 
                 <p>
                     $$\bbox[8px,border:1px solid black]
@@ -179,8 +182,9 @@
                 }
                 
 
-                \tag{line1. 1}$$</p> <!--closes term box-->
-                <hr \>
+                \tag{Eq. 10}$$</p> <!--closes term box-->
+                <hr />
+                <p id="work">Determine Coefficients $a_0$, $a_n$, and $b_n$ for $g(x)=x$</p>
                 <p class="ao">$$ \begin{align*}
                     a_0 &= \frac{1}{\pi} \int_{- \pi}^{\pi} x\ dx\\
                     &= \frac{1}{\pi} \left[ \frac{x^2}{2} \right]\Bigg|_{-\pi}^{+\pi}\\
@@ -222,20 +226,46 @@
                 <div id="fig3-3"><img src="./Index/calc/trumpet/fig3-3.bmp" alt="Figure 3-3" width="280px" height="179px" /> <!--FIGURE 1 IMG--></div>
                 
                 <div id="img1-explanation"><b>Fig. 3-5</b> - From left to right: shaded plots of the integrands $x$, $xcos(x)$, and $xsin(x)$. The first two cancel to zero over our bounday, while $xsin(x)$ has symmetry about the y-axis. </div>
-
-
-                <p>$$\bbox[8px,border:1px solid black]
+                <hr />
+                <p>Substituting $a_0$, $a_n$, $b_n$ and $g(x)=x$ into (Thrm. 1):</p>
+                <p class="eq11">$$\bbox[8px,border:1px solid black]
                     {
                     
                         \frac{1}{\pi} \int_{- \pi}^{\pi} x^2\ dx
-                        = \frac{0^2}{2} + \sum_{n=1}^{\infty} \left[0^2+b^2_n\right]
+                        = \frac{2 \pi^3}{3}
+                        = \sum_{n=1}^{\infty} \left[ \frac{ -2 \cos{(n \pi)}}{n} \right]
 
                         
                     
                     }
+                    \tag{Eq. 11}$$</p> <!--working on the bn only expression-->
                     
+                <p>Excellent--we have determined that this infinite sum of $cos{(n \pi)}/ n$ for $n = 1, 2, 3, 4... \infty$ is equal to a real value!</p>
+                <ul class="fourierbullet"><li>We can take this a step further to actually solve (Eq. 2) by analyzing $cos(n \pi)$ a little closer. Consider a table of values for different $n$:</li></ul>
+                    
+                    <!--<p>$$but$$</p>
+
+                    <p class="eq11-2">$$\bbox[8px,border:0px solid black]
+                        {
+                        
+                            \frac{1}{\pi} \int_{- \pi}^{\pi} x^2\ dx
+                            = \frac{2 \pi^3}{3}
     
-                    \tag{line1. 1}$$</P> <!--working on the bn only expression-->
+                            
+                        
+                        } \tag{Eq. 12}$$</p>-->
+            
+                <!--
+                    <p class="eq11-2a">$$and$$</p>
+                <p class="eq11-3">$$\bbox[8px,border:0px solid black]
+                        {
+                        
+                            \sum_{n=1}^{\infty} \left[ \frac{ -2 \cos{(n \pi)}}{n} \right] = 
+    
+                            
+                        
+                        }$$</p> -->
+
             </div> <!--Closes Fourier2-->
         </div><!--closes container-->
     </body>

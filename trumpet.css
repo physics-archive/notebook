@@ -72,6 +72,12 @@ footer {
     margin-right: 100px;
 }
 
+#fourier2 .fourierbullet{
+    list-style-type: "* ";
+    margin-left: auto;
+    margin-right: 100px;
+}
+
 #fourier .link{
     text-decoration: none;
     color: green;
@@ -135,4 +141,10 @@ footer {
 
 #fig3-3 {
     clear:right;
+}
+
+#work{
+    text-align: center;
+    font-size: 15pt;
+    font-weight:bold;
 }
