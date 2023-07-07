@@ -57,13 +57,20 @@ footer {
 
 #img1-comparison {
     font-style: none;
-    float:none;
+    text-align:center;
+}
+
+#fig1-img{
+    text-align:center;
+    align-items:center;
 }
 
 #img1-explanation {
     font-size: 12pt;
     color: #373737;
     text-align: center;
+    width:700px;
+    padding-left:100px;
 }
 
 #fourier .fourierbullet{
