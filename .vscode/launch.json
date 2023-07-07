@@ -8,7 +8,7 @@
         "name": "Launch Chrome",
         "request": "launch",
         "type": "chrome",
-        "url": "http://localhost:80",
+        "url": "/Users/s285/vcs/github.com/subs-code/notebook/trumpet.html",
         "webRoot": "${workspaceFolder}"
     },
         {
