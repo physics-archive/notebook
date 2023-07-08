@@ -25,7 +25,7 @@
     <body>
         <div id="container">
             <div id="header"> <!--Let's work a list into here instead-->
-                <h2 class="title">Convergence -- Infinite Series Can Return a Finite Value</h2>
+                <h2 class="title">Convergence - Infinite Series Can Return a Finite Value</h2>
             </div>
             <div id="problem">
                 <p class="preface">Demonstrated here: the power of calculus in resolving problems created by infinity, and in obtaining analytical solutions to sums of infinitely-many numbers in a list.
@@ -241,8 +241,8 @@
                     }
                     \tag{Eq. 11}$$</p> <!--working on the bn only expression-->
                     
-                <p>Encoded in (Eq. 11): the infinite sum of terms in $\left[cos{(n \pi)}/ n\right]^2$ for $n = (1, 2, 3, 4... \infty$) is equal to a finite number - exactly $ \frac{ \pi^2}{6}$! Parseval's Theorem allowed us to simply integrate $ \int x^2dx$ to reach our conclusion.</p>
-                <ul class="fourierbullet"><li>Congratulations! We have proven that certain infinite series will converge to a finite number.</li><li>Possible because $\int x^2 dx$ is easily obtainable in comparison to $ \sum_{n=1}^{ \infty} \frac{cos^2(n)}{n^2}$ (Eq. 2).</li><li>We can take this a step further to actually solve the Basel Problem (Eq. 2) by analyzing $cos(n \pi)$ a little closer. Consider a table of values for different $n$:
+                <p>Encoded in (Eq. 11): the infinite sum of terms in $\left[cos{(n \pi)}/ n\right]^2$ for $n = (1, 2, 3, 4... \infty)$ is equal to a finite number - exactly $ \frac{ \pi^2}{6}$! Parseval's Theorem allowed us to simply integrate $ \int x^2dx$ to reach our conclusion.</p>
+                <ul class="fourierbullet"><li>Congratulations! We have proven that certain infinite series will converge to a finite number.</li><li>Possible because $\int x^2 dx$ is easily obtainable in comparison to $ \sum_{n=1}^{ \infty} \frac{cos^2(n)}{n^2}$</li><li>We can take this a step further to actually solve the Basel Problem (Eq. 2) by analyzing $cos(n \pi)$ a little closer. Consider a table of values for different $n$:
                 </li></ul>
 
                 <div id="cos-input">
@@ -259,10 +259,12 @@
                     $$1$$
                 </div>
                     
-                <p class="exit"><br />Cosine has a period of only $2 \pi$, so this table contains all two possible values of $cos(n \pi)$ for any integer $n$. Therefore, for $n \in \Bbb{I}$ we can rewrite $cos(n \pi)$ as the following expression: </p>
+                <p class="exit"><br />Cosine has a period of only $2 \pi$, so this table contains the only two unique outputs of $ \cos(n \pi)$. On the unit circle, these values correspond are the two points where the x-axis intersects $x^2 + y^2 = 1$. <br /><br />Therefore, for $n \in \Bbb{I}$ we can rewrite $cos(n \pi)$ as the following expression: </p>
 
-                <span id="cosident">$$ \bbox[8px,border:1px solid black]{cos(n \pi) = (-1)^n}$$</span>
-                <span class="follow"><br /><br />&nbsp;for $n \in \Bbb{I}$</span>
+                <span id="cosidentnew">$$ \bbox[8px,border:1px solid black]{ \cos{(n \pi)} = (-1)^n} \tag{Identity 1}$$</span>
+
+                <span>Rewriting (Eq. 11) using this identity for Cosine, </span>
+                <!--<span class="follow"><br /><br />&nbsp;for $n \in \Bbb{I}$</span-->
                     <!--<p>$$but$$</p>
 
                     <p class="eq11-2">$$\bbox[8px,border:0px solid black]
@@ -294,7 +296,7 @@
         <div id="mathtest">
             <br /><br /><br /><br /><br /><br /><br /><br /><br />$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
         </div>
-        <br /><br /><br />Notes by &copy; Tyler DeFrancesco, 2023.<br />
+        <br /><br /><br />Notes by &copy; Tyler DeFrancesco 2023 | BS Physics '21<br />
     </footer>
 </html>
 
