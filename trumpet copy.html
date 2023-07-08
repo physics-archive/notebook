@@ -25,34 +25,34 @@
     <body>
         <div id="container">
             <div id="header"> <!--Let's work a list into here instead-->
-                <h2 class="title">Convergence -- Infinite Series Can Return a Finite Value</h2>
+                <h2 class="title">Convergence - Infinite Series Can Return a Finite Value <br /><span id="small"><a target="_blank" href="https://www.math.cmu.edu/~bwsulliv/basel-problem.pdf" style="color:darkgreen">See Carnegie-Mellon's 'Numberous Proofs to the Basel Problem' for Mathematical History and Analytical Solutions</a></span></h2>
             </div>
             <div id="problem">
-                <p class="preface">Demonstrated here: the power of calculus in resolving problems created by infinity, and in obtaining analytical solutions to sums of infinitely-many numbers in a list.
-                    The following mathematical concept is convergence. Arrays (or series) of values - infinite in count - will either a) diverge towards infinity or b) converge to an exact number.
+                <p class="preface">Demonstrated here: the power of calculus in resolving problems created by infinity, and in obtaining analytical solutions to sums of infinitely-many numbers.
+                    The following mathematical concept is convergence, and it applies to continuous functions in addition to discrete sums.
                 </p> <!--Reorganize to be a list of bullets and structure at the top for a preface--> <!--Talk about how we need mathematical tools to resolve this reality for any function-->
                 <p class="pp1">Consider the following sequence:</p>
                 
                 <p class="s1">
                     $$\bbox[8px,border:1px solid black] {
-                        S_1 = \frac{1}{n^2}\,\ \,\text{where} \,\,n \in \Bbb{I}} \tag{Eq. 1}\label{s1}$$
+                        S_1 = \frac{1}{n^2}\,\ \,\text{where} \,\,n \in  \Bbb{N}} \tag{Eq. 1}\label{s1}$$
                 </p> <!--Closes S1-->
-                <p>Expanding this sequence shows that it is a <u>simple list of fractions.</u></p>
+            <p>Expanding this sequence for $n=1$ to $n= \infty$ shows that it is a <u>simple list of fractions</u>:</p>
                 <p class="s1.1">$$\bbox[8px,border:1px solid black] {
                     S_1=\frac{1}{n^2} = 1,\,\frac{1}{4},\,\frac{1}{9},\,\frac{1}{16},\,\frac{1}{25},\,\frac{1}{36},\,...} \tag{Eq. 1.2}\label{1.1}$$</p>
-                <p>Now consider the following sum over index $n \rightarrow \infty$:</p>
+                <p>Now consider the following sum over the same index range:</p>
                 <p>$$\bbox[8px,border:1px solid black] {
-                    \sum_{n=1}^\infty \frac{1}{n^2} = 1 + \frac{1}{4} + \frac{1}{16} + \frac{1}{25} +\,...\ } \tag{Eq. 2}\label{2}$$</p>
+                    \sum_{n=1}^\infty \frac{1}{n^2} = 1 + \frac{1}{4} + \frac{1}{16} + \frac{1}{25} + \frac{1}{36} + \dots} \tag{Eq. 2}\label{2}$$</p>
                 
-                <p>In (Eq. 2), we are summing over index $n$ of infinite length. 
-                    On the surface, we should be summing to infinity regardless of how small these additions become as $n$ grows. 
-                    If infinite additions of positive value will not return an infinite value, what value will it return and how do we even attempt a determination?</p>
-                <p>Drop the discrete notation, for now, in favor of a continuous function over domain $x \in [1,\infty)$. The discrete $S_1(n)$ becomes continuous:</p>
+                <p>On the surface, it looks like the series might sum to infinity regardless of how small these additions become as $n$ grows; there are infinitely-many additions being made, after all. 
+                    If sequentially adding-together an infinite sequence of numbers can return a finite sum in $\Bbb{R}$, then what will that number be and how do we even attempt a determination? <ul id="fourierbullet"><li>Moreover, these terms are in the rational number set $\Bbb{Q}$. In finite mathematics, we cannot sum-together numbers from $\Bbb{Q}$ to obtain a number that is exclusively in $\Bbb{R}$. This is true for all natural numbers $\Bbb{N}$ and integers $\Bbb{Z}$ as well.</li></ul></p>
+                <img id="setcenter" src="./Index/calc/trumpet/sets.png" alt="sets" width="150px" height="90px"/>
+                <p>Calculus allows us to drop the discrete notation in favor of a continuous function over domain $x \in [1,\infty)$:</p>
                 
                 <p>$$\bbox[8px,border:1px solid black]{
-                    f(x)=\int_{0}^{x}\frac{1}{x^2} \ dx} \tag{Eq. 3}\label{3}$$
+                    f(x)=\int_{1}^{x}\frac{1}{x^2} \ dx} \tag{Eq. 3}\label{3}$$
                 </p>
-                <p>Here is a plot of $x^{-2}$ with its underside shaded to represent $\int{x^{-2}dx}$. This is the "area-under-the-function" interpration for antiderivatives. This graphical interpretation can resolve a finite area under our infinite curve.</p>
+                <p>Here is a plot of $1/x^2$ with its underside shaded to represent $\int{dx/x^2}$. This is the "area-under-the-function" interpration for antiderivatives. This graphical interpretation can resolve a finite area under our infinite curve, but we require a quantitative approach to arrive at that conclusion.</p>
                 
                 <div id="fig1-img">
 
@@ -60,13 +60,13 @@
 
                 </div>
                 <div id="test"></div>
-                <div id="img1-explanation"><b>Fig. 1</b> - Plot of $1/x^2$ over domain $[1,4.5]$. This function monotonically decreases on $(0, \infty)$ such that $f(x \rightarrow \infty) \rightarrow 0$.</div>
+                <div id="img1-explanation"><b>Fig. 1</b> - Plot of $1/x^2$ over domain $[1,4.5]$. This function monotonically decreases on $(0, \infty)$ such that $f(x \rightarrow \infty) \rightarrow 0$. Notice that each value of $1/n^2$ is contained within $f(x)=1/x^2$</div>
 
-                <p>So, we need to integrate $f(x)$ over our domain $[1,\infty)$ and see what analytical solutions - if any - result.<br />Since $\infty$ is not itself a value, we should rewrite our <u>indefinite integral</u> using limits and a dummy variable $t$, and evaluate:</p>
+                <p>So, we need to integrate $f(x)$ over our domain $[1,\infty)$ and see what analytical solutions - if any - result.<br />Since $\infty$ is not itself a value, we should rewrite our <u>improper integral</u> using limits and a dummy variable $t$, and evaluate:</p>
 
                 <p>$$\bbox[8px,border:1px solid black]{
                     \lim_{t \rightarrow \infty} 
-                    \int_{0}^{t}\frac{1}{x^2} = \lim_{t \rightarrow \infty} 
+                    \int_{1}^{t}\frac{1}{x^2} = \lim_{t \rightarrow \infty} 
                     \left[1 - \frac{1}{t}\right] 
                     = 1 - \lim_{t \rightarrow \infty} \left[\frac{1}{t}\right] = 
                     \bbox[#FF1,8px,border:0px solid red]{1}\ } \tag{Eq. 4} $$
@@ -77,13 +77,13 @@
             </div>
 
             <div id="solution">
-                <p>Over the domain $[1,\infty)$, $f(x)$ encloses an area of exactly $1$. Determining that this infinite sum converges is not trivia; obtaining an analytical solution so easily by applying entry-level calculus is astonishing.</p>
+                <p>Over the domain $[1,\infty)$, $f(x)$ encloses an area of exactly $1$. Determining that this infinite series converges is not trivia; obtaining an analytical solution so easily by applying entry-level calculus is astonishing.</p>
                 
                 <br /><hr />
                 
-                <p class="question2"><b>How can we demonstrate that this solution is not trivial?</b></p>
+                <p class="question2"><b>How Can We Demonstrate that this Solution is Not Trivial?</b></p>
                 <p>
-                    Ask: if $\int_{1}^{\infty} \left[\frac{1}{x^2}\right] dx$ converges to a real value, then will $\int_{1}^{\infty} \left[\frac{1}{x}\right] dx$ also converge? Consider the similarities:
+                    Ask: if $\int_{1}^{\infty} \left[\frac{1}{x^2}\right] dx$ converges to a real and finite value, then will $\int_{1}^{\infty} \left[\frac{1}{x}\right] dx$ also converge? Consider the similarities:
                     </p><ul class="untrivial"><li> Both are rational expressions in the form $p/q$ </li><li> Monotonically decrasing over $x \in [1,\infty)$</li><li>Has values in-between 0 and 1 over our domain</li><li>Mutual characteristics are graphically demonstrable:</li></ul>
                 <!--</p>-->
 
@@ -93,7 +93,7 @@
                 
                 </div><!--Contains figure 1 graphic-->
                     
-                <div id="img1-explanation"><b>Fig. 2</b> - Plot of $f_1(x)$ and $f_2(x)$ over the domain $[1,4.5]$. Visually evident: both functions are monotonic over this domain and approach 0 as $x \rightarrow \infty$. This graphical representation doesn't actually give us any information about convergence.</div>
+                <div id="img1-explanation"><b>Fig. 2</b> - Plot of $f_1(x)$ and $f_2(x)$ over the domain $[1,4.5]$. Visually evident: both functions are monotonic over this domain and approach 0 as $x \rightarrow \infty$. This graphical representation does not provide any definite information about convergence.</div>
 
                 <p>Let us evaluate our continuous sum for $f(x)=\left[\frac{1}{x}\right]$ and see if we diverge or converge:</p>
 
@@ -115,7 +115,7 @@
                 <hr />
                 <p id="htitle">Evaluating Infinite Series Using Fourier Analysis</p>
                 <p class="f1">Integration of a function over $[1, \infty)$ is far more abstract as a concept than summing a list of fractions.
-                    Therefore, let us return to our discrete series $S_1$ and attempt an evaluation using <a class="link" href="fourier-one.html" target="_blank">Fourier analysis</a>. We can relate our continous function, $f(x)$, to our discrete infinite series $S_1(n)$. <br /><ul class="fourierbullet"><li>Generally, <a class="link" href="./fourier-one.html" target="_blank">Fourier analysis</a> allows us to rewrite any continuous function--with arbitrary precision--as an infinite sum of sines, cosines and coefficients. Convenient for functions that are discontinuous (i.e. electrical signals, environmental vibrations).</li><br /><li>For a function $g(x)$ to have an associated Fourier Series, it must meet the Strong Dirichlet Conditions. Real (physical) signals will always satisfy these conditions! [Citation Required.]</li></ul>
+                    Therefore, let us return to our discrete sum (Eq. 2) and attempt a solution using <a class="link" href="fourier-one.html" target="_blank">Fourier analysis</a>. We can relate our continous function, $f(x)$, to our discrete infinite series $S_1(n)$. <br /><ul class="fourierbullet"><li>Generally, <a class="link" href="./fourier-one.html" target="_blank">Fourier analysis</a> allows us to rewrite any continuous function--with arbitrary precision--as an infinite summation of sines, cosines and coefficients. Convenient for functions that are discontinuous (i.e. electrical signals, environmental vibrations).</li><br /><li>For a function $g(x)$ to have an associated Fourier Series, it must meet the Strong Dirichlet Conditions. Real (physical) signals will always satisfy these conditions! [Citation Required.]</li></ul>
                 </p> <!--Maybe put a break here for the Fourier section.-->
                 
                 <p>
@@ -148,7 +148,7 @@
 
                 <p>Evaluating these three integrals yields one independent coefficient $(a_0)$ and two coefficients $(a_n, b_n)$ which vary with Fourier index $n$. The size of $n$ determines the precision of our series approximation of $g(x)$. Fourier analysis adapts the concept of convergence to fit approximation, computation and analytical purposes.</p>
                 
-                First introduced to me in Electrodyamics I: Parseval's theorem - valid only for square-integrable $g(x)$ - relates our function to the fourier coefficients associated with $g(x)$ as such:
+                First introduced to me in Electrodyamics I: Parseval's theorem - valid only for square-integrable $g(x)$ - relates our function to the fourier coefficients as such:
                 
                 <p>
 
@@ -222,7 +222,7 @@
                     \end{align*} $$<br /><br /></p> <!--bn coefficients-->
                
                 <!--Integrand comment!-->
-                <p class="an-notes">Notice that $a_0$ = $a_n$ = zero in this case because of the integrand's symmetry about the y-axis. $g(x)=x$ is an odd function: $g(-x)=-g(x)$. In other words--the integrands of $a_0$ and $a_n$ are symmetrical about the origin. <br /><br />Graphically, it is clear why $a_0 = a_n = 0$ while $b_n \not= 0:$</p>
+                <p class="an-notes">Notice that $a_0$ = $a_n$ = 0 in this case because of the integrand's symmetry about the origin; $g(x)=x$ is an odd function: $g(-x)=-g(x)$. <br /><br />Graphically, it is clear why $a_0 = a_n = 0$ while $b_n \not= 0:$</p>
                 
                 <div id="fig3"><img src="./Index/calc/trumpet/fig3.bmp" alt="Figure 3" width="280px" height="179px" /> <!--FIGURE 1 IMG--></div>
                 <div id="fig3-2"><img src="./Index/calc/trumpet/fig3-2.bmp" alt="Figure 3-2" width="280px" height="179px" /> <!--FIGURE 1 IMG--></div>
@@ -230,20 +230,59 @@
                 
                 <div id="img1-explanation"><b>Fig. 3-5</b> - From left to right: shaded plots of the integrands $x$, $xcos(x)$, and $xsin(x)$. The first two cancel to zero over our bounday, while $xsin(x)$ has symmetry about the y-axis. </div>
                 <hr />
-                <p>Substituting $a_0$, $a_n$, $b_n$ and $g(x)=x$ into (Thrm. 1):</p>
+                <p id="work">How a Solution to the Basel Problem Emerges from Parseval's Theorem</p>
+                <p>Substituting $a_0$, $a_n$, $b_n$ and $g(x)=x$ into (Thrm. 1), we are equating a simple integral to our infinite series:</p>
                 <p class="eq11">$$\bbox[8px,border:1px solid black]
                     {
                     
                         \frac{1}{\pi} \int_{- \pi}^{\pi} x^2\ dx
-                        = \sum_{n=1}^{\infty} \left[ \frac{ -2 \cos{(n \pi)}}{n} \right]
-                        = \frac{2 \pi^3}{3}
+                        = 4 \sum_{n=1}^{\infty} \left[ \frac{ \cos^2{(n \pi)}}{n^2} \right]
+                        = \frac{2 \pi^2}{3}
                     }
                     \tag{Eq. 11}$$</p> <!--working on the bn only expression-->
                     
-                <p>Encoded in (Eq. 11): the infinite sum of $cos{(n \pi)}/ n$ for $n = 1, 2, 3, 4... \infty$ is equal to a real value! Equal to $\frac{2 \pi^3}{3}.$</p>
-                <ul class="fourierbullet"><li>Congratulations! We have proven that infinite sums can converge to a real value.</li><li>We can take this a step further to actually solve the Basel Problem (Eq. 2) by analyzing $cos(n \pi)$ a little closer. Consider a table of values for different $n$:</li></ul>
+                <p>Encoded in (Eq. 11): the infinite sum of terms in $\left[cos{(n \pi)}/ n\right]^2$ for $n = (1, 2, 3, 4... \infty)$ is equal to a finite number - exactly $ \frac{ \pi^2}{6}$! Parseval's Theorem allowed us to simply integrate $ \int x^2dx$ to reach our conclusion.</p>
+                <ul class="fourierbullet"><li>Congratulations! We have proven that certain infinite series will converge to a finite number.</li><li>Possible because $\int x^2 dx$ is easily obtainable in comparison to $ \sum_{n=1}^{ \infty} \frac{cos^2(n)}{n^2}$</li><li>We can take this a step further to actually solve the Basel Problem (Eq. 2) by analyzing $cos(n \pi)$ a little closer. Consider a table of cosine outputs for different $n$:
+                </li></ul>
+
+                <div id="cos-input">
+                $$ \cos{(1 \pi)}\ \ \  $$
+                $$ \cos{(2 \pi)}\ \ \ $$
+                $$ \cos{(3 \pi)}\ \ \ $$
+                $$ \cos{(4 \pi)}\ \ \ $$
+                </div>
+                <div style="border-left:2px solid #000;height:170;float:left;"></div>
+                <div id="cos-output">
+                    $$-1$$
+                    $$1$$
+                    $$-1$$
+                    $$1$$
+                </div>
                     
-                <p>This page is a work in progress. It is my first page.</p>
+                <p class="exit"><br />Cosine has a period of only $2 \pi$, so this table contains our only two unique outputs of $ \cos(n \pi)$: </p>
+
+                <span id="cosidentnew">$$ \bbox[8px,border:1px solid black]{ \cos{(n \pi)} = (-1)^n} \tag{Identity 1} $$</span>
+
+                <span>Using our Cosine identity in (Eq. 11), we obtain the Basel Problem and its solution simultaneously:
+                </span>
+
+                <span id="cosidentnew">$$               
+                    
+                        \sum_{n=1}^{\infty} \frac{ (-1)^{2n}}{n^2}
+                        = \frac{ 2 \pi^2}{3}\\ 
+                    \bbox[8x,border:1px solid black]{ \ \sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{ \pi^2}{6}\ }
+                    \tag{Eq. 12}$$</span>
+
+                <span id="series">
+                    $$
+                    \bbox[8px,border:1px solid black] {
+                        \sum_{n=1}^{\infty} \frac{1}{n^2}= 1 + \frac{1}{4} + \frac{1}{16} + \frac{1}{25} + \frac{1}{36} + \dots + \frac{1}{\infty} = \bbox[8px,border:0px solid black,yellow] {\frac{\pi^2}{6}}} \tag{Eq. 2}
+                     $$
+                </span>
+
+                <p>Incredibly, the result is an irrational number! It is not trivial at this point that $\pi$ should appear. Why? <ul class="fourierbullet"><li>Every term is part of the rational number set $\Bbb{Q}$, but our sum converges to an irrational number in $\Bbb{R}$ that is outside of $\Bbb{Q}$!</li></ul></p>
+                
+                <!--<span class="follow"><br /><br />&nbsp;for $n \in \Bbb{I}$</span-->
                     <!--<p>$$but$$</p>
 
                     <p class="eq11-2">$$\bbox[8px,border:0px solid black]
@@ -272,11 +311,7 @@
     </body>
 
     <footer>
-        <div id="mathtest">
-            <br /><br /><br /><br /><br /><br /><br /><br /><br />$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
-            $$\in$$
-        </div>
-        <br /><br /><br />Notes by &copy; Tyler DeFrancesco, 2023.<br />
+        <br /><br /><br />Notes by &copy; Tyler DeFrancesco 2023 | BS Physics '21<br />
     </footer>
 </html>
 
