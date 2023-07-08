@@ -161,3 +161,37 @@ footer {
     font-size: 16pt;
     font-weight:bold;
 }
+
+#cos-input{
+    float:left;
+    padding-left:380px;
+}
+
+#cos-output{
+    float:left;
+    clear:right;
+    padding-left:10px;
+    padding-top:8px;
+}
+
+#fourier2 .exit{
+    float:none;
+    clear:both;
+}
+#vline{
+    float:none;
+    border-left: 6px solid blue;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 3;
+}
+
+#cosident{
+    float:left;
+    padding-left:380px;
+}
+#fourier2 .follow{
+    font-size:10pt;
+}
