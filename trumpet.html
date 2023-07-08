@@ -230,6 +230,7 @@
                 
                 <div id="img1-explanation"><b>Fig. 3-5</b> - From left to right: shaded plots of the integrands $x$, $xcos(x)$, and $xsin(x)$. The first two cancel to zero over our bounday, while $xsin(x)$ has symmetry about the y-axis. </div>
                 <hr />
+                <p id="work">A Solution to the Basel Problem</p>
                 <p>Substituting $a_0$, $a_n$, $b_n$ and $g(x)=x$ into (Thrm. 1):</p>
                 <p class="eq11">$$\bbox[8px,border:1px solid black]
                     {
@@ -240,15 +241,28 @@
                     }
                     \tag{Eq. 11}$$</p> <!--working on the bn only expression-->
                     
-                <p>Encoded in (Eq. 11): the infinite sum of $\left[cos{(n \pi)}/ n\right]^2$ for $n = 1, 2, 3, 4... \infty$ is equal to a real value! Equal to $\frac{\pi^2}{6}$. We only obtained this because Parseval's Theorem allowed us to simply integrate $ \int x^2dx$ to reach our conclusion.</p>
-                <ul class="fourierbullet"><li>Congratulations! We have proven that infinite series can converge to a real value.</li><li>We can take this a step further to actually solve the Basel Problem (Eq. 2) by analyzing $cos(n \pi)$ a little closer. Consider a table of values for different $n$:
+                <p>Encoded in (Eq. 11): the infinite sum of $\left[cos{(n \pi)}/ n\right]^2$ for $n = 1, 2, 3, 4... \infty$ is equal to a real value! Equal to $\frac{\pi^2}{6}$. We only obtained this because Parseval's Theorem allowed us to simply integrate $ \int x^2dx$ to reach our conclusion.<br /></p>
+                <ul class="fourierbullet"><li>Congratulations! We have proven that certain infinite series will converge to a real value.</li><li>We can take this a step further to actually solve the Basel Problem (Eq. 2) by analyzing $cos(n \pi)$ a little closer. Consider a table of values for different $n$:
                 </li></ul>
 
-                <div id="cos">
-
+                <div id="cos-input">
+                $$ \cos{(1 \pi)}\ \ \  $$
+                $$ \cos{(2 \pi)}\ \ \ $$
+                $$ \cos{(3 \pi)}\ \ \ $$
+                $$ \cos{(4 \pi)}\ \ \ $$
+                </div>
+                <div style="border-left:2px solid #000;height:170;float:left;"></div>
+                <div id="cos-output">
+                    $$-1$$
+                    $$1$$
+                    $$-1$$
+                    $$1$$
                 </div>
                     
-                <p>This page is a work in progress. It is my first page.</p>
+                <p class="exit"><br />Cosine has a period of only $2 \pi$, so this table contains all two possible values of $cos(n \pi)$ for any integer $n$. Therefore, for $n \in \Bbb{I}$ we can rewrite $cos(n \pi)$ as the following expression: </p>
+
+                <span id="cosident">$$ \bbox[8px,border:1px solid black]{cos(n \pi) = (-1)^n}$$</span>
+                <span class="follow"><br /><br />&nbsp;for $n \in \Bbb{I}$</span>
                     <!--<p>$$but$$</p>
 
                     <p class="eq11-2">$$\bbox[8px,border:0px solid black]
@@ -279,7 +293,6 @@
     <footer>
         <div id="mathtest">
             <br /><br /><br /><br /><br /><br /><br /><br /><br />$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
-            $$\in$$
         </div>
         <br /><br /><br />Notes by &copy; Tyler DeFrancesco, 2023.<br />
     </footer>
