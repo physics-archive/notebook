@@ -25,10 +25,10 @@
     <body>
         <div id="container">
             <div id="header"> <!--Let's work a list into here instead-->
-                <h2 class="title">Convergence - Infinite Series Can Return a Finite Value</h2>
+                <h2 class="title">Convergence - Infinite Series Can Return a Finite Value <br />For more information, see Carnegie-Mellon</h2>
             </div>
             <div id="problem">
-                <p class="preface">Demonstrated here: the power of calculus in resolving problems created by infinity, and in obtaining analytical solutions to sums of infinitely-many numbers in a list.
+                <p class="preface">Demonstrated here: the power of calculus in resolving problems created by infinity, and in obtaining analytical solutions to sums of infinitely-many numbers.
                     The following mathematical concept is convergence. Arrays (or series) of values - infinite in count - will either a) diverge towards infinity or b) converge to an exact number.
                 </p> <!--Reorganize to be a list of bullets and structure at the top for a preface--> <!--Talk about how we need mathematical tools to resolve this reality for any function-->
                 <p class="pp1">Consider the following sequence:</p>
@@ -46,7 +46,7 @@
                 
                 <p>In (Eq. 2), we are summing over index $n$ of infinite length. 
                     On the surface, we should be summing to infinity regardless of how small these additions become as $n$ grows. 
-                    If sequentially adding infinitely-many numbers from $\Bbb{R}$ can return a finite number in $\Bbb{R}$, then what number will that sum equal and how do we even attempt a determination?</p>
+                    If sequentially adding infinitely-many numbers from $\Bbb{R}$ can return a finite number in $\Bbb{R}$, then what number will that sum equal and how do we even attempt a determination? <ul id="fourierbullet"><li>Moreover, these fractions are rational numbers $\Bbb{Q}$. In finite mathematics, we are not adding .</li></ul></p>
                 <p>Drop the discrete notation, for now, in favor of a continuous function over domain $x \in [1,\infty)$. The discrete $S_1(n)$ becomes continuous:</p>
                 
                 <p>$$\bbox[8px,border:1px solid black]{
@@ -93,7 +93,7 @@
                 
                 </div><!--Contains figure 1 graphic-->
                     
-                <div id="img1-explanation"><b>Fig. 2</b> - Plot of $f_1(x)$ and $f_2(x)$ over the domain $[1,4.5]$. Visually evident: both functions are monotonic over this domain and approach 0 as $x \rightarrow \infty$. This graphical representation doesn't actually give us any information about convergence.</div>
+                <div id="img1-explanation"><b>Fig. 2</b> - Plot of $f_1(x)$ and $f_2(x)$ over the domain $[1,4.5]$. Visually evident: both functions are monotonic over this domain and approach 0 as $x \rightarrow \infty$. This graphical representation does not provide any definite information about convergence.</div>
 
                 <p>Let us evaluate our continuous sum for $f(x)=\left[\frac{1}{x}\right]$ and see if we diverge or converge:</p>
 
@@ -115,7 +115,7 @@
                 <hr />
                 <p id="htitle">Evaluating Infinite Series Using Fourier Analysis</p>
                 <p class="f1">Integration of a function over $[1, \infty)$ is far more abstract as a concept than summing a list of fractions.
-                    Therefore, let us return to our discrete series $S_1$ and attempt an evaluation using <a class="link" href="fourier-one.html" target="_blank">Fourier analysis</a>. We can relate our continous function, $f(x)$, to our discrete infinite series $S_1(n)$. <br /><ul class="fourierbullet"><li>Generally, <a class="link" href="./fourier-one.html" target="_blank">Fourier analysis</a> allows us to rewrite any continuous function--with arbitrary precision--as an infinite summation of sines, cosines and coefficients. Convenient for functions that are discontinuous (i.e. electrical signals, environmental vibrations).</li><br /><li>For a function $g(x)$ to have an associated Fourier Series, it must meet the Strong Dirichlet Conditions. Real (physical) signals will always satisfy these conditions! [Citation Required.]</li></ul>
+                    Therefore, let us return to our discrete sum (Eq. 2) and attempt a solution using <a class="link" href="fourier-one.html" target="_blank">Fourier analysis</a>. We can relate our continous function, $f(x)$, to our discrete infinite series $S_1(n)$. <br /><ul class="fourierbullet"><li>Generally, <a class="link" href="./fourier-one.html" target="_blank">Fourier analysis</a> allows us to rewrite any continuous function--with arbitrary precision--as an infinite summation of sines, cosines and coefficients. Convenient for functions that are discontinuous (i.e. electrical signals, environmental vibrations).</li><br /><li>For a function $g(x)$ to have an associated Fourier Series, it must meet the Strong Dirichlet Conditions. Real (physical) signals will always satisfy these conditions! [Citation Required.]</li></ul>
                 </p> <!--Maybe put a break here for the Fourier section.-->
                 
                 <p>
@@ -148,7 +148,7 @@
 
                 <p>Evaluating these three integrals yields one independent coefficient $(a_0)$ and two coefficients $(a_n, b_n)$ which vary with Fourier index $n$. The size of $n$ determines the precision of our series approximation of $g(x)$. Fourier analysis adapts the concept of convergence to fit approximation, computation and analytical purposes.</p>
                 
-                First introduced to me in Electrodyamics I: Parseval's theorem - valid only for square-integrable $g(x)$ - relates our function to the fourier coefficients associated with $g(x)$ as such:
+                First introduced to me in Electrodyamics I: Parseval's theorem - valid only for square-integrable $g(x)$ - relates our function to the fourier coefficients as such:
                 
                 <p>
 
