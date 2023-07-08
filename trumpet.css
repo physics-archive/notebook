@@ -195,3 +195,12 @@ footer {
 #fourier2 .follow{
     font-size:10pt;
 }
+
+#small {
+    font-size: 11pt;
+    font-weight:normal;
+}
+
+a{
+    text-decoration:none;
+}
