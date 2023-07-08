@@ -2,21 +2,18 @@
 <html>  
     <head>
         
-        <script type="text/x-mathjax-config">
-            MathJax.Hub.Config({
-              extensions: ["tex2jax.js"],
-              jax: ["input/TeX", "output/HTML-CSS"],
-              tex2jax: {
-                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-                processEscapes: false
+        <script>
+            MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
               },
-              "HTML-CSS": { fonts: ["TeX"] }
-            });
-        </script>
+              svg: {
+                fontCache: 'global'
+              }
+            };
+            </script>
         
-        <script type="text/javascript" async
-          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML">
-        </script>
+        <script type="text/javascript" src="./MathJax3/es5/tex-chtml.js"></script>
         
         <title>Calculus</title>
         <link rel="stylesheet" type="text/css" href="trumpet.css" /> <!--links CSS style sheet-->

@@ -29,3 +29,25 @@
         <script type="text/javascript" async
           src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML">
         </script>
+
+
+<!--MathJax 3 working in Safari for inline math format-->
+
+<head>
+        
+  <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+      </script>
+  
+  <script type="text/javascript" src="./es5/tex-chtml.js"></script>
+  
+  <title>Calculus</title>
+  <link rel="stylesheet" type="text/css" href="trumpet.css" /> <!--links CSS style sheet-->
+</head>
