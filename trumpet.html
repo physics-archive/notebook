@@ -242,7 +242,7 @@
                     \tag{Eq. 11}$$</p> <!--working on the bn only expression-->
                     
                 <p>Encoded in (Eq. 11): the infinite sum of terms in $\left[cos{(n \pi)}/ n\right]^2$ for $n = (1, 2, 3, 4... \infty)$ is equal to a finite number - exactly $ \frac{ \pi^2}{6}$! Parseval's Theorem allowed us to simply integrate $ \int x^2dx$ to reach our conclusion.</p>
-                <ul class="fourierbullet"><li>Congratulations! We have proven that certain infinite series will converge to a finite number.</li><li>Possible because $\int x^2 dx$ is easily obtainable in comparison to $ \sum_{n=1}^{ \infty} \frac{cos^2(n)}{n^2}$</li><li>We can take this a step further to actually solve the Basel Problem (Eq. 2) by analyzing $cos(n \pi)$ a little closer. Consider a table of values for different $n$:
+                <ul class="fourierbullet"><li>Congratulations! We have proven that certain infinite series will converge to a finite number.</li><li>Possible because $\int x^2 dx$ is easily obtainable in comparison to $ \sum_{n=1}^{ \infty} \frac{cos^2(n)}{n^2}$</li><li>We can take this a step further to actually solve the Basel Problem (Eq. 2) by analyzing $cos(n \pi)$ a little closer. Consider a table of cosine outputs for different $n$:
                 </li></ul>
 
                 <div id="cos-input">
@@ -259,7 +259,7 @@
                     $$1$$
                 </div>
                     
-                <p class="exit"><br />Cosine has a period of only $2 \pi$, so this table contains our only two unique outputs of $ \cos(n \pi)$. On the unit circle, -1 and 1 are the x-intercepts for $x^2 + y^2 = 1$ -- a circle of radius 1 that is centered about the origin (0,0). <br /><br />Therefore, for $n \in \Bbb{I}$ we can rewrite $cos^2(n \pi)$ using numerical analysis: </p>
+                <p class="exit"><br />Cosine has a period of only $2 \pi$, so this table contains our only two unique outputs of $ \cos(n \pi)$. On the unit circle, -1 and 1 are the x-intercepts for $x^2 + y^2 = 1$ -- a circle with $r=1$ that is centered about the origin $(0,0)$. <br /><br />Therefore, for $n \in \Bbb{I}$ we can rewrite $cos^2(n \pi)$ numerically: </p>
 
                 <span id="cosidentnew">$$ \bbox[8px,border:1px solid black]{ \cos{(n \pi)} = (-1)^n} \tag{Identity 1} $$</span>
 
