@@ -2,17 +2,16 @@
 <html>  
     <head>
         
-        <script type="text/x-mathjax-config">
-            MathJax.Hub.Config({
-              extensions: ["tex2jax.js"],
-              jax: ["input/TeX", "output/HTML-CSS"],
-              tex2jax: {
-                inlineMath: [ ['$','$'] ],
-                processEscapes: false
+        <script>
+            MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
               },
-              "HTML-CSS": { fonts: ["TeX"] }
-            });
-        </script>
+              svg: {
+                fontCache: 'global'
+              }
+            };
+            </script>
         
         <script type="text/javascript" src="./MathJax/es5/tex-chtml.js"></script>
         
