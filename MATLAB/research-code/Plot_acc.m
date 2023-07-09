@@ -1,0 +1,1 @@
+createfigureAcc(acc(Data,AmplifierGain,ProbeRate)./AmplifierGain./ProbeRate*9.81./1000);

@@ -1,0 +1,27 @@
+Location_Time_Gain 
+'d10sG' = door, 10s total, gain = 100 V/g instead of 10 V/g.
+
+
+- Location - 
+
+d = door data (back corner)
+dm = door data taken closer to the middle
+m = middle floor data
+da = door position A (see photo) from 7/2/2021 data
+dc = door position at the entrance curtain
+dd = door position D (close to the curtain)
+ef = hall floor next to the lab door
+ec = center of the hallway (in front of the lab entrance)
+eb = hall position (B) at the opposing wall, across from the lab entrance
+	-environmental humming began during measurements, at eb and is present in spectra at: eb, ec, ef.
+
+- Time and Gain -
+
+G = 100 gain data (10 gain otherwise)
+
+dt = 20 * t/div
+
+M1ms = 20ms
+
+Min Freq. Resolvable = sampleRate/1000
+
