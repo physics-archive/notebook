@@ -21,6 +21,8 @@
     font-size:15;
 }
 
+
+
 #footer {
     clear: both;
     background-color: #FFFFF0;
@@ -58,6 +60,7 @@ a {
 
 #index .index_header {
     text-align: center;
+    font-size:16pt;
 }
 
 #footer{
