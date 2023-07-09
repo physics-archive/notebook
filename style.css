@@ -5,7 +5,12 @@
 }
 
 #content {
-    padding: 10px;
+    text-align:left;
+}
+
+#context{
+    font-size:14pt;
+    text-align:justify;
 }
 
 #container {
@@ -13,6 +18,7 @@
     width: 900px;
     margin-left: auto;
     margin-right: auto;
+    font-size:15;
 }
 
 #footer {
@@ -23,20 +29,27 @@
 }
 
 #index .selected{
-    color: rebeccapurple;
+    color: darkgreen;
+    font-weight:bold;
 }
 
 #index ul {
     text-decoration: none;
-    list-style-type: square;
+
+
 }
 a {
     text-decoration: none;
-    color: rebeccapurple;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:14pt;
 }
-
+#index-list{
+    padding-left:50px;
+}
 #mj {
     text-align: center;
+    
 }
 
 #main {
@@ -45,4 +58,15 @@ a {
 
 #index .index_header {
     text-align: center;
+}
+
+#footer{
+    padding-top:500px;
+}
+
+#index-list{
+        list-style-type: "* ";
+        margin-left: auto;
+        margin-right: 100px;
+    
 }
