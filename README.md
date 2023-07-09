@@ -7,14 +7,15 @@ UConn educated me, but I carefully remain conscientious of the following:
   
   2) No scanned notes from any professors at the University are transcribed or included for viewing.
 
-     i) Likewise, I deliberately avoid rewriting anything that may have been recorded verbatim from 2017-21 --
+      Likewise, I deliberately avoid rewriting anything that may have been recorded verbatim from 2017-21 --
         despite the source notes existing in my own notebooks, transcribed in my own handwriting.
   
   
   3) NEVER will this repo host any uploads of any exam-related material.
      This is the one area that is entirely non-grey and is punishable by the University.
      Of course, some staple problems I cover do appear on Physics exams (like the infinite square well in early QM courses).
-     Generalized prolems like that are not intellectual property of the University and are available publically without contest.
+
+     Generalized prolems such as QHO, the Basel Problem, Schrödinger's eq. for a free-particle, Hydrogen fine-structure energy corrections, are not intellectual property of the University and are available publically without contest.
      Widely-accepted mathematical models for physical systems will always overlap with course material.
      
 
