@@ -11,8 +11,9 @@ UConn educated me, but I carefully remain conscientious of the following:
   
   4) NEVER will this repo host any uploads of any exam-related material.
      This is the one area that is entirely non-grey and is punishable by the University.
-     Of course, some staple problems (like the QM infinite square well) do appear on Physics exams.
+     Of course, some staple problems I cover do appear on Physics exams (like the infinite square well in early QM courses).
      Generalized prolems like that are not intellectual property of the University and are available publically without contest.
+     Widely-accepted mathematical models for physical systems will always overlap with course material.
      
 
   6) Problem sets are also off limits for me taking problems / solutions from,
