@@ -1,7 +1,9 @@
 <!DOCTYPE html-css>
 <html>  
     <head>
-        
+        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
         <script>
             MathJax = {
               tex: {
@@ -11,9 +13,8 @@
                 fontCache: 'global'
               }
             };
-            </script>
-      <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-      <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+        </script>
+
         
         <script type="text/javascript" src="./MathJax3/es5/tex-chtml.js"></script>
         
@@ -27,12 +28,19 @@
     <body>
         <div id="container">
 
-            
+        <!--DOES NOT WORK FOR SOME REASON BUT IT WORKS IN ISOLATION. MAYBE MATHJAX-->
             <py-config type="json">
                 {
                   "packages": ["numpy", "matplotlib"]
                 }
             </py-config>
+            <py-script>
+                async def _fetch():
+                    from pyodide.http import pyfetch
+                    resp = await pyfetch("...")
+                ...
+                pyscript.run_until_complete(_fetch())
+                </py-script>
             <py-script>
                 import matplotlib.pyplot as plt
                 import numpy as np
