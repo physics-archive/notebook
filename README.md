@@ -1,5 +1,5 @@
 # Digital-Physics-Archive
-Content studied while obtaining my BS program in Physics, rewritten and expanded. Coded in HTML and CSS with MathJax.js from the ground-up. Purpose: to sharpen my coding skills while providing "open-source" e-textbook for undergraduate physics material.
+Content studied while obtaining my BS in Physics, rewritten and expanded. Coded in HTML and CSS with MathJax.js from the ground-up. Purpose: to sharpen my coding skills while providing "open-source" e-textbook for undergraduate physics material.
 
 IMPORTANT DISCLAIMER: None of the content hosted on my git is direct source material from the University of Connecticut. 
 UConn educated me, but I carefully remain conscientious of the following:
