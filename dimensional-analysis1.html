@@ -39,21 +39,46 @@
       <li>Mass ($m$) of the pendulum</li>
       <!--<li>Initial angle ($ \theta_i$) of the pendulum</li>-->
     </ul>
-    <p>Conveniently, all quantities except for $ \theta$ are dimensional. Therefore, whatever form $f(L,g,m, \theta_i)$ takes on,
+    <p>Conveniently, all quantities except for $ \theta$ are dimensional. Therefore, whatever form $f( \ell,g,m, \theta_i)$ takes on,
       it must be dimensionally valid. Not all proposals for $f$ make sense, and so we can start to make some deductions.
     </p>
 
-    <p>Let me express this proposed relationship for $f$ as an algebraic function:</p>
+    <p>Let me express this proposed relationship for $f$ as an algebraic function of those parameters:</p>
     
-    <p>$$ f\left(L,g,m \right)\ \text{~}\ L^{ \alpha} g^{ \beta} m^{ \gamma}$$</p>
-    <p>Here, $\alpha, \beta,$ and $\gamma$ are entirely unknown -- they might even be zero. <br/><br/>Since $f$ has units of frequency ($1/time$), then
-      the quantity $L^{ \alpha} g^{ \beta} m^{ \gamma}$ must also have units of frequency to fit a statement of <i>equality</i>. Algebraically:
+    <p>$$ f\left( \ell,g,m \right)\ \text{~}\ \ell^{ \alpha} g^{ \beta} m^{ \gamma} \tag{Eq. 1}$$</p>
+    <p>Here, $\alpha, \beta,$ and $\gamma$ are entirely unknown -- they might even be zero. We require a system of equations
+      to make any determinations. There are three unknowns and three dimensions, so we may be in luck.
+       <br/><br/>Since $f$ has units of frequency ($T^{-1}$), then
+      the quantity $\ell^{ \alpha} g^{ \beta} m^{ \gamma}$ 
+      must also have units of frequency. This allows us to transform our statement so that we equate the dimensionality
+      of our relationship, thus producing multiple equations for our multiple dimensions:
     </p>
     
-    <span>$$T^{-1}=L^{ \alpha} \left( L T^{-2}\right)^{ \beta} M^{ \gamma}$$</span>
-    <span></span>
+    <span>$$ \begin{align*}
+      T^{-1}
+      &=L^{ \alpha} \left( L T^{-2}\right)^{ \beta} M^{ \gamma}\\
+      &= L^{ \alpha} L^{ \beta} T^{-2 \beta} M^{ \gamma}\\ 
+      L^0 T^{-1} M^0 &= L^{( \alpha + \beta)} T^{-2 \beta} M^{ \gamma}
+      \end{align*} \tag{Eq. 2}$$</span>
+    
+      <span>We obtain three equations from this - one for each dimension that nature inevitably balances. 
+        For instance, to balance out our dimensions of mass, there is only one possibility for $ \gamma$: 
+      </span>
+    $$\begin{align} M^{ \gamma} = 1\\ \gamma = 0 \end{align} \tag{Eq. 3}$$
+
+    <span>Clearly, $ \gamma = 0$ is the only way to make $M^{ \gamma}=1$. So, $f$ cannot depend on the pendulum's mass.<br/><br/>
+      This type of quantitative deduction is at the core of dimensional analysis. Let us clean this up and actually write-out the
+      system of equations, and then represent it as a matrix:
+    </span>
+
+    <p class="system">
+
+
+    
+    
+    
+    
     <!--make this into a list i.e. math: function, physics: parameters.-->
-  </p>
   
   
   
