@@ -4,9 +4,6 @@
     text-align: center;
 }
 
-#content {
-    text-align:left;
-}
 
 #context{
     font-size:14pt;
@@ -38,6 +35,10 @@
 #index ul {
     text-decoration: none;
 
+#info {
+    text-decoration:none;
+    list-style-type:square;
+}
 
 }
 a {
@@ -49,13 +50,10 @@ a {
 #index-list{
     padding-left:50px;
 }
+
 #mj {
     text-align: center;
     
-}
-
-#main {
-    text-align: center;
 }
 
 #index .index_header {
