@@ -11,6 +11,9 @@ body {
     width: 100%;
 }
 
+#fourier2{
+    will-change:opaque;
+    }
 #mathtest {
     text-align: center;
     size: 4px;
