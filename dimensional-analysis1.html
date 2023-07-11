@@ -27,7 +27,33 @@
 
 <div id="intro">
 
-  <p>Here's a powerful tool to demonstrate why theoretical physics is an effective approach when modeling physical systems. Using dimensional and numerical analysis, let us determine the exact form for a pendulum's cycle frequency. Physical observation guides our mathematical logic, and vise versa.</p>
+  <p>Here's a powerful tool to demonstrate why theoretical physics is an effective approach when modeling physical systems. 
+    Using dimensional and numerical analysis, let us determine the exact form for a pendulum's cycle frequency. 
+    Physical observation will our mathematical logic, and vise versa.</p>
+  
+  <p>Starting with physics -- what real-world parameters determine the pendulum frequnecy $f$? 
+    Mathematically I am asking: what is $f$ actually a function of in our isolated system? Here are some realistic possibilities:
+    <ul id="list1">
+      <li>Gravitational acceleration ($g$)</li>
+      <li>Length ($L$) of the pendulum</li>
+      <li>Mass ($m$) of the pendulum</li>
+      <!--<li>Initial angle ($ \theta_i$) of the pendulum</li>-->
+    </ul>
+    <p>Conveniently, all quantities except for $ \theta$ are dimensional. Therefore, whatever form $f(L,g,m, \theta_i)$ takes on,
+      it must be dimensionally valid. Not all proposals for $f$ make sense, and so we can start to make some deductions.
+    </p>
+
+    <p>Let me express this proposed relationship for $f$ as an algebraic function:</p>
+    
+    <p>$$ f\left(L,g,m \right)\ \text{~}\ L^{ \alpha} g^{ \beta} m^{ \gamma}$$</p>
+    <p>Here, $\alpha, \beta,$ and $\gamma$ are entirely unknown -- they might even be zero. <br/><br/>Since $f$ has units of frequency ($1/time$), then
+      the quantity $L^{ \alpha} g^{ \beta} m^{ \gamma}$ must also have units of frequency to fit a statement of <i>equality</i>. Algebraically:
+    </p>
+    
+    <span>$$T^{-1}=L^{ \alpha} \left( L T^{-2}\right)^{ \beta} M^{ \gamma}$$</span>
+    <span></span>
+    <!--make this into a list i.e. math: function, physics: parameters.-->
+  </p>
   
   
   
