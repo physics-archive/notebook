@@ -72,11 +72,39 @@
     </span>
 
     <p class="system">
+      $$ \begin{cases}
+      1 \alpha + 1 \beta + 0 \gamma = 0 \\
+      0 \alpha -2 \beta + 0 \gamma= -1 \\
+      0 \alpha + 0 \beta + 1 \gamma = 0 \end{cases}$$  
+    </p>
 
+    <p>Joining both sides of (Eq. 3) forms a 3x4 matrix produdes a neat object that we can row-reduce to obtain $\alpha, \beta, \gamma$:
+    </p>
 
+    <span id="matrix1">$$
+      \begin{bmatrix}
+  1 & 1 & 0 & 0\\
+  0 & -2 & 0 & -1\\
+  0 & 0 & 1 & 0
+      \end{bmatrix} \stackrel{rr}{ \rightarrow} 
+  \begin{bmatrix}
+   1 & 0 & 0 & 1/2\\
+  0 & 1 & 0 & -1/2\\
+  0 & 0 & 1 & 0
+     \end{bmatrix} $$
+    </span>
+    <p class="ans">
+      $$ \begin{cases}
+      \alpha = \frac{1}{2}\\
+      \beta = - \frac{1}{2} \\
+      \gamma = 0 \end{cases}$$  
+    </p>
     
-    
-    
+    <p>These exponents produce the following frequency relationship for our pendulum:</p>
+
+    $$f\ \text{~}\ \sqrt{ \frac{g}{ \ell}}$$
+    (Eq. 7) states that the frequency of a pendulum scales with the square-root of gravitational acceleration, and with the inverse square-root of pendulum length. Mass did not factor into $f( \ell, g)$For example, increasing $ \ell$ by 4 meters will decrease $f$ by 2 Hz. 
+
     
     <!--make this into a list i.e. math: function, physics: parameters.-->
   
