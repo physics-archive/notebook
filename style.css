@@ -34,13 +34,13 @@
 
 #index ul {
     text-decoration: none;
-
+}
 #info {
     text-decoration:none;
     list-style-type:square;
 }
 
-}
+
 a {
     text-decoration: none;
     margin-left:auto;
