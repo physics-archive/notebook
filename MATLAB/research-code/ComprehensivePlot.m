@@ -61,5 +61,5 @@ end
 example_Velocity_OneThirdOctave= example_sortedVelocity(1:23);
 
 Plot_acc
-%Plot_nb
+Plot_nb
 Plot
