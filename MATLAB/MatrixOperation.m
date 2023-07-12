@@ -28,7 +28,12 @@ true_false_difference=Difference(1:10000);
 Nine_millionth_element=Difference(9*10^6); %returns 0. These sets never equal.
 
 
+y1=transpose(zeros(10^7,1)); %a vector with values equal to 0 for our irrationals.
+y2=y1 + 1; %a vector with values equal to 1 for our rationals
+verify_y=y2-y1; %should be 1 everywhere if we did this correctly. It is.
 
+%let's actually plot y1 and y2 along our real number line from [0,1];
+%this is going to render 2*10^7 points.
 
-
-plot(S1);
+plot(S1,y1,S2,y2); %two lines on top of each other, but it's 1:1 and onto
+%very strange shape. 
