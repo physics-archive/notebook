@@ -1,10 +1,12 @@
 pi_scale = 3.14159265;
 base_step = 10.^-7; %this will scale step-size of real_ and q_step
 
+%construct a digital real number line from 0 to 1
 real_step = (1 ./ pi_scale)*pi*base_step; %"irrational" number
 real_initial = 0; %graph begins at at the origin
 real_final = 1; %domain of [0,1]
 
+%construct a digital rational number line from 0 to 1
 q_step = base_step;
 q_initial = 0;
 q_final = 1;
