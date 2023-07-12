@@ -36,6 +36,22 @@ verify_y=y2-y1; %should be 1 everywhere if we did this correctly. It is.
 
 %let's actually plot y1 and y2 along our real number line from [0,1];
 %this is going to render 2*10^7 points.
+%plot(S1,y1,S2,y2); %two lines on top of each other, but it's 1:1 and onto
+%very strange shape.
 
-plot(S1,y1,S2,y2); %two lines on top of each other, but it's 1:1 and onto
-%very strange shape. 
+reals=[S1 S2]; %this is our real number line over [0,1]  with 20 million points.
+reals_verify=length(reals) ./ length(S1); %will be 2 if we joined our rationals to our irrationals.
+
+%I want to test that our vector was stitched together in numerical order
+%being countable and ordered is an important property of R
+range=10^7 -5:1:10^7 +5;
+reals_middle=zeros(1,11); %define our array for memory conservation.
+
+for k= range
+    for j=1:11
+        reals_middle(j)=reals(k)-reals(k+1);
+    end
+end %all elements should be our step size if they ordered correctly
+
+
+
