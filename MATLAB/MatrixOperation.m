@@ -53,5 +53,9 @@ for k= range
     end
 end %all elements should be our step size if they ordered correctly
 
+eff=0;
 
+alternate(3); %will return -1
 
+X=reals;
+Y=alternate_s(length(reals));
