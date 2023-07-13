@@ -16,11 +16,13 @@
         <script type="text/javascript" src="./MathJax3/es5/tex-chtml.js"></script>
         
         <title>Calculus</title>
-        <link rel="stylesheet" type="text/css" href="reals1.css?ver=1.2" /> <!--links CSS style sheet-->
+        <link rel="stylesheet" type="text/css" href="reals1.css?ver=1.3" /> <!--links CSS style sheet-->
 </head>
 
 <body>
   <div id="container">
+
+<h2 style="text-align:center">Resolving Paradoxes in the Real Number Set $\Bbb{R}$</h2>
 
 <p id="intro">Consider this bizarre function proposed by Dirichlet:</p>
 
@@ -35,7 +37,22 @@ f(x) = \begin{cases}
 <p>Plotting this function over the real number line $\Bbb{R}$ produces a paradoxical result that motivates a 
   deeper study into continuity, and more generally into the fine structures of $\Bbb{Q}$ and $\Bbb{R}$ themselves.</p>
 
+<div id="fig1">
+<img src=".\MATLAB\dirichlet.png" height="210px" width="285px" />
+</div>
+
+<p>Plotting this function over $\Bbb{R}$ is deceptive to the unexpectant observer because it appears only
+  to violate our conditions for an ordinary function: it does not look single-valued. However, (Eq. 1) defines a clear
+  rule that guarantees it is a valid function. 
+<ul><li>The irrational numbers (when $x \notin \Bbb{Q}$) are constructed from the "holes" in the rational number line above it, at $f(x)=1$.
+  Is there a symmetry or some sort of pattern to this extreme discontinuity?<br/>
+</li>
+<li>Problem: both sets of points consist of innfinitely-many values, even on the interval [0,1]. Once again, we must look deeper
+  into analysis to resolve this paradox of comparing objects of infinite size.
+</li></ul>
+</p>
+
 
 </div></body> <!--Closes container-->
-<img src=".\MATLAB\dirichletplot.jpg" height="300px" wifth="450px" />
+
 </html>
