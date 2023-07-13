@@ -66,27 +66,27 @@ $(f)$ leading up to this point, as it cannot be expressed as an algebraic relati
 
 </p>
 
-<p>An interesting way to show that $\Bbb{Q}$ is different from its subsets $\Bbb{N}$ and $\Bbb{Z}$ with regards to continuity
-  is to create an analogue to Dirichlet's function with the integers. This time, the empty intervals between the integers of $\Bbb{Z}$ 
-  will be filled by the rationals of $\Bbb{Q}$:</p>
+<p>An interesting way to show that $\Bbb{Q}$ has density, as opposed to its subsets $\Bbb{N}$ and $\Bbb{Z}$,
+  is to plot an analogue to Dirichlet's function using the integers. This time, the empty intervals between the upper set of points ($\Bbb{Z}$) 
+  will be filled by the rationals of $\Bbb{Q}$ -- analogous to (Fig. 1) where the holes of $\Bbb{Q}$ were filled by the irrationals:</p>
   
   <span id="z">$$
 
     f_{\Bbb{Z}}(x) = \begin{cases} 
     1\ \ \text{if} \ x \in \Bbb{Z} \\
-    0\ \ \text{if} \ x \notin \Bbb{Z}
+    0\ \ \text{if} \ x \notin \Bbb{Z} \land x \notin (\Bbb{R}-\Bbb{Q})
     
     \end{cases} \tag{Eq. 2}$$</span>
 
 <div id="fig2">
 <img src=".\MATLAB\int-intervals.png" height="210px" width="285px" /></div>
 <span id="fignotes"><b>Fig 2.</b> - A plot of $f_{\Bbb{Z}}(x)$ over a 
-  domain that is convenient for visualizing the 
-  empty intervals in $\Bbb{Z}$. 
-  These intervals are filled by densely-packed rationals.</span>
+  domain that demonstrates how 
+  empty intervals in $\Bbb{Z}$ are filled by densely-packed rationals. 
+  Notice that irrationals are omitted from (Eq. 2) in the second condition of the piecewise $f_{\Bbb{Z}}(x)$, yet the number set at 0 still looks like a continuum.</span>
 
 <p>This points towards the rational set being undoubtably "bigger" than the integer set. However, this is untrue. 
-  Cardinality and equinumerosity give us the result that $\Bbb{Z}$ and $\Bbb{Q}$ actually have the same number of elements.</p>
+  Cardinality and equinumerosity give us the result that $\Bbb{Z}$ and $\Bbb{Q}$ actually have the same number of elements as each other and $\Bbb{N}$.</p>
 <ul><li>In fact, it's even less intuitive. If |$\Bbb{Z}$| denotes the cardinatlity (# of elements) in the integer set $\Bbb{Z}$, 
   then it is fact that:</li></ul>
 
