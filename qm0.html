@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+        
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+          },
+          svg: {
+            fontCache: 'global'
+          }
+        };
+        </script>
+    
+    <script type="text/javascript" src="./MathJax3/es5/tex-chtml.js"></script>
+    <link rel="stylesheet" type="text/css" href="qm0.css?ver=1.01" /> <!--links CSS style sheet-->
+
+    <title>Quantum Mechs 0</title>
+</head>
+
+
+<body><div id="container">
+<h1 id="header">Understanding Position in Entry-Level Quantum Mechanics</h1>
+
+<div id="intro"> 
+
+<p>Quantum mechanics is weird. In Schr&ouml;dinger's model
+  for energy conservation, our position function of time $x(t)$ is replaced with
+  a mathematical object we call the wavefunction $ \Psi(x,t)$. Why is this weird in comparison to classical mechanics? 
+</p>
+
+<ul id="introlist"><li>In classical mechanics: all information about a particle system is encoded 
+  in the position function $x(t)$.</li>
+<li>In Schr&ouml;dinger's quantum mechanics: information about the system is encoded instead in the wavefunction $\psi(x,t)$</li></ul>
+
+<p>Why are we shifting our focus from $x(t) \rightarrow \Psi(x,t)$? Mathematically,
+  where does this new function emerge from?
+</p>
+
+<p>To understand the origin of $\Psi(x,t)$, we need to first understand how information
+  is encoded in a classical system. In Newton's Classical Mechanics, a particle's 
+  position over time - $x(t)$ - is the solution set for $x(t)$ in Newton's differential equation for motion:
+</p>
+<p>$$ \bbox[8px,border:1px solid black] {F=m \ddot{x} = m \frac{d^2x}{dt^2}} \tag{Eq. 1}$$ 
+</p>
+<p id="eqnote"><b>Eq. 1</b> - Newton's equation of motion says that acceleration is the second
+time-derivative of the position vector $x$. This is a second-order linear ordinary differential equation.</p>
+<p>Solutions to Newton's Equation (Eq. 1) leads to a deterministic understanding of the system's motion.
+  Together with energy conservation, this leads to anything we would want to know about a system's behavior.
+</p>
+
+<p>Schr&ouml;dinger's equivalent to Newton's Equation is a complex-valued energy conservation equation:</p>
+
+$$
+\bbox[8px,border:1px solid black]{
+  i \hbar \frac{\partial{\Psi(x,t)}}{\partial{t}} = - \frac{\hbar^2}{2m} \frac{\partial^2 \Psi}{\partial x^2} + V(x,t) \Psi(x,t)
+} \tag{Eq. 2}
+$$
+<p id="eqnote"><b>Eq. 2</b> - Schr&ouml;dinger's Equation for the energy and motion of a particle. Partial differential equation whose solutions are functions of both position and time: $\Psi(x,t)$.
+  according to Schr&ouml;dinger, given by $\Psi(x,t)$. Here, $\Psi^*(x,t)$ denotes the complex conjugate of $\Psi(x,t)$.</p>
+
+<p>The partial differential equation for motion (Schr&ouml;dinger's Equation)
+  has solutions not of $x(t)$, but of $\Psi(x,t)$, which are related to $x(t)$ statistically
+  as an expectation value:
+</p>
+<span>
+  $$
+  \bbox[8px,border:1px solid black]{< x(t) >\ = \int_{- \infty}^{+ \infty} \left[\Psi\ x\ \Psi^* \right] dx} \tag{Eq. 3}$$ 
+</span>
+
+<p id="eqnote"><b>Eq. 3</b> - Expectation value for position as a function of time 
+  according to Schr&ouml;dinger, given by $\Psi(x,t)$. Here, $\Psi^*(x,t)$ denotes the complex conjugate of $\Psi(x,t)$.</p>
+<p>In Quantum Mechanics, $ \hat{x}$ 
+  is known as an operator ($\hat{x}$ is the operator for position). Operators are how we obtain
+  observable quantities in Quantum Mechanics, since $\Psi$ itself is not observable.</p>
+</div> <!--Closes intro-->
+
+</div></body> <!--Body and container closure-->
+
+
+
+    <footer>
+        <br /><br /><br />Notes by &copy; Tyler DeFrancesco 2023 | BS Physics '21<br />
+    </footer>
+
+
+</html>
