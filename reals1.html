@@ -16,13 +16,27 @@
         <script type="text/javascript" src="./MathJax3/es5/tex-chtml.js"></script>
         
         <title>Calculus</title>
-        <link rel="stylesheet" type="text/css" href="reals1.css?ver=1.4.1" /> <!--links CSS style sheet-->
+        <link rel="stylesheet" type="text/css" href="reals1.css?ver=1.4.03" /> <!--links CSS style sheet-->
 </head>
 
 <body>
   <div id="container">
 
-<h2 style="text-align:center">Resolving Paradoxes in the Real Number Set $\Bbb{R}$</h2>
+<h2 style="text-align:center">Resolving Paradoxes in the Real Number Set $\Bbb{R}$<br/><span id="comment">Page is under heavy development and is incomplete</span></h2>
+
+
+<p>Let us motivate some analysis of the real number line and its properties. In this section, I aim to demonstrate the following:</p>
+
+<ul id="introlist">
+  <li>Paradoxes in our real number line are numerous, clearly demonstrable, and 
+    require resolution using set theory</li>
+    <li>Functions may be generalized to a definition that is much less strict than what is covered prior to Real Analysis</li>
+    <li>Computational methods and resources have value even when approaching pure mathematics</li>
+    <li>Differences between the sets of Natural Numbers ($\Bbb{N}$), Integers ($\Bbb{Z}$), Rationals ($\Bbb{Q}$) and Reals ($\Bbb{R}$)
+      are worth considering
+    </li>
+</ul><!--Ends intro list-->
+
 
 <p id="intro">Consider this bizarre function proposed by Dirichlet:</p>
 
@@ -34,8 +48,9 @@ f(x) = \begin{cases}
 
 \end{cases} \tag{Eq. 1}$$</span> <!--Cases-->
 
-<p>Plotting this function over the real number line $\Bbb{R}$ produces a paradoxical result that motivates a 
-  deeper study into continuity, and more generally into the fine structures of $\Bbb{Q}$ and $\Bbb{R}$ themselves.</p>
+<p>Plotting this function over the real number line $\Bbb{R}$ produces a figure that prompts discussion about 
+  continuity, and more generally into the "fine structure" of $\Bbb{R}$. The plot conflicts with our limited definition of functions
+$(f)$ leading up to this point, as it cannot be expressed as an algebraic relationship and seems to test the borders of being single-valued.</p>
 
 <div id="fig1">
 <img src=".\MATLAB\dirichlet.png" height="210px" width="285px" />
