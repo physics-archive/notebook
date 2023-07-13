@@ -1,3 +1,8 @@
+#comment{
+    text-align:center;font-size:10pt;
+    font-weight:normal;
+}
+
 #header {
     text-align: center;
 }
@@ -54,3 +59,12 @@ footer {
     text-align: center;
     font-size: 12;
 }
+
+#introlist{
+    text-decoration:none;
+    list-style-type:"* ";
+}
+
+li + li {
+    margin-top: 4px;
+  }
