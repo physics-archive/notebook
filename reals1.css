@@ -1,7 +1,7 @@
 #header {
     text-align: center;
 }
-
+#container{will-change:opaque}
 body{
     background-color: #FFFFF0;
 }
@@ -32,4 +32,25 @@ footer {
 
 #fig1 {
  text-align:center;
+}
+
+#fig2{
+    text-align:center;
+}
+
+#fignotes {
+        display:block;
+        font-size: 12pt;
+        color: #373737;
+        text-align: center;
+        width:700px;
+        margin-left:auto;
+        margin-right:auto;
+}
+
+footer {
+    clear: both;
+    background-color: #FFFFF0;
+    text-align: center;
+    font-size: 12;
 }
