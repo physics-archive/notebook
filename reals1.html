@@ -15,8 +15,8 @@
         
         <script type="text/javascript" src="./MathJax3/es5/tex-chtml.js"></script>
         
-        <title>Calculus</title>
-        <link rel="stylesheet" type="text/css" href="reals1.css?ver=1.4.03" /> <!--links CSS style sheet-->
+        <title>Introductory Real Analayis</title>
+        <link rel="stylesheet" type="text/css" href="reals1.css?ver=1.4.04" /> <!--links CSS style sheet-->
 </head>
 
 <body>
@@ -30,12 +30,10 @@
 <ul id="introlist">
   <li>Paradoxes in our real number line are numerous, clearly demonstrable, and 
     require resolution using set theory</li>
-    <li>Functions may be generalized to a definition that is much less strict than what is covered prior to Real Analysis</li>
+    <li>Extending our number system from the naturals through to the reals ($\Bbb{N} \subseteq \Bbb{Z} \subseteq \Bbb{Q} \subseteq \Bbb{R}$) is required if 
+      every length along the number line is to correspond to a value that we can actually define <span style="font-size:13pt">(Abbott, 2000 pg. 4)</span>.</li>
+    <li>Functions may be generalized to a definition that is much less strict than what is covered prior to Real Analysis. This is instrumental in Physics, as it allows for numerical techniques (via computer) to be carried out when analytical solutions do not exist, which is often.</li>
     <li>Computational methods and resources have value even when approaching pure mathematics</li>
-    <li>Differences between the sets of Natural Numbers ($\Bbb{N}$), Integers ($\Bbb{Z}$), Rationals ($\Bbb{Q}$) and Reals ($\Bbb{R}$)
-      are worth considering
-    </li>
-    <li>Extending our number system from the naturals through to the reals ($\Bbb{N} \subseteq \Bbb{Z} \subseteq \Bbb{Q} \subseteq \Bbb{R}$) is required to enable every operation [<i>incomplete line</i>]</li>
 </ul><!--Ends intro list-->
 
 
@@ -56,17 +54,14 @@ $(f)$ leading up to this point, as it cannot be expressed as an algebraic relati
 <div id="fig1">
 <img src=".\MATLAB\dirichlet.png" height="210px" width="285px" />
 </div>
-<span id="fignotes"><b>Fig 1.</b> - A plot of f(x). This is a single function, not two stacked on top of each other. The elements of the lower 
-  line (irrational numbers) are located where the holes in the above line ($\Bbb{Q}$) are located.</span>
-<p>Plotting this function over $\Bbb{R}$ is deceptive to the unexpectant observer because it appears only
-  to violate our conditions for an ordinary function: it does not look single-valued. However, (Eq. 1) defines a clear
-  rule that guarantees it is a valid function. 
+<span id="fignotes"><b>Fig 1.</b> - A plot of f(x). This is a single function, not two stacked on top of each other.</span>
+<p>Here are some important observation about the properties of $f(x)$:
 <ul><li>The irrational numbers (when $x \notin \Bbb{Q}$) are constructed from the "holes" in the rational number line above it, at $f(x)=1$.
   Is there a symmetry or some sort of pattern to this extreme discontinuity?<br/>
 </li></ul>
 <ul><li>This is a loose way of visualizing the property that elements of $\Bbb{Q}$ are dense in $\Bbb{R}$</li></ul>
-<ul><li>Problem: both sets of points consist of innfinitely-many values, no matter the interval size. Once again, we must look deeper
-  into real analysis to resolve a paradox of comparing objects of infinite size. This property of a number set is called cardinality.
+<ul><li>Paradoxically, both sets of points consist of infinitely-many elements, no matter our scope along $\Bbb{R}$. We must look
+  into real analysis to compare of objects of infinite "size." This property of a number set is called cardinality.
 </li></ul>
 
 </p>
