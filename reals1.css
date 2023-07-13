@@ -68,3 +68,7 @@ footer {
 li + li {
     margin-top: 6px;
   }
+
+h3{
+    text-align:center;
+}
