@@ -60,6 +60,6 @@ alternate(3); %will return -1
 X=reals;
 Y=alternate_s(length(reals));
 
-plot(X,Y+0.5,".")
+Dirichlet=plot(X,Y+0.5,".");
 axis([0 1.25 -1.5 1.5]); %one function of two "lines". Very discontinuous
 
