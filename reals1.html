@@ -65,9 +65,9 @@ $(f)$ leading up to this point, as it cannot be expressed as an algebraic relati
 </li></ul>
 
 </p>
-<hr/><h3>Further Visualizing $\Bbb{Q}$'s Density in $\Bbb{R}$</h3>
+<hr/><h3>Providing Visualization for $\Bbb{Q}$'s Unique Density in $\Bbb{R}$</h3>
 <p>An interesting way to show that $\Bbb{Q}$ has density, as opposed to its subsets $\Bbb{N}$ and $\Bbb{Z}$,
-  is to plot an analogue to Dirichlet's function using the integers. This time, the empty intervals between the upper set of points ($\Bbb{Z}$) 
+  is to plot an analogue to Dirichlet's function, using the integers at $f(x)=1$ instead of the rationals. This time, the empty intervals between the upper set of points ($\Bbb{Z}$) 
   will be filled by the rationals of $\Bbb{Q}$ -- analogous to (Fig. 1) where the holes of $\Bbb{Q}$ were filled by the irrationals:</p>
   
   <span id="z">$$
@@ -97,9 +97,20 @@ Following modern math cirricula - namely Abbott - we will evoke the <i>Axiom of 
 <ul id="axiom"><li><b>Axiom of Completeness</b>: <i>Every nonempty set of real numbers that is bounded above has a least upper bound</i> (Abbott, 2000, p.14).</li>
 <li id="arch"><b>Archimedian Property (i):</b> <i>Given any number $x \in \Bbb{R}$, there exists an $n \in \Bbb{N}$ satisfying $n \gt x$</br></i></li>
 <li id="arch"><b>Archimedian Property (ii):</b> <i>Given any number $y \in \Bbb{R}$, there exists an $n \in \Bbb{N}$ satisfying $1/n \lt y$</br></i> (Abbott, 2000, p.19)</li></ul>
-</ul>
+</ul><span id="fignotes">The AoC applies to sets bounded below as well, with greatest lower bounds.<br/></span>
 
-<p>These statements introduce a lot of concepts for set theory, so let us go through them carefully.</p>
+<!--<span id="fignotes">These statements rely the fact that $\Bbb{N}$ is not bounded above.</span>-->
+
+<p><br/>These statements introduce a lot of concepts for set theory, so let us go through them carefully. Starting with the <i>Axiom of Completeness</i>:
+what does it mean for sets to be bounded, and how does this lead to resolution for paradoxes involving infinite sets?</p>
+
+<p>Consider a set $A$ with elements that are ordered as such:</p>
+
+$$
+A = \{r^2 \ge 2\ :\ x \in \Bbb{Q}\} \tag{Eq. 3}
+$$
+
+<p>So, $A$ contains all rational numbers $r^2$ that are greater than 2. Is this set bounded? If so, is it bounded above or below?</p>
 <!--<p>This points towards the rational set being undoubtably "bigger" than the integer set. However, this is untrue. 
   Cardinality and equinumerosity give us the result that $\Bbb{Z}$ and $\Bbb{Q}$ actually have the same number of elements as each other and $\Bbb{N}$.</p>
 <ul><li>In fact, it's even less intuitive. If |$\Bbb{Z}$| denotes the cardinatlity (# of elements) in the integer set $\Bbb{Z}$, 
