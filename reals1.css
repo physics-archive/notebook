@@ -2,7 +2,7 @@
     text-align:center;font-size:10pt;
     font-weight:normal;
 }
-
+#container{will-change:opaque;}
 #header {
     text-align: center;
 }
