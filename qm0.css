@@ -36,3 +36,5 @@ footer {
 }
 
 h3{text-align:center;}
+
+li + li {margin-top: 6px;}
