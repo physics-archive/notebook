@@ -1,7 +1,8 @@
 #header {
     text-align: center;
 }
-#container{will-change:opaque;}
+#container{will-change:transform;}
+
 body{
     background-color: #FFFFF0;
 }
