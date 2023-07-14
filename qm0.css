@@ -38,3 +38,9 @@ footer {
 h3{text-align:center;}
 
 li + li {margin-top: 6px;}
+
+#special{
+    font-size:12pt;
+    font-weight:none;
+    color:darkblue;
+}
