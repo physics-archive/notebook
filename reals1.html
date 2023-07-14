@@ -54,7 +54,7 @@ $(f)$ leading up to this point, as it cannot be expressed as an algebraic relati
 <div id="fig1">
 <img src=".\MATLAB\dirichlet.png" height="210px" width="285px" />
 </div>
-<span id="fignotes"><b>Fig 1.</b> - A plot of f(x). This is a single function, coded numerically in MATLAB; it is not two functions stacked on top one another.</span>
+<span id="fignotes"><b>Fig 1.</b> - A plot of f(x). This is a single function, coded numerically in MATLAB; this is not a plot of two functions stacked on top of one another.</span>
 <p>Here are some important observation about the properties of $f(x)$:
 <ul><li>The irrational numbers (when $x \notin \Bbb{Q}$) are constructed from the "holes" in the rational number line above it, at $f(x)=1$.
   Is there a symmetry or some sort of pattern to this extreme discontinuity?<br/>
@@ -91,7 +91,15 @@ $(f)$ leading up to this point, as it cannot be expressed as an algebraic relati
 <hr/><h3>Rigorously Proving $\Bbb{Q}$'s Density in $\Bbb{R}$</h3>
 
 <p>To proceed with mathenatical rigor, we must invoke axiomic statements to 
-  begin showing how rationals are packed together in the real number line $\Bbb{R}$</p>
+  begin showing how rationals are packed together in the real number line $\Bbb{R}$. 
+Following modern math cirricula - namely Abbott - we will evoke the <i>Axiom of Completeness</i> and its consequence -- the <i>Archimedea Property</i>.</p>
+
+<ul id="axiom"><li><b>Axiom of Completeness</b>: <i>Every nonempty set of real numbers that is bounded above has a least upper bound</i> (Abbott, 2000, p.14).</li>
+<li id="arch"><b>Archimedian Property (i):</b> <i>Given any number $x \in \Bbb{R}$, there exists an $n \in \Bbb{N}$ satisfying $n \gt x$</br></i></li>
+<li id="arch"><b>Archimedian Property (ii):</b> <i>Given any number $y \in \Bbb{R}$, there exists an $n \in \Bbb{N}$ satisfying $1/n \lt y$</br></i> (Abbott, 2000, p.19)</li></ul>
+</ul>
+
+<p>These statements introduce a lot of concepts for set theory, so let us go through them carefully.</p>
 <!--<p>This points towards the rational set being undoubtably "bigger" than the integer set. However, this is untrue. 
   Cardinality and equinumerosity give us the result that $\Bbb{Z}$ and $\Bbb{Q}$ actually have the same number of elements as each other and $\Bbb{N}$.</p>
 <ul><li>In fact, it's even less intuitive. If |$\Bbb{Z}$| denotes the cardinatlity (# of elements) in the integer set $\Bbb{Z}$, 
