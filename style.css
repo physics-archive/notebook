@@ -30,6 +30,7 @@
 #index .selected{
     color: darkgreen;
     font-weight:bold;
+    will-change:opacity;
 }
 
 #index ul {
