@@ -2,11 +2,10 @@
     text-align:center;font-size:10pt;
     font-weight:normal;
 }
-#container{will-change:opaque;}
+#container{will-change:opacity;}
 #header {
     text-align: center;
 }
-#container{will-change:opaque}
 body{
     background-color: #FFFFF0;
 }
