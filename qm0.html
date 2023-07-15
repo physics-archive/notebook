@@ -29,35 +29,34 @@
 
 <p>Quantum mechanics is weird. In Schr&ouml;dinger's model
   for particle mechanics, our classical position function $x(t)$ is replaced with
-  a mathematical object that we call the wavefunction $ \Psi(x,t)$. Let us use
-examine this different understanding of system position in order to motivate our 
-looking into Quantum Mechanics. Then we will return to closely
+  a statistical object that we call the wavefunction $ \Psi(x,t)$. 
+  Let us motivate a study into quantum mechanics by showcasing a
+  <b>directly-observable</b> consequence of the wavefunction $\Psi$.
+Classical and quantum mechanical motion for a particle differ as such:</p>  
+<!--Later, we will return to closely
 examine $\Psi$ and its perplexing properties from the beginning.
-Consider this page a motivating preface to a long chapter on early Quantum Particle Mechanics.
-</p>
+Consider this page a motivating preface to a volume on early Quantum Particle Mechanics.
+</p>-->
 
-<ul id="introlist"><li>In Classical Mechanics: all information about a particle system is encoded 
-  in its position function $x(t)$</li>
-<li>In Schr&ouml;dinger's Quantum Mechanics: information about the system is encoded 
-  instead in the wavefunction $\psi(x,t)$</li></ul>
+<ul id="introlist"><li><b>In Classical Mechanics</b>: <i>all information about a system is encoded 
+  in its position function $x(t)$. Solves a second-order <u>ordinary</u> differentail equation</i>.</li>
+<li><b>In Schr&ouml;dinger's Quantum Mechanics</b>: <i>information about system energy is encoded 
+  instead in the wavefunction $\Psi(x,t)$. Solves a linear <u>partial</u> differential equation</i>.</li></ul>
+<hr/><h3 id="section">Motion in Newtonian Mechanics</h3>
 
-<p>Why are we shifting our focus from $x(t) \rightarrow \Psi(x,t)$? Mathematically,
- where is this new system-defining quantity emerging from, and how does it encode more information
- than the observable motion of a system?
+<p>To understand how $\Psi(x,t)$ provides any system information, we need to first explore how information
+  is encoded in a classical system. In Newton's formulation, recall that a particle's 
+  position over time is the solution set $x(t)$ to the differential equation:
 </p>
-
-<p>To understand how $\Psi(x,t)$ gives us any system information, we need to first understand how information
-  is encoded in a classical system. In Newton's Classical Mechanics, a particle's 
-  position over time is the solution set for $x(t)$ in Newton's differential equation for motion:
-</p>
-<p>$$ \bbox[8px,border:1px solid black] {F=m \ddot{x} = m \frac{d^2x}{dt^2}} \tag{Eq. 1}$$ 
+<p>$$ \bbox[8px,border:1px solid black] {\vec{F}=m \ddot{x} = m \frac{d^2x}{dt^2}} \tag{Eq. 1}$$ 
 </p>
 <p id="eqnote"><b>Eq. 1</b> - Newton's equation of motion says that acceleration is the second
-time-derivative of the position vector $x$. This is a second-order linear ordinary differential equation.</p>
-<p>Solutions to Newton's Equation (Eq. 1) leads to a deterministic understanding of the system's motion.
-  Together with energy conservation, this leads to anything we would want to know about a system's behavior.
+time-derivative of the position vector $x$.</p>
+<p>Solutions to (Eq. 1) provide deterministic solution set for the system's motion over all time and space. Of course, for real
+  systems our $F$ probably does not have an analytical form for us to make such complete deductions as we can in theory.
 </p>
 
+<hr/><h3>Motion and Energy in Schr&ouml;dinger's Quantum Mechanics</h3>
 <p>Schr&ouml;dinger's analog to Newton's Equation is a complex-valued energy conservation equation:</p>
 
 $$
@@ -100,9 +99,8 @@ in our quantum mathematical models as well.
   
   <ul><li>This is a bizarre way of describing a system's motion; it is highly indirect in comparison to Classical Mechanics,
 which has solutions to its diff. eq. that are directly observable $x(t)$.</li> 
-<li>We can demonstrate this by solving a simple problem 
-  (i.e. a rigid body subject to gravitational force) using Newton's Equation, 
-  and then again with Schr&ouml;dinger's Equatinon.</li></ul></p>
+<li>Here, $\lt x(t) \gt$ is the probability of finding our particle between $- \infty$ and $+ \infty$ (all of space, like $x(t)$ in classical mechanics).</li></ul></p>
+
 </div> <!--Closes intro-->
 
 </div></body> <!--Body and container closure-->
