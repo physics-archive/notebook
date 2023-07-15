@@ -16,7 +16,7 @@
         <script type="text/javascript" src="./MathJax3/es5/tex-chtml.js"></script>
         
         <title>Introductory Real Analayis</title>
-        <link rel="stylesheet" type="text/css" href="reals1.css?ver=1.4.05" /> <!--links CSS style sheet-->
+        <link rel="stylesheet" type="text/css" href="reals1.css?ver=1.5" /> <!--links CSS style sheet-->
 </head>
 
 <body>
@@ -51,7 +51,7 @@ f(x) = \begin{cases}
 $(f)$ leading up to this point, as it cannot be expressed as an algebraic relationship and seems to test the borders of being single-valued.</p>
 
 <div id="fig1">
-<img src=".\MATLAB\dirichlet.png" height="210px" width="285px" />
+<img src=".\MATLAB\dirichlety.png" height="210px" width="285px" />
 </div>
 <span id="fignotes"><b>Fig 1.</b> - A plot of f(x). This is a single function, coded numerically in MATLAB; this is not a plot of two functions stacked on top of one another.</span>
 <p>Here are some important observation about the properties of $f(x)$:
@@ -78,7 +78,7 @@ $(f)$ leading up to this point, as it cannot be expressed as an algebraic relati
     \end{cases} \tag{Eq. 2}$$</span>
 
 <div id="fig2">
-<img src=".\MATLAB\int-intervals.png" height="210px" width="285px" /></div>
+<img src=".\MATLAB\dirichletz.png" height="210px" width="285px" /></div>
 <span id="fignotes"><b>Fig 2.</b> - A plot of $f_{\Bbb{Z}}(x)$ over a 
   domain that demonstrates how 
   empty intervals in $\Bbb{Z}$ are filled by densely-packed rationals. 
@@ -87,11 +87,11 @@ $(f)$ leading up to this point, as it cannot be expressed as an algebraic relati
   <p>This property of $\Bbb{Q}$ to appear continuous, regardless of domain scope, is why the rational numbers form a field and support the identities for multiplication, division, addition and subtraction.
     For example, every element of $\Bbb{Z}$ has the multiplication inverses to support division. Still, we are missing many numbers in (Fig. 2) such as factors of $\pi$ or $\sqrt{2}$.
   </p>
-<hr/><h3>Rigorously Proving $\Bbb{Q}$'s Density in $\Bbb{R}$</h3>
+<hr/><h3>Mathematical 'Origin' of $\Bbb{Q}$'s Density in $\Bbb{R}$</h3>
 
 <p>To proceed with mathenatical rigor, we must invoke axiomic statements to 
   begin showing how rationals are packed together in the real number line $\Bbb{R}$. 
-Following modern math cirricula - namely Abbott - we will evoke the <i>Axiom of Completeness</i> and its consequence -- the <i>Archimedea Property</i>.</p>
+Following modern math cirricula we will start with the <i>Axiom of Completeness</i> and its consequence -- the <i>Archimedea Property</i>.</p>
 
 <ul id="axiom"><li><b>Axiom of Completeness</b>: <i>Every nonempty set of real numbers that is bounded above has a least upper bound</i> (Abbott, 2000, p.14).</li>
 <li id="arch"><b>Archimedian Property (i):</b> <i>Given any number $x \in \Bbb{R}$, there exists an $n \in \Bbb{N}$ satisfying $n \gt x$</br></i></li>
@@ -112,7 +112,26 @@ $$
 <p>Set $A$ contains all rational numbers $r^2$ that are greater than 2.</p> 
 <ul><li>$r^2$ are rationals, and the rational numbers are ordered.</li>
 <li>It follows that our set is ordered such that 2 is its first element: $a_1=2$.</li>
-<li>Therefore, $A$ must be <u>bounded below</u> with a <u>greatest lower bound</u> of 2.</li></ul>
+<li>Therefore, $A$ must be <u>bounded below</u> with a <u>greatest lower bound</u> of 2. In other words, 2 is the <i>infinum</i> of $A$:</li></ul>
+
+$$ \bbox[8px,border:1px solid black]{ \text{inf} (A)=2} $$
+
+<span>This is a generalization of minima and maxima, applied abstractly to sets. Now that we're aware of the axiomatic importance of boundedness in sets,
+  let's go back and make some (non-rigorous) observations about our number system:
+</span>
+
+<ul id="observations">
+
+  <li>The natural numbers $\Bbb{N}$ begin with the number 1, therefore they are bounded below with inf$(\Bbb{N})$=1; it is <u>not</u> bounded above.
+  This fits even our historical notions of infinite: our natural number line begins but it never ends.</li>
+  $$\Bbb{N} = \{1,2,3,4,\dots \}$$
+  <li>The integers $\Bbb{Z}$ are not bounded below nor bounded above. However, they are ordered and countably infinite, like the natural number $\Bbb{n}$.</li>
+  $$\Bbb{Z} = \{ \dots , -2, -1, 0, 1, 2, \dots \}$$
+  <li>The rational field $\Bbb{Q}$ contains the set $\Bbb{Z}$, so $\Bbb{Q}$ cannot be bounded below or above either. Ordered and countably infinite, still.</li>
+  $$\Bbb{Q} = \{ p/q : p \land q \in \Bbb{Z} \}$$
+</ul>
+
+<span id="fignotes">Notice that defining $\Bbb{Q}$ requires more general notation to address its density. It is countably infinite, but it is tricker to list <i>adjacent</i> terms as we do for naturals and integers.<br/></span>
 
 <!--<p>This points towards the rational set being undoubtably "bigger" than the integer set. However, this is untrue. 
   Cardinality and equinumerosity give us the result that $\Bbb{Z}$ and $\Bbb{Q}$ actually have the same number of elements as each other and $\Bbb{N}$.</p>
