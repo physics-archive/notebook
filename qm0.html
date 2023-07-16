@@ -30,7 +30,7 @@
     </div> 
 
     <div id="nextpage" style="float:right;font-weight:bold;right:450px;">
-        <a class="nextpage" href="https://physics-archive.github.io/notebook/reals1.html" target="_blank">Next Page</a>
+        <a class="nextpage" href="https://physics-archive.github.io/notebook/qm0-2.html" target="_blank">Next Page</a>
     </div>
 
 
@@ -38,7 +38,7 @@
   
 
 <div id="container">
-<h1 id="header">Understanding Position in Entry-Level Quantum Mechanics<br/></h1>
+<h1 id="header">System Information in Quantum Mechanics<br/></h1>
 
 <div id="transformation">
 <div id="intro"> 
@@ -47,7 +47,7 @@
   for particle mechanics, our classical position function $x(t)$ is replaced with
   a statistical object that we call the wavefunction $ \Psi(x,t)$. 
   Let us motivate a study into quantum mechanics by showcasing a
-  <b>directly-observable</b> consequence of the wavefunction $\Psi$.
+  directly-observable consequence of the wavefunction $\Psi$.
 Classical and quantum mechanical motion for a particle differ as such:</p>  
 <!--Later, we will return to closely
 examine $\Psi$ and its perplexing properties from the beginning.
@@ -72,6 +72,26 @@ time-derivative of the position vector $x$.</p>
   systems our $F$ probably does not have an analytical form for us to make such complete deductions as we can in theory.
 </p>
 
+<p>This ordinary differential equation (ODE) leads to our familiar relationships between $x(t)$ $v(t)$ and $a(t)$:</p>
+$$ \bbox[8px,border:1px solid black] {a(t) = \frac{d v(t)}{dt} = \frac{d^2 x(t)}{dt^2}}$$
+
+<!--<p>Since Schr&ouml;dinger's Equation is an energy conservation equation, let change (Eq. 1) using 
+  calculus' chain rule so that it too is a statement about energy conservation. Reacll that $\ddot{x}$ is
+  the first time-derivative of velocity:
+</p>
+
+$$ \begin{align} 
+\vec{F} &= m \frac{dv}{dt} \\
+&= m \frac{dv}{dx} \cancelto{v(t)}{\frac{dx}{dt}} \\
+&= m \frac{dv}{dx} v(t) \\
+&= m \frac{dv}{dx} \frac{d ( \frac{v^2}{2})}{dv} \\
+\vec{F} 
+&= \bbox[8px,border:1px solid black]{ \frac{1}{2} m \frac{d}{dx} \left[v^2\right]}
+\end{align}$$-->
+
+
+
+
 <hr/><h3>Motion and Energy in Schr&ouml;dinger's Quantum Mechanics</h3>
 <p>Schr&ouml;dinger's analog to Newton's Equation is a complex-valued energy conservation equation:</p>
 
@@ -83,7 +103,7 @@ $$
 <p id="eqnote"><b>Eq. 2</b> - Schr&ouml;dinger's Equation for the energy and motion of a particle. Partial differential equation whose solutions are functions of both position and time: $\Psi(x,t)$. $\Psi^*$ denotes the complex conjugate of $\Psi$
     to account for complex-valuec wavefunctions. More on that later.</p>
 
-<p>Schr&ouml;dinger's Equation (Eq. 2) is a linear second-order partial differential equation, and has the form of 
+<p>This is a linear second-order partial differential equation, and has the form of 
   a wave equation. Obtaining analytical solutions to this PDE for a given system potential $V$ is almost never trivial, and sometimes it is impossible.
 </p>
 <hr/><h3 id="secheader">Where is Classical Position Encoded in Schr&ouml;dinger's Equation?</h3>
@@ -116,6 +136,7 @@ in our quantum mathematical models as well.
   <ul><li>This is a bizarre way of describing a system's motion; it is highly indirect in comparison to Classical Mechanics,
 which has solutions to its diff. eq. that are directly observable $x(t)$.</li> 
 <li>Here, $\lt x(t) \gt$ is the probability of finding our particle between $- \infty$ and $+ \infty$ (all of space, like $x(t)$ in classical mechanics).</li></ul></p>
+
 
 </div> <!--Closes intro-->
 
