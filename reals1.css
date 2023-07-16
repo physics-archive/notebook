@@ -2,6 +2,8 @@
     text-align:center;font-size:10pt;
     font-weight:normal;
 }
+
+
 #container{will-change:opacity;}
 #header {
     text-align: center;
@@ -14,6 +16,15 @@ body{
     background-color: #FFFFF0;
     width: 100%;
 }
+
+#buttons{
+    background-color: #FFFFF0;
+    width:900px;
+    margin-left: auto;
+    margin-right: auto;
+} /* Codes my home and next page buttons to align with title */
+
+.home , .nextpage{color:darkslategrey;}
 
 
 #intro{
