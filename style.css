@@ -83,3 +83,16 @@ a {
         margin-right: 100px;
     
 }
+
+.ihead{
+    
+    text-align:left;
+    font-weight:bold;
+    list-style-type:none;
+    padding-left:10px;
+    font-size:14pt;
+    padding-top:40px;
+
+}
+
+li + li {margin-top: 3px;}
