@@ -24,6 +24,17 @@ body{
     transform: translateZ(0);
 }
 
+#buttons{
+    background-color: #FFFFF0;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+} /* Codes my home and next page buttons to align with title */
+
+.home , .nextpage{color:darkslategrey;}
+
+.nextpage{text-align:right;}
+
 footer {
     clear: both;
     background-color: #FFFFF0;
