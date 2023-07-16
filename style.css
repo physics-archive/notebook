@@ -37,7 +37,11 @@
 #index .selected{
     color: darkgreen;
     font-weight:bold;
-    will-change:opacity;
+}
+
+.selected{
+    will-change:transform;
+    transform: translateZ(0);
 }
 
 #index ul {
