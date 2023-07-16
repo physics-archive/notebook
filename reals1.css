@@ -4,7 +4,6 @@
 }
 
 
-#container{will-change:opacity;}
 #header {
     text-align: center;
 }
@@ -19,13 +18,16 @@ body{
 
 #buttons{
     background-color: #FFFFF0;
-    width:900px;
+    display:block;
+    width: 900px;
     margin-left: auto;
     margin-right: auto;
 } /* Codes my home and next page buttons to align with title */
-
-.home , .nextpage{color:darkslategrey;}
-
+.home , .nextpage{color:darkslategrey;text-decoration:none;} /* Codes my home and next page buttons to align with title */
+#transformation{
+    will-change:transform, opacity;
+    transform: translateZ(0);
+} /* Has to be applied outside of container for my buttons to work*/
 
 #intro{
     font-size:14pt;
