@@ -27,11 +27,11 @@
 <div id="buttons">
 
     <div id="home" style="float:left;font-weight:bold;left:450px;">
-        <a class="home" href="https://physics-archive.github.io/notebook/">Home Page</a>
+        <a class="home" href="./index.html">Home Page</a>
     </div> 
 
     <div id="nextpage" style="float:right;font-weight:bold;right:450px;">
-        <a class="nextpage" href="https://physics-archive.github.io/notebook/reals1.html">Next Page</a>
+        <a class="nextpage" href="./Classical-Energy.html">Next Page</a>
 
 </div> <!--closes buttons-->
   
@@ -180,22 +180,19 @@
 $$ \lim_{l \rightarrow \infty} f( \ell) = \Theta \ \lim_{l \rightarrow \infty}  \sqrt{\frac{g}{l}} = 0 \tag{Lim. 1}$$
 <p style="text-align:center; font-size:12pt;"><b>Lim. 1</b> - If $a \gt \gt b$ in a number ($a/b$), then ($a/b) \rightarrow 0$. Infinite length gives us no motion.</p>
 
-$$ \lim_{l \rightarrow 0} f( \ell) = \Theta(\theta_i) \ \lim_{l \rightarrow 0}  \sqrt{\frac{g}{l}} = \text{Indeterminate} \tag{Lim. 1}$$
+<p style="padding-left:100px;">$$ \lim_{l \rightarrow 0} f( \ell) = \Theta \ \lim_{l \rightarrow 0}  \sqrt{\frac{g}{l}} = \text{Indeterminate} \tag{Lim. 2}$$</p>
 <p style="text-align:center; font-size:12pt;"><b>Lim. 2</b> - $f$ grows as length approaches 0, but $f$ becomes undefined at $l=0$.<br/> This makes physical sense since our pendulum does not exist without length.</p>
 
 
 $$ \lim_{g \rightarrow 0} f(g) = \Theta \ \lim_{g \rightarrow \infty}  \sqrt{\frac{g}{l}} = 0 \tag{Lim. 3}$$
 <p style="text-align:center; font-size:12pt;"><b>Lim. 3</b> - Zero gravity gives us no pendulum motion. Matches our physical expectation.</p>
 
-<p>It is safe to say that dimensional analysis can provide copious information about
-  system relationships and behavior, so long as our target depends on dimensional quantities.
-  <br/><br/> Let us finish this off by verifying (Eq. 5) for sure, while determining $\Theta(\theta)$. The Euler-Lagrande equation
+<p>Let us finish this off by verifying (Eq. 5) for sure, while determining $\Theta(\theta)$. The Euler-Lagrande equation
   for motion is best for systems with easily-identifiable energies, as will become clear.
 </p>
   
-<hr/><h3>Pendulum Equation of Motion (Euler-Lagrange)</h3>
-<p>Without providing basis or diving into components of (Eq. 6), let us determine 
-  the motion of our pendulum (using a superior formulation to Newton's).
+<hr/><h3 id="header">Verify Our Results w/ Euler-Lagrange Equation of Motion</h3>
+<p>
 </p>
   
   
