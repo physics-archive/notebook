@@ -23,7 +23,9 @@ body{
     margin-left: auto;
     margin-right: auto;
 } /* Codes my home and next page buttons to align with title */
+
 .home , .nextpage{color:darkslategrey;text-decoration:none;} /* Codes my home and next page buttons to align with title */
+
 #transformation{
     will-change:transform, opacity;
     transform: translateZ(0);

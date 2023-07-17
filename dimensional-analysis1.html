@@ -16,7 +16,7 @@
     </script> <!--MathJax 3 config script-->
     
     <script type="text/javascript" src="./MathJax3/es5/tex-chtml.js"></script>
-    <link rel="stylesheet" type="text/css" href="dim.css?ver=1.21" /> <!--links CSS style sheet-->
+    <link rel="stylesheet" type="text/css" href="dim.css?ver=1.23" /> <!--links CSS style sheet-->
 
     <title>Dimensional Analaysis</title>
 </head>
@@ -27,11 +27,11 @@
 <div id="buttons">
 
     <div id="home" style="float:left;font-weight:bold;left:450px;">
-        <a class="home" href="https://physics-archive.github.io/notebook/" target="_blank">Home Page</a>
+        <a class="home" href="https://physics-archive.github.io/notebook/">Home Page</a>
     </div> 
 
     <div id="nextpage" style="float:right;font-weight:bold;right:450px;">
-        <a class="nextpage" href="https://physics-archive.github.io/notebook/reals1.html" target="_blank">Next Page</a>
+        <a class="nextpage" href="https://physics-archive.github.io/notebook/reals1.html">Next Page</a>
 
 </div> <!--closes buttons-->
   
@@ -59,20 +59,28 @@
       </li>
     </ul>
     
-    
-    Using dimensional and numerical analysis, let us determine the exact form for a pendulum's cycle frequency. 
+    <hr/>
+    <h2 style="text-align:center;">Case I: The Pendulum</h2>
+    Using dimensional analysis and basic linear algebra, let us determine the exact form for a pendulum's cycle frequency. 
     Physical observation will our mathematical logic, and vise versa.</p>
   
   <p>Starting with physics -- what real-world parameters determine the pendulum frequnecy $f$? 
-    Mathematically I am asking: what is $f$ actually a function of in our isolated system? Here are some realistic possibilities:
+    Mathematically I am asking: what is $f$ actually a function of in our isolated system? Here are some realistic possibilities:</p>
+    
+    <img src="./Index/theoretical/pendulum2.png" height="120px" width="80px" style="float:right; padding-right:70px;"/>
+
     <ul id="list1">
       <li>Gravitational acceleration ($g$)</li>
-      <li>Length ($L$) of the pendulum</li>
+      <li>Length ($ \ell $) of the pendulum</li>
       <li>Mass ($m$) of the pendulum</li>
+      <li>Initial angle $\theta_i$</li>
       <!--<li>Initial angle ($ \theta_i$) of the pendulum</li>-->
     </ul>
-    <p>Conveniently, all quantities except for $ \theta$ are dimensional. Therefore, whatever form $f( \ell,g,m, \theta_i)$ takes on,
+    
+    
+    <p><br/>Conveniently, all quantities except for $ \theta$ are dimensional. Whatever form $f( \ell,g,m, \theta_i)$ takes on,
       it must be dimensionally valid. Not all proposals for $f$ make sense, and so we can start to make some deductions.
+      For $\theta_i$, we will provide justification for considering its contribution as functional $\theta_i \rightarrow \Theta(\theta_i)$
     </p>
 
     <p>Let me express this proposed relationship for $f$ as an algebraic function of those parameters:</p>
@@ -136,18 +144,40 @@
     
     <p>These exponents produce the following frequency relationship for our pendulum:</p>
 
-    $$f(g, \ell)\ \text{~}\ \sqrt{ \frac{g}{ \ell}}$$
-    (Eq. 7) states that the frequency of a pendulum scales with the square-root of gravitational acceleration, 
+    $$f(g, \ell)\ \text{~}\ \sqrt{ \frac{g}{ \ell}} \tag{Eq. 4}$$
+    <p>This result states that the frequency of a pendulum scales with the square-root of gravitational acceleration, 
     and with the inverse square-root of pendulum length. 
-    Mass did not factor into $f( \ell, g)$
-    For example, increasing $ \ell$ by 4 meters will decrease $f$ by 2 Hz. 
-    Plotting this relationship for different $ \ell$ and $g$ helps to physically contextualize this frequency dependency:
+    Mass did not factor into $f( \ell, g)$.</p>
 
-    
-    <!--make this into a list i.e. math: function, physics: parameters.-->
+    <p>Writing this as an equality rather than a dependency relationship will require us to 
+      address any dimensionless constants that would not have been encoded in the dimensionality of $f$.
+      Values like $\pi$ or $1/2$ may appear, and we know that some function of our initial angle $\theta_i$ probably
+    contributes to $f$ since $\theta_i = 0$ should give us $f = 0$, and $theta_i = 90^0$ probably gives us $f_max$<br/><br/>
+  Therefore, we transform (Eq. 4) into an equality by including some unknown function ($\Theta$) of intial-angle:</p>
+
+  $$ \bbox[8px,border:1px solid black]{f(\ell, g, \theta_i) = \Theta(\theta_i) \sqrt{ \frac{g}{ \ell}}} 
+  \tag{Eq. 5}$$
+
+<p>We can plot and algebraically evaluate these relationships for $g$ and $l$ to convince 
+  ourselves that our expression makes sense.</p>
+<ul id="list1">
+  <li>Decreasing $g$ should decrease $f$, since gravity is our only source of acceleration / motion.</li>
+  <li>Intuitively, effects of changing $ \ell$ are less clear, so (Eq. 5) proves insightful.</li>
+</ul>
+
+<div id="imgpair">
+<img src="./Index/theoretical/pendulum_g.bmp" height="150px;" width="220px;"/>
+<img src="./Index/theoretical/pendulum_l.bmp" height="150px;" width="220px;"/>
+</div>
+
+<p>Our limiting cases for system parameters also demonstrates that (Eq. 5) makes physical sense:</p>
   
-  
-  
+$$ \lim_{l \rightarrow \infty} f( \ell) = \Theta \ \lim_{l \rightarrow \infty}  \sqrt{\frac{g}{l}} = 0 \tag{Lim. 1}$$
+<p style="text-align:center; font-size:12pt;"><b>Lim. 1</b> - If $a \gt \gt b$ in a number ($a/b$), then ($a/b) \rightarrow 0$.</p>
+$$ \lim_{g \rightarrow 0} f(g) = \Theta \ \lim_{g \rightarrow \infty}  \sqrt{\frac{g}{l}} = 0 \tag{Lim. 2}$$
+
+<p style="text-align:center; font-size:12pt;"><b>Lim. 2</b> - Zero gravity gives us no pendulum motion, as expected.</p>
+
   
   
   
