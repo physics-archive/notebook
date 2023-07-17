@@ -68,9 +68,9 @@ a {
     
 }
 
-#index .index_header {
+.index_header {
     text-align: center;
-    font-size:16pt;
+    font-size:17pt;
 }
 
 #footer{
@@ -89,7 +89,7 @@ a {
     text-align:left;
     font-weight:bold;
     list-style-type:none;
-    padding-left:10px;
+    padding-left:0px;
     font-size:14pt;
     padding-top:40px;
 
