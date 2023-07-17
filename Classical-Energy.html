@@ -20,6 +20,8 @@
         <title>Energy 1</title>
         <link rel="stylesheet" type="text/css" href="c1.css?ver=0.1" /> <!--links CSS style sheet-->
     </head>
+    $\newcommand{\vect}[1]{\mathrm{ \vec{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
+
 </head>
 
 <body>
@@ -48,12 +50,23 @@ Placeholder paragraph.
       <ul id="introlist"><li>Generalize our approach with vector notation</li></ul>
       
         <hr/><h3 id="section">Newtonian Formulation in Vector Notation</h3>
-      
-      <p>
+      <p>Placeholder. $\vect{r}$
       </p>
+    
+    </p>    
+      <hr/><h3 id="section">Energy Conservation from Newton's Eq. of Motion</h3>
+    
+    <p>
+    </p>
 
-
-
+      $$ \begin{align} 
+      \vect{F} &= m \frac{dv}{dt} \\
+      &= m \frac{dv}{dx} \cancelto{v(t)}{\frac{dx}{dt}} \\
+      &= m \frac{dv}{dx} v(t) \\
+      &= m \frac{dv}{dx} \frac{d ( \frac{v^2}{2})}{dv} \\
+      \vec{F} 
+      &= \frac{1}{2} m \frac{d}{dx} \left[v^2\right]
+      \end{align}$$
 
 </div></body> <!--closes container-->
 
