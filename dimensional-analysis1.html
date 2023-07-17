@@ -174,20 +174,29 @@
   be determined using empirical methods or boundary conditions. In dimensional anylsis,
   any unitless coefficients or constant will need information from other sources. This should make sense. 
 </p>
-<p>Our limiting cases for system parameters also demonstrates that (Eq. 5) makes physical sense. 
-  Consider our frequency for cases where we have 1) an infinite-length pendulum, and 2) zero gravity; we can use 
-calculus to take limits of $f$ and see if it "holds up" logically.</p>
+<p>To further convince ourselves that (Eq. 5) gives the correct dependencies for $g$ and $\ell$, consider our 
+  frequency at extreme inputs; we can use calculus to take interesting limits of $f$ and see if our math "holds up" physically.</p>
   
 $$ \lim_{l \rightarrow \infty} f( \ell) = \Theta \ \lim_{l \rightarrow \infty}  \sqrt{\frac{g}{l}} = 0 \tag{Lim. 1}$$
-<p style="text-align:center; font-size:12pt;"><b>Lim. 1</b> - If $a \gt \gt b$ in a number ($a/b$), then ($a/b) \rightarrow 0$.</p>
-$$ \lim_{g \rightarrow 0} f(g) = \Theta \ \lim_{g \rightarrow \infty}  \sqrt{\frac{g}{l}} = 0 \tag{Lim. 2}$$
+<p style="text-align:center; font-size:12pt;"><b>Lim. 1</b> - If $a \gt \gt b$ in a number ($a/b$), then ($a/b) \rightarrow 0$. Infinite length gives us no motion.</p>
 
-<p style="text-align:center; font-size:12pt;"><b>Lim. 2</b> - Zero gravity gives us no pendulum motion, as expected.</p>
+$$ \lim_{l \rightarrow 0} f( \ell) = \Theta(\theta_i) \ \lim_{l \rightarrow 0}  \sqrt{\frac{g}{l}} = \text{Indeterminate} \tag{Lim. 1}$$
+<p style="text-align:center; font-size:12pt;"><b>Lim. 2</b> - $f$ grows as length approaches 0, but $f$ becomes undefined at $l=0$.<br/> This makes physical sense since our pendulum does not exist without length.</p>
 
+
+$$ \lim_{g \rightarrow 0} f(g) = \Theta \ \lim_{g \rightarrow \infty}  \sqrt{\frac{g}{l}} = 0 \tag{Lim. 3}$$
+<p style="text-align:center; font-size:12pt;"><b>Lim. 3</b> - Zero gravity gives us no pendulum motion. Matches our physical expectation.</p>
+
+<p>It is safe to say that dimensional analysis can provide copious information about
+  system relationships and behavior, so long as our target depends on dimensional quantities.
+  <br/><br/> Let us finish this off by verifying (Eq. 5) for sure, while determining $\Theta(\theta)$. The Euler-Lagrande equation
+  for motion is best for systems with easily-identifiable energies, as will become clear.
+</p>
   
-  
-  
-  
+<hr/><h3>Pendulum Equation of Motion (Euler-Lagrange)</h3>
+<p>Without providing basis or diving into components of (Eq. 6), let us determine 
+  the motion of our pendulum (using a superior formulation to Newton's).
+</p>
   
   
   
