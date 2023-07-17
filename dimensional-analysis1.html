@@ -152,7 +152,7 @@
     <p>Writing this as an equality rather than a dependency relationship will require us to 
       address any dimensionless constants that would not have been encoded in the dimensionality of $f$.
       Values like $\pi$ or $1/2$ may appear, and we know that some function of our initial angle $\theta_i$ probably
-    contributes to $f$ since $\theta_i = 0$ should give us $f = 0$, and $theta_i = 90^0$ probably gives us $f_max$<br/><br/>
+    contributes to $f$ since $\theta_i = 0$ should give us $f = 0$, and $theta_i = 90^0$ probably gives us $f_{max}$<br/><br/>
   Therefore, we transform (Eq. 4) into an equality by including some unknown function ($\Theta$) of intial-angle:</p>
 
   $$ \bbox[8px,border:1px solid black]{f(\ell, g, \theta_i) = \Theta(\theta_i) \sqrt{ \frac{g}{ \ell}}} 
@@ -170,7 +170,13 @@
 <img src="./Index/theoretical/pendulum_l.bmp" height="150px;" width="220px;"/>
 </div>
 
-<p>Our limiting cases for system parameters also demonstrates that (Eq. 5) makes physical sense:</p>
+<p>Perfect. We have determined an essential quantity describing a pendulum's motion. The contribution by our starting angle, $\Theta(\theta)$, can 
+  be determined using empirical methods or boundary conditions. In dimensional anylsis,
+  any unitless coefficients or constant will need information from other sources. This should make sense. 
+</p>
+<p>Our limiting cases for system parameters also demonstrates that (Eq. 5) makes physical sense. 
+  Consider our frequency for cases where we have 1) an infinite-length pendulum, and 2) zero gravity; we can use 
+calculus to take limits of $f$ and see if it "holds up" logically.</p>
   
 $$ \lim_{l \rightarrow \infty} f( \ell) = \Theta \ \lim_{l \rightarrow \infty}  \sqrt{\frac{g}{l}} = 0 \tag{Lim. 1}$$
 <p style="text-align:center; font-size:12pt;"><b>Lim. 1</b> - If $a \gt \gt b$ in a number ($a/b$), then ($a/b) \rightarrow 0$.</p>
