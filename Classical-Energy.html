@@ -38,19 +38,20 @@
 </div> <!--closes buttons-->
 
 <div id="container">
-    <h1 id="header">Conservation of Energy in<br/>Classical Mechanics</h1>
+    <h1 id="header">Classical Mechanics<br/>Conservation of Energy</h1>
   
       <!--Later, we will return to closely
       examine $\Psi$ and its perplexing properties from the beginning.
       Consider this page a motivating preface to a volume on early Quantum Particle Mechanics.
       </p>-->
     <p> 
-Placeholder paragraph.
+We need a general approach if we want to obtain exact solutions.
     </p>
       <ul id="introlist"><li>Generalize our approach with vector notation</li></ul>
       
         <hr/><h3 id="section">Newtonian Formulation in Vector Notation</h3>
-      <p>Placeholder. $\vect{r}$
+      <p>One-dimensional models are useful in cases where we have symmetries to exploit,
+        but we need to rewrite Newton's Equation using vector calculus in order to encode directional information for general cases. 
       </p>
     
     </p>    
@@ -61,11 +62,11 @@ Placeholder paragraph.
 
       $$ \begin{align} 
       \vect{F} &= m \frac{dv}{dt} \\
-      &= m \frac{dv}{dx} \cancelto{v(t)}{\frac{dx}{dt}} \\
-      &= m \frac{dv}{dx} v(t) \\
-      &= m \frac{dv}{dx} \frac{d ( \frac{v^2}{2})}{dv} \\
-      \vec{F} 
-      &= \frac{1}{2} m \frac{d}{dx} \left[v^2\right]
+      &= m \frac{d \vect{v}}{d \vect{x}} \cancelto{v(t)}{\frac{dx}{dt}} \\
+      &= m \frac{d\vect{v}}{dx} \vect{v(t)} \\
+      &= m \frac{d\vect{v}}{dx} \frac{d ( \frac{\vect{v}^2}{2})}{d\vect{v}} \\
+      \vect{F} 
+      &= \frac{1}{2} m \frac{d}{dx} \left[\vect{v}^2\right]
       \end{align}$$
 
 </div></body> <!--closes container-->
