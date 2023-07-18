@@ -21,6 +21,11 @@
         <link rel="stylesheet" type="text/css" href="./vect.css?ver=0.1" /> <!--links CSS style sheet-->
     </head>
     $\newcommand{\vect}[1]{\mathrm{ \vec{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
+    $\newcommand{\vecta}[3]{ 
+      \begin{bmatrix} #1\\ #2\\ #3 \end{bmatrix}
+
+    } $ <!--3 vector takes 3 inputes-->
+
 
 </head>
 
@@ -29,7 +34,7 @@
 <div id="buttons">
 
         <div id="home" style="float:left;font-weight:bold;left:450px;">
-            <a class="home" href="./index.html">Home Page</a>
+            <a class="home" href="../index.html">Home Page</a>
         </div> 
     
         <div id="nextpage" style="float:right;font-weight:bold;right:450px;">
@@ -49,33 +54,78 @@
         
       </p>
       <ul id="introlist">
-        <li>Encoding all of our directional information in a generalized position vector $\vect{r}(t)$ allows us
-          to single-out elements we care about later on.
+        <li>Encoding our directional information in a position vector $\vect{r}(t)$ allows us
+          to model motion directly in flat space $\Bbb{R}^3$.
         </li>
-        <li>While this often complicates our mathematical modeling of system motion, it should provide a clearer picture
-          of things now that we're in our own 3-dimensional space.</li>
-          <li>This will make vector (and matrix) formulations of quantum mechanics far more approachable.</li>
+        <li>Vectors often complicate our mathematical modeling, but we are rewarded with a clearer picture
+          of our system motion. We can use these vector quantities as direct inputs for simulations via software, for example.</li>
+          <li>This rigor will make the vector (and matrix) formulations of quantum mechanics far more approachable.</li>
           
       </ul>
       
-        <hr/><h3 id="section">Newtonian Formulation in Vector Notation</h3>
+        <hr/><h3 id="section">Rewriting Position, Velocity and Acceleration as 3-Vectors</h3>
       <p> 
+        In transitioning from $x(t) \rightarrow \vect{r}(t)$, The following will serve as a brief overview 
+        on vector-valued functions, and is best achieved by expressing our vectors
+        in several equivalent forms. <br/><br/>The three elements of $\vect{r}$
+        correspond to motion in the respective directions:
       </p>
     
-    </p>    
+    $$\vect{r}(t) = 
+    \begin{bmatrix}
+      x(t)\\ y(t)\\ z(t)
+    \end{bmatrix} = 
+    x(t) \vecta{1}{0}{0} + 
+    y(t) \vecta{0}{1}{0} +
+    z(t) \vecta{0}{0}{1} \tag{Eq. 1}$$
+
+    <p>Since our particle - i.e. $\vect{r}$ - exist in flat space, the length of our vector (relative
+      to the origin) is given
+      by the Pythagorean addition of its components: </p>
+      
+      $$ |\vect{r}(t)| = x(t) \oplus y(t) \oplus z(t) = \sqrt{[x(t)]^2+[y(t)]^2+[z(t)]^2}$$
+    
+      <p></p>
+      <p>Differentiating $\vect{r}$ with respect to time will simply apply the operation to each
+        component, leading definitions for $\vect{a}$ and $\vect{v}$ that are analogous
+        to our one-dimensional model: </p>
+
+      $$\vect{a}(t) = \frac{d \vect{v}}{dt} = \frac{d^2 \vect{r}}{dt^2} 
+      = \frac{d^2}{dt^2} \vecta{x(t)}{y(t)}{z(t)}
+      = \vecta{\frac{d^2 x(t)}{dt^2}}{\frac{d^2 y(t)}{dt^2}}{\frac{d^2 z(t)}{dt^2}}\tag{Eq. 2} $$
+      
+      <p>It should be evident that vector formulation is <i>really</i> providing simultaneous solutions for three separare differential equations. Going forward,
+      since time-derivatives behave as they did one-dimensionally, we can invoke the familiar the notation from Newton: $\frac{d}{dt}[f(t)] = \dot{f}(t)$.</p>
+      
+      <p>Notice, too, that this formulation is not limited to 3-dimensional vectors. Given any flat coordinate
+        system ($\Bbb{R}^k\ \text{for}\ k \in \Bbb{N}$), (Eq. 1) and (Eq. 2) can be generalized:
+         </p>
+      
+         $$\vect{G} = \begin{bmatrix} x_1(t)\\ x_2(t)\\ x_3(t)\\ \vdots\\ x_j(t) \end{bmatrix}\ \text{and}\ \ 
+         | \vect{G}| = \sqrt{ \sum_{j=1}^{j} x_j(t)} \tag{Eq. 3}$$
+      
+      <p>One may question why we care about generalizing a system past our own 3-dimensional coordiante system,
+        but it will become clear the <i>dimensionality</i> does not always have to denote <i>spatial dimensionality</i>. 
+        Just think of lists or arrays in programming - they have dimensionality that corresponds to size, and sometimes this 
+        size may be quite large. In MATLAB, data arrays are vectors of possibly-incredible size.
+      </p>
       <hr/><h3 id="section">Calculus Operators for Vector Functions</h3>
     
     <p>
+    
     </p>
 
-      $$ \begin{align} 
+      <!--$$ \begin{align} 
       \vect{F} &= m \frac{dv}{dt} \\
       &= m \frac{d \vect{v}}{d \vect{x}} \cancelto{v(t)}{\frac{dx}{dt}} \\
       &= m \frac{d\vect{v}}{dx} \vect{v(t)} \\
       &= m \frac{d\vect{v}}{dx} \frac{d ( \frac{\vect{v}^2}{2})}{d\vect{v}} \\
       \vect{F} 
       &= \frac{1}{2} m \frac{d}{dx} \left[\vect{v}^2\right]
-      \end{align}$$
+      \end{align} \tag{Eq. 1}$$ -->
+
+
+
 
 </div></body> <!--closes container-->
 
