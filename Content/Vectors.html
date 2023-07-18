@@ -18,7 +18,7 @@
         <script type="text/javascript" src="../MathJax3/es5/tex-chtml.js"></script>
         
         <title>Vector Calculus</title>
-        <link rel="stylesheet" type="text/css" href="./vect.css?ver=0.2" /> <!--links CSS style sheet-->
+        <link rel="stylesheet" type="text/css" href="./vect.css?ver=0.3" /> <!--links CSS style sheet-->
     </head>
     $\newcommand{\vect}[1]{\mathrm{ \vec{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
     $\newcommand{\vecta}[3]{ 
@@ -96,6 +96,14 @@
     <p class="eqcomment">Going forward,
       since time-derivatives behave as they did one-dimensionally, we can 
       invoke the familiar the notation from Newton: $\frac{d}{dt}[f(t)] = \dot{f}(t)$</p>
+      
+      <p>Putting everything back together, we obtain our vectorized Newton's Equation:</p>
+
+      $$\bbox[8px,border:1px solid black]{\vect{F}(\vect{r},t) = m \ddot{\vect{r}} = \begin{bmatrix} F_x\\ F_y\\ F_z \end{bmatrix} = 
+      m \begin{bmatrix} 
+      \ddot{x}(t)\\ \ddot{y}(t)\\ \ddot{z}(t) \end{bmatrix}} \tag{Eq. 3}$$
+<p>Let's remind ourselves that force, on our lefthand-side, is determined by our system (i.e. whatever we're interested in), and $\ddot{\vect{r}}$ is the motion we're interested in solving.</p>
+      
       <p>Evidently, this vector formulation is providing simultaneous solutions for three separare differential equations. 
         Our understanding of energy conservation (and conserved quantities in general) will be deepened
         by considering solutions to Newton's Equations in this matter.
@@ -107,20 +115,19 @@
          </p>
       
          $$\vect{G} =\begin{bmatrix} x_1(t)\\ x_2(t)\\ x_3(t)\\ \vdots\\ x_j(t) \end{bmatrix}\ \text{and}\ \ 
-         | \vect{G}| = \sqrt{ \sum_{j=1}^{j} x_j(t)} \tag{Eq. 3}$$
-      <p class ="eqcomment" style="text-align:center; font-size:10pt;"><b>Eq. 3</b> - Generalizations 
+         | \vect{G}| = \sqrt{ \sum_{j=1}^{j} x_j(t)} \tag{Eq. 4}$$
+      <p class ="eqcomment" style="text-align:center; font-size:10pt;"><b>Eq. 4</b> - Generalizations 
        of (Eq. 1) and (Eq. 2), s.t. $\text{dim} \vect{G} = j$</p>
       <p>Why would we even care about generalizing a system beyond the 3-dimensional coordiante system?
         <ul><li>Dimensionality does not always have to denote <i>spatial dimensionality</i>.</li>
         <li>Think of lists or arrays in programming: their dimension corresponds to their size, and sometimes this 
           size may be quite large, dynamic, random, etc. </li>
-        <li>Even when approaching problems <i>in</i> our 3D space, generlized coordinates prove useful. In a system of N-many particles, 
+        <li>Even when approaching problems <i>in</i> our 3D space, generalized coordinates prove useful. In a system of N-many particles, 
         we can denote different quantities $x_j$ for each particle, resulting in <i>j</i>-many dimensions to our system.</li>
         </ul> 
       </p>
 
-
-      <hr/><h3 id="section"></h3>
+      <hr/><h3 id="section">A Deeper Understanding of Conservation</h3>
     
     <p>
     
