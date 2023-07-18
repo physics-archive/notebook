@@ -97,17 +97,21 @@
       <p>It should be evident that vector formulation is <i>really</i> providing simultaneous solutions for three separare differential equations. Going forward,
       since time-derivatives behave as they did one-dimensionally, we can invoke the familiar the notation from Newton: $\frac{d}{dt}[f(t)] = \dot{f}(t)$.</p>
       
-      <p>Notice, too, that this formulation is not limited to 3-dimensional vectors. Given any flat coordinate
-        system ($\Bbb{R}^k\ \text{for}\ k \in \Bbb{N}$), (Eq. 1) and (Eq. 2) can be generalized:
+      <p>Notice, too, that this formulation is not limited to 3-dimensional vectors. For all flat coordinate
+        systems (that is, $\Bbb{R}^k\ \text{for}\ k \in \Bbb{N}$), (Eq. 1) and (Eq. 2) can be generalized:
          </p>
       
          $$\vect{G} = \begin{bmatrix} x_1(t)\\ x_2(t)\\ x_3(t)\\ \vdots\\ x_j(t) \end{bmatrix}\ \text{and}\ \ 
          | \vect{G}| = \sqrt{ \sum_{j=1}^{j} x_j(t)} \tag{Eq. 3}$$
       
-      <p>One may question why we care about generalizing a system past our own 3-dimensional coordiante system,
-        but it will become clear the <i>dimensionality</i> does not always have to denote <i>spatial dimensionality</i>. 
-        Just think of lists or arrays in programming - they have dimensionality that corresponds to size, and sometimes this 
-        size may be quite large. In MATLAB, data arrays are vectors of possibly-incredible size.
+      <p>Why do we even care about generalizing a system past our own 3-dimensional coordiante system?
+        <ul><li><i>Dimensionality</i> does not always have to denote <i>spatial dimensionality</i>.</li>
+        <li>Think of lists or arrays in programming - they have dimensionality that corresponds to size, and sometimes this 
+          size may be quite large, or even dynamic. 
+          Vectorized quantities are MATLAB's direct analogue to nested lists.</li>
+        <li></li>
+        </ul> 
+
       </p>
       <hr/><h3 id="section">Calculus Operators for Vector Functions</h3>
     
