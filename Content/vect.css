@@ -48,6 +48,10 @@ footer {
     margin-left:auto;margin-right:auto;
 }
 
+.eqcomment{
+    text-align:center;
+}
+
 h3{text-align:center;}
 
 li + li {margin-top: 6px;}
