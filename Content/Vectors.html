@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <head>       
+        <script>
+            MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+              },
+              svg: {
+                fontCache: 'global'
+              }
+            };
+            </script>
+        
+        <script type="text/javascript" src="../MathJax3/es5/tex-chtml.js"></script>
+        
+        <title>Vector Calculus</title>
+        <link rel="stylesheet" type="text/css" href="./vect.css?ver=0.3" /> <!--links CSS style sheet-->
+    </head>
+    $\newcommand{\vect}[1]{\mathrm{ \vec{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
+
+</head>
+
+<body>
+
+<div id="buttons">
+
+        <div id="home" style="float:left;font-weight:bold;left:450px;">
+            <a class="home" href="../index.html">Home Page</a>
+        </div> 
+    
+        <div id="nextpage" style="float:right;font-weight:bold;right:450px;">
+            <a class="nextpage" href="./Classical-Energy.html">Next Page</a>
+    
+</div> <!--closes buttons-->
+
+<div id="container">
+    <h1 id="header">Vectorizing Newton's Equation</h1>
+  
+      <!--Later, we will return to closely
+      examine $\Psi$ and its perplexing properties from the beginning.
+      Consider this page a motivating preface to a volume on early Quantum Particle Mechanics.
+      </p>-->
+      <p>One-dimensional quantities like $x(t)$ are useful in cases where we have symmetries to exploit,
+        but we need to rewrite Newton's Equation using vector calculus if we want a true 3-dimensional model of motion. 
+        
+      </p>
+      <ul id="introlist">
+        <li>Encoding all of our directional information in a generalized position vector $\vect{r}(t)$ allows us
+          to single-out elements we care about later on.
+        </li>
+        <li>While this often complicates our mathematical modeling of system motion, it should provide a clearer picture
+          of things now that we're in our own 3-dimensional space.</li>
+          <li>This will make vector (and matrix) formulations of quantum mechanics far more approachable.</li>
+          
+      </ul>
+      
+        <hr/><h3 id="section">Newtonian Formulation in Vector Notation</h3>
+      <p> 
+      </p>
+    
+    </p>    
+      <hr/><h3 id="section">Calculus Operators for Vector Functions</h3>
+    
+    <p>
+    </p>
+
+      $$ \begin{align} 
+      \vect{F} &= m \frac{dv}{dt} \\
+      &= m \frac{d \vect{v}}{d \vect{x}} \cancelto{v(t)}{\frac{dx}{dt}} \\
+      &= m \frac{d\vect{v}}{dx} \vect{v(t)} \\
+      &= m \frac{d\vect{v}}{dx} \frac{d ( \frac{\vect{v}^2}{2})}{d\vect{v}} \\
+      \vect{F} 
+      &= \frac{1}{2} m \frac{d}{dx} \left[\vect{v}^2\right]
+      \end{align}$$
+
+</div></body> <!--closes container-->
+
+<footer>
+    <br /><br /><br />Notes by &copy; Tyler DeFrancesco 2023 | BS Physics '21<br />
+</footer>
+
+
+</html>
