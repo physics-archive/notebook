@@ -1,0 +1,88 @@
+#comment{
+    text-align:center;font-size:10pt;
+    font-weight:normal;
+}
+
+
+#header {
+    text-align: center;
+}
+body{
+    background-color: #FFFFF0;
+}
+
+#container {
+    background-color: #FFFFF0;
+    width: 100%;
+}
+
+#buttons{
+    background-color: #FFFFF0;
+    display:block;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+} /* Codes my home and next page buttons to align with title */
+
+.home , .nextpage{color:darkslategrey;text-decoration:none;} /* Codes my home and next page buttons to align with title */
+
+#transformation{
+    will-change:transform, opacity;
+    transform: translateZ(0);
+} /* Has to be applied outside of container for my buttons to work*/
+
+#intro{
+    font-size:14pt;
+}
+#container {
+    background-color: #FFFFF0;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:14pt;
+}
+
+footer {
+    clear: both;
+    background-color: #FFFFF0;
+    text-align: center;
+    font-size: 12;
+}
+
+#fig1 {
+ text-align:center;
+}
+
+#fig2{
+    text-align:center;
+}
+
+#fignotes {
+        display:block;
+        font-size: 12pt;
+        color: #373737;
+        text-align: center;
+        width:700px;
+        margin-left:auto;
+        margin-right:auto;
+}
+
+footer {
+    clear: both;
+    background-color: #FFFFF0;
+    text-align: center;
+    font-size: 12;
+}
+
+#introlist{
+    text-decoration:none;
+    list-style-type:"* ";
+}
+
+li + li {
+    margin-top: 6px;
+  }
+
+h3{
+    text-align:center;
+}
