@@ -18,7 +18,7 @@
         <script type="text/javascript" src="../MathJax3/es5/tex-chtml.js"></script>
         
         <title>Vector Calculus</title>
-        <link rel="stylesheet" type="text/css" href="./vect.css?ver=0.1" /> <!--links CSS style sheet-->
+        <link rel="stylesheet" type="text/css" href="./vect.css?ver=0.2" /> <!--links CSS style sheet-->
     </head>
     $\newcommand{\vect}[1]{\mathrm{ \vec{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
     $\newcommand{\vecta}[3]{ 
@@ -58,7 +58,7 @@
           to model motion directly in flat space $\Bbb{R}^3$.
         </li>
         <li>Vectors often complicate our mathematical modeling, but we are rewarded with a clearer picture
-          of our system motion. We can use these vector quantities as direct inputs for simulations via software, for example.</li>
+          of energy conservation and motion in general.</li>
           <li>This rigor will make the vector (and matrix) formulations of quantum mechanics far more approachable.</li>
           
       </ul>
@@ -86,34 +86,41 @@
       $$ |\vect{r}(t)| = x(t) \oplus y(t) \oplus z(t) = \sqrt{[x(t)]^2+[y(t)]^2+[z(t)]^2}$$
     
       <p></p>
-      <p>Differentiating $\vect{r}$ with respect to time will simply apply the operation to each
+      <p>Differentiating $\vect{r}$ with respect to time will simply apply the <i>scalar</i>operation to each
         component, leading definitions for $\vect{a}$ and $\vect{v}$ that are analogous
         to our one-dimensional model: </p>
 
       $$\vect{a}(t) = \frac{d \vect{v}}{dt} = \frac{d^2 \vect{r}}{dt^2} 
       = \frac{d^2}{dt^2} \vecta{x(t)}{y(t)}{z(t)}
       = \vecta{\frac{d^2 x(t)}{dt^2}}{\frac{d^2 y(t)}{dt^2}}{\frac{d^2 z(t)}{dt^2}}\tag{Eq. 2} $$
-      
-      <p>It should be evident that vector formulation is <i>really</i> providing simultaneous solutions for three separare differential equations. Going forward,
-      since time-derivatives behave as they did one-dimensionally, we can invoke the familiar the notation from Newton: $\frac{d}{dt}[f(t)] = \dot{f}(t)$.</p>
-      
+    <p class="eqcomment">Going forward,
+      since time-derivatives behave as they did one-dimensionally, we can 
+      invoke the familiar the notation from Newton: $\frac{d}{dt}[f(t)] = \dot{f}(t)$</p>
+      <p>Evidently, this vector formulation is providing simultaneous solutions for three separare differential equations. 
+        Our understanding of energy conservation (and conserved quantities in general) will be deepened
+        by considering solutions to Newton's Equations in this matter.
+      </p>
+
+      <hr/><h3>Generalizing to N-Dimensional Functions</h3>
       <p>Notice, too, that this formulation is not limited to 3-dimensional vectors. For all flat coordinate
         systems (that is, $\Bbb{R}^k\ \text{for}\ k \in \Bbb{N}$), (Eq. 1) and (Eq. 2) can be generalized:
          </p>
       
-         $$\vect{G} = \begin{bmatrix} x_1(t)\\ x_2(t)\\ x_3(t)\\ \vdots\\ x_j(t) \end{bmatrix}\ \text{and}\ \ 
+         $$\vect{G} =\begin{bmatrix} x_1(t)\\ x_2(t)\\ x_3(t)\\ \vdots\\ x_j(t) \end{bmatrix}\ \text{and}\ \ 
          | \vect{G}| = \sqrt{ \sum_{j=1}^{j} x_j(t)} \tag{Eq. 3}$$
-      
-      <p>Why do we even care about generalizing a system past our own 3-dimensional coordiante system?
+      <p class ="eqcomment" style="text-align:center; font-size:10pt;"><b>Eq. 3</b> - Generalizations 
+       of (Eq. 1) and (Eq. 2), s.t. $\text{dim} \vect{G} = j$</p>
+      <p>Why would we even care about generalizing a system beyond the 3-dimensional coordiante system?
         <ul><li>Dimensionality does not always have to denote <i>spatial dimensionality</i>.</li>
         <li>Think of lists or arrays in programming: their dimension corresponds to their size, and sometimes this 
           size may be quite large, dynamic, random, etc. </li>
-        <li>Even <i>in</i> our 3D space, generlized coordinates prove useful. In a system of N-many particles, 
-        we can denote different positions $x_j$ for each particle, leading to a many-dimensional system within $\Bbb{R}^3$.</li>
+        <li>Even when approaching problems <i>in</i> our 3D space, generlized coordinates prove useful. In a system of N-many particles, 
+        we can denote different quantities $x_j$ for each particle, resulting in <i>j</i>-many dimensions to our system.</li>
         </ul> 
-
       </p>
-      <hr/><h3 id="section">Calculus Operators for Vector Functions</h3>
+
+
+      <hr/><h3 id="section"></h3>
     
     <p>
     
