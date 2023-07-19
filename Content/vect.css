@@ -51,6 +51,8 @@ footer {
 .eqcomment{
     text-align:center;
     font-size:10pt;
+    width:600px;
+    margin-left:auto;margin-right:auto;
 }
 
 h3{text-align:center;}
