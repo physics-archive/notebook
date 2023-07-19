@@ -71,35 +71,34 @@
         correspond to motion in the respective directions:
       </p>
     
-    $$\vect{r}(t) = 
+    $$ \bbox[8px,border:0px solid black] {\vect{r}(t) = 
     \begin{bmatrix}
       x(t)\\ y(t)\\ z(t)
     \end{bmatrix} = 
     x(t) \vecta{1}{0}{0} + 
     y(t) \vecta{0}{1}{0} +
-    z(t) \vecta{0}{0}{1} \tag{Eq. 1}$$
+    z(t) \vecta{0}{0}{1} } \tag{Eq. 1}$$
 
-    <p>Since our particle - i.e. $\vect{r}$ - exist in flat space, the length of our vector (relative
-      to the origin) is given
-      by the Pythagorean addition of its components: </p>
+    <p>Since our particle (and $\vect{r}$) exist in flat space, we can say that the length of our vector
+       is a Pythagorean sum of its dimensional components: </p>
       
-      $$ |\vect{r}(t)| = x(t) \oplus y(t) \oplus z(t) = \sqrt{[x(t)]^2+[y(t)]^2+[z(t)]^2}$$
+      $$\bbox[8px,border:0px solid black]{ |\vect{r}(t)| = x(t) \oplus y(t) \oplus z(t) = \sqrt{[x(t)]^2+[y(t)]^2+[z(t)]^2}} $$
     
       <p></p>
       <p>Differentiating $\vect{r}$ with respect to time will simply apply the <i>scalar</i>operation to each
         component, leading definitions for $\vect{a}$ and $\vect{v}$ that are analogous
         to our one-dimensional model: </p>
 
-      $$\vect{a}(t) = \frac{d \vect{v}}{dt} = \frac{d^2 \vect{r}}{dt^2} 
+      $$\bbox[8px,border:0px solid black]{\vect{a}(t) = \frac{d \vect{v}}{dt} = \frac{d^2 \vect{r}}{dt^2} 
       = \frac{d^2}{dt^2} \vecta{x(t)}{y(t)}{z(t)}
-      = \vecta{\frac{d^2 x(t)}{dt^2}}{\frac{d^2 y(t)}{dt^2}}{\frac{d^2 z(t)}{dt^2}}\tag{Eq. 2} $$
+      = \vecta{\frac{d^2 x(t)}{dt^2}}{\frac{d^2 y(t)}{dt^2}}{\frac{d^2 z(t)}{dt^2}} } \tag{Eq. 2} $$
     <p class="eqcomment">Going forward,
       since time-derivatives behave as they did one-dimensionally, we can 
       invoke the familiar the notation from Newton: $\frac{d}{dt}[f(t)] = \dot{f}(t)$</p>
       
       <p>Putting everything back together, we obtain our vectorized Newton's Equation:</p>
 
-      $$\bbox[8px,border:1px solid black]{\vect{F}(\vect{r},t) = m \ddot{\vect{r}} = \begin{bmatrix} F_x\\ F_y\\ F_z \end{bmatrix} = 
+      $$\bbox[8px,border:0px solid black]{\vect{F}(\vect{r},t) = m \ddot{\vect{r}} = \begin{bmatrix} F_x\\ F_y\\ F_z \end{bmatrix} = 
       m \begin{bmatrix} 
       \ddot{x}(t)\\ \ddot{y}(t)\\ \ddot{z}(t) \end{bmatrix}} \tag{Eq. 3}$$
 <p>Let's remind ourselves that force, on our lefthand-side, is determined by our system (i.e. whatever we're interested in), and $\ddot{\vect{r}}$ is the motion we're interested in solving.</p>
