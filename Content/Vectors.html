@@ -220,9 +220,9 @@ $$
 \end{align} \tag{Eq. 9}
 $$
 
-<p>Our lefthand-side is dependent on our system, so we should leave that as a path integral. </p>
+<p>Our lefthand-side is dependent on our system, so we should leave that as a path integral to keep directional information in-tact. </p>
 
-$$ \int_r \vect{F}(\vect{r}) \cdot d \vect{r} = \frac{1}{2} m (v-v_0)^2 = \frac{1}{2} mv^2 +  E\\ $$
+$$ \int_r \vect{F}(\vect{r}) \cdot d \vect{r} = \frac{1}{2} m (v-v_0)^2 = \frac{1}{2} mv^2 -  E\\ $$
 $$\bbox[8px,border:1px solid black]{ E = \frac{1}{2} m v^2 - \int_r \vect{F}(\vect{r}) \cdot d \vect{r}} \\ \tag{Eq. 10}$$
 
 <p class="eqcomment">
@@ -231,7 +231,8 @@ $$\bbox[8px,border:1px solid black]{ E = \frac{1}{2} m v^2 - \int_r \vect{F}(\ve
 </p>
 
 <p>Let's take a second and appreciate what exactly our conservation statement is saying.</p>
-<ul><li>The sum of these quantities (kinetic and potential energies) remains constant for all $\vect{r}$, t.
+<ul><li>The sum of these quantities (kinetic and potential energies) remains constant for all $\vect{r}$, t. Considering the 
+  work it took us to obtain (Eq. 10), this is an interesting conclusion.
 </li></ul>
 $$\bbox[8px,border:1px solid black]{ \frac{dE}{dx_j} = \frac{dE}{dt} = 0} $$
 <!--Then, we will 
@@ -239,10 +240,36 @@ $$\bbox[8px,border:1px solid black]{ \frac{dE}{dx_j} = \frac{dE}{dt} = 0} $$
 
   <ul><li>
     <i>E</i> is determined arbitrarily by our reference frame,
-    since it determines ($x_0, y_0, z_0$) and $v_0$ when integrating across our coordinate system.
+    since it determines ($x_0, y_0, z_0$, $v_0$) when integrating over our coordinate system.
   </li>
+  <li>Vector calculus allows us to recontextualize our path integral as a scalar potential to our force field: $V( \vect{r})$</li>
 </ul>
 
+$$ \bbox[8px,border:1px solid black]{V(\vect{r}) = - \int_{r_0}^r \vect{F}(\vect{r}) 
+\cdot d \vect{r}} \tag{Eq. 11} \\$$
+
+$$ 
+\bbox[8px,border:1px solid black] {
+
+\vec{\nabla} V(\vect{r}) = - \vect{F}(\vect{r}) 
+
+}
+\tag{Eq. 12}
+$$
+<p class="eqcomment"><b>Eq. 11 & 12</b> - $\vect{F}$ and $d \vect{r}$ are determined by our system force and path.
+  Our potential takes a vector input, but it outputs a scalar quantity. Applying the del operator ($\vec{\nabla}$)
+  to $V(\vect{r})$ gives us its gradient (vector calculus).
+</p>
+
+<p>Suddenly, our focus has shifted from the observable motion of our system ($\vect{r}$) to something
+  far more abstract ($E$ and $V(\vect{r})$). Therefore, we need to motivate our reasons for 
+  exploring <i>E</i> and $V(\vect{r})$ any further.
+</p>
+<ul>
+  <li>Knowing that terms in (Eq. 10) sum to a constant for all coordinate inputs 
+    is mathematically interesting, but how is this useful?</li>
+
+  </ul>
 </div></div></body> <!--closes container-->
 
 <footer>
