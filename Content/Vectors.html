@@ -131,7 +131,7 @@
         </ul> 
       </p>
 
-      <hr/><h3 id="section">Multidimensional Conservation of Energy</h3>
+      <hr/><h3 id="section">Obtaining Differential Elements for Position ($d \vect{r}$) and rewriting $m \vect{a}$</h3>
     
     <p>
       Let us start by defining a full differential element for $\vect{r}$ to describe arbitrarily small changes:
@@ -145,15 +145,33 @@
     
     d \vect{r} &= d(\hata{x} x + \hata{y} y + \hata{z} z) \\
               &= d(\hata{x} x) + d(\hata{y} y) + d(\hata{z} z) \\
-              &= \hata{x} dx  + x \cancel{d \hata{x}} + \hata{y} dy  + 
-              y \cancel{d \hata{y}} + \hata{z} dz  + z \cancel{d \hata{z}} \\
+              &= \hata{x} dx  + x \cancel{d \hata{x}} + \hata{y} dy \\
+              & \ + y \cancel{d \hata{y}} + \hata{z} dz  + z \cancel{d \hata{z}} \\
               d \vect{r} &= \bbox[8px,border:1px solid black]{ \hata{x} dx  + \hata{y} dy + \hata{z} dz}
   
-    \end{align*}$$
+    \end{align*} \tag{Eq. 6}$$
 <p class="eqcomment"><b>Eq. 6</b> - Differentials of the Cartesian unit vectors are equal to 0, as these vectors (in Eq. 1) are constant. 
   While this may seem obvious that differentiating $d \vect{r}$ produces our cartesian differentials neatly, 
 other coordinate systems do not have such obvious differential elements. </p>
-      
+
+<p>Finally, let us invoke the chain rule to express $m \ddot{\vect{r}}$ as a relationship involving velocity, in order to match 
+  the quantities we care about when discussing energy relationship (think kinetic energy). For each component $j$ in $\vect{r_j}$
+</p>
+
+$$
+\begin{align}
+
+m \ddot{x_j} &= m \frac{dv_j}{dt}\\
+&=m \frac{dv_j}{dx_j} \\
+&=m \frac{dv_j}{\cancel{dx_j}} \frac{\cancel{dx_j}}{dt}\\
+m \ddot{x_j} &= \bbox[8px,border:1px solid black]{m v \frac{dv_j}{dx_j}}
+
+\end{align}
+\tag{Eq. 7}
+$$
+<p class="eqcomment"><b>Eq. 7</b> - This relationship between velocity, mass, and the derivative of velocity w.r.t. position is 
+  crucial for arriving at our conclusions for conserved quantities. Interpreting this in-between quantity is trickier than analyzing (Eq. 9), arguably. 
+</p>
 <!--$$ \begin{align} 
       \vect{F} &= m \frac{dv}{dt} \\
       &= m \frac{d \vect{v}}{d \vect{x}} \cancelto{v(t)}{\frac{dx}{dt}} \\
@@ -163,13 +181,28 @@ other coordinate systems do not have such obvious differential elements. </p>
       &= \frac{1}{2} m \frac{d}{dx} \left[\vect{v}^2\right]
       \end{align} \tag{Eq. 1}$$ -->
 
-<p>Now we are ready to reorganize Newton's Equation into a conservation statement. 
-  Taking the dot product of our force field $\vect{F}$
-  with our differential element $d \vect{r}$ produces:
+      <hr/><h3 id="section">Conservation of Energy</h3>
+
+<p>Now we are ready to express Newton's Equation as a conservation statement. 
+  Multiplying our differential $d \vect{r}$ through (Eq. 1), we can resolve the conserved quantity
+  $E$, the total system energy:
 </p>
 
+$$ 
+\begin{align}
+ 
+\vect{F}(\vect{r}) \cdot d \vect{r} &= m \frac{d \vect{v}}{dx_j} \cdot d \vect{r}\\
 
+&=m \vecta{\frac{dv_x}{dx}}{\frac{dv_y}{dy}}{\frac{dv_z}{dz}}^T \vecta{dx}{dy}{dz} \\
 
+&= m (v_x \frac{dv_x}{\cancel{dx}}\cancel{dx} + v_y \frac{dv_y}{\cancel{dy}}\cancel{dy} + v_z \frac{dv_z}{\cancel{dz}}\cancel{dz}) \\
+
+\vect{F}(\vect{r}) \cdot d \vect{r} & = m (v_x dv_x + v_y dv_y + v_z dv_z)
+\end{align} \tag{Eq. 8}
+$$
+
+<p class="eqcomment"><b>Eq. 8</b> - Recall that vector multiplication will result in either a scalar (dot-product) called <u>field divergence</u>, or we may obtain 
+  another vector quantity (cross-product) that gives a field's <u>curl</u>. This is the divegence of our force field w.r.t. changes in position.</p>
 
 </div></div></body> <!--closes container-->
 
