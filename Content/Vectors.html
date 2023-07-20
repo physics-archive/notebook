@@ -18,7 +18,7 @@
         <script type="text/javascript" src="../MathJax3/es5/tex-chtml.js"></script>
         
         <title>Vector Calculus</title>
-        <link rel="stylesheet" type="text/css" href="./vect.css?ver=1.2" /> <!--links CSS style sheet-->
+        <link rel="stylesheet" type="text/css" href="./vect.css?ver=2.0" /> <!--links CSS style sheet-->
     </head>
     $\newcommand{\vect}[1]{\mathrm{ \vec{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
     $\newcommand{\vecta}[3]{ 
@@ -26,7 +26,7 @@
 
     } $ <!--3 vector takes 3 inputes-->
     $\newcommand{\hata}[1]{\mathrm{ \hat{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
-
+    $ \newcommand{\blbox}[1]{\bbox[8px,border:1px solid black]{#1}}$
 
 </head>
 
@@ -170,7 +170,7 @@ m \ddot{x_j} &= \bbox[8px,border:1px solid black]{m v \frac{dv_j}{dx_j}}
 \tag{Eq. 7}
 $$
 <p class="eqcomment"><b>Eq. 7</b> - This relationship between velocity, mass, and the derivative of velocity w.r.t. position is 
-  crucial for arriving at our conclusions for conserved quantities. Interpreting this in-between quantity is trickier than analyzing (Eq. 9), arguably. 
+  crucial for arriving at our conclusions for conserved quantities. Interpreting this in-between quantity is trickier than analyzing (Eq. 8), arguably. 
 </p>
 <!--$$ \begin{align} 
       \vect{F} &= m \frac{dv}{dt} \\
@@ -181,7 +181,7 @@ $$
       &= \frac{1}{2} m \frac{d}{dx} \left[\vect{v}^2\right]
       \end{align} \tag{Eq. 1}$$ -->
 
-      <hr/><h3 id="section">Conservation of Energy</h3>
+      <hr/><h3 id="section">Obtaining a Conservation Statement from Newton's Equation</h3>
 
 <p>Now we are ready to express Newton's Equation as a conservation statement. 
   Multiplying our differential $d \vect{r}$ through (Eq. 1), we can resolve the conserved quantity
@@ -195,13 +195,9 @@ $$
 
 \vecta{F_x}{F_y}{F_z}^T \vecta{dx}{dy}{dz} &=m \vecta{\frac{dv_x}{dx}}{\frac{dv_y}{dy}}{\frac{dv_z}{dz}}^T \vecta{dx}{dy}{dz} \\\\
 
-F_x dx + F_y dy + F_z dz &= m (v_x dv_x + v_y dv_y + v_z dv_z) \\\\
+F_x dx + F_y dy + F_z dz &= m (v_x dv_x + v_y dv_y + v_z dv_z) \end{align}$$
+<div id="spec">$$\begin{align} \blbox{\vect{F}(\vect{r}) \cdot d \vect{r} = m ( \vect{v} \cdot d \vect{v})} \end{align}$$</div>
 
-\vect{F}(\vect{r}) \cdot d \vect{r} &
-
-= m ( \vect{v} \cdot d \vect{v})
-
-\end{align} \tag{Eq. 8} $$
 </div>
 
 <!--<p class="eqcomment"><b>Eq. 8</b> - Recall that vector multiplication will result in either a scalar (dot-product) called <u>field divergence</u>, or we may obtain 
@@ -217,36 +213,35 @@ $$
 
 \int_{x_0}^{x} F_x\ dx + \int_{y_0}^{y} F_y\ dy + \int_{z_0}^{z} F_z\ dz &= \int_{v_{0}}^{v_x} v_x\ dv_x + \int_{v_0}^{v_y} v_y\ dv_y \ + \int_{v_0}^{v_z} v_z\ dv_z  
 
-\end{align} \tag{Eq. 9}
+\end{align} \tag{Eq. 8}
 $$
 
 <p>Our lefthand-side is dependent on our system, so we should leave that as a path integral to keep directional information in-tact. </p>
-
+<div style="padding-right:4px;">
 $$ \int_r \vect{F}(\vect{r}) \cdot d \vect{r} = \frac{1}{2} m (v-v_0)^2 = \frac{1}{2} mv^2 -  E\\ $$
-$$\bbox[8px,border:1px solid black]{ E = \frac{1}{2} m v^2 - \int_r \vect{F}(\vect{r}) \cdot d \vect{r}} \\ \tag{Eq. 10}$$
+$$\bbox[8px,border:1px solid black]{ E = \frac{1}{2} m v^2 - \int_r \vect{F}(\vect{r}) \cdot d \vect{r}} \\ \tag{Eq. 9}$$
 
 <p class="eqcomment">
-  <b>Eq. 10</b> - Our statement of energy conservation. Notice that velocity is no longer a vector quantity, as it is squared. The square of a vector
+  <b>Eq. 9</b> - Our statement of energy conservation. Notice that velocity is no longer a vector quantity, as it is squared. The square of a vector
   corresponds to its squared magnitude, since $\vect{G}^2 is not a valid operation.
 </p>
 
+<hr/><h3 id="section">Characteristics of System Energy and $V(\vect{r})$</h3>
+
 <p>Let's take a second and appreciate what exactly our conservation statement is saying.</p>
-<ul><li>The sum of these quantities (kinetic and potential energies) remains constant for all $\vect{r}$, t. Considering the 
-  work it took us to obtain (Eq. 10), this is an interesting conclusion.
+<ul><li>The sum of these quantities (kinetic and potential energies) remains constant for all $\vect{r}$, t. This is an interesting conclusion
+  given the complexity of our quantities.
 </li></ul>
 $$\bbox[8px,border:1px solid black]{ \frac{dE}{dx_j} = \frac{dE}{dt} = 0} $$
 <!--Then, we will 
   explain the terms in our result, and address some powerful consequences.-->
 
-  <ul><li>
-    <i>E</i> is determined arbitrarily by our reference frame,
-    since it determines ($x_0, y_0, z_0$, $v_0$) when integrating over our coordinate system.
-  </li>
+  <ul>
   <li>Vector calculus allows us to recontextualize our path integral as a scalar potential to our force field: $V( \vect{r})$</li>
 </ul>
 
 $$ \bbox[8px,border:1px solid black]{V(\vect{r}) = - \int_{r_0}^r \vect{F}(\vect{r}) 
-\cdot d \vect{r}} \tag{Eq. 11} \\$$
+\cdot d \vect{r}} \tag{Eq. 10} \\$$
 
 $$ 
 \bbox[8px,border:1px solid black] {
@@ -254,20 +249,25 @@ $$
 \vec{\nabla} V(\vect{r}) = - \vect{F}(\vect{r}) 
 
 }
-\tag{Eq. 12}
+\tag{Eq. 11}
 $$
-<p class="eqcomment"><b>Eq. 11 & 12</b> - $\vect{F}$ and $d \vect{r}$ are determined by our system force and path.
+<p class="eqcomment"><b>Eq. 10 & 11</b> - $\vect{F}$ and $d \vect{r}$ are determined by our system force and path.
   Our potential takes a vector input, but it outputs a scalar quantity. Applying the del operator ($\vec{\nabla}$)
   to $V(\vect{r})$ gives us its gradient (vector calculus).
 </p>
+
+<ul>
+<li>
+  <i>E</i> is determined by our reference frame.
+</li></ul>
 
 <p>Suddenly, our focus has shifted from the observable motion of our system ($\vect{r}$) to something
   far more abstract ($E$ and $V(\vect{r})$). Therefore, we need to motivate our reasons for 
   exploring <i>E</i> and $V(\vect{r})$ any further.
 </p>
 <ul>
-  <li>Knowing that terms in (Eq. 10) sum to a constant for all coordinate inputs 
-    is mathematically interesting, but how is this useful?</li>
+  <li>Knowing that the sum of terms in (Eq. 9) will remain constant for all inputs 
+    is mathematically interesting, but this discovery needs to be useful if we are to introduce <i>E</i> and $V(\vect{r})$ as system quantities worth exploring.</li>
 
   </ul>
 </div></div></body> <!--closes container-->
