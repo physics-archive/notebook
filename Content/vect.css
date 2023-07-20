@@ -48,6 +48,13 @@ footer {
     margin-left:auto;margin-right:auto;
 }
 
+mjx-container.MathJax * {
+    margin-bottom: 0px;
+  }
+
+#b12{
+    padding-left:50px;
+}
 .eqcomment{
     text-align:center;
     font-size:10pt;

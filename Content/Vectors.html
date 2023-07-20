@@ -18,7 +18,7 @@
         <script type="text/javascript" src="../MathJax3/es5/tex-chtml.js"></script>
         
         <title>Vector Calculus</title>
-        <link rel="stylesheet" type="text/css" href="./vect.css?ver=1.1" /> <!--links CSS style sheet-->
+        <link rel="stylesheet" type="text/css" href="./vect.css?ver=1.2" /> <!--links CSS style sheet-->
     </head>
     $\newcommand{\vect}[1]{\mathrm{ \vec{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
     $\newcommand{\vecta}[3]{ 
@@ -187,22 +187,53 @@ $$
   Multiplying our differential $d \vect{r}$ through (Eq. 1), we can resolve the conserved quantity
   $E$, the total system energy:
 </p>
-
-$$ 
+<div id="b12">
+$$
 \begin{align}
  
 \vect{F}(\vect{r}) \cdot d \vect{r} &= m \frac{d \vect{v}}{dx_j} \cdot d \vect{r}\\
 
-&=m \vecta{\frac{dv_x}{dx}}{\frac{dv_y}{dy}}{\frac{dv_z}{dz}}^T \vecta{dx}{dy}{dz} \\
+\vecta{F_x}{F_y}{F_z}^T \vecta{dx}{dy}{dz} &=m \vecta{\frac{dv_x}{dx}}{\frac{dv_y}{dy}}{\frac{dv_z}{dz}}^T \vecta{dx}{dy}{dz} \\\\
 
-&= m (v_x \frac{dv_x}{\cancel{dx}}\cancel{dx} + v_y \frac{dv_y}{\cancel{dy}}\cancel{dy} + v_z \frac{dv_z}{\cancel{dz}}\cancel{dz}) \\
+F_x dx + F_y dy + F_z dz &= m (v_x dv_x + v_y dv_y + v_z dv_z) \\\\
 
-\vect{F}(\vect{r}) \cdot d \vect{r} & = m (v_x dv_x + v_y dv_y + v_z dv_z)
-\end{align} \tag{Eq. 8}
+\vect{F}(\vect{r}) \cdot d \vect{r} &
+
+= m ( \vect{v} \cdot d \vect{v})
+
+\end{align} \tag{Eq. 8} $$
+</div>
+
+<!--<p class="eqcomment"><b>Eq. 8</b> - Recall that vector multiplication will result in either a scalar (dot-product) called <u>field divergence</u>, or we may obtain 
+  another vector quantity (cross-product) that gives a field's <u>curl</u>. This is the divegence of our force field w.r.t. changes in position.</p>-->
+
+<p>Integrate both sides of this expression w.r.t. the differential elements $d \vect{r}$ and $\ d \vect{v}$:
+</p> 
+
+$$
+\begin{align}
+
+\int_r \vect{F}(\vect{r}) \cdot d \vect{r} &= \int \vect{v} \cdot d \vect{v}\\
+
+\int_{x_0}^{x} F_x\ dx + \int_{y_0}^{y} F_y\ dy + \int_{z_0}^{z} F_z\ dz &= \int_{v_{0}}^{v_x} v_x\ dv_x + \int_{v_0}^{v_y} v_y\ dv_y \ + \int_{v_0}^{v_z} v_z\ dv_z  
+
+\end{align} \tag{Eq. 9}
 $$
 
-<p class="eqcomment"><b>Eq. 8</b> - Recall that vector multiplication will result in either a scalar (dot-product) called <u>field divergence</u>, or we may obtain 
-  another vector quantity (cross-product) that gives a field's <u>curl</u>. This is the divegence of our force field w.r.t. changes in position.</p>
+<p>Our lefthand-side is dependent on our system, so we should leave that as a path integral. </p>
+
+$$ \int_r \vect{F}(\vect{r}) \cdot d \vect{r} = \frac{1}{2} m (v-v_0)^2 = \frac{1}{2} mv^2 +  E\\ $$
+$$\bbox[8px,border:1px solid black]{ E = \frac{1}{2} m v^2 - \int_r \vect{F}(\vect{r}) \cdot d \vect{r}} \\ \tag{Eq. 10}$$
+
+<p class="eqcomment">
+  Eq. 10 - Our statement of energy conservation. Notice that velocity is no longer a vector quantity, as it is squared. The square of a vector
+  corresponds to its squared magnitude, since $\vect{G}^2 is not a valid operation.
+</p>
+
+
+<!--Then, we will 
+  explain the terms in our result, and address some powerful consequences.-->
+
 
 </div></div></body> <!--closes container-->
 
