@@ -64,8 +64,8 @@
     Using dimensional analysis and basic linear algebra, let us determine the exact form for a pendulum's cycle frequency. 
     Physical observation will guide our mathematical logic, and vise versa.</p>
   
-  <p>Starting with physics -- what real-world parameters determine the pendulum frequnecy $f$? 
-    Mathematically I am asking: what is $f$ actually a function of in our isolated system? Here are some realistic possibilities:</p>
+  <p>Consider: what real-world parameters determine a pendulum's frequnecy ($f$)? 
+    Mathematically, we're curious what system variables $f$ depends on. Here are some realistic possibilities:</p>
     
     <img src="../Index/theoretical/pendulum2.png" height="127px" width="80px" style="float:right; padding-right:70px;"/>
 
@@ -174,7 +174,11 @@
   be determined using empirical methods or boundary conditions. In dimensional anylsis,
   any unitless coefficients or constant will need information from other sources. This should make sense. 
 </p>
-<p>To further convince ourselves that (Eq. 5) gives the correct dependencies for $g$ and $\ell$, consider our 
+
+<hr/><h3>Verifying our Work Using Limits $f(g, \ell)$</h3>
+
+</p>
+<p>To further convince ourselves that (Eq. 5) describes the correct dependencies for $g$ and $\ell$, consider our 
   frequency at extreme inputs; we can use calculus to take interesting limits of $f$ and see if our math "holds up" physically.</p>
   
 $$ \lim_{l \rightarrow \infty} f( \ell) = \Theta \ \lim_{l \rightarrow \infty}  \sqrt{\frac{g}{l}} = 0 \tag{Lim. 1}$$
