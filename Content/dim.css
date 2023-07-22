@@ -22,7 +22,9 @@ body{
     width: 100%;
 }
 
-
+#lettered{
+    list-style-type:upper-alpha;
+}
 #imgpair{ 
 width:50%;
 margin-left:auto;

@@ -16,7 +16,7 @@
     </script> <!--MathJax 3 config script-->
     
     <script type="text/javascript" src="../MathJax3/es5/tex-chtml.js"></script>
-    <link rel="stylesheet" type="text/css" href="./dim.css?ver=1.24" /> <!--links CSS style sheet-->
+    <link rel="stylesheet" type="text/css" href="./dim.css?ver=1.26" /> <!--links CSS style sheet-->
 
     <title>Dimensional Analaysis</title>
 </head>
@@ -152,7 +152,9 @@
     <p>Writing this as an equality rather than a dependency relationship will require us to 
       address any dimensionless constants that would not have been encoded in the dimensionality of $f$.
       Values like $\pi$ or $1/2$ may appear, and we know that some function of our initial angle $\theta_i$ probably
-    contributes to $f$ since $\theta_i = 0$ should give us $f = 0$, and $theta_i = 90^0$ probably gives us $f_{max}$<br/><br/>
+    contributes to $f$, since 
+    <ul id="lettered"><li>an initial angle of zero should give us no pendulum movement: $f(\theta_i = 0) = 0$</li> <li>$\theta_i = 90^0$ probably does result in $f_{max}$ since 
+    the pendulum sweeps the largest angle (and distance in $\Bbb{R}^3$) at $\theta_i$.</li></ul><br/><br/>
   Therefore, we transform (Eq. 4) into an equality by including some unknown function ($\Theta$) of intial-angle:</p>
 
   $$ \bbox[8px,border:1px solid black]{f(\ell, g, \theta_i) = \Theta(\theta_i) \sqrt{ \frac{g}{ \ell}}} 
@@ -175,20 +177,20 @@
   any unitless coefficients or constant will need information from other sources. This should make sense. 
 </p>
 
-<hr/><h3>Verifying our Work Using Limits $f(g, \ell)$</h3>
+<hr/><h3 style="text-align:center;">Verifying our Work Using Limits of $f(g, \ell)$</h3>
 
 </p>
 <p>To further convince ourselves that (Eq. 5) describes the correct dependencies for $g$ and $\ell$, consider our 
   frequency at extreme inputs; we can use calculus to take interesting limits of $f$ and see if our math "holds up" physically.</p>
   
-$$ \lim_{l \rightarrow \infty} f( \ell) = \Theta \ \lim_{l \rightarrow \infty}  \sqrt{\frac{g}{l}} = 0 \tag{Lim. 1}$$
+$$ \lim_{l \rightarrow \infty} f( \ell) = \Theta \sqrt{g}\ \lim_{l \rightarrow \infty}  \sqrt{\frac{1}{l}} = 0 \tag{Lim. 1}$$
 <p style="text-align:center; font-size:12pt;"><b>Lim. 1</b> - If $a \gt \gt b$ in a number ($a/b$), then ($a/b) \rightarrow 0$. Infinite length gives us no motion.</p>
 
-<p style="padding-left:100px;">$$ \lim_{l \rightarrow 0} f( \ell) = \Theta \ \lim_{l \rightarrow 0}  \sqrt{\frac{g}{l}} = \text{Indeterminate} \tag{Lim. 2}$$</p>
+<p style="padding-left:100px;">$$ \lim_{l \rightarrow 0} f( \ell) = \Theta \sqrt{g} \ \lim_{l \rightarrow 0}  \sqrt{\frac{1}{l}} = \text{Diverges to}\ \infty \tag{Lim. 2}$$</p>
 <p style="text-align:center; font-size:12pt;"><b>Lim. 2</b> - $f$ grows as length approaches 0, but $f$ becomes undefined at $l=0$.<br/> This makes physical sense since our pendulum does not exist without length.</p>
 
 
-$$ \lim_{g \rightarrow 0} f(g) = \Theta \ \lim_{g \rightarrow \infty}  \sqrt{\frac{g}{l}} = 0 \tag{Lim. 3}$$
+$$ \lim_{g \rightarrow 0} f(g) = \frac{ \Theta}{\sqrt{\ell}} \ \lim_{g \rightarrow \infty}  \sqrt{g} = 0 \tag{Lim. 3}$$
 <p style="text-align:center; font-size:12pt;"><b>Lim. 3</b> - Zero gravity gives us no pendulum motion. Matches our physical expectation.</p>
 
 <p>Let us finish this off by verifying (Eq. 5) for sure, while determining $\Theta(\theta)$. The Euler-Lagrande equation
