@@ -45,7 +45,8 @@
 
 <div id="container">
 
-    <h1 id="header">Vectorizing Newton's Equation</h1>
+    <h1 id="header">Vectorizing Newton's Equation<br/><a href="vecref.html" target="_blank" style="text-decoration:none;"><span style="font-size:12pt;">Notation reference sheet - recommended 
+    if you are unfamiliar with vector notation.</span></a></h1>
     <div id="transformation">  
       <!--Later, we will return to closely
       examine $\Psi$ and its perplexing properties from the beginning.
@@ -57,7 +58,7 @@
       </p>
       <ul id="introlist">
         <li>Encoding our directional information in a position vector $\vect{r}(t)$ allows us
-          to model motion directly in flat space $\Bbb{R}^3$.
+          to model motion in flat space ($\Bbb{R}^3$).
         </li>
         <li>Vectors often complicate our mathematical modeling, but we are rewarded with a clearer picture
           of energy conservation and motion in general.</li>
@@ -89,7 +90,8 @@
        is a Pythagorean sum of its dimensional components: </p>
       
       $$\bbox[8px,border:0px solid black]{ |\vect{r}(t)| = x(t) \oplus y(t) \oplus z(t) = \sqrt{[x(t)]^2+[y(t)]^2+[z(t)]^2}} \tag{Eq. 2} $$
-    <p class="eqcomment"><b>Eq. 2</b> - Unit vectors (denoted with a hat) have magnitude one, as they are a purely directional operator.</p>
+    <p>Notice, our radicand is <i>not</i> a sum of vector-valued quantities; $x, y, z$ are scalar functions of <i>t</i>. 
+      Operating on these scalar functions with the unit-vectors ($\hata{x}, \hata{y}, \hata{z}$) results in $\vect{r}$'s directional information.</p>
       <p></p>
       <p>Introducing our calculus operations: differentiating $\vect{r}$ with respect to time will simply apply the <i>scalar</i> operation to each
         component, giving us definitions for $\vect{a}$ and $\vect{v}$ that are analogous
@@ -107,6 +109,7 @@
       $$\bbox[8px,border:1px solid black]{\vect{F}(\vect{r},t) = m \ddot{\vect{r}} = \begin{bmatrix} F_x\\ F_y\\ F_z \end{bmatrix} = 
       m \begin{bmatrix} 
       \ddot{x}(t)\\ \ddot{y}(t)\\ \ddot{z}(t) \end{bmatrix}} \tag{Eq. 4}$$
+      <p class="eqcomment"><b>Eq. 3</b> - A concise form for Newton's Equation, generalized to $\Bbb{R}^3$.
 <p>Force in Newton's Equation is determined by our system choice, whereas $\ddot{\vect{r}}$ (system motion) is the quantity we're interested in obtaining.
   
 </p>
