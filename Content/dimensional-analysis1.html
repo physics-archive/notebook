@@ -42,7 +42,7 @@
 <div id="transformation">
 <div id="intro">
 
-  <p>Here's a powerful tool to demonstrate why theoretical physics is an effective approach when modeling physical systems. 
+  <p>Here's a powerful tool to demonstrate why theoretical physics is an effective approach when modeling real systems. 
     I aim to showcase the advantages of working with dimensional units when performing quantitative analysis. Dimension refers to a quantity's unit of measurement (i.e. the quantity $2 meters$ has dimensions of: length $L^1$.
     </p>
     <ul id="listb">
@@ -149,7 +149,20 @@
     and with the inverse square-root of pendulum length. 
     Mass did not factor into $f( \ell, g)$.</p>
 
-    <p>Writing this as an equality rather than a dependency relationship will require us to 
+    <p>We can plot and algebraically evaluate these relationships for $g$ and $l$ to convince 
+      ourselves that our expression makes sense.</p>
+    <ul id="list1">
+      <li>Decreasing $g$ should decrease $f$, since gravity is our only source of acceleration / motion.</li>
+      <li>Intuitively, effects of changing $ \ell$ are less clear, so (Eq. 5) proves insightful.</li>
+    </ul>
+    <div id="imgpair">
+      <img src="../Index/theoretical/pendulum_g.bmp" height="150px;" width="220px;"/>
+      <img src="../Index/theoretical/pendulum_l.bmp" height="150px;" width="220px;"/>
+      </div> <!--Section that was originally located below the next section.-->
+
+<hr/>
+    
+<p>Writing this as an equality rather than a dependency relationship will require us to 
       address any dimensionless constants that would not have been encoded in the dimensionality of $f$.
       Values like $\pi$ or $1/2$ may appear, and we know that some function of our initial angle $\theta_i$ probably
     contributes to $f$, since 
@@ -160,17 +173,7 @@
   $$ \bbox[8px,border:1px solid black]{f(\ell, g, \theta_i) = \Theta(\theta_i) \sqrt{ \frac{g}{ \ell}}} 
   \tag{Eq. 5}$$
 
-<p>We can plot and algebraically evaluate these relationships for $g$ and $l$ to convince 
-  ourselves that our expression makes sense.</p>
-<ul id="list1">
-  <li>Decreasing $g$ should decrease $f$, since gravity is our only source of acceleration / motion.</li>
-  <li>Intuitively, effects of changing $ \ell$ are less clear, so (Eq. 5) proves insightful.</li>
-</ul>
-
-<div id="imgpair">
-<img src="../Index/theoretical/pendulum_g.bmp" height="150px;" width="220px;"/>
-<img src="../Index/theoretical/pendulum_l.bmp" height="150px;" width="220px;"/>
-</div>
+  <!--Old images section that I replaced up above to match content focus.-->
 
 <p>Perfect. We have determined an essential quantity describing a pendulum's motion. The contribution by our starting angle, $\Theta(\theta)$, can 
   be determined using empirical methods or boundary conditions. In dimensional anylsis,
