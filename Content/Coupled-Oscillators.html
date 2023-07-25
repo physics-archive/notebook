@@ -17,7 +17,7 @@
         <script type="text/javascript" src="../MathJax3/es5/tex-chtml.js"></script>
         
         <title>Classical Coupling</title>
-        <link rel="stylesheet" type="text/css" href="Coupled-Oscillators.css?ver=1.0" /> <!--links CSS style sheet-->
+        <link rel="stylesheet" type="text/css" href="./Coupled-Oscillators.css?ver=1.2" /> <!--links CSS style sheet-->
     
 
         $\newcommand{\vect}[1]{\mathrm{ \vec{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
@@ -44,10 +44,30 @@
 </div> <!--closes buttons-->
 
 <div id="container">
-    <h1 id="header">Coupled Oscillators in Classical Mechanics</h1>
-    
+    <h1 id="header">Classical Coupling</h1>
+    <p class="eqcomment">Page under heavy development. Not chronologically ordered at the moment (7/25).<br/></p>
+    <p>Why do we care about particles on a spring or physical coupling in classical mechanics?</p>
+    <ul>
+      <li>In classical electrodynamics, the "electron on a spring" model describes many systems (i.e. dielectrics).</li>
+      <li>In quantum mechanics, the harmonic potential is prevelant in molecular-energy approximations.</li>
+      <li>Coupling can also be undesired, such as parasitic electrical potentials. 
+        Or vibrational resonances that need to be addressed when designing civil structures.
+      </li>
+    </ul>
     <p>In classical mechanics, systems must transfer energy through some medium in order 
-      to be coupled, and reach their normal modes.</p>  
+      to achieve coupling.</p>  
+    <p>Recall that a particle on a spring is subject to a linear restorative force (Hooke's Law):</p>
+    $$F(x) = -kx \tag{Eq. 1}$$ 
+
+    In terms of energy mechanics, the particle is subject the familiar harmonic potential $U(x)$:
+    $$U(x') = \int_{0}^{x} -kx\ dx = \frac{1}{2}kx^2 \tag{Eq. 2}$$
+
+    Therefore, our particle on a spring has has the total energy $E_{HO}$:
+
+    $$\blbox{E_{HO} = \frac{1}{2}m v^2 + \frac{1}{2}kx^2} \tag{Eq. 3}$$
+
+    <p></p>
+ 
       <!--Later, we will return to closely
       examine $\Psi$ and its perplexing properties from the beginning.
       Consider this page a motivating preface to a volume on early Quantum Particle Mechanics.
