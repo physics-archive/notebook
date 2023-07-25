@@ -3,7 +3,7 @@ function [Energy] = Energy(R,Density,time)
 %   Detailed explanation goes here
 
 
-Energy = R.^5 .* Density .* time;
+Energy = R.^5 .* Density ./ time.^2;
 
 end
 
