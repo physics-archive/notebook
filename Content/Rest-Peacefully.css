@@ -48,6 +48,13 @@ footer {
     margin-left:auto;margin-right:auto;
 }
 
+.eqcomment{
+    text-align:center;
+    font-size:10pt;
+    width:500px;
+    margin-left:auto;margin-right:auto;
+}
+
 h3{text-align:center;}
 
 li + li {margin-top: 6px;}
@@ -65,4 +72,13 @@ transform: translateZ(0);
 
 #AtomsForPeace{
     color:darkblue;
+}
+
+#second{
+    padding-left:20px;
+    list-style-type:none;
+}
+
+#trinity{
+    padding-left:50px;margin-left:auto;margin-right:auto;
 }
