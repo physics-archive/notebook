@@ -18,7 +18,7 @@
         <script type="text/javascript" src="../MathJax3/es5/tex-chtml.js"></script>
         
         <title>Real Oscillators</title>
-        <link rel="stylesheet" type="text/css" href="real-oscillators.css?ver=0.2" /> <!--links CSS style sheet-->
+        <link rel="stylesheet" type="text/css" href="real-oscillators.css?ver=0.3" /> <!--links CSS style sheet-->
         $\newcommand{\vect}[1]{\mathrm{ \vec{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
         $\newcommand{\vecta}[3]{ 
           \begin{bmatrix} #1\\ #2\\ #3 \end{bmatrix}
@@ -95,8 +95,23 @@
         $$m \ddot{x} - \beta \dot{x} + kx = 0
 
         $$
-      
 
+        In <i>d/dx</i> notation, this reads:
+      
+        $$\blbox{m \frac{d^2 x}{dt^2} - \beta \frac{dx}{dt} + kx = 0}
+
+        $$
+        <p class="eqcomment"><b>Eq. 1</b> - Second-order, linear ordinary differential equation. Describes forces acting on some mass on 
+        a real (damped) spring.</p>
+
+        <p>
+          Undoubtably, constructing (Eq. 1) was far easier than jumping straight to its solution, <i>x(t)</i>. In solving (Eq. 1), we will 
+          demonstrate that <i>x(t)</i> is not trivial, and would not have been easily-obtainable with algebra or empirical methods alone.
+        </p>
+<ul><li>Constructing our differential equations (i.e., characerizing changes to our system) is where much of our physics 
+  intuition gets concentrated. A computer (or mathematician) can often do the brute work of actually <i>solving</i> the equations. 
+  Refer to the Spherical Bessel Functions.
+</li></ul>
 
 </div></body> <!--closes container-->
 

@@ -48,9 +48,16 @@ footer {
     margin-left:auto;margin-right:auto;
 }
 
+.eqcomment{
+    text-align:center;
+    font-size:10pt;
+    width:500px;
+    margin-left:auto;margin-right:auto;
+}
+
 h3{text-align:center;}
 
-li + li {margin-top: 6px;}
+li + li {margin-top: 10px;}
 
 #special{
     font-size:12pt;
