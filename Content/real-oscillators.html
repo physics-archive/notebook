@@ -38,37 +38,45 @@
         </div> 
     
         <div id="nextpage" style="float:right;font-weight:bold;right:450px;">
-            <a class="nextpage" href="./Content/QHO.html">Next Page</a>
+            <a class="nextpage" href="./Coupled-Oscillators.html">Next Page</a>
     
 </div> <!--closes buttons-->
 
 <div id="container">
-    <h1 id="header">Oscillators in Nature</h1>
+    <h1 id="header">Oscillators and Diff. Eq. in Nature</h1>
     
-    <p>Oscillators are a natural phenomenon. Quantities that describe system motion may be cyclical 
-      (i.e. a rotating rigid body will experience cycles of position). Arguably of more importance: systems that are elusive to direct 
-      observation (i.e., effect of an electric-field propogating through some insulating material) may be accurately modeled 
-      as physical oscillators. <br/><br/>In fact, many nuclear and microscopic systems behave like damped oscillators. 
+    <p>Oscillators are a natural phenomenon. Rotating bodies have cyclical motion, as does some mass on a spring. 
+      Moreover, systems that are elusive to direct 
+      observation (i.e., an electric-field propogating through some insulating material) are accurately accurately modeled 
+      as physical oscillators. <br/><br/>In fact, a plethora of nuclear and microscopic systems behave like damped oscillators. 
       Even Maxwell's Equations form a wave equation, whose solutions are our  
-      electromagnetic wave-model of light (composed of oscillating <i>E-</i> and <i>B-</i>fields). 
+      electromagnetic wave-model of light (that is, oscillating <i>E-</i> and <i>B-</i>fields). 
     </p>  
     
-    <p>Often, it is easier to make mathematically identify the sources of change in our system, 
-      rather than obtaining an outright solution to how those changes actually result in our overall system behavior. 
-      <ul><li>
+    <p>
+      
+      Often, it is easier to mathematically identify the sources of change to our system, 
+      as opposed to obtaining a direct solution to how those sources actually compound to result in our overall system behavior. 
+      <ul><li>For instance: an object in free-fall is subject to a total force of $mg$ -- but what 
+        is $\vect{r}(t)$ exactly? It can be easily determined or recalled, but you can see that our logic <i>begins</i> with 
+        change, which progresses to a comprehensive solution for motion (position). 
+      </li><li>This is a reflection of utilizing differential equations: we start with a statement about change (the differential equation), 
+        and then we solve it to obtain a statement on how our system evolves over time (i.e., motion over time).
       </li></ul>
-      This is at the heart of 
-    why differential equations dominate our mathematical models for physical systems: describe how it changes, first - then use calculus 
-  to solve <i>how</i> that change effects system quantites (such as motion or energy).</p>
+      
+
+</p> <!--closes long beginning paragraph.-->
 
       <!--Later, we will return to closely
       examine $\Psi$ and its perplexing properties from the beginning.
       Consider this page a motivating preface to a volume on early Quantum Particle Mechanics.
       </p>-->
-      <hr/><h3 id="section">Differential Equation for Undamped Harominc Motion</h3>
+      <hr/><h3 id="section">Constructing and Justifying our Differential Equation</h3>
   
-      <p>Hooke's law describes a restorative force: $F=-kx$. What is this $kx$ quantity <i>really</i> describing? 
-      <ul><li>As our system moves away from equillibrium ($x_0=0$), a force directed at $x_0$ grows (directly proportional to $k$).</li>
+      <p>Hooke's law describes a restorative force: $F=-kx$. What is $-kx$ <i>really</i> describing? 
+      <ul><li>As our system moves away from equillibrium ($x_0=0$), a force directed at $x_0$ grows (directly proportional to $k$); it 
+        is restoring system position by opposing displacement away from equillibrium.
+      </li>
       <li>Notice that if our sign is reversed to say $F=+kx$, our force is directed <i>away</i> from equillibrium. Position will never 
       return to $x=0$ once displacement away from $x_0$ occurs.</li></ul></p>
 
