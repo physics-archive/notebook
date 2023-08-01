@@ -80,7 +80,21 @@
       <li>Notice that if our sign is reversed to say $F=+kx$, our force is directed <i>away</i> from equillibrium. Position will never 
       return to $x=0$ once displacement away from $x_0$ occurs.</li></ul></p>
 
-      <p>Let us follow this reasoning and define each contribution to $\vect{F}$ for our real mass-on-a-spring.</p>
+      <p>Let us use intuition to define each contribution to $\vect{F}$ for our real mass-on-a-spring:</p>
+
+      <ul><li>$F_{spring}(x)= -kx$: A restorative force that depends explicitly on position. Proportional to our spring constant $k$.</li>
+        <li>$F_{damp}(v)= +\beta \dot{x}$: A frictional force. Opposes velocity and causes energy loss (nonconservative force). Proportional to some 
+          damping factor $\beta$.
+        </li></ul>
+
+        <p>Newton's Equation for our spring system follows (where $F_{total}=m \ddot{x})$:</p>
+
+        $$
+        F_{total} - F_{spring} - F_{damp} = 0$$
+        
+        $$m \ddot{x} - \beta \dot{x} + kx = 0
+
+        $$
       
 
 
