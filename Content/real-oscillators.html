@@ -75,10 +75,10 @@
   
       <p>Hooke's law describes a restorative force: $F=-kx$. What is $-kx$ <i>really</i> describing? 
       <ul><li>As our system moves away from equillibrium ($x_0=0$), a force directed towards $x_0$ grows in order to 
-        is restore system position; it opposes displacement away from equillibrium.
+        is restore system position; its direction always points towards the equillibrium point $x_0$.
       </li>
       <li>Notice that if our sign is reversed to say $F=+kx$, our force is directed <i>away</i> from equillibrium. Position will never 
-      return to $x=0$ once displacement away from $x_0$ occurs.</li></ul></p>
+      return to $x=0$ once displacement away from $x_0$ occurs. This describes exponential, positive feedback.</li></ul></p>
 
       <p>Let us use intuition to define each contribution to $\vect{F}$ for our real mass-on-a-spring:</p>
 
@@ -116,9 +116,64 @@
 
 <hr/><h3 id="section">Solving our Differential Equation for Real Spring Motion</h3>
 
+<p>Making our lives easier: (Eq. 1) is actually homogonous in addition to being linear and ordinary. 
+  Given these properties, our complete (most general) solution needs to have the following properties:
+</p>
+
+<ul>
+  
+  <li>
+    <b>Second-order diff. eq.</b>: full solution must be a linear superposition of two 
+    linearly independent solutions $y_1,y_2$, meaning we have two arbitrary constant to solve for (A,B).
+</li>
+<li><b>Ordinary diff. eq..:</b> usually far easier to appraoch and solve than partial differential equations. Our solution 
+set will be finite as opposed to finite (in the case of PDEs).</li>
+</ul>
+
+<p>Examine the most genearlized oscillatory function we can come up with, but label it as being a part of some index <i>j</i> to remind ourselves 
+that we expect to find exactly two solutions of <i>x(t)</i> (<i>j</i>=2):
+
+$$x_n(t)=C_n e^{i \omega_n t} \tag {Eq. 2.1}$$
+
+Our most generalized solution is some linear combination of these two solutions:</p>
+$$\blbox{x(t)=C_1 e^{i \omega_1 t} + C_2 e^{i \omega_2 t}} \tag{Eq. 2.2} $$
+
+<p>While the overall shape of this solution matches our spring motion, 
+  we need to test (Eq. 2.1) as a solution (Eq. 1) for two reason:
+  <ul><li>to prove that (Eq. 2.2) definitely solves (Eq. 1) for all <i>t</i>, and</li>
+  <li>to determine the parameters
+    that actually define physical characteristics of our system: $C_n$ and $\omega_n$.
+  <br/><br/>Thinking ahead: consider what $\omega$ and $C_n$ actually correspond to, physically. Hint: consider their dimensions and how their limits influence our spring description.</li></ul>
+</p>
+
+<p>Testing (Eq. 2.1) in (Eq. 1), we verify our solution for <i>x(t)</i>is correct, and we obtain $\omega_n$. 
+  Since this page is supposed to be complementary to an introductory diff. eq., many steps will 
+  be shown as to not jump too many conclusions at once:
+</p>
+
+$$ \frac{d^2}{dt^2} [C_n e^{i \omega_n t}] + 
+\left(\frac{\beta}{m}\right) \frac{d}{dt} [C_n e^{i \omega_n t}] + 
+\left(\frac{k}{m}\right) [C_n e^{i \omega_n t} ]= 0  
+
+$$
+Perform our time-derivatives in terms one and two:
+$$ i^2 \omega_n^2 [e^{i \omega_n t}] + 
+\left(\frac{\beta}{m}\right) i \omega_n[C_n e^{i \omega_n t}] + 
+\left(\frac{k}{m}\right) [C_n e^{i \omega_n t} ]= 0  
+
+$$
+Pull out common factors to reveal an interesting expression (and recall $i^2=-1$):
+
+$$\blbox{C_n e^{i \omega_n t} \left(
+- \omega_n^2 - \frac{\beta}{m}\omega_n +k
 
 
+\right) = 0}
 
+\tag {Eq. 3.1} $$
+
+Our question: is (Eq. 3)? If yes, then (Eq. 2.2) solves (Eq. 1), and we can proceed with 
+finding $\omega_n$ and $C_n$ and finally model our spring motion.
 </div></body> <!--closes container-->
 
 <footer>
