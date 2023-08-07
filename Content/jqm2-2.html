@@ -56,7 +56,7 @@
       <img src="../Index/theoretical/p2-2-figure.png" height="100px" width="350px" style="padding-left:120px;" alt="CoupledOscillator"/>
 
 <br/>Find the eigenfrequencies of longitudinal oscillation and the normal mode 
-  of motion associated with each frequency.
+  of motion associated with each frequency (pp. 6).
 </p>
  
       <!--Later, we will return to closely
@@ -66,15 +66,26 @@
       <hr/><h3 id="section">The Problem</h3>
   <p>We need to solve a system of three ordinary differential equations. Jackson prompts us to use energy mechanics 
     to describe our system behavior, rather than Newton's equation for motion. 
-    <br/><br/>This question can be reduced to an eigenvalue (linear algebra) problem,  
+    This question is reduced to an eigenvalue (linear algebra) problem,  
     demonstrating that frequencies of vibration 
-    only occur at particular values rather than along some continuum.
+    only occur at particular values rather than along some continuum.<br/><br/>Comparitively, this problem 
+    is far easier to solve than 2-1. This is largely <u>because</u> of our use of energy mechanics, here.
   </p>
 
-  <p></p>
+  <p>Since our masses vibrate only along one spatial dimension, we will define a generalized
+    coordinate of index <i>j</i> to describe motion for each particle. The total kinetic energy (T)
+    of our system may be written as a linear sum of each component kinetic energy:
+  </p>
 
+  $$\blbox{T= \frac{1}{2} \sum_{j=1}^{3} m_j \dot{x}_j^2 }\tag{Eq. 1.1}$$
 
-<p></p>
+  <p>In our system $m_1=m_2=m_3=m$, so (Eq. 1) can be expanded and simplified to the following sum:</p>
+
+$$\blbox{T=\frac{1}{2}m \left( 
+  \dot{x}_1^2 +   \dot{x}_3^2 +   \dot{x}_3^2
+  \right)} \tag{Eq. 1.2}$$
+
+  <p>The total potential energy (V) of our system is a sum of harmonic potentials - one term for each coordiante:</p>
 
 </div></body> <!--closes container-->
 
