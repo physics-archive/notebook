@@ -133,4 +133,5 @@ li + li {margin-top: 3px;}
     list-style-type:none;
     text-decoration:none;
     color:darkblue;
+    font-weight:bold;
 }
