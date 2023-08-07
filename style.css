@@ -121,3 +121,16 @@ li + li {margin-top: 3px;}
 
 .home , .nextpage{color:darkslategrey;text-decoration:none;} /* Codes my home and next page buttons to align with title */
 
+#pset-header{
+    list-style-type:none;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+.pset{
+    padding-left:20px;
+    list-style-type:none;
+    text-decoration:none;
+    color:darkblue;
+}
