@@ -18,7 +18,7 @@
         <script type="text/javascript" src="../MathJax3/es5/tex-chtml.js"></script>
         
         <title>Real Oscillators</title>
-        <link rel="stylesheet" type="text/css" href="real-oscillators.css?ver=0.3" /> <!--links CSS style sheet-->
+        <link rel="stylesheet" type="text/css" href="real-oscillators.css?ver=0.5" /> <!--links CSS style sheet-->
         $\newcommand{\vect}[1]{\mathrm{ \vec{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
         $\newcommand{\vecta}[3]{ 
           \begin{bmatrix} #1\\ #2\\ #3 \end{bmatrix}
@@ -115,7 +115,10 @@
 <li>However, physical intuition is often required to simplify equations and make them solvable.</li></ul>
 
 <hr/><h3 id="section">Solving our Differential Equation for Real Spring Motion</h3>
-
+<p>For completeness, it is necessary to consider <i>x(t)</i> to be complex-valued when solving our differential equation. 
+However, our physical (observable) system is described only by its real part (not its imaginary). 
+We will write Re[x(t)] <i>after</i> working out our 
+complex solution. Going forward, <i>i</i> will play a fundamental role in defining oscillatory functions.</p>
 <p>Making our lives easier: (Eq. 1) is actually homogonous in addition to being linear and ordinary. 
   Given these properties, our complete (most general) solution needs to have the following properties:
 </p>
@@ -135,7 +138,7 @@
 that we expect to find exactly two solutions of <i>x(t)</i> (<i>j</i>=2):
 
 $$x_n(t)=C_n e^{i \omega_n t} \tag {Eq. 2.1}$$
-
+<p class="eqcomment"><b>Eq. 2.1 - </b>$C_n$ are complex-valued constants, and may have imaginary parts!</p>
 Our most generalized solution is some linear combination of these two solutions:</p>
 $$\blbox{x(t)=C_1 e^{i \omega_1 t} + C_2 e^{i \omega_2 t}} \tag{Eq. 2.2} $$
 
@@ -215,9 +218,35 @@ $$
  \tag{Eq. 4}$$
 
 We already see an interesting quality of our solution to damped motion: our particle is oscillating 
-with some new frequency that is related by its natural frequency ($\kappa$ - the oscillating without damping) and 
-the systen damping (encoded in $\beta$).
+with some new frequency that is related by its natural frequency ($\kappa$ - the undamped frequency) and 
+the systen damping (encoded in $\beta$). We can proceed to write down the purely-real (physical) form to this solution.
+<ul><li>$e^{-\gamma t}$ - Factor corresponding to pure exponential decay over time. A damping term.</li>
+<li>$\left(C_1e^{...} +C_2e^{...} \right)$ - Factor corresponding to undamped oscillation of the system in time.</li></ul>
 </p>
+
+
+<div id="fig2">
+<img src="../Index/theoretical/complex-damping1e.bmp" alt="damping1" width="266px" height="200px", style="margin-left:auto;
+margin-right:auto;" />
+</div>
+
+</p>
+
+
+<p class="eqcomment">
+ <b>Plot 1</b> - Plot of (Eq. 4) for arbitrary parameters ($\gamma \lt \kappa$). 
+ Predicts oscillating motion that decays in amplitude over time. Matches our expectation of how a 
+ damped harmonic oscillator will behave.
+</p>
+<hr/><h3 id="section">The Real Part of our Solution</h3>
+<p>Our complex-valued solution is the most general description we have for damped oscillations in 1-D. 
+  However, the imaginary part (Im[<i>x(t)</i>]) does not correspond to any observable quantities, so we should disregard it
+  and pursue a trigonometric form for (Eq. 4), so that we may readily apply our model to physical systems:
+</p>
+
+$$ x(t) \rightarrow Re[x(t)] $$
+$$ C_n \rightarrow A_n+iB_n $$
+
 </div></body> <!--closes container-->
 
 <footer>
