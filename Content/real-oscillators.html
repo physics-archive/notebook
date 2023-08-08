@@ -139,6 +139,7 @@ $$x_n(t)=C_n e^{i \omega_n t} \tag {Eq. 2.1}$$
 Our most generalized solution is some linear combination of these two solutions:</p>
 $$\blbox{x(t)=C_1 e^{i \omega_1 t} + C_2 e^{i \omega_2 t}} \tag{Eq. 2.2} $$
 
+<!--
 <p>While the overall shape of this solution matches our spring motion, 
   we need to test (Eq. 2.1) as a solution (Eq. 1) for two reason:
   <ul><li>to prove that (Eq. 2.2) definitely solves (Eq. 1) for all <i>t</i>, and</li>
@@ -150,8 +151,10 @@ $$\blbox{x(t)=C_1 e^{i \omega_1 t} + C_2 e^{i \omega_2 t}} \tag{Eq. 2.2} $$
 <p>Testing (Eq. 2.1) in (Eq. 1), we verify our solution for <i>x(t)</i>is correct, and we obtain $\omega_n$. 
   Since this page is supposed to be complementary to an introductory diff. eq., many steps will 
   be shown as to not jump too many conclusions at once:
-</p>
+</p> -->
 
+<p>Substitute this full solution into our equation of motion to start determining our solution parameters ($C_n, \omega_n$):
+</p>
 $$ \frac{d^2}{dt^2} [C_n e^{i \omega_n t}] + 
 \left(\frac{\beta}{m}\right) \frac{d}{dt} [C_n e^{i \omega_n t}] + 
 \left(\frac{k}{m}\right) [C_n e^{i \omega_n t} ]= 0  
@@ -166,7 +169,7 @@ $$
 Pull out common factors to reveal an interesting expression (recall $i^2=-1$):
 
 $$\blbox{C_n e^{i \omega_n t} \left(
-- \omega_n^2 + \frac{\beta}{m}\omega_n + \frac{k}{m}
+- \omega_n^2 + i\frac{\beta}{m}\omega_n + \frac{k}{m}
 
 
 \right) = 0}
@@ -178,23 +181,42 @@ $$\blbox{C_n e^{i \omega_n t} \left(
     <li>Algebraically, this is no problem:
     divide both sides by $C_n e^{i \omega_n t}$ to obtain our simplified eigenvalue equation.</li>
   
-  <li>A less hand-waivy argument: the quantity $e^{i \omega_n t}$ never equals zero, so the only zeros (roots)
-    in (Eq. 3.1) come from particular configurations of $\omega_n$ (our eigenfrequencies):
-  </li>
+  <li>A less hand-waivy argument: the quantity $e^{i \omega_n t}$ will never equal zero, so the only zeros (roots)
+    in our quadratic equation (Eq. 3.1) have to come from particular values of $\omega_n$ (our eigenfrequencies):
+  </li></ul>
 
-  $$\blbox{ - \omega_n^2 + \frac{\beta}{m}\omega_n + \frac{k}{m} = 0 } \tag{Eq. 3.2}$$
+  $$\blbox{ - \omega_n^2 + i\frac{\beta}{m}\omega_n + \frac{k}{m} = 0 } \tag{Eq. 3.2}$$
 
 
 
 Define the following substitutions (to simplify math and compress system parameters), and solve our auxillary equation 
-for eigenfrequencies:
+for complex-valued eigenfrequencies:
 
-$$\begin{align} \beta /m \rightarrow 2\gamma \\ k/m \rightarrow \kappa^2 \end{align}$$
+$$\begin{align} \beta /m \rightarrow 2\gamma \\ k/m \rightarrow \kappa^2 \end{align}$$ <!--substitution of parameters-->
 
-$$ - \omega_n^2 + 2\gamma \omega_n + \kappa^2 = 0 $$
+$$ - \omega_n^2 + 2i\gamma \omega_n + \kappa^2 = 0 $$
 
-$$\blbox{\omega_{1,2} = \gamma \pm \sqrt{\gamma^2 + \kappa^2}}  \tag {Eq. 3.3}$$
+$$\blbox{\omega_{1,2} = i\gamma \pm \sqrt{\kappa^2 - \gamma^2}}  \tag {Eq. 3.3}$$
 
+
+<!--<p class="eqcomment">Notice our eigenfrequencies are complex-valued, here.</p>-->
+Therefore, our general solution for damped spring motion is given by substituting (Eq. 3.3) in (Eq. 2.2):
+
+$$ x(t)=
+  C_1 e^{i^2 \gamma t} e^{+i \left(\sqrt{\kappa^2 - \gamma^2}\right)t} + 
+  C_2 e^{i^2 \gamma t} e^{-i \left(\sqrt{\kappa^2 - \gamma^2}\right)t}
+  
+$$
+
+ $$ \blbox{x(t)= e^{-\gamma t}
+  \left(C_1 e^{+i \left(\sqrt{\kappa^2 - \gamma^2}\right)t} + 
+  C_2 e^{-i \left(\sqrt{\kappa^2 - \gamma^2}\right)t} \right)
+  } 
+ \tag{Eq. 4}$$
+
+We already see an interesting quality of our solution to damped motion: our particle is oscillating 
+with some new frequency that is related by its natural frequency ($\kappa$ - the oscillating without damping) and 
+the systen damping (encoded in $\beta$).
 </p>
 </div></body> <!--closes container-->
 
