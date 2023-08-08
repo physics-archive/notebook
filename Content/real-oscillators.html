@@ -43,8 +43,9 @@
 </div> <!--closes buttons-->
 
 <div id="container">
-    <h1 id="header">Oscillators and Diff. Eq. in Nature</h1>
-    
+    <h1 id="header">Oscillators and Diff. Eq. in Nature <br/>
+    <a href="dampingref.html" target="_blank" style="text-decoration:none;color:darkslategrey;"><span style="font-size:12pt;">Dimensional 
+    Analysis on $\beta, \gamma, k, m$</span></a></h1>
     <p>Oscillators are a natural phenomenon. Rotating bodies have cyclical motion, as does some mass on a spring. 
       Moreover, systems that are elusive to direct 
       observation (i.e., an electric-field propogating through some insulating material) are accurately accurately modeled 
@@ -236,17 +237,38 @@ margin-right:auto;" />
 <p class="eqcomment">
  <b>Plot 1</b> - Plot of (Eq. 4) for arbitrary parameters ($\gamma \lt \kappa$). 
  Predicts oscillating motion that decays in amplitude over time. Matches our expectation of how a 
- damped harmonic oscillator will behave.
+ damped harmonic oscillator will behave. Changes shape if $\gamma \ge \kappa$ (critical/overdamping).
 </p>
 <hr/><h3 id="section">The Real Part of our Solution</h3>
 <p>Our complex-valued solution is the most general description we have for damped oscillations in 1-D. 
-  However, the imaginary part (Im[<i>x(t)</i>]) does not correspond to any observable quantities, so we should disregard it
+  However, the imaginary part (Im[<i>x(t)</i>]) does not describe any observable behavior, so we should disregard it
   and pursue a trigonometric form for (Eq. 4), so that we may readily apply our model to physical systems:
 </p>
 
-$$ x(t) \rightarrow Re[x(t)] $$
+$$ x(t) \rightarrow \text{Re}[x(t)] $$
 $$ C_n \rightarrow A_n+iB_n $$
+$$ \sqrt{\kappa^2 - \gamma^2} \rightarrow \Omega$$
+<p>Note that $A_n, B_n$ are real-valued coefficients, and $\Omega$ is a frequency that we can think of as our 
+  damped oscillation frequency. Our real solution to motion comes out with surprising brevity:
+</p>
+$$x(t) \rightarrow e^{-\gamma t}\ \text{Re}\left[
+(A_1 + iB_1) e^{+i \Omega t} + 
+  (A_2 + iB_2) e^{-i \Omega t}
+\right] $$
 
+$$\begin{align} x(t) = e^{\gamma t}\ ( &\text{Re}[
+A_1 \cos{t\Omega} + A_2 \cos{t\Omega} + B_1 \sin{t\Omega} - B_2 \sin{t\Omega}] \\ 
+- &\text{Re}[
+i A_1 \sin{t\Omega} - i A_2 \sin{t\Omega} - iB_1 \cos{t\Omega} - iB_2 \cos{t\Omega}
+] ) \end{align} \tag{Eq. 5}$$
+
+<p>I have carefully grouped terms in (Eq. 5) such that it is clear which of our trigonometric terms are purely real versus 
+  purely imaginary -- our real solution for <i>x(t)</i> is clearly visible:
+</p>
+
+$$x(t) = e^{-\gamma t} \left[ (A_1 + A_2) \cos{\Omega t} + (B_1 - B_2) \sin{\Omega t} \right] $$
+Compressing our solution constants yet again, we obtain an elegant solution to damped harmonic motion:
+$$\blbox{x(t) = e^{-\gamma t} \left[ A\cos{\Omega t} + B{\cos{\Omega t}} \right]} \tag {Eq. 6} $$
 </div></body> <!--closes container-->
 
 <footer>
