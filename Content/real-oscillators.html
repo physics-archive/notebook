@@ -84,7 +84,7 @@
 
       <ul><li>$F_{spring}(x)= -kx$: A restorative force that depends explicitly on position. 
         <br/>Proportional to our spring constant $k$.</li>
-        <li>$F_{damp}(v)= +\beta \dot{x}$: A frictional force. Opposes velocity and causes energy loss (nonconservative force). Proportional to some 
+        <li>$F_{damp}(v)= -\beta \dot{x}$: A frictional force. Opposes velocity and causes energy loss (nonconservative force). Proportional to some 
           damping factor $\beta$.
         </li></ul>
 <hr/>
@@ -93,12 +93,12 @@
         $$
         F_{total} - F_{spring} - F_{damp} = 0$$
         
-        $$m \ddot{x} - \beta \dot{x} + kx = 0
+        $$m \ddot{x} + \beta \dot{x} + kx = 0
 
         $$
 
       
-        $$\blbox{m \frac{d^2 x}{dt^2} - \beta \frac{dx}{dt} + kx = 0}
+        $$\blbox{m \frac{d^2 x}{dt^2} + \beta \frac{dx}{dt} + kx = 0}
         \tag{Eq. 1}
         $$
         <p class="eqcomment"><b>Eq. 1</b> - Linear, second-order, ordinary differential equation. Force assocaited with a mass 
@@ -142,8 +142,8 @@ $$\blbox{x(t)=C_1 e^{i \omega_1 t} + C_2 e^{i \omega_2 t}} \tag{Eq. 2.2} $$
 <p>While the overall shape of this solution matches our spring motion, 
   we need to test (Eq. 2.1) as a solution (Eq. 1) for two reason:
   <ul><li>to prove that (Eq. 2.2) definitely solves (Eq. 1) for all <i>t</i>, and</li>
-  <li>to determine the parameters
-    that actually define physical characteristics of our system: $C_n$ and $\omega_n$.
+  <li>to determine the parameters ($C_n$, $\omega_n$)
+    which actually define physical characteristics of our system.
   <br/><br/>Thinking ahead: consider what $\omega$ and $C_n$ actually correspond to, physically. Hint: consider their dimensions and how their limits influence our spring description.</li></ul>
 </p>
 
@@ -163,22 +163,39 @@ $$ i^2 \omega_n^2 [e^{i \omega_n t}] +
 \left(\frac{k}{m}\right) [C_n e^{i \omega_n t} ]= 0  
 
 $$
-Pull out common factors to reveal an interesting expression (and recall $i^2=-1$):
+Pull out common factors to reveal an interesting expression (recall $i^2=-1$):
 
 $$\blbox{C_n e^{i \omega_n t} \left(
-- \omega_n^2 - \frac{\beta}{m}\omega_n +k
+- \omega_n^2 + \frac{\beta}{m}\omega_n + \frac{k}{m}
 
 
 \right) = 0}
 
 \tag {Eq. 3.1} $$
 
-Our question: is (Eq. 3)? If yes, then (Eq. 2.2) solves (Eq. 1), and we can proceed with 
-finding $\omega_n$ and $C_n$ and finally model our spring motion.
+<p>In proving that our equality holds, we need to eliminate this exponential term. 
+  <ul>
+    <li>Algebraically, this is no problem:
+    divide both sides by $C_n e^{i \omega_n t}$ to obtain our simplified eigenvalue equation.</li>
+  
+  <li>A less hand-waivy argument: the quantity $e^{i \omega_n t}$ never equals zero, so the only zeros (roots)
+    in (Eq. 3.1) come from particular configurations of $\omega_n$ (our eigenfrequencies):
+  </li>
 
-<p>In proving that our equality holds, we need to eliminate this exponential term. Algebraically, this is no problem:
-  divide both sides by $C_n e^{i \omega_n t}$. We lose information about $C_n$, but we can solve for $\omega_n$ and prove that our left-hand-side (LHS) 
-is equal to zero.</p>
+  $$\blbox{ - \omega_n^2 + \frac{\beta}{m}\omega_n + \frac{k}{m} = 0 } \tag{Eq. 3.2}$$
+
+
+
+Define the following substitutions (to simplify math and compress system parameters), and solve our auxillary equation 
+for eigenfrequencies:
+
+$$\begin{align} \beta /m \rightarrow 2\gamma \\ k/m \rightarrow \kappa^2 \end{align}$$
+
+$$ - \omega_n^2 + 2\gamma \omega_n + \kappa^2 = 0 $$
+
+$$\blbox{\omega_{1,2} = \gamma \pm \sqrt{\gamma^2 + \kappa^2}}  \tag {Eq. 3.3}$$
+
+</p>
 </div></body> <!--closes container-->
 
 <footer>
