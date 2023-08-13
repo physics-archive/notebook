@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <head>       
+        <script>
+            MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+              },
+              svg: {
+                fontCache: 'global'
+              }
+            };
+            </script>
+        
+        <script type="text/javascript" src="../MathJax3/es5/tex-chtml.js"></script>
+        
+        <title>Vector Calculus</title>
+        <link rel="stylesheet" type="text/css" href="./vect.css?ver=2.1" /> <!--links CSS style sheet-->
+    </head>
+    $\newcommand{\vect}[1]{\mathrm{ \vec{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
+    $\newcommand{\vecta}[3]{ 
+      \begin{bmatrix} #1\\ #2\\ #3 \end{bmatrix}
+
+    } $ <!--3 vector takes 3 inputes-->
+    $\newcommand{\hata}[1]{\mathrm{ \hat{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
+    $ \newcommand{\blbox}[1]{\bbox[8px,border:1px solid black]{#1}}$
+
+</head>
+
+<body>
+
+<div id="buttons">
+
+        <div id="home" style="float:left;font-weight:bold;left:450px;">
+            <a class="home" href="../index.html">Home Page</a>
+        </div> 
+    
+        <div id="nextpage" style="float:right;font-weight:bold;right:450px;">
+            <a class="nextpage" href="./Classical-Energy.html">Next Page</a>
+    
+</div> <!--closes buttons-->
+
+<div id="container">
+
+    <h1 id="header">Vectorizing Newton's Equation<br/><a href="vecref.html" target="_blank" style="text-decoration:none;color:darkslategrey;"><span style="font-size:12pt;">Notation reference sheet - recommended 
+    if you are unfamiliar with vector notation.</span></a></h1>
+    <div id="transformation">  
+      <!--Later, we will return to closely
+      examine $\Psi$ and its perplexing properties from the beginning.
+      Consider this page a motivating preface to a volume on early Quantum Particle Mechanics.
+      </p>-->
+      <p>One-dimensional quantities like $x(t)$ are useful in cases where we have symmetries to exploit,
+        but we need to rewrite Newton's Equation using vector calculus if we want a true 3-dimensional model of motion. 
+        
+      </p>
+      <ul id="introlist">
+        <li>Encoding our directional information in a position vector $\vect{r}(t)$ allows us
+          to model motion in flat space ($\Bbb{R}^3$).
+        </li>
+        <li>Vector-valued functions often complicate our mathematical modeling (see all of quantum mechanics), but in the end 
+          we are rewarded with a clearer picture of
+         conserved quantities and system behavior.</li>
+          <li>This rigor will make the vector (and matrix) formulations of quantum mechanics far more approachable.</li>
+          
+      </ul>
+      
+        <hr/><h3 id="section">Rewriting Position, Velocity and Acceleration as 3-Vectors</h3>
+      <p> 
+        In transitioning from $x(t) \rightarrow \vect{r}(t)$, The following will serve as a brief overview 
+        on vector-valued functions, and is best achieved by expressing our vectors
+        in several equivalent forms. <br/><br/>The three elements of $\vect{r}$
+        correspond to motion in the respective directions:
+      </p>
+    $$ \bbox[8px,border:0px solid black] {\vect{r}(t) = 
+    \hat{ \mathrm{ \boldsymbol{r}}} \mathrm{ \boldsymbol{r}}(t)  =
+    \begin{bmatrix}
+      x(t)\\ y(t)\\ z(t)
+    \end{bmatrix} = 
+    x(t) \vecta{1}{0}{0} + 
+    y(t) \vecta{0}{1}{0} +
+    z(t) \vecta{0}{0}{1} } \tag{Eq. 1}$$
+
+    <p class="eqcomment"><b>Eq. 1</b> - A vector in $\Bbb{R}^3$ measured from the origin (0,0,0), 
+      expressed in four equivalent forms.</p>
+
+
+    <p>Since our particle (and $\vect{r}$) exist in flat space, we can say that the length of our vector
+       is the sum (in quadrature) of its elements: </p>
+      
+      $$\bbox[8px,border:0px solid black]{ |\vect{r}(t)| = x(t) \oplus y(t) \oplus z(t) = \sqrt{[x(t)]^2+[y(t)]^2+[z(t)]^2}} \tag{Eq. 2} $$
+    <p>Notice, our radicand is <i>not</i> a sum of vector-valued quantities; $x, y, z$ are scalar functions of <i>t</i>. 
+      Operating on these scalar functions with the unit-vectors ($\hata{x}, \hata{y}, \hata{z}$) results in $\vect{r}$'s directional information.</p>
+      <p></p>
+      <p>Introducing our calculus operations: differentiating $\vect{r}$ with respect to time will simply apply the <i>scalar</i> operation to each
+        component, giving us definitions for $\vect{a}$ and $\vect{v}$ that are analogous
+        to our one-dimensional model: </p>
+
+      $$\bbox[8px,border:0px solid black]{\vect{a}(t) = \frac{d \vect{v}}{dt} = \frac{d^2 \vect{r}}{dt^2} 
+      = \frac{d^2}{dt^2} \vecta{x(t)}{y(t)}{z(t)}
+      = \vecta{\frac{d^2 x(t)}{dt^2}}{\frac{d^2 y(t)}{dt^2}}{\frac{d^2 z(t)}{dt^2}} } \tag{Eq. 3} $$
+    
+    <!---  <p class="eqcomment"><b>Eq. 3</b> - Since time-derivatives are behaving as they did one-dimensionally (like a scalar operation), we can 
+      invoke the familiar the notation from Newton: $\frac{d}{dt}[f(t)] = \dot{f}(t)$</p>
+      
+      <p>Putting everything back together, we obtain our vectorized Newton's Equation:</p>-->
+
+      $$\bbox[8px,border:1px solid black]{\vect{F}(\vect{r},t) = m \ddot{\vect{r}} = \begin{bmatrix} F_x\\ F_y\\ F_z \end{bmatrix} = 
+      m \begin{bmatrix} 
+      \ddot{x}(t)\\ \ddot{y}(t)\\ \ddot{z}(t) \end{bmatrix}} \tag{Eq. 4}$$
+      <p class="eqcomment"><b>Eq. 3</b> - A concise form for Newton's Equation, generalized to $\Bbb{R}^3$. 
+        Here, <i>m</i> is taken to be a scalar quantity, 
+        but mass is most generally a <i>3x3</i>, symmetric matrix <b>M</b>.
+<p>Force in Newton's Equation is determined by our system choice, whereas $\ddot{\vect{r}}$ (system motion) is the quantity we're interested in obtaining.
+  
+</p>
+      
+      <p>Evidently, this vector formulation is a more compact (short-hand) way of expressing our three separate differential equations. 
+        Conceptually, this serves a greater purpose than simply cleaning-up our notation:
+        
+      </p>
+<ul><li>Powerful properties of fields and potentials in $\Bbb{R}^3$ may be invoked, allowing us to deepen our 
+  understanding of how a system evolves in time - not just with regarding motion!</li>
+</ul>
+
+      <hr/><h3>Generalizing to N-Dimensional Vectors</h3>
+      <p>Notice, too, that this formulation is not limited to 3-vectors. For any choice of $\Bbb{R}^k $ ($k \in \Bbb{N}$),
+        (Eq. 1) and (Eq. 2) can be generalized, and so a <i>k</i>-dimensional vector may be defined as follows:
+         </p>
+      
+         $$\vect{Q} =\begin{bmatrix} x_1(t)\\ x_2(t)\\ x_3(t)\\ \vdots\\ x_k(t) \end{bmatrix}\ \text{and}\ \ 
+         | \vect{Q}| = \sqrt{ \sum_{k=1}^{k} x^2_k(t)} \tag{Eq. 5}$$
+      <p class ="eqcomment" style="text-align:center; font-size:10pt;"><b>Eq. 5</b> - Generalizations 
+       of (Eq. 1) and (Eq. 2), s.t. $\text{dim} \vect{Q} = k$. Typical (Lagrange) notation is $x_k \rightarrow q_k$.</p>
+      <p>Why would we even care about generalizing a system beyond our 3-dimensional, flat coordiante system?
+        <ul><li>Generalized coordinates may span very large indices, and coupled systems may 
+      contain non-diagonal matrices (i.e. nondiagonal mass-matrix).</li>
+        <li>In programming: the 
+          size (dimension) of an array (matrix) may be quite large, dynamic, random, etc. 
+
+</li>
+    
+        </ul> 
+        When approaching problems <i>in</i> our flat, 3-D space, generalized coordinates are invaluable. In a system of N-many particles, 
+        we can denote different coordinates $x_k$ for each particle, resulting in <i>k</i>-many, coupled equations of motion.
+      </p>
+
+      <hr/><h3 id="section">Obtaining Differential Elements for Position ($d \vect{r}$) and rewriting $m \vect{a}$</h3>
+    
+    <p>
+      Let us start by defining a full differential element for $\vect{r}$ to describe arbitrarily small changes:
+    </p>
+    <ul><li><i>Newton's dot notation</i>: let $\ddot{g}(t) \rightarrow \ddot{g}$. We do not want to keep redeclaring the time-dependence of our functions.</li>
+    <li>We should be thorough and apply the product rule to each component of $\vect{r}$ to prove that calculus operations
+       behave analogously to our one-dimensional cases. That is, let us invoke the right-hand-side of (Eq. 1).
+    </li>
+  <li>Recall that $\hata{x}$ is the unit vector for the x-direction. Unit vectors encode purely directional information.</li></ul>
+    $$\begin{align*} 
+    
+    d \vect{r} &= d(\hata{x} x + \hata{y} y + \hata{z} z) \\
+              &= d(\hata{x} x) + d(\hata{y} y) + d(\hata{z} z) \\
+              &= \hata{x} dx  + x \cancel{d \hata{x}} + \hata{y} dy \\
+              & \ + y \cancel{d \hata{y}} + \hata{z} dz  + z \cancel{d \hata{z}} \\
+              d \vect{r} &= \bbox[8px,border:1px solid black]{ \hata{x} dx  + \hata{y} dy + \hata{z} dz}
+  
+    \end{align*} \tag{Eq. 6}$$
+<p class="eqcomment"><b>Eq. 6</b> - Differential elements for our Cartesian unit vectors are equal to 0, as they are always constant. 
+  Other coordinate systems do not produce such a clean vector operation.</p>
+
+<p>Finally, let us invoke the chain rule to express $m \ddot{\vect{r}}$ as a relationship involving velocity, in order to match 
+  the quantities we care about when discussing energy relationship (think kinetic energy). For each component $j$ in $\vect{r_j}$
+</p>
+
+$$
+\begin{align}
+
+m \ddot{x_j} &= m \frac{dv_j}{dt}\\
+&=m \frac{dv_j}{dx_j} \\
+&=m \frac{dv_j}{\cancel{dx_j}} \frac{\cancel{dx_j}}{dt}\\
+m \ddot{x_j} &= \bbox[8px,border:1px solid black]{m v \frac{dv_j}{dx_j}}
+
+\end{align}
+\tag{Eq. 7}
+$$
+<p class="eqcomment"><b>Eq. 7</b> - Interpreting physical meaning from this in-between quantity is tricky (see Fig. a).
+</p>
+<!--$$ \begin{align} 
+      \vect{F} &= m \frac{dv}{dt} \\
+      &= m \frac{d \vect{v}}{d \vect{x}} \cancelto{v(t)}{\frac{dx}{dt}} \\
+      &= m \frac{d\vect{v}}{dx} \vect{v(t)} \\
+      &= m \frac{d\vect{v}}{dx} \frac{d ( \frac{\vect{v}^2}{2})}{d\vect{v}} \\
+      \vect{F} 
+      &= \frac{1}{2} m \frac{d}{dx} \left[\vect{v}^2\right]
+      \end{align} \tag{Eq. 1}$$ -->
+
+      <hr/><h3 id="section">Obtaining a Conservation Statement from Newton's Equation</h3>
+
+<p>Now we are ready to express Newton's Equation as a conservation statement. 
+  Multiplying our differential $d \vect{r}$ through (Eq. 1), we can resolve the conserved quantity
+  $E$, the total system energy:
+</p>
+<div id="b12">
+$$
+\begin{align}
+ 
+\vect{F}(\vect{r}) \cdot d \vect{r} &= m \frac{d \vect{v}}{dx_j} \cdot d \vect{r}\\
+
+\vecta{F_x}{F_y}{F_z}^T \vecta{dx}{dy}{dz} &=m \vecta{\frac{dv_x}{dx}}{\frac{dv_y}{dy}}{\frac{dv_z}{dz}}^T \vecta{dx}{dy}{dz} \\\\
+
+F_x dx + F_y dy + F_z dz &= m (v_x dv_x + v_y dv_y + v_z dv_z) \end{align}$$
+<div id="spec">$$\begin{align} \blbox{\vect{F}(\vect{r}) \cdot d \vect{r} = m ( \vect{v} \cdot d \vect{v})} \end{align}$$</div>
+
+</div>
+
+<!--<p class="eqcomment"><b>Eq. 8</b> - Recall that vector multiplication will result in either a scalar (dot-product) called <u>field divergence</u>, or we may obtain 
+  another vector quantity (cross-product) that gives a field's <u>curl</u>. This is the divegence of our force field w.r.t. changes in position.</p>-->
+
+<p>Integrate both sides of this expression w.r.t. the separated differential elements:
+</p> 
+
+$$
+\begin{align*}
+
+<!--\int_r \vect{F}(\vect{r}) \cdot d \vect{r} &= m \int \vect{v} \cdot d \vect{v} \\-->
+
+\int_r \vect{F}(\vect{r}) \cdot d \vect{r} &= \int_{v_{0}}^{v_x} m v_x\ dv_x + \int_{v_0}^{v_y} m v_y\ dv_y \ + \int_{v_0}^{v_z} m v_z\ dv_z
+
+<!--\int_{x_0}^{x} F_x\ dx + \int_{y_0}^{y} F_y\ 
+  dy + \int_{z_0}^{z} F_z\ dz &= \int_{v_{0}}^{v_x} v_x\ dv_x + \int_{v_0}^{v_y} v_y\ dv_y \ + \int_{v_0}^{v_z} v_z\ dv_z --> 
+
+\end{align*} \tag{Eq. 8}
+$$
+<p class="eqcomment"><b>Eq. 8</b> - To keep the expression neat, consider the case where our initial system position and velocity ($r_0,v_0) are zero.</p>
+<p>We should leave this sum as a path integral of our 3-vector $F(\vect{r})$, 
+  to keep directional information in-tact. Notice that dot products take <i>vector inputs</i> but produce <i>scalar outputs</i>, 
+    resulting the scalar-value of energy.
+  <ul><li>Force applied to a system may be path-dependent (i.e. generalized magnetic force). In contrast, a force like (classical) gravity will vary
+    only with distance from the source.
+     
+
+  </li>
+  
+</ul> </p>
+<div style="padding-right:4px;">
+$$ \int_r \vect{F}(\vect{r}) \cdot d \vect{r} = \frac{1}{2} m (v-v_0)^2 = \frac{1}{2} mv^2 -  E\\ $$
+$$\bbox[8px,border:1px solid black]{ E = \frac{1}{2} m v^2 - \int_r \vect{F}(\vect{r}) \cdot d \vect{r}} \\ \tag{Eq. 9}$$
+$$\blbox{\ Total\ Energy\ =\ Kinetic\ Energy\ +\ Potential\ Energy}$$
+
+<p class="eqcomment">
+  <b>Eq. 9</b> - Our statement of energy conservation, with surprising brevity. Notice that velocity is no longer a vector. 
+  In fact, we have mostly transformed Newton's 
+  statement back into a scalar equation. 
+</p>
+
+<p>Derive the dimensionality of energy by considering the K.E. term $\frac{1}{2}mv^2$:</p>
+
+$$\blbox{[E] = [m][v]^2 = M^1L^2T^{-2} } \tag{Eq. 9.1}$$
+<p class="eqcomment"><b>Eq. 9.1</b> - In S.I. units, this is $kg\ m^2 / s^2$ -- Newton-meters -- Joules.</p>
+<p>A reminder: this quantity followed <i>first</i> from mathematical analysis,
+and <i>then</i> we assigned physical meaning to it as the total system energy <i>E</i>. 
+<!-- <ul><li>Deriving mathematical relationships first - and interpreting the Physics 
+  of these statements later - is a common way that we construct 
+  theories in modern Physics.</li> -->
+  <li>In Newton's era, the field had not yet progressed to this extent. Newton never obtained this statement from his own equation (not even its one-dimensional case).</li></ul></p>
+<hr/><h3 id="section">Characteristics of System Energy and $V(\vect{r})$</h3>
+
+<p>Let's take a second and appreciate what exactly our conservation statement is saying.</p>
+<ul><li>The sum of these quantities (kinetic and potential energies) remains constant for all $\vect{r}$, t. This is an interesting conclusion
+  given the complexity of our quantities.
+</li></ul>
+$$\bbox[8px,border:1px solid black]{\frac{dE}{dt} = 0 \text{ if } \vect{F} \not = \vect{G}(t)}  \tag{Eq. 9.2}$$
+<p class="eqcomment"><b>Eq. 9.2*</b> - Total energy of an <u>isolated</u> system is conserved. Our universe's total energy is unchanging in time. Developed 
+in statistical mechanics. More rigorously, this time-energy conservation relationship is a consequence of Noether's theorem.</p>
+<!--Then, we will 
+  explain the terms in our result, and address some powerful consequences.-->
+
+  <ul>
+  <li>Vector calculus allows us to recontextualize our path integral as a scalar potential to our force field: $V( \vect{r})$</li>
+</ul>
+
+$$ \bbox[8px,border:1px solid black]{
+  V(\vect{r}) = - \int_{r_0}^r \vect{F}(\vect{r}) 
+\cdot d \vect{r}} \tag{Eq. 10} \\$$
+
+$$ 
+\bbox[8px,border:1px solid black] {
+
+\vec{\nabla} V(\vect{r}) = - \vect{F}(\vect{r}) 
+
+}
+\tag{Eq. 11}
+$$
+<p class="eqcomment"><b>Eq. 10 & 11</b> - $\vect{F}$ and $d \vect{r}$ are determined by our system force and path.
+  Our potential takes a vector input, but it outputs a scalar quantity. Applying the del operator ($\vec{\nabla}$)
+  to $V(\vect{r})$ gives us its gradient.
+</p>
+<!--
+<ul>
+<li>
+  There is no "absolute energy" to compare <i>E</i> against.
+</li></ul>
+-->
+<p>Suddenly, our focus has shifted from the observable motion of our system ($\vect{r}$) to quantites that 
+  are more abstract ($E$ and $V(\vect{r})$). We even have linear operator ($\vec{\nabla}$) to relate $\vect{F}$ to our potential <i>V</i>.
+</p>
+
+<ul><li>Whether <i>V</i> is numerical or analytical, we can obtain $\vect{F}$ by knowing a system's potential (and vise versa).</li>
+<li>If <i>V</i> is time-dependent ($V = V(t)$), energy conservation is broken, due to energy exchange with some external system.</li></ul>
+<!--<ul>
+  <li>Knowing that the sum of terms in (Eq. 9) will remain constant for all inputs 
+    is mathematically interesting, but this discovery needs to be useful if we are to introduce <i>E</i> 
+    and $V(\vect{r})$ as system quantities worth exploring.</li>
+    <li>Schr&ouml;dinger's Equation is also an energy conservation statement, and is anlogous to this classical result.
+    </li>
+  </ul>
+-->
+</div>
+
+
+</div></body> <!--closes container-->
+
+<footer>
+    <br /><br /><br />Notes by &copy; Tyler DeFrancesco 2023 | BS Physics '21<br />
+</footer>
+
+
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html-css>
+<html>  
+    <head>
+        
+        <script>
+            MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+              },
+              svg: {
+                fontCache: 'global'
+              }
+            };
+            </script>
+        
+        <script type="text/javascript" src="../MathJax3/es5/tex-chtml.js"></script>
+        
+        <title>Calculus</title>
+        <link rel="stylesheet" type="text/css" href="./trumpet.css?ver=1.6" /> <!--links CSS style sheet-->
+    </head>
+
+    <body>
+        <div id="buttons">
+
+            <div id="home" style="float:left;font-weight:bold;">
+                <a class="home" href="../index.html">Home Page</a>
+            </div> <!--Closes home-->
+
+            <div id="nextpage" style="float:right;font-weight:bold;color:darkgreen;">
+                <a class="nextpage" href="./reals1.html">Next Page</a>
+            </div>
+
+
+        </div><!--closes my top buttons-->
+        
+        
+        <div id="container">
+            <div id="header"> <!--Let's work a list into here instead-->
+                <h2 class="title">Convergence - Infinite Series Can Return a Finite Value <br /><span id="small"><a target="_blank" href="https://www.math.cmu.edu/~bwsulliv/basel-problem.pdf" style="color:darkslategrey">See Carnegie-Mellon's 'Numberous Proofs to the Basel Problem' for Mathematical History and Analytical Solutions</a></span></h2>
+            </div>
+            <div id="problem">
+                <p class="preface">Demonstrated here: the power of calculus in resolving paradoxes created by infinity, and in obtaining analytical solutions to problems that are difficult to approach with numerical analysis alone.
+                    The following mathematical concept is convergence, and it applies to continuous functions as well as discrete sums.
+                </p> <!--Reorganize to be a list of bullets and structure at the top for a preface--> <!--Talk about how we need mathematical tools to resolve this reality for any function-->
+                <p class="pp1">Consider the following sequence:</p>
+                
+                <p class="s1">
+                    $$\bbox[8px,border:1px solid black] {
+                        S_1 = \frac{1}{n^2}\,\ \,\text{where} \,\,n \in  \Bbb{N}} \tag{Eq. 1}\label{s1}$$
+                </p> <!--Closes S1-->
+            <p>Expanding this sequence starting at $n=1$ returns a <u>simple list of fractions</u>:</p>
+                <p class="s1.1">$$\bbox[8px,border:1px solid black] {
+                    S_1=\frac{1}{n^2} = 1,\,\frac{1}{4},\,\frac{1}{9},\,\frac{1}{16},\,\frac{1}{25},\,\frac{1}{36},\,...} \tag{Eq. 1.2}\label{1.1}$$</p>
+                <p>Now let us sum these set elements over the entirety of index <i>n</i>:</p>
+                <p>$$\bbox[8px,border:1px solid black] {
+                    \sum_{n=1}^\infty \frac{1}{n^2} = 1 + \frac{1}{4} + \frac{1}{16} + \frac{1}{25} + \frac{1}{36} + \dots} \tag{Eq. 2}\label{2}$$</p>
+                
+                <p>On the surface, it looks like the series might sum to infinity regardless of how small these additions become; there are infinitely-many positive additions being made, after all. 
+                    If adding-together an infinite sequence of numbers can return a finite sum, then what will that number be and how do we even attempt a determination? <ul id="fourierbullet"><li>Moreover, these terms belong to the rational number set $\Bbb{Q}$. In finite maths, we cannot sum-together numbers from $\Bbb{Q}$ to obtain a number that is exclusively in $\Bbb{R}$. This is true for all natural numbers $\Bbb{N}$ and integers $\Bbb{Z}$ as well.</li></ul></p>
+                <img id="setcenter" src="../Index/calc/trumpet/sets.png" alt="sets" width="150px" height="90px"/>
+                <p>Calculus allows us to drop the discrete notation in favor of a continuous function which is analogous to our discrete series -- with domain $x \in [1,\infty)$:</p>
+                
+                <p>$$\bbox[8px,border:1px solid black]{
+                    f(x)=\int_{1}^{x}\frac{1}{x^2} \ dx} \tag{Eq. 3}\label{3}$$
+                </p>
+                <p>Below is a plot of $1/x^2$ with its underside shaded to represent the integral $\int{dx/x^2}$. 
+                    This is our "area-under-the-function" interpration for antiderivatives. 
+                    This graphical interpretation will resolve a finite area under our infinite curve, 
+                    but we require a quantitative approach to demonstrate that convergence occurs.</p>
+                
+                <div id="fig1-img">
+
+                    <img src="../Index/calc/trumpet/fig1.bmp" alt="Figure 0" width="300px" height="165px" /> <!--FIGURE 1 IMG-->
+
+                </div>
+                <div id="test"></div>
+                <div id="img1-explanation"><b>Fig. 1</b> - Plot of $1/x^2$ over domain $[1,4.5]$. This function monotonically decreases over
+                     $(0, \infty)$ such that $f(x \rightarrow \infty) \rightarrow 0$. 
+                     Notice that each value of $1/n^2$ is contained within $f(x)=1/x^2$</div>
+
+                <p>So, we need to integrate $f(x)$ over our domain $[1,\infty)$ and see what analytical solutions - if any - occur.
+                    <br />Since $\infty$ is not itself a value, we should rewrite our <u>improper integral</u> 
+                    using limits and a dummy variable $t$, and evaluate:</p>
+
+                <p>$$\bbox[8px,border:1px solid black]{
+                    \lim_{t \rightarrow \infty} 
+                    \int_{1}^{t}\frac{1}{x^2}\ dx = \lim_{t \rightarrow \infty} 
+                    \left[1 - \frac{1}{t}\right] 
+                    = 1 - \cancelto{0}{\lim_{t \rightarrow \infty} \left[\frac{1}{t}\right]} = 
+                    \bbox[#FF1,8px,border:0px solid red]{1}\ } \tag{Eq. 4} $$
+                </p>
+                
+                <p class="p_solution"><b>Eq. 4</b> - If $t \rightarrow \infty$, then the denomenator in $\frac{1}{t}$ approaches infinity. Therefore our quotient approaches zero -- and our integral is equal to 1.</p>
+            
+            </div>
+
+            <div id="solution">
+                <p>Over the domain $[1,\infty)$, $f(x)$ encloses an area of exactly $1$. Determining that this infinite series converges is not trivia; obtaining an analytical solution so easily by applying entry-level calculus is astonishing.</p>
+                
+                <br /><hr />
+                
+                <p class="question2"><b>How Can We Demonstrate that this Solution is Not Trivial?</b></p>
+                <p>
+                    Ask: if $\int_{1}^{\infty} \left[\frac{1}{x^2}\right] dx$ converges to a real and finite value, then will $\int_{1}^{\infty} \left[\frac{1}{x}\right] dx$ also converge? Consider the similarities:
+                    </p><ul class="untrivial"><li> Both are rational expressions in the form $p/q$ </li><li> Monotonically decrasing over $x \in [1,\infty)$</li><li>Has values in-between 0 and 1 over our domain</li><li>Mutual characteristics are graphically demonstrable:</li></ul>
+                <!--</p>-->
+
+                <div id="img1-comparison">
+
+                    <img src="../resources/fig1.bmp" alt="Figure 1"  width="300px" height="165px" /> 
+                
+                </div><!--Contains figure 1 graphic-->
+                    
+                <div id="img1-explanation"><b>Fig. 2</b> - Plot of $f_1(x)$ and $f_2(x)$ over the domain $[1,4.5]$. Visually evident: both functions are monotonic over this domain and approach 0 as $x \rightarrow \infty$. This graphical representation does not provide any definite information about convergence.</div>
+
+                <p>Let us evaluate our continuous sum for $f(x)=\left[\frac{1}{x}\right]$ and see if we diverge or converge:</p>
+
+                <p class="eq5">
+                    $$\bbox[8px,border:1px solid black]
+                        {
+                        \lim_{t \rightarrow \infty} \int_{1}^{t} \left[\frac{1}{x}\right]\ dx 
+                        = \lim_{t \rightarrow \infty} \ln[t]-\ln[1] 
+                        = \infty - 0 
+                        = \bbox[#FF1,8px,border:0px solid red]{\infty} 
+                        } \tag{Eq. 5}$$
+                </p>
+
+                <p>Despite similarities between the functions, $f_1(x)$ converges over $[1,\infty)$ whereas $f_2(x)$ is divergent.</p>
+            <br />
+            </div> <!--Closes "solution"-->
+
+            <div id="fourier">
+                <hr />
+                <p id="htitle">Evaluating Infinite Series Using Fourier Analysis</p>
+                <p class="f1">Integration of a function over $[1, \infty)$ is far more abstract as a concept than summing a list of fractions.
+                    Therefore, let us return to our discrete sum (Eq. 2) and attempt a solution using <a class="link" href="fourier-one.html" target="_blank">Fourier analysis</a>. We can relate our continous function, $f(x)$, to our discrete infinite series $S_1(n)$. <br /><ul class="fourierbullet"><li>Generally, <a class="link" href="./fourier-one.html" target="_blank">Fourier analysis</a> allows us to rewrite any continuous function--with arbitrary precision--as an infinite summation of sines, cosines and coefficients. Convenient for functions that are discontinuous (i.e. electrical signals, environmental vibrations).</li><br /><li>For a function $g(x)$ to have an associated Fourier Series, it must meet the Strong Dirichlet Conditions. Real (physical) signals will always satisfy these conditions! [Citation Required.]</li></ul>
+                </p> <!--Maybe put a break here for the Fourier section.-->
+                
+                <p>
+                    $$\bbox[8px,border:1px solid black]
+                        {
+                        g(x) = \frac{a_0}{2}
+                            + \sum_{n=1}^{\infty} (a_n \cos(nx)+b_n sin(nx))
+                        } \tag{Eq. 6}$$
+                </p>
+                <p>The coefficients $a_0$, $a_n$ and $b_n$ are related to $g(x)$ via integration:</p>
+
+                <p class="coefficients">
+
+                    $$\bbox[8px,border:1px solid black] 
+                        {
+                        a_0 = \frac{1}{2L} \int_{-L}^{L} g(x) dx 
+                        } 
+                        
+                        \bbox[8px,border:1px solid black]
+                        {
+                        a_n = \frac{1}{L} \int_{-L}^{L} g(x) cos\left[n \frac{x}{L}\right]dx 
+                        } 
+
+                        \bbox[8px,border:1px solid black]
+                        {
+                        b_n = \frac{1}{L} \int_{-L}^{L} g(x) sin\left[n \frac{x}{L}\right]dx 
+                        } 
+
+                        \tag{Eq.s 7-9}$$</p>
+
+                <p>Evaluating these three integrals yields one independent coefficient $(a_0)$ and two coefficients $(a_n, b_n)$ which vary with Fourier index $n$. The size of $n$ determines the precision of our series approximation of $g(x)$. Fourier analysis adapts the concept of convergence to fit approximation, computation and analytical purposes.</p>
+                
+                First introduced to me in Electrodyamics I: Parseval's theorem - valid only for square-integrable $g(x)$ - relates our function to the fourier coefficients as such:
+                
+                <p>
+
+                    $$\bbox[8px,border:1px solid black]
+                        {
+                        \frac{1}{L} \int_{-L}^{L} \left[g^2(x)\right] dx
+                        = \frac{a^2_0}{2} + \sum_{n=1}^{\infty} \left[a^2_n+b^2_n\right]
+                        } 
+                        
+
+                        \tag{Thrm. 1}$$
+
+                </p> <!--Theorem 1-->
+
+                <p class="condition"> </p>
+                <p>Given clever choices for $g(x)$, Parseval's theorem simplifies our mathematical approach to determining the value for a converging series.</p> 
+                <ul id="joshmo"><li>An advantage of (Thrm. 1) over (Eq. 6): our Fourier coefficients - $a_n$ and $b_n$ - now dominate their terms in the fourier series of $g(x)$. Integration terms simplify--therefore, our analysis and computational demands do as well.</li></ul>
+                <p>Let's choose a function and analyze it with Parseval's Theorem to see if we can extrapolate information regarding why - and at what value - $S_1$ will converge.</p>
+                <ul id="gx">
+                    <li>Let $g(x)$ = x</li>
+                    <li>Periodicity: $L= \pi$</li>
+                </ul>
+
+
+            </div> <!--Closes Fourier-->
+
+            <div id="fourier2">
+                <p>$$\bbox[8px,border:1px solid black]
+                {
+                
+                    \frac{1}{\pi} \int_{- \pi}^{\pi} x^2\ dx
+                    = \frac{a^2_0}{2} + \sum_{n=1}^{\infty} \left[a^2_n+b^2_n\right]
+                
+                }
+                
+
+                \tag{Eq. 10}$$</p> <!--closes term box-->
+                <hr />
+                <p id="work">Determine Coefficients $a_0$, $a_n$, and $b_n$ for $g(x)=x$</p>
+                <p class="ao">$$ \begin{align*}
+                    a_0 &= \frac{1}{\pi} \int_{- \pi}^{\pi} x\ dx\\
+                    &= \frac{1}{\pi} \left[ \frac{x^2}{2} \right]\Bigg|_{-\pi}^{+\pi}\\
+                    &= \frac{1}{\pi} \left[ \frac{\pi^2}{2} - \frac{(- \pi)^2}{2}\right]\\
+                    
+                    & \bbox[8px,border:0px solid black] {= \bbox[#FF1,8px,border:0px solid red]{0} }
+    
+                    \end{align*} $$</p> <!--nested equation-->
+                
+                <p class="an">$$ \begin{align*}
+                    a_n &= \frac{1}{\pi} \int_{- \pi}^{\pi} x \cos{\left(n x\right)}\ dx\\
+                    
+                    &= \frac {1}{\pi} 
+                        \left[ \frac{\cos{\left(n x\right)}}{n^2} 
+                        + \require{cancel} \cancelto{0}{\frac{ x \sin{\left(n x\right)}}{n}} \right]
+                        \Bigg|_{-\pi}^{+\pi}\\
+                        &= \frac{1}{ \pi} 
+                        \left[
+                        \frac{ \cos{( - \pi n) } - \cos{( + \pi n) }}{n^2}
+                        \right]\\
+                        &= \bbox[8px,border:0px solid black] { \bbox[#FF1,8px,border:0px solid red]{0} } for\ all\ n 
+                        \end{align*}$$</p> <!--an coefficients-->
+                
+                <p class="bn">$$ \begin{align*}
+                    b_n &= \frac{1}{\pi} \int_{- \pi}^{ \pi} x \sin{\left(n x\right)}\ dx\\
+                    &= \frac {1}{\pi} 
+                        \left[ \frac{ - \pi \cos{\left(n x\right)}}{n} 
+                        + 0 \right]
+                        \Bigg|_{-\pi}^{+\pi}\\    
+                    &= \bbox[8px,border:0px solid black] { \bbox[#FF1,8px,border:0px solid red]{ - \frac{2}{n} \cos{\left(n \pi\right)}} }
+        
+                    \end{align*} $$<br /><br /></p> <!--bn coefficients-->
+               
+                <!--Integrand comment!-->
+                <p class="an-notes">Notice that $a_0$ = $a_n$ = 0 in this case because of the integrand's symmetry about the origin; $g(x)=x$ is an odd function: $g(-x)=-g(x)$. <br /><br />Graphically, it is clear why $a_0 = a_n = 0$ while $b_n \not= 0:$</p>
+                
+                <div id="fig3"><img src="../Index/calc/trumpet/fig3.bmp" alt="Figure 3" width="280px" height="179px" /> <!--FIGURE 1 IMG--></div>
+                <div id="fig3-2"><img src="../Index/calc/trumpet/fig3-2.bmp" alt="Figure 3-2" width="280px" height="179px" /> <!--FIGURE 1 IMG--></div>
+                <div id="fig3-3"><img src="../Index/calc/trumpet/fig3-3.bmp" alt="Figure 3-3" width="280px" height="179px" /> <!--FIGURE 1 IMG--></div>
+                
+                <div id="img1-explanation"><b>Fig. 3-5</b> - From left to right: shaded plots of the integrands $x$, $xcos(x)$, and $xsin(x)$. The first two cancel to zero over our bounday, while $xsin(x)$ has symmetry about the y-axis. </div>
+                <hr />
+                <p id="work">How a Solution to the Basel Problem Emerges from Parseval's Theorem</p>
+                <p>Substituting $a_0$, $a_n$, $b_n$ and $g(x)=x$ into (Thrm. 1), we are equating a simple integral to our infinite series:</p>
+                <p class="eq11">$$\bbox[8px,border:1px solid black]
+                    {
+                    
+                        \frac{1}{\pi} \int_{- \pi}^{\pi} x^2\ dx
+                        = 4 \sum_{n=1}^{\infty} \left[ \frac{ \cos^2{(n \pi)}}{n^2} \right]
+                        = \frac{2 \pi^2}{3}
+                    }
+                    \tag{Eq. 11}$$</p> <!--working on the bn only expression-->
+                    
+                <p>Encoded in (Eq. 11): the infinite sum of terms in $\left[cos{(n \pi)}/ n\right]^2$ for $n = (1, 2, 3, 4... \infty)$ is equal to a finite number - exactly $ \frac{ \pi^2}{6}$! Parseval's Theorem allowed us to simply integrate $ \int x^2dx$ to reach our conclusion.</p>
+                <ul class="fourierbullet"><li>Congratulations! We have proven that certain infinite series will converge to a finite number.</li><li>Possible because $\int x^2 dx$ is easily obtainable in comparison to $ \sum_{n=1}^{ \infty} \frac{cos^2(n)}{n^2}$</li><li>We can take this a step further to actually solve the Basel Problem (Eq. 2) by analyzing $cos(n \pi)$ a little closer. Consider a table of cosine outputs for different $n$:
+                </li></ul>
+
+                <div id="cos-input">
+                $$ \cos{(1 \pi)}\ \ \  $$
+                $$ \cos{(2 \pi)}\ \ \ $$
+                $$ \cos{(3 \pi)}\ \ \ $$
+                $$ \cos{(4 \pi)}\ \ \ $$
+                </div>
+                <div style="border-left:2px solid #000;height:170;float:left;"></div>
+                <div id="cos-output">
+                    $$-1$$
+                    $$1$$
+                    $$-1$$
+                    $$1$$
+                </div>
+                    
+                <p class="exit"><br />Cosine has a period of only $2 \pi$, so this table contains our only two unique outputs of $ \cos(n \pi)$: </p>
+
+                <span id="cosidentnew">$$ \bbox[8px,border:1px solid black]{ \cos{(n \pi)} = (-1)^n} \tag{Identity 1} $$</span>
+
+                <span>Using our Cosine identity in (Eq. 11), we obtain the Basel Problem and its solution simultaneously:</span>
+
+                <span id="cosidentnew">$$               
+                    
+                        4 \sum_{n=1}^{\infty} \frac{ (-1)^{2n}}{n^2}
+                        = \frac{ 2 \pi^2}{3}$$
+                    $$\bbox[8x,border:1px solid black]{ \ \sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{ \pi^2}{6}\ }
+                    \tag{Eq. 12}$$</span>
+
+                <span id="series">
+                    $$
+                    \bbox[8px,border:1px solid black] {
+                        \sum_{n=1}^{\infty} \frac{1}{n^2}= 1 + \frac{1}{4} + \frac{1}{16} + \frac{1}{25} + \frac{1}{36} + \dots + \frac{1}{\infty} = \bbox[8px,border:0px solid black,yellow] {\frac{\pi^2}{6}}} \tag{Eq. 2}
+                     $$
+                </span>
+                <p>Incredibly, the result is an irrational number! It is not trivial at this point that $\pi$ should appear. Why? <ul class="fourierbullet"><li>Every term in our series belongs to the rational number set $\Bbb{Q}$, but our sum converges outside of that set to an irrational number in $\Bbb{R}$!</li></ul></p>
+                
+                <!--<span class="follow"><br /><br />&nbsp;for $n \in \Bbb{I}$</span-->
+                    <!--<p>$$but$$</p>
+
+                    <p class="eq11-2">$$\bbox[8px,border:0px solid black]
+                        {
+                        
+                            \frac{1}{\pi} \int_{- \pi}^{\pi} x^2\ dx
+                            = \frac{2 \pi^3}{3}
+    
+                            
+                        
+                        } \tag{Eq. 12}$$</p>-->
+            
+                <!--
+                    <p class="eq11-2a">$$and$$</p>
+                <p class="eq11-3">$$\bbox[8px,border:0px solid black]
+                        {
+                        
+                            \sum_{n=1}^{\infty} \left[ \frac{ -2 \cos{(n \pi)}}{n} \right] = 
+    
+                            
+                        
+                        }$$</p> -->
+
+                        <hr/><br/>
+                        <!--<div id="final euler">
+                            <img src="../Index/calc/trumpet/Eulerp.jpg" alt="L. Euler" height="200px" width="130px" style="display:block; margin-left:auto; margin-right:auto;" /></div>-->
+
+                        <p style="text-align:center; width:450px;margin-left:auto;margin-right:auto;font-size:17pt;">Leonhard Euler, (1707-1783) <span style="font-size:12pt;"><br/><br/>Note that convergence was a known property of infinite series prior to Euler. 
+                            His discovery (in this context) is solving the Basel Problem. <br/><br/>
+                    </p>
+            </div> <!--Closes Fourier2-->
+        </div><!--closes container-->
+    </body>
+
+    <footer>
+        <br /><br /><br />Notes by &copy; Tyler DeFrancesco 2023 | BS Physics '21<br />
+    </footer>
+</html>
+
+<!--Reorganize to be a list of bullets and structure at the top for a preface-->

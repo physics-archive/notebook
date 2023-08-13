@@ -1,0 +1,137 @@
+#header {
+    font-family: 'Times New Roman', Times, serif;
+    padding:5px;
+    text-align: center;
+}
+
+#buttons{
+    background-color: #FFFFF0;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:15;
+}
+
+#context{
+    font-size:14pt;
+    text-align:left;
+}
+
+#container {
+    background-color: #FFFFF0;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:15;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 300px 1fr;
+    place-items:center;
+    list-style-type:none;
+    color:darkblue;
+    font-weight:bold;
+    text-decoration:none;
+}
+.grida{
+    list-style-type:none;
+    color:darkblue;
+    font-weight:bold;
+    font-size:13pt;
+    text-decoration:none;
+}
+#footer {
+    clear: both;
+    background-color: #FFFFF0;
+    text-align: center;
+    font-size: 12;
+}
+
+#index .selected{
+    color: darkgreen;
+    font-weight:bold;
+}
+
+.selected{
+    will-change:transform;
+    transform: translateZ(0);
+}
+
+#index ul {
+    text-decoration: none;
+}
+#info {
+    text-decoration:none;
+    list-style-type:square;
+}
+
+
+.selected {
+    text-decoration: none;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:14pt;
+}
+#index-list{
+    padding-left:50px;
+}
+
+#mj {
+    text-align: center;
+    
+}
+
+.index_header {
+    text-align: center;
+    font-size:17pt;
+}
+
+#footer{
+    padding-top:270px;
+}
+
+#index-list{
+        list-style-type: "* ";
+        margin-left: auto;
+        margin-right: 100px;
+    
+}
+
+.ihead{
+    
+    text-align:left;
+    font-weight:bold;
+    list-style-type:none;
+    padding-left:0px;
+    font-size:14pt;
+    padding-top:40px;
+
+}
+
+li + li {margin-top: 3px;}
+
+#buttons{
+    background-color: #FFFFF0;
+    display:block;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+} /* Codes my home and next page buttons to align with title */
+
+.home , .nextpage{color:darkslategrey;text-decoration:none;} /* Codes my home and next page buttons to align with title */
+
+#pset-header{
+    list-style-type:none;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+.pset{
+    padding-left:20px;
+    list-style-type:none;
+    text-decoration:none;
+    color:darkblue;
+    font-weight:bold;
+}

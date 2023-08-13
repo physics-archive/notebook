@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html>
+
+
+    <head>       
+        <script>
+            MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+              },
+              svg: {
+                fontCache: 'global'
+              }
+            };
+            </script>
+        
+        <script type="text/javascript" src="../MathJax3/es5/tex-chtml.js"></script>
+        
+        <title>Real Oscillators</title>
+        <link rel="stylesheet" type="text/css" href="real-oscillators.css?ver=0.6" /> <!--links CSS style sheet-->
+        $\newcommand{\vect}[1]{\mathrm{ \vec{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
+        $\newcommand{\vecta}[3]{ 
+          \begin{bmatrix} #1\\ #2\\ #3 \end{bmatrix}
+        
+        } $ <!--3 vector takes 3 inputes-->
+        $\newcommand{\hata}[1]{\mathrm{ \hat{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
+        $ \newcommand{\blbox}[1]{\bbox[8px,border:1px solid black]{#1}}$
+        $ \newcommand{\ddp}[2]{ \frac{\partial ^2 {#1}}{\partial {#2}^2}} $ <!--second partial derivative -->
+        $ \newcommand{\ddf}[2]{ \frac{d ^2 {#1}}{d {#2}^2}} $ <!--second partial derivative -->
+
+     </head>
+
+
+<body>
+
+<div id="buttons">
+
+        <div id="home" style="float:left;font-weight:bold;left:450px;">
+            <a class="home" href="../index.html">Home Page</a>
+        </div> 
+    
+        <div id="nextpage" style="float:right;font-weight:bold;right:450px;">
+            <a class="nextpage" href="./Coupled-Oscillators.html">Next Page</a>
+    
+</div> <!--closes buttons-->
+
+<div id="container">
+    <h1 id="header">Damped Harmonic Oscillator<br/>
+    <a href="dampingref.html" target="_blank" style="text-decoration:none;color:darkslategrey;"><span style="font-size:12pt;">Dimensional 
+    Analysis on $\beta, \gamma, k, m$</span></a></h1>
+    <p>Oscillators are a natural phenomenon. Rotating bodies have cyclical motion, as does some mass on a spring. 
+      Moreover, systems that are elusive to direct 
+      observation (i.e., an electric-field propogating through some insulating material) are accurately accurately modeled 
+      as physical oscillators. <br/><br/>Many nuclear and microscopic systems behave like damped oscillators. 
+      Maxwell's Equations lead to a wave equation whose solutions are our  
+      electromagnetic model for light (oscillating <i>E-</i> and <i>B-</i>fields that propogate with a velocity). 
+    </p>  
+    
+    <p>
+      
+      Often, it is easier to mathematically identify the sources of change to our system, 
+      rather than arriving immediately at a mathematical model. 
+      <!--<ul><li>For instance: an object in free-fall is subject to a total force of $mg$ -- but what 
+        is $\vect{r}(t)$ exactly? It can be easily determined or recalled, but you can see that our logic <i>begins</i> with 
+        change, which progresses to a comprehensive solution for motion (position). 
+      </li><li>This is a reflection of utilizing differential equations: we start with a statement about change (the differential equation), 
+        and then we solve it to obtain a statement on how our system evolves over time (i.e., motion over time).
+      </li></ul>-->
+      
+
+</p> <!--closes long beginning paragraph.-->
+
+      <!--Later, we will return to closely
+      examine $\Psi$ and its perplexing properties from the beginning.
+      Consider this page a motivating preface to a volume on early Quantum Particle Mechanics.
+      </p>-->
+      <hr/><h3 id="section">Constructing and Justifying our Differential Equation</h3>
+  
+      <p>Hooke's law describes a restorative force: $F=-kx$. What is $-kx$ <i>really</i> describing? 
+      <ul><li>As our system moves away from equillibrium ($x_0=0$), a force directed towards $x_0$ grows in order to 
+        is restore system position; its direction always points towards the equillibrium point $x_0$.
+      </li></ul>
+      <!--<li>Notice that if our sign is reversed to say $F=+kx$, our force is directed <i>away</i> from equillibrium. Position will never 
+      return to $x=0$ once displacement away from $x_0$ occurs. This describes exponential, positive feedback.</li></ul></p>-->
+
+      <p>Let us use methamtical intuition to describe each contribution to the total force $\vect{F}$:</p>
+
+      <ul><li>$F_{spring}(x)= -kx$: A restorative force that depends explicitly on position. 
+        <br/>Proportional to our spring constant $k$.</li>
+        <li>$F_{damp}(v)= -\beta \dot{x}$: A frictional force. Opposes velocity and causes energy loss (nonconservative force). Proportional to some 
+          damping factor $\beta$.
+        </li></ul>
+<hr/>
+        <p>Newton's Equation for our spring system follows:</p>
+
+        $$
+        F_{total} - F_{spring} - F_{damp} = 0$$
+        
+        $$m \ddot{x} + \beta \dot{x} + kx = 0
+
+        $$
+
+      
+        $$\blbox{m \frac{d^2 x}{dt^2} + \beta \frac{dx}{dt} + kx = 0}
+        \tag{Eq. 1}
+        $$
+        <p class="eqcomment"><b>Eq. 1</b> - Linear, second-order, ordinary differential equation. Force assocaited with a mass 
+          on a spring, with friction accounted for in our second term.</p>
+
+        <p>
+          Undoubtably, constructing (Eq. 1) was far easier than jumping straight to its solution, <i>x(t)</i>. In solving (Eq. 1), we will 
+          demonstrate that <i>x(t)</i> is not trivial, and would not have been easily-obtainable with algebra or empirical methods alone.
+        </p>
+<ul><li>Constructing differential equations is where much of our physics 
+  efforts get concentrated. A computer (or mathematician) can often do the brute work of actually <i>solving</i> the equations that we create to model our system. 
+  Refer to the Spherical Bessel Functions.
+</li>
+<li>However, physical intuition is often required to simplify equations and make them solvable.</li></ul>
+
+<hr/><h3 id="section">Complex-Valued Solution to the Differential Equation for Real Spring Motion</h3>
+<p>For completeness, it is necessary to consider <i>x(t)</i> to be complex-valued when solving our differential equation. 
+However, our physical (observable) system is described only by its real part (not its imaginary). 
+We will write Re[x(t)] <i>after</i> working out our 
+complex solution.</p>
+<p>First observation: (Eq. 1) is actually homogonous in addition to being linear and ordinary. 
+  Given these properties, our complete (most general) solution must satisfy the following:
+</p>
+
+<ul>
+  
+  <li>
+    <b>Second-order, Linear diff. eq.</b>: full solution must be a superposition of two 
+    linearly-independent solutions: $x_{full}(t)=C_1x_1(t)+C_2x_2(t)$. We will produce two complex-valued constants ($C_1,C_2$). 
+    Initial conditions and constraints on our system will lead to determinations of these constants. 
+    $C_1$ and $C_2$ determine the <i>weight</i> of each linearly-independent solution to our (Eq. 1).
+</li>
+<li><b>Ordinary diff. eq..:</b> usually far easier to appraoch and solve than partial differential equations. 
+  The solution set will be finite as opposed to infinite (in the case of PDEs).</li>
+</ul>
+
+<p>Examine the most genearlized oscillatory function we can come up with, but label it as being a part of some index <i>j</i> to remind ourselves 
+that we expect to find exactly two solutions of <i>x(t)</i>. In other words, <i>j</i>={1,2}:
+
+$$x_n(t)=C_n e^{i \omega_n t} \tag {Eq. 2.1}$$
+<p class="eqcomment"><b>Eq. 2.1 - </b>$C_n$ are complex-valued constants, and may have imaginary parts!</p>
+Our most generalized solution is some linear combination of these two solutions:</p>
+$$\blbox{x(t)=C_1 e^{i \omega_1 t} + C_2 e^{i \omega_2 t}} \tag{Eq. 2.2} $$
+
+<!--
+<p>While the overall shape of this solution matches our spring motion, 
+  we need to test (Eq. 2.1) as a solution (Eq. 1) for two reason:
+  <ul><li>to prove that (Eq. 2.2) definitely solves (Eq. 1) for all <i>t</i>, and</li>
+  <li>to determine the parameters ($C_n$, $\omega_n$)
+    which actually define physical characteristics of our system.
+  <br/><br/>Thinking ahead: consider what $\omega$ and $C_n$ actually correspond to, physically. Hint: consider their dimensions and how their limits influence our spring description.</li></ul>
+</p>
+
+<p>Testing (Eq. 2.1) in (Eq. 1), we verify our solution for <i>x(t)</i>is correct, and we obtain $\omega_n$. 
+  Since this page is supposed to be complementary to an introductory diff. eq., many steps will 
+  be shown as to not jump too many conclusions at once:
+</p> -->
+<hr/><h3 id="section">Reduction to an Eigenvalue Problem</h3>
+
+<p>Substitute this full solution into our equation of motion to start determining our solution parameters ($C_n, \omega_n$):
+</p>
+$$ \frac{d^2}{dt^2} [C_n e^{i \omega_n t}] + 
+\left(\frac{\beta}{m}\right) \frac{d}{dt} [C_n e^{i \omega_n t}] + 
+\left(\frac{k}{m}\right) [C_n e^{i \omega_n t} ]= 0  
+
+$$
+Perform our time-derivatives in terms one and two:
+$$ i^2 \omega_n^2 [e^{i \omega_n t}] + 
+\left(\frac{\beta}{m}\right) i \omega_n[C_n e^{i \omega_n t}] + 
+\left(\frac{k}{m}\right) [C_n e^{i \omega_n t} ]= 0  
+
+$$
+Pull out common factors to reveal a quadratic equation, and our eigenvalue problem. Recall $i^2=-1$:
+
+$$\blbox{C_n e^{i \omega_n t} \left(
+- \omega_n^2 + i\frac{\beta}{m}\omega_n + \frac{k}{m}
+
+
+\right) = 0}
+
+\tag {Eq. 3.1} $$
+
+<p>We need to eliminate this exponential term in order to solve the auxillary (or <i>secular</i>) equation (3.2).
+  <ul>
+    <li>Algebraically, this is no problem:
+    divide both sides by $C_n e^{i \omega_n t}$ to obtain (Eq. 3.2).</li>
+  
+  <li>Less hand-waivy: the quantity $e^{i \omega_n t}$ can never equal zero, so the only zeros (roots)
+    in (Eq. 3.1) <i>must</i> follow from particular choices of $\omega_n$ (our eigenfrequencies):
+  </li></ul>
+
+  $$\blbox{ - \omega_n^2 + i\frac{\beta}{m}\omega_n + \frac{k}{m} = 0 } \tag{Eq. 3.2}$$
+
+
+
+Define the following substitutions (to simplify math and compress system parameters), and solve our auxillary equation 
+for complex-valued eigenvalues:
+
+$$\begin{align} \beta /m \rightarrow 2\gamma \\ k/m \rightarrow \kappa^2 \end{align}$$ <!--substitution of parameters-->
+
+$$ - \omega_n^2 + 2i\gamma \omega_n + \kappa^2 = 0 $$
+
+$$\blbox{\omega_{1,2} = i\gamma \pm \sqrt{\kappa^2 - \gamma^2}}  \tag {Eq. 3.3}$$
+
+
+<!--<p class="eqcomment">Notice our eigenfrequencies are complex-valued, here.</p>-->
+Therefore, our general solution for damped spring motion is given by substituting (Eq. 3.3) in (Eq. 2.2):
+
+$$ x(t)=
+  C_1 e^{i^2 \gamma t} e^{+i \left(\sqrt{\kappa^2 - \gamma^2}\right)t} + 
+  C_2 e^{i^2 \gamma t} e^{-i \left(\sqrt{\kappa^2 - \gamma^2}\right)t}
+  
+$$
+
+ $$ \blbox{x(t)= e^{-\gamma t}
+  \left(C_1 e^{+i \left(\sqrt{\kappa^2 - \gamma^2}\right)t} + 
+  C_2 e^{-i \left(\sqrt{\kappa^2 - \gamma^2}\right)t} \right)
+  } 
+ \tag{Eq. 4}$$
+
+We already see an interesting quality of our solution to damped motion: our particle is oscillating 
+with some new (relative to undamped motion) frequency that is related by its natural frequency ($\kappa$) and 
+the systen damping (encoded in $\beta$). <br/><br/> Interestingly, <i>x(t)</i> is a product of two distinctly-shaped 
+functions: a factor that decays purely-exponentially in time, and a purely-oscillatory factor:
+<ul><li>$e^{-\gamma t}$ - Factor corresponding to pure exponential decay over time. A damping term, independnet of $\kappa$.</li>
+<li>$\left(C_1e^{...} +C_2e^{...} \right)$ - Factor corresponding to undamped oscillation of the system in time. Determined by both $\gamma$ and $\kappa$.</li></ul>
+</p>
+
+
+<div id="fig2">
+<img src="../Index/theoretical/complex-damping1e.bmp" alt="damping1" width="266px" height="200px", style="margin-left:auto;
+margin-right:auto;" />
+</div>
+
+</p>
+
+
+<p class="eqcomment">
+ <b>Figure 1</b> - Plot of (Eq. 4) for arbitrary parameters ($\gamma \lt \kappa$). 
+ Predicts oscillating motion that decays in amplitude over time. Matches our expectation of how a 
+ damped harmonic oscillator will behave. Changes shape if $\gamma \ge \kappa$ (critical/overdamping).
+</p>
+<hr/><h3 id="section">The Real-Valued Part of <i>x(t)</i></h3>
+<p>Our complex-valued solution is the most general description we have for damped oscillations in 1-D. 
+  However, the imaginary part (Im[<i>x(t)</i>]) does not describe any observable behavior, so we should disregard it
+  and pursue a trigonometric form for (Eq. 4), so that we may readily apply our model to physical systems:
+</p>
+
+$$ x(t) \rightarrow \text{Re}[x(t)] $$
+$$ C_n \rightarrow A_n+iB_n $$
+$$ \sqrt{\kappa^2 - \gamma^2} \rightarrow \Omega$$
+<p>Note that $A_n, B_n$ are real-valued coefficients, and $\Omega$ is a frequency that we can think of as our 
+  damped oscillation frequency. Our real solution to motion comes out with surprising brevity:
+</p>
+$$x(t) \rightarrow e^{-\gamma t}\ \text{Re}\left[
+(A_1 + iB_1) e^{+i \Omega t} + 
+  (A_2 + iB_2) e^{-i \Omega t}
+\right] $$
+
+$$\begin{align} x(t) = e^{\gamma t}\ ( &\text{Re}[
+A_1 \cos{\Omega t} + A_2 \cos{\Omega t} + B_1 \sin{\Omega t} - B_2 \sin{\Omega t}] \\ 
+- &\text{Re}[
+i A_1 \sin{ \Omega t} - i A_2 \sin{\Omega t} - iB_1 \cos{\Omega t} - iB_2 \cos{ \Omega t}
+] ) \end{align} \tag{Eq. 5}$$
+
+<p>I have carefully grouped terms in (Eq. 5) such that it is clear which of our trigonometric terms are purely real versus 
+  purely imaginary -- our real solution for <i>x(t)</i> is clearly visible:
+</p>
+
+$$x(t) = e^{-\gamma t} \left[ (A_1 + A_2) \cos{\Omega t} + (B_1 - B_2) \sin{\Omega t} \right] $$
+Compressing our solution constants yet again, we obtain an elegant solution to damped harmonic motion:
+$$\blbox{x(t) = e^{-\gamma t} \left[ A\cos{\Omega t} + B{\sin{\Omega t}} \right]} \tag {Eq. 6} $$
+<p class="eqcomment"><b>Eq. 6</b> - The real-valued solution to Newton's equation for damped, harmonic motion (Eq. 1). 
+  The damped oscillation-frequency ($\Omega$) may be imaginary, necessitating the use of complex analysis (or Eq. 4) to
+evaluate behavior when $\gamma > \kappa$.</p>
+
+<ul class="stard"><li><i>A</i> and <i>B</i> are the only quantities that remain unknown. It makes sense that we still have 
+some undetermined information in our solution, as we have yet to describe an actual system configuration. 
+Therefore, <i>A</i> and <i>B</i>
+adjust our solution to match different <b>initial conditions</b> or <b>constraints</b> of an observed system.</li></ul>
+
+
+<div id="fig2">
+<img src="../Index/theoretical/re-underdamped2.png" alt="re-underdamped.png" width="259px" height="159.2px", style="margin-left:auto;
+margin-right:auto;" />
+<img src="../Index/theoretical/re-critical2.bmp" alt="re-critical.bmp" width="250px" height="159.2px", style="margin-left:auto;
+margin-right:auto;" />
+<img src="../Index/theoretical/overdamped4.bmp" alt="re-underdamped.bmp" width="250px" height="159.2px", style="margin-left:auto;
+margin-right:auto;" /></div>
+
+<p class="eqcomment"> <b>Figure 2</b> - Plots of <i>x(t)</i> for different damping strengths.
+The complex nature of <i>x(t)</i> encodes our lack of real roots in the overdamped case, and we lose 
+our oscillatory behavior.</p>
+
+
+<p>We have mathematically modeled oscillatory motion, with energy loss, about some equillibrium configuration with an 
+  eigenfrequency $\Omega$. This frequency is influenced by the damping strength,
+ implying that our mechanism for energy loss causes decay in amplitude <u>in addition to</u> 
+ adjusting the oscillation periodicity from its undamped value ($\gamma=0$). 
+</p>
+
+<hr/><h3 id="section">Brief Verification of our Solution</h3>
+<p>Prior to a discussion, we should demonstrate explicitly that <i>x(t)</i> really does solve
+(Eq. 1). Use the complex-valued form (Eq. 4) over the real part (Eq. 6) in order to preserve generality.</p>
+
+$$ \ddf{x}{t} + 2\gamma \frac{dx}{dt}+\kappa^2 x = 0$$
+<!--Simplifying the differential equation-->
+$$
+\frac{d^2}{dt^2} \left[
+e^{-\gamma t} \left( C_1 e^{i \Omega t} + C_2 e^{-i \Omega t} \right) \right] 
++
+2\gamma \frac{d}{dt} \left[
+e^{-\gamma t} \left( C_1 e^{i \Omega t} + C_2 e^{-i \Omega t} \right) \right]  +
+\kappa^2 \left[
+e^{-\gamma t} \left( C_1 e^{i \Omega t} + C_2 e^{-i \Omega t} \right) \right] \stackrel{?}{=} 0
+ $$
+$$ <!--Long diff eq.-->
+-\left( \Omega^2 -\kappa^2 + \gamma^2) e^{-\gamma t} (C_1 e^{i \Omega t} + C_2 e^{-i \Omega t} \right) \stackrel{?}{=} 0
+$$
+
+<!-- <p class="eqcomment"> Recall $\Omega = \sqrt{\kappa^2-\gamma^2}$</p> -->
+
+$$
+ \cancelto{0}{([ \kappa^2 - \gamma^2 ] -\kappa^2 + \gamma^2)} e^{-\gamma t} \left( C_1 e^{i \Omega t} + C_2 e^{-i \Omega t} 
+ \right) \stackrel{\unicode{10004}}{=} 0
+$$
+Therefore, <i>x(t)</i> does solve (Eq. 1) for all values of $\beta, m, k$, and <i>t</i>. 
+
+<hr/><h3 id="section">Understanding Initial Conditions -- <i>A, B</i></h3>
+<p>For a brief moment, consider how certain configurations of <i>A</i> and <i>B</i>
+   influence <i>x(t)</i> at initial time $t=t_0$:
+
+<ul><li>If <i>A</i> = 0: $x(0) \rightarrow B\sin{0}$. The system starts
+   at equillibrium ($\sin{0}=0$).
+</li>
+
+<li>If <i>B</i> = 0: $x(0) \rightarrow A\cos{0}$ = A. The system 
+  begins at its maximum value for displacement.
+</li>
+
+<li><i>A,B </i>$\not =$ 0: $x(0) \rightarrow A$, while $\dot{x}(0) \rightarrow -B\Omega $. System begins at its displacement maximum, 
+but also with some negative velocity.</li>
+
+</ul></p>
+
+<div id="fig2">
+  <img src="../Index/theoretical/damping-A0-1.bmp" alt="A0.png" width="259px" height="159.2px", style="margin-left:auto;
+  margin-right:auto;" />
+  <img src="../Index/theoretical/damping-B0-1.bmp" alt="B0.bmp" width="250px" height="159.2px", style="margin-left:auto;
+  margin-right:auto;" />
+  <img src="../Index/theoretical/damping-AB-1.bmp" alt="AB.bmp" width="250px" height="159.2px", style="margin-left:auto;
+  margin-right:auto;" /></div>
+
+<p class="eqcomment"><b>Figure 3 </b>- Plots of motion for different values of <i>A,B</i>, 
+  illustrating that these parameters vary according 
+  to initial system configuration.</p>
+
+<p> </p>
+</div></body> <!--closes container-->
+
+<footer>
+    <br /><br /><br />Notes by &copy; Tyler DeFrancesco 2023 | BS Physics '21<br />
+</footer>
+
+
+</html>

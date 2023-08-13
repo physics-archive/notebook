@@ -1,0 +1,228 @@
+#header {
+    text-align: center;
+}
+
+body {
+    background-color: #FFFFF0;
+}
+
+#container {
+    background-color: #FFFFF0;
+    width: 100%;
+}
+
+
+#fourier2{will-change:opaque;}
+#problem{will-change:opaque}
+
+#buttons{
+    background-color: #FFFFF0;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+} /* Codes my home and next page buttons to align with title */
+
+.home , .nextpage{color:darkslategrey;}
+
+
+#mathtest {
+    text-align: center;
+    size: 4px;
+}
+
+#problem {
+    font-size: 14pt;
+}
+
+#content {
+    padding: 10px;
+}
+
+#container {
+    background-color: #FFFFF0;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    clear: both;
+    background-color: #FFFFF0;
+    text-align: center;
+    font-size: 12;
+}
+
+#problem .eq1{
+    word-spacing: 40px;
+}
+
+#solution{
+    font-size: 14pt;
+}
+
+#solution .question2{
+    text-align: center;
+    font-size: 16pt;
+}
+
+#fourier {
+    font-size: 14pt;
+}
+
+#img1-comparison {
+    font-style: none;
+    text-align:center;
+}
+
+#fig1-img{
+    text-align:center;
+    align-items:center;
+}
+
+#img1-explanation {
+    font-size: 12pt;
+    color: #373737;
+    text-align: center;
+    width:700px;
+    padding-left:100px;
+}
+
+#fourier .fourierbullet{
+    list-style-type: "* ";
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+#fourier2 .fourierbullet{
+    list-style-type: "* ";
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+#fourier .link{
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+#fourier .f1{
+    text-align: justify;
+}
+
+#solution .untrivial{
+    text-decoration: none;
+    list-style-type: square;
+}
+
+#joshmo {
+    list-style-type: "*"
+}
+
+#problem .p_solution{
+    font-size: 12pt;
+    text-align: center;
+}
+
+#fourier2 {
+    font-size: 14pt;
+}
+
+#fourier2 .ao {
+    float: left;
+    width: 180px;
+    background-color:lightyellow;
+}
+
+#fourier2 .an { /* Fixed this shitty code, kind of*/
+    float: left;
+    padding-left: 90px;
+    background-color:lightyellow;
+}
+
+#fourier2 .bn {
+    float: left;
+    padding-left: 20px;
+    background-color:lightyellow;
+}
+
+#fourier2 .an-notes {
+    clear: both;
+    font-size: 14pt;
+}
+
+#fig3 {
+    float:left;
+}
+
+#fig3-2 {
+    float:left;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#fig3-3 {
+    clear:right;
+}
+
+#work{
+    text-align: center;
+    font-size: 15pt;
+    font-weight:bold;
+}
+
+#htitle{
+    text-align: center;
+    font-size: 16pt;
+    font-weight:bold;
+}
+
+#cos-input{
+    float:left;
+    padding-left:380px;
+}
+
+#cos-output{
+    float:left;
+    clear:right;
+    padding-left:10px;
+    padding-top:8px;
+}
+
+#fourier2 .exit{
+    float:none;
+    clear:both;
+}
+#vline{
+    float:none;
+    border-left: 6px solid blue;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 3;
+}
+
+#cosident{
+    float:left;
+    padding-left:380px;
+}
+#fourier2 .follow{
+    font-size:10pt;
+}
+
+#small {
+    font-size: 11pt;
+    font-weight:normal;
+}
+
+a{
+    text-decoration:none;
+}
+
+#setcenter {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    
+}
