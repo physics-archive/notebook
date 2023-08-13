@@ -1,0 +1,1242 @@
+bplist00Ò_WebMainResource_WebSubresourcesÕ	
+^WebResourceURL_WebResourceFrameName_WebResourceData_WebResourceMIMEType_WebResourceTextEncodingName_Zhttp://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/coupled-spring.htmlPO­v<!DOCTYPE html><html lang="en-us"><head>
+<meta charset="UTF-8"> 
+
+
+<title>coupled</title>
+<link href="../../propstyles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<h3>Coupled oscillations, point masses and spring</h3>
+<h4>Problem:</h4><p>Find the eigenfrequencies and describe the normal modes for 
+a system of three equal masses m and four springs, all with spring constant k, 
+with the system fixed at the ends as shown in the figure below.&nbsp; The motion 
+can only take place in one dimension, along the axes of the springs.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>
+<img src="images/coupled047.gif" alt="image"></p>
+<p>&nbsp;</p>
+<p>Solution:</p>
+<ul>
+<li>Concepts:<br>Coupled oscillations, normal modes</li>
+<li>Reasoning:<br>We are asked to find the normal modes of coupled harmonic 
+oscillators.</li>
+<li>Details of the calculation:<br>The&nbsp;kinetic energy is T = Â½[m(dx<sub>1</sub>/dt)<sup>2</sup> 
++&nbsp;m(dx<sub>2</sub>/dt)<sup>2</sup> +&nbsp;m(dx<sub>3</sub>/dt)<sup>2</sup>],<br>
+and the potential energy is U = (k/2)[(x<sub>2</sub> - x<sub>1</sub>)<sup>2</sup> 
++ (x<sub>3</sub> - x<sub>2</sub>)<sup>2</sup> + x<sub>1</sub><sup>2</sup> + 
+x<sub>3</sub><sup>2</sup>].<br>U = (k/2)[2x<sub>1</sub><sup>2</sup> + 2x<sub>2</sub><sup>2</sup> 
++ 2x<sub>3</sub><sup>2</sup> - x<sub>1</sub>x<sub>2</sub> - x<sub>2</sub>x<sub>1</sub> 
+- x<sub>2</sub>x<sub>3</sub> - x<sub>3</sub>x<sub>2</sub>].<br>The x<sub>i</sub> 
+are the displacements from the equilibrium positions.&nbsp; We use the x<sub>i</sub> 
+as our generalized coordinates q<sub>i</sub>.<br>The Lagrangian is L = T - 
+U.&nbsp; This can be put into the form<br>
+L = Â½âˆ‘<sub>ij</sub>[T<sub>ij</sub>(dq<sub>i</sub>/dt)(dq<sub>j</sub>/dt) - k<sub>ij</sub>q<sub>i</sub>q<sub>j</sub>]&nbsp; 
+with T<sub>ij</sub> = T<sub>ji</sub>,&nbsp; k<sub>ij</sub> = k<sub>ji</sub>.&nbsp; <br>
+Here T<sub>11</sub> 
+= T <sub>22</sub> = T<sub>33</sub> = m, &nbsp;T<sub>ij</sub>(iâ‰ j) = 0,<br>k<sub>11</sub> 
+= k<sub>22</sub> = k<sub>33</sub> = 2k, &nbsp;k<sub>12</sub> = k<sub>21</sub> = k<sub>23</sub> 
+= k<sub>32</sub> = -k, &nbsp;k<sub>13</sub> = k<sub>31</sub> = 0.<br>
+<br>
+Solutions of the form x<sub>j</sub> = Re(A<sub>j</sub>e<sup>iÏ‰t</sup>) can 
+be found.&nbsp; For solutions of this form the equations of motion reduce to<p>
+<img src="images/couple1.gif" alt="image">.</p>
+<p>We can find the Ï‰<sup>2</sup> from det(k<sub>ij</sub> - 
+Ï‰<sup>2</sup>T<sub>ij</sub>) = 0.&nbsp; For a system with n degrees of 
+freedom, n characteristic frequencies Ï‰<sub>a</sub> can be found. &nbsp;Our 
+system has 3 degrees of freedom.</p>
+<p><b>
+<img src="images/couple2.gif" alt="image">.</b></p>
+<p>(2k - Ï‰<sup>2</sup>m)<sup>3</sup> - 2k<sup>2</sup>(2k - 
+Ï‰<sup>2</sup>m)&nbsp; = 0.<br>(i) &nbsp;(2k - Ï‰<sup>2</sup>m) = 0, Ï‰<sub>1</sub><sup>2</sup> 
+= 2k/m,&nbsp; A<sub>2</sub> = 0, A<sub>1</sub> = -A<sub>3</sub>.</p>
+<p>(ii)&nbsp; (2k - Ï‰<sup>2</sup>m)<sup>2</sup> 
+- 2k<sup>2 </sup>= 0.&nbsp; Ï‰<sub>2</sub><sup>2</sup> = (2 + âˆš2)k/m,&nbsp; A<sub>3</sub> 
+= A<sub>1</sub>,&nbsp; A<sub>2</sub> = - âˆš2A<sub>1</sub>.<br>(iii)&nbsp; Ï‰<sub>3</sub><sup>2</sup> 
+= (2 - âˆš2)k/m,&nbsp; A<sub>3</sub> = A<sub>1</sub>,&nbsp; A<sub>2</sub> = 
+âˆš2A<sub>1</sub>.</p>
+</li>
+</ul>
+
+<h4>Problem:</h4>
+<p>Two particles of mass m and one particle of mass M are constrained to move on 
+a line as shown.&nbsp; They are connected by massless springs with spring constant k.</p>
+<p>
+<img src="images/coupled001.gif" alt="image"></p>
+<p>Find the normal modes and eigenfrequencies of the system, keeping M/m finite.</p>
+<p>Solution:</p>
+<ul>
+<li>Concepts:<br>
+Coupled oscillations, normal modes</li>
+<li>Reasoning:<br>
+We are asked to find the normal modes of coupled harmonic oscillators.</li>
+<li>Details of the calculations:<br>
+The&nbsp;kinetic energy is T = Â½[ m(dx<sub>1</sub>/dt)<sup>2</sup> +&nbsp; M(dx<sub>2</sub>/dt)<sup>2</sup> 
++&nbsp; m(dx<sub>3</sub>/dt)<sup>2</sup>],<br>
+and the potential energy is U = (k/2)[(x<sub>2</sub> - x<sub>1</sub>)<sup>2</sup> 
++ (x<sub>3</sub> - x<sub>2</sub>)<sup>2</sup>].<br>
+U = (k/2)[x<sub>1</sub><sup>2</sup> + 2x<sub>2</sub><sup>2</sup> + x<sub>3</sub><sup>2</sup> 
+- x<sub>1</sub>x<sub>2</sub> - x<sub>2</sub>x<sub>1</sub> - x<sub>2</sub>x<sub>3</sub> 
+- x<sub>3</sub>x<sub>2</sub>].<br>
+The x<sub>i</sub> are the displacements from the equilibrium positions.&nbsp; We 
+use the x<sub>i</sub> as our generalized coordinates q<sub>i</sub>.<br>
+The Lagrangian is L = T - U.&nbsp; This can be put into the form<br>
+L = Â½âˆ‘<sub>ij</sub>[T<sub>ij</sub>(dq<sub>i</sub>/dt)(dq<sub>j</sub>/dt) - k<sub>ij</sub>q<sub>i</sub>q<sub>j</sub>]&nbsp; 
+with T<sub>ij</sub> = T<sub>ji</sub>,&nbsp; k<sub>ij</sub> = k<sub>ji</sub>.&nbsp;
+<br>
+Here T<sub>11 </sub>= T<sub>33</sub> = m, T<sub>22</sub> = M, T<sub>ij</sub>(iâ‰ j) 
+= 0,<br>
+k<sub>11</sub> = k<sub>33</sub> = k, k<sub>22</sub> = 2k, k<sub>12</sub> = k<sub>21</sub> 
+= k<sub>23</sub> = k<sub>32</sub> = -k, k<sub>13</sub> = k<sub>31</sub> = 0.<br>
+Solutions of the form x<sub>j</sub> = Re(A<sub>j</sub>e<sup>iÏ‰ t</sup>) can 
+be found.&nbsp; For solutions of this form the equations of motion reduce to:<br>
+<br>
+<img src="images/coupled003.gif" alt="image"><br>
+<br>
+<img src="images/coupled53.gif" alt="image"><br>
+<br>(k - Ï‰<sup>2</sup>m)<sup>2</sup>(2k - Ï‰<sup>2</sup>M) - 2k<sup>2</sup>(k - Ï‰<sup> 
+2</sup>m) = 0.<br>Solution 1: k&nbsp;- Ï‰<sup>2</sup>m = 0,&nbsp; Ï‰ = (k/m)<sup>Â½</sup>.<br>If k - Ï‰<sup>2</sup>m â‰  0, then (k - Ï‰<sup>2</sup>m)(2k - Ï‰<sup>2</sup>M) = 
+2k<sup>2</sup>.&nbsp; Ï‰<sup>2</sup>(Ï‰<sup>2</sup>mM - kM - 2km) = 0.<br>Solution 2: Ï‰ = 0.<br>Solution 3: Ï‰ = (k/m + 2k/M)<sup>Â½</sup>.<br>The displacements for each mode are determined from the equations of motion.<br>Solution 1: Ï‰ = (k/m)<sup>Â½</sup>.<br>Equation 1 yields kA<sub>2</sub> = 0, equation 2 then yields kA<sub>1</sub> 
++ kA<sub>3</sub> = 0.<br>A<sub>1</sub> = - A<sub>3</sub>, A<sub>2</sub> = 0, the central mass is 
+stationary, m<sub>1</sub> and m<sub>3</sub> move in opposite directions with 
+equal amplitudes.<br>Solution 2: Ï‰ = 0.<br>A<sub>1</sub> = A<sub>2</sub> = A<sub>3</sub>, translation of the CM, no 
+relative motion.<br>Solution 3: Ï‰ = (k/m + 2k/M)<sup>Â½</sup>.<br>The displacements<br>Equation 1 yields -(2m/M)A<sub>1</sub> = A<sub>2</sub>.<br>Equation 3 yields -(2m/M)A<sub>3</sub> = A<sub>2</sub>.<br>A<sub>1</sub> = A<sub>3</sub> = -(M/(2m))A<sub>2</sub>, the central mass 
+move in a direction opposite to the direction of the outer masses.</li>
+</ul>
+<h4>Problem:</h4>
+<p>Two masses a and b are on a horizontal surface.&nbsp; Mass b has a spring 
+connected to it and is at rest.&nbsp; Mass a has an initial velocity v<sub>0</sub> 
+along the x-axis and strikes the spring of constant k, compressing it and thus 
+starting mass b in motion along the x-axis.<br>
+(a)&nbsp; Find the maximum force exerted.<br>
+(b)&nbsp; Find the resulting motion of mass a 
+while in contact with the spring.</p>
+<p>Solution:</p>
+<ul>
+<li>Concepts:<br>
+Small oscillations, coupled oscillations, normal modes<br>
+L = Â½âˆ‘<sub>ij</sub>[T<sub>ij</sub>(dq<sub>i</sub>/dt)(dq<sub>j</sub>/dt) - k<sub>ij</sub>q<sub>i</sub>q<sub>j</sub>]&nbsp; 
+with T<sub>ij</sub> = T<sub>ji</sub>,&nbsp; k<sub>ij</sub> = k<sub>ji</sub>.&nbsp;
+<br>
+Solutions of the form q<sub>j</sub> = Re(A<sub>j</sub>e<sup>iÏ‰t</sup>) can 
+be found.&nbsp; We can find the Ï‰<sup>2</sup> from det(k<sub>ij </sub>- Ï‰<sup>2</sup>T<sub>ij</sub>) 
+= 0.</li>
+<li>Reasoning:<br>
+During the time interval that both masses are in contact with the spring, 
+they can be treated as coupled harmonic oscillators.</li>
+<li>Details of the calculations:<br>
+(a)&nbsp; Assume that at t = 0 mass a makes contact with the spring.&nbsp; At t = 0 
+both masses are at their equilibrium position.&nbsp; Let x<sub>a</sub>(t) and x<sub>b</sub>(t) 
+denote the their displacements from their equilibrium positions, 
+respectively.<br>In the collision energy and momentum are conserved.<br>T<sub>i</sub> = T<sub>f</sub> + U, P<sub>i</sub> = P<sub>f</sub>.&nbsp; The 
+maximum force is exerted when the spring has maximum compression.&nbsp; At that 
+instant both masses move with the same velocity.<br>Â½m<sub>a</sub>v<sub>0</sub><sup>2</sup> = Â½(m<sub>a</sub> + m<sub>b</sub>)v<sup>2</sup> 
++ Â½k(x<sub>b</sub> - x<sub>a</sub>)<sub>min</sub><sup>2</sup>.<br>m<sub>a</sub>v<sub>0</sub> = (m<sub>a</sub> + m<sub>b</sub>)v.<br>Combining the two equations we have (x<sub>b</sub> - x<sub>a</sub>)<sub>min</sub> 
+= (m<sub>a</sub>m<sub>b</sub>/k)<sup>Â½</sup> v<sub>0</sub>/(m<sub>a</sub> 
++ m<sub>b</sub>)<sup>Â½</sup>.<br>The maximum force is k(x<sub>b</sub> - x<sub>a</sub>)<sub>min</sub> = (km<sub>a</sub>m<sub>b</sub>)<sup>Â½</sup> 
+v<sub>0</sub>/(m<sub>a</sub> + m<sub>b</sub>)<sup>Â½</sup>.<br><br>(b)&nbsp; T = Â½m<sub>a</sub>(dx<sub>a</sub>/dt)<sup>2</sup> + Â½m<sub>b</sub>(dx<sub>b</sub>/dt)<sup>2</sup>,&nbsp;
+<br>U = Â½k(x<sub>b</sub> - x<sub>a</sub>)<sup>2</sup> = Â½k(x<sub>b</sub><sup>2</sup> 
++ x<sub>a</sub><sup>2</sup> - x<sub>a</sub>x<sub>b</sub> - x<sub>b</sub>x<sub>a</sub>).<br>T<sub>11</sub> = m<sub>a</sub>, T<sub>22</sub> = m<sub>b</sub>, k<sub>11</sub> 
+= k<sub>22</sub> = k, k<sub>12</sub> = k<sub>21</sub> = -k.<br>det(k<sub>ij 
+</sub>- Ï‰<sup>2</sup>T<sub>ij</sub>) = 0&nbsp; --&gt; Ï‰<sub>1</sub> = 
+0, Ï‰<sub>2</sub><sup>2</sup> = k(m<sub>a</sub> + m<sub>b</sub>)/(m<sub>a</sub>m<sub>b</sub>).<br>For Ï‰<sub>1</sub> = 0 we have A<sub>1</sub> = A<sub>2</sub>.&nbsp; For Ï‰<sub>2</sub><sup>2</sup> 
+= k(m<sub>a</sub> + m<sub>b</sub>)/(m<sub>a</sub>m<sub>b</sub>) we have A<sub>2</sub> 
+= -(m<sub>a</sub>/m<sub>b</sub>)A<sub>1</sub>.<br>The most general solutions are:<br>x<sub>a</sub> = A<sub>1</sub>t + B<sub>1</sub>cos(Ï‰t + 
+Ï†),&nbsp; x<sub>b</sub> = 
+A<sub>1</sub>t - (m<sub>a</sub>/m<sub>b</sub>)B<sub>1</sub>cos(Ï‰t + Ï†), 
+<br>dx<sub>a</sub>/dt = A<sub>1</sub> - Ï‰B<sub>1</sub>sin(Ï‰t + Ï†),&nbsp; dx<sub>b</sub>/dt 
+= A<sub>1</sub> + Ï‰(m<sub>a</sub>/m<sub>a</sub>)B<sub>1</sub>sin(Ï‰t + 
+Ï†).
+<br>The initial conditions at t = 0 are x<sub>a</sub> = x<sub>b</sub> = 0, dx<sub>a</sub>/dt 
+= v<sub>0</sub>, dx<sub>b</sub>/dt = 0.<br>This implies B<sub>1</sub>cos(Ï†) = 0, 
+Ï† = 
+Ï€/2.<br>v<sub>0</sub> = A<sub>1</sub> - Ï‰B<sub>1</sub>,&nbsp; A<sub>1</sub> + Ï‰(m<sub>a</sub>/m<sub>b</sub>)B<sub>1</sub> 
+= 0. <br>A<sub>1</sub> = v<sub>0</sub>m<sub>a</sub>/(m<sub>a</sub> + m<sub>b</sub>),&nbsp; 
+B<sub>1</sub> = -(1/Ï‰)v<sub>0</sub>m<sub>b</sub>/(m<sub>a</sub> + m<sub>b</sub>).<br>Therefore<br>x<sub>a</sub> = (v<sub>0</sub>/Ï‰)m<sub>b</sub>/(m<sub>a</sub> + m<sub>b</sub>)sinÏ‰t 
++ m<sub>a</sub>v<sub>0</sub>/(m<sub>a</sub> + m<sub>b</sub>)t,<br>dx<sub>a</sub>/dt = v<sub>0</sub>m<sub>b</sub>/(m<sub>a</sub> + m<sub>b</sub>)cosÏ‰t 
++ m<sub>a</sub>v<sub>0</sub>/(m<sub>a</sub> + m<sub>b</sub>),<br>as long as mass a is in contact with the spring.<br>[At t = 0 we have dx<sub>a</sub>(lab) /dt = v<sub>0</sub>m<sub>b</sub>/(m<sub>a</sub> 
++ m<sub>b</sub>) + m<sub>a</sub>v<sub>0</sub>/(m<sub>a</sub> + m<sub>b</sub>) 
+= v<sub>0</sub>.]</li>
+</ul>
+<p>A different approach:</p>
+<p>Solution:</p>
+<ul>
+<li>Concepts:<br>
+Simple harmonic motion, frame transformations, two interacting particles</li>
+<li>Reasoning:<br>
+In the center of mass frame we have an elastic collision between two 
+particles with an interaction energy U(x) = Â½k(x-x<sub>0</sub>)<sup>2</sup>, 
+where x-x<sub>0</sub> is the distance between the particles, as long as 
+particle a is in contact with the spring .&nbsp;</li>
+<li>Details of the calculations:<br>
+(a)&nbsp; In the center of mass frame we have an elastic collision.&nbsp; Assume mass 
+a approaches the CM with with speed v<sub>a</sub> from the left, and mass b 
+approaches the CM with speed v<sub>b</sub> from the right.&nbsp; The CM is 
+at rest and mass a recedes from the CM with with speed v<sub>a</sub> to the 
+right, while mass b recedes from the CM with with speed v<sub>b</sub> to the 
+left after the collision.<br>
+We have m<sub>a</sub>v<sub>a</sub> = m<sub>b</sub>v<sub>b</sub> in the CM 
+frame before the collision.&nbsp; To find the relationship between the speeds in 
+the CM and the lab frame we use<br>
+m<sub>a</sub>(v<sub>0</sub> - v<sub>b</sub>) = m<sub>b</sub>v<sub>b</sub>.&nbsp; 
+v<sub>b</sub> = m<sub>a</sub>v<sub>0</sub>/(m<sub>a</sub> + m<sub>b</sub>)),&nbsp; 
+v<sub>a</sub> = m<sub>b</sub>v<sub>0</sub>/(m<sub>a</sub> + m<sub>b</sub>).<br>
+The maximum force is exerted when all the kinetic energy is converted into 
+potential energy.<br>
+F<sub>max</sub> = k(x<sub>min</sub>-x<sub>0</sub>).<br>
+k(x<sub>min</sub>-x<sub>0</sub>)<sup>2 </sup>= m<sub>a</sub>v<sub>a</sub><sup>2</sup> 
++ m<sub>b</sub>v<sub>b</sub><sup>2</sup> =&nbsp; m<sub>a</sub>(m<sub>b</sub>v<sub>0</sub>/(m<sub>a</sub> 
++ m<sub>b</sub>))<sup>2</sup> + m<sub>b</sub>(m<sub>a</sub>v<sub>0</sub>/(m<sub>a</sub> 
++ m<sub>b</sub>))<sup>2</sup> = m<sub>a</sub>m<sub>b</sub>v<sub>0</sub><sup>2</sup>/(m<sub>a</sub> 
++ m<sub>b</sub>).<br>
+k(x<sub>min</sub>-x<sub>0</sub>) = (km<sub>a</sub>m<sub>b</sub>)<sup>Â½</sup> 
+v<sub>0</sub>/(m<sub>a</sub> + m<sub>b</sub>)<sup>Â½</sup>.<br>
+(b)&nbsp; Assume that mass a makes contact with the spring at t = 0, at the 
+origin of the CM and the lab frame.&nbsp; (We assume that at t = 0 the origin of 
+the two frames coincide.)&nbsp; Assume that at t = 0 the distance between mass a 
+and mass b is x<sub>0</sub>.<br>
+In the CM frame when mass a moves a distance x<sub>a</sub> to the right, 
+mass b moves a distance x<sub>b</sub> = x<sub>a</sub>(m<sub>a</sub>/m<sub>b</sub>)&nbsp; 
+to the left.&nbsp; The distance between the masses becomes x = x<sub>0</sub> - (x<sub>a</sub> 
++ x<sub>b</sub>) = x<sub>0</sub> - x<sub>a</sub>(m<sub>a</sub> + m<sub>b</sub>)/m<sub>b</sub> 
+= x<sub>0</sub> - x'.<br>
+For t &gt; 0 we have U = Â½kx<sup>'2</sup> = Â½[k(m<sub>a</sub> + m<sub>b</sub>)<sup>2</sup>/m<sub>b</sub><sup>2</sup>]x<sub>a</sub><sup>2</sup> 
+until the time when contact is lost again.<br>
+The kinetic energy of the particles is <br>
+T = Â½m<sub>a</sub>(dx<sub>a</sub>/dt)<sup>2</sup> + Â½m<sub>b</sub>(dx<sub>b</sub>/dt)<sup>2</sup> 
+= Â½(m<sub>a</sub> + m<sub>a</sub><sup>2</sup>/m<sub>b</sub>)(dx<sub>a</sub>/dt)<sup>2</sup>.<br>
+L = T - U = Â½(m<sub>a</sub>(m<sub>b</sub> + m<sub>a</sub>)/m<sub>b</sub>)(dx<sub>a</sub>/dt)<sup>2</sup> 
+- Â½)[k(m<sub>a</sub> + m<sub>b</sub>)<sup>2</sup>/m<sub>b</sub><sup>2</sup>]x<sub>a</sub><sup>2</sup>.<br>
+This is a Lagrangian for simple harmonic motion.<br>
+d<sup>2</sup>x<sub>a</sub>/dt<sup>2</sup> = -k(m<sub>b</sub> + m<sub>a</sub>)/(m<sub>a</sub>m<sub>b</sub>)x<sub>a</sub> 
+= -(k/Î¼)x<sub>a</sub>, with Î¼ = m<sub>a</sub>m<sub>b</sub>/(m<sub>b</sub> + 
+m<sub>a</sub>).<br>
+We therefore have<br>
+x<sub>a</sub> = AsinÏ‰t, Ï‰ = (k/m)<sup>Â½</sup>, until t = Ï€/Ï‰ (Â½ period 
+of the motion).<br>
+dx<sub>a</sub>/dt = Ï‰AcosÏ‰t.<br>
+At t = 0 we have Ï‰A = v<sub>a</sub> = m<sub>b</sub>v<sub>0</sub>/(m<sub>a</sub> 
++ m<sub>b</sub>),&nbsp; A = m<sub>b</sub>v<sub>0</sub>/[Ï‰(m<sub>a</sub> + m<sub>b</sub>)]<br>
+In the lab frame we have x<sub>a</sub>(lab) = x<sub>a</sub> + v<sub>b</sub>t.<br>
+The motion of mass a is described by<br>
+x<sub>a</sub>(lab) = (v<sub>0</sub>/Ï‰)m<sub>b</sub>/(m<sub>a</sub> + m<sub>b</sub>)sinÏ‰t 
++ m<sub>a</sub>v<sub>0</sub>/(m<sub>a</sub> + m<sub>b</sub>)t,<br>
+dx<sub>a</sub>(lab) /dt = v<sub>0</sub>m<sub>b</sub>/(m<sub>a</sub> + m<sub>b</sub>)cosÏ‰t 
++ m<sub>a</sub>v<sub>0</sub>/(m<sub>a</sub> + m<sub>b</sub>),<br>
+as long as mass a is in contact with the spring.<br>
+[At t = 0 we have dx<sub>a</sub>(lab) /dt = v<sub>0</sub>m<sub>b</sub>/(m<sub>a</sub> 
++ m<sub>b</sub>) + m<sub>a</sub>v<sub>0</sub>/(m<sub>a</sub> + m<sub>b</sub>) 
+= v<sub>0</sub>.]</li>
+</ul>
+
+<h4>Problem:</h4><p>Use Lagrange's equations to find the normal modes and normal frequencies for 
+linear vibrations of the CO<sub>2</sub> molecule shown below.</p>
+<p>
+<img src="images/coupled034.gif" alt="image"></p>
+<p>Solution:</p>
+<ul>
+<li>Concepts:<br>Small oscillations, normal modes<br>
+L = Â½âˆ‘<sub>ij</sub>[T<sub>ij</sub>(dq<sub>i</sub>/dt)(dq<sub>j</sub>/dt) - k<sub>ij</sub>q<sub>i</sub>q<sub>j</sub>]&nbsp; 
+with T<sub>ij</sub> = T<sub>ji</sub>,&nbsp; k<sub>ij</sub> = k<sub>ji</sub>.&nbsp;
+<br>
+Solutions of the form q<sub>j</sub> = Re(A<sub>j</sub>e<sup>iÏ‰t</sup>) can 
+be found.&nbsp; We can find the Ï‰<sup>2</sup> from det(k<sub>ij </sub>- Ï‰<sup>2</sup>T<sub>ij</sub>) 
+= 0.</li>
+<li>Reasoning:<br>We are asked to find the normal modes of the system.</li>
+<li>Details of the calculations:<br>We are only 
+considering linear vibrations.<br>Let q<sub>i</sub> denote the displacement 
+of the ith particle from its equilibrium position.<br>q<sub>i</sub> = x<sub>i</sub> 
+- x<sub>i0</sub>.<br>Then<br>T = Â½[m<sub>o</sub>(dq<sub>1</sub>/dt)<sup>2</sup> 
++ m<sub>c</sub>(dq<sub>2</sub>/dt)<sup>2</sup> + m<sub>o</sub>(dq<sub>3</sub>/dt)<sup>2</sup>].<br>
+U = Â½k<sub>1</sub>[(q<sub>2</sub> - q<sub>1</sub>)<sup>2</sup> + (q<sub>3</sub> 
+- q<sub>2</sub>)<sup>2</sup>] + Â½k<sub>2</sub>[(q<sub>3</sub> - q<sub>1</sub>)<sup>2</sup>].<br>
+U = Â½(k<sub>1</sub> + k<sub>2</sub>)q<sub>1</sub><sup>2</sup> + Â½(k<sub>1</sub> 
++ k<sub>2</sub>)q<sub>3</sub><sup>2</sup> + k<sub>1</sub>q<sub>2</sub><sup>2</sup> 
+- Â½k<sub>1</sub>(q<sub>2</sub>q<sub>1</sub> + q<sub>1</sub>q<sub>2</sub> 
++ q<sub>3</sub>q<sub>2</sub> + q<sub>2</sub>q<sub>3</sub>)<br>- Â½k<sub>2</sub>(q<sub>3</sub>q<sub>1</sub> 
++ q<sub>1</sub>q<sub>3</sub>).<br>T<sub>11</sub> = T<sub>33</sub> = m<sub>o</sub>,&nbsp; 
+T<sub>22</sub> = m<sub>c</sub>,&nbsp; T<sub>ij</sub>(i â‰  j) = 0.<br>k<sub>11</sub> 
+= k<sub>33</sub> = k<sub>1</sub> + k<sub>2</sub>,&nbsp; k<sub>22</sub> = 2k<sub>1</sub>,&nbsp; 
+k<sub>12</sub> = k<sub>21</sub> = k<sub>32</sub> = k<sub>23</sub> = -k<sub>1</sub>,&nbsp; 
+k<sub>31</sub> = k<sub>13</sub> = -k<sub>2</sub>.<br>det(k<sub>ij
+</sub>- Ï‰<sup>2</sup>T<sub>ij</sub>) = 0.<br>
+<br>
+<img src="images/coupled035.gif" alt="image">.<br>
+<br>Ï‰<sup>2</sup> = 0,&nbsp; or&nbsp;&nbsp;
+Ï‰<sup>2</sup> = (k<sub>1</sub>/m<sub>c</sub> + k<sub>1</sub>/m<sub>o</sub> + 
+k<sub>2</sub>/m<sub>o</sub>) Â± (k<sub>1</sub>/m<sub>c</sub> - k<sub>2</sub>/m<sub>o</sub>).<br>
+To find the relative displacements we solve the system of equations<br><br>
+<img src="images/coupled037.gif" alt="image"><br><br>
+for each Ï‰.<br>
+<table id="table1">
+<tbody><tr>
+<td>Ï‰<sup>2</sup> = 0: </td>
+<td>&nbsp; uniform linear motion,&nbsp; A<sub>1</sub> = A<sub>2</sub> = A<sub>3</sub>.</td>
+<td></td>
+</tr>
+<tr>
+<td>Ï‰<sup>2</sup> = 2k<sub>1</sub>/m<sub>c</sub> + k<sub>1</sub>/m<sub>o</sub>:
+</td>
+<td>&nbsp; A<sub>3</sub> = A<sub>1</sub>,&nbsp; A<sub>2</sub> = -(2m<sub>o</sub>/m<sub>c</sub>)A<sub>1</sub>.</td>
+<td>&lt;--o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; o----&gt;&nbsp; &lt;--o</td>
+</tr>
+<tr>
+<td>Ï‰<sup>2</sup> = k<sub>1</sub>/m<sub>o</sub> + 2k<sub>2</sub>/m<sub>o</sub>:</td>
+<td>&nbsp; A<sub>3</sub> = -A<sub>1</sub>,&nbsp; A<sub>2</sub> = 0.</td>
+<td>&nbsp;&nbsp;&nbsp; o---&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;---o</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+
+<h4>Problem:</h4>
+<p>A particle of mass m is attached to a rigid support by a spring with a force 
+constant k.&nbsp; At equilibrium, the spring hangs vertically downward.&nbsp; To 
+this mass-spring combination is attached an identical oscillator, the spring of 
+the latter being connected to the mass of the former.</p>
+<p><img src="images/coupled011.gif" alt="image"></p>
+<p>(a) Show that by appropriate choice of coordinates and their zero-points the 
+equations of motion can be expressed&nbsp; as <br>md<sup>2</sup>x<sub>1</sub>/dt<sup>2</sup> 
++ 2kx<sub>1</sub> - kx<sub>2</sub> = 0,&nbsp; <br>md<sup>2</sup>x<sub>2</sub>/dt<sup>2</sup> 
++ kx<sub>2</sub> - kx<sub>1</sub> = 0.<br>(b)&nbsp; Calculate the characteristic 
+frequencies for one-dimensional vertical oscillations.&nbsp; <br>(c)&nbsp; 
+Qualitatively describe the normal modes of the system with a short discussion 
+plus drawings.&nbsp; <br>(d)&nbsp; Quantitatively compare the characteristic 
+frequencies with the frequencies when either of the particles is held fixed 
+while the other oscillates.&nbsp; </p>
+<p>Solution:</p>
+<ul>
+<li>Concepts:<br>Lagrangian 
+mechanics, coupled oscillations</li>
+<li>Reasoning:<br>We are asked to find the normal modes of coupled harmonic 
+oscillators.</li>
+<li>Details of the calculation:<br>(a)&nbsp; T = Â½m(dy<sub>1</sub>/dt)<sup>2</sup> 
++ Â½m(dy<sub>2</sub>/dt)<sup>2</sup>,&nbsp; U = Â½ky<sub>1</sub><sup>2</sup> + Â½k(y<sub>2</sub> 
+- y<sub>1</sub>)<sup>2</sup> - mgy<sub>1</sub> - mgy<sub>2</sub>.<br>Here y<sub>1</sub> 
+and y<sub>2</sub> are the displacements of the springs from their respective 
+equilibrium positions. The y-axis points down.<br>Let y<sub>1</sub> = x<sub>1</sub> 
++ a, y<sub>2</sub> = x<sub>2</sub> + b.<br>T = Â½m(dx<sub>1</sub>/dt)<sup>2</sup> 
++ Â½m(dx<sub>2</sub>/dt)<sup>2</sup>,&nbsp; <br>U = kx<sub>1</sub><sup>2</sup> + 
+ka<sup>2</sup> + 2kx<sub>1</sub>a&nbsp; + Â½kx<sub>2</sub><sup>2</sup> + Â½kb<sup>2</sup> 
++ kx<sub>2</sub>b - kx<sub>1</sub>x<sub>2</sub> - kab - kx<sub>1</sub>b - kx<sub>2</sub>a<br>
+- mgx<sub>1</sub> - mgx<sub>2</sub> - mga - mgb - constant.<br>The zero of 
+the potential energy can be chosen arbitrarily.<br>To put the potential 
+energy function into the form U = Â½âˆ‘<sub>ij</sub>k<sub>ij</sub>x<sub>i</sub>x<sub>j</sub>, 
+let ka<sup>2</sup> + Â½kb<sup>2</sup>- kab - mga - mgb = constant.<br>Choose 
+2ka&nbsp; - kb - mg = 0,&nbsp; kb - ka - mg = 0, which implies that ka = 2mg,&nbsp; kb = 3mg.&nbsp;<br>Then x<sub>1</sub> and x<sub>2</sub> are the displacements from the 
+equilibrium positions in the gravitational potential near the surface of 
+Earth,<br>and T = Â½m(dx<sub>1</sub>/dt)<sup>2</sup> + Â½m(dx<sub>2</sub>/dt)<sup>2</sup>,&nbsp; 
+U = kx<sub>1</sub><sup>2</sup> + Â½kx<sub>2</sub><sup>2</sup> - kx<sub>1</sub>x<sub>2</sub>,&nbsp; 
+L = T - U.<br>Lagrange's equations become<br>md<sup>2</sup>x<sub>1</sub>/dt<sup>2</sup> 
++ 2kx<sub>1</sub> - kx<sub>2</sub> = 0,<br>md<sup>2</sup>x<sub>2</sub>/dt<sup>2</sup> 
++ kx<sub>2</sub> - kx<sub>1</sub> = 0.<p>(b)&nbsp; Assume x<sub>1</sub> = 
+Re(A<sub>1</sub> exp(iÏ‰t)), x<sub>2</sub> = Re(A<sub>2</sub> exp(iÏ‰t)).&nbsp; 
+Then<br>
+<br><img src="images/coupled012.gif" alt="image">.<br>
+<br>
+Ï‰<sup>2</sup> = [3/2 Â± âˆš5/2](k/m),&nbsp; Ï‰<sub>1</sub><sup>2</sup> = [3/2 + 
+âˆš5/2](k/m),&nbsp; Ï‰<sub>2</sub><sup>2</sup> = [3/2 - âˆš5/2](k/m).<br>
+Ï‰<sub>1</sub> = 1.62 (k/m)<sup>Â½</sup>,&nbsp; Ï‰<sub>2</sub> = 0.62 
+(k/m)<sup>Â½</sup>.</p>
+<p>(c)&nbsp; Ï‰ = Ï‰<sub>1</sub>: A<sub>2</sub> = -Â½A<sub>1</sub>(âˆš5 - 1) = 
+-0.62 A<sub>1</sub>.&nbsp; <br>
+Ï‰ = Ï‰<sub>2</sub>: A<sub>2</sub> = Â½A<sub>1</sub>(âˆš5 + 1) = 1.62 A<sub>1</sub>.</p>
+<p>&nbsp;<img src="images/coupled016.gif" alt="image"><br>(d)&nbsp; When particle 1 
+is held fixed (x<sub>1</sub> = 0), then particle 2 oscillates with angular 
+frequency Ï‰, where Ï‰ = (k/m)<sup>Â½</sup>.<br>When particle 2 is held fixed 
+(x<sub>2</sub> = 0), then particle 1 oscillates with angular frequency Ï‰, 
+where Ï‰ = (2k/m)<sup>Â½</sup> = 1.41 (k/m)<sup>Â½</sup>.<br>The separation 
+of the characteristic frequencies of the coupled system is greater than the 
+separation of the single particle frequencies.</p>
+</li>
+</ul>
+<h4>Problem:</h4>
+<p>Four mass points of mass m move on a circle of radius R. &nbsp;Each mass point is 
+coupled to its two neighboring points by a spring constant k. &nbsp;<br>
+(a)&nbsp; Find the Lagrangian of the system, and derive the equations of motion of 
+the system. &nbsp;<br>
+(b)&nbsp; Calculate the eigen-frequencies of the system, and discuss the related 
+eigen-vibrations.</p>
+<p>&nbsp;<img src="images/coupled017.gif" alt="image"></p>
+<p>Solution:</p>
+<ul>
+<li>Concepts:<br>
+Coupled oscillations</li>
+<li>Reasoning:<br>
+<img src="images/coupled018.gif" alt="image"><br>
+L = Â½âˆ‘<sub>ij</sub>[T<sub>ij</sub>(dq<sub>i</sub>/dt)(dq<sub>j</sub>/dt) 
+- k<sub>ij</sub>q<sub>i</sub>q<sub>j</sub>]&nbsp; with T<sub>ij</sub> = T<sub>ji</sub>,&nbsp; 
+k<sub>ij</sub> = k<sub>ji</sub>.&nbsp; <br>
+Here T<sub>ii</sub> 
+= m, T<sub>ij</sub>(i â‰  j) = 0,&nbsp;&nbsp; i, j = 1, 2, 3, 4,&nbsp; (cyclic).<br>
+k<sub>ii</sub> = 2k,&nbsp; k<sub>ij</sub> = -k if j = i Â± 1,&nbsp; k<sub>ij</sub> = 0 
+otherwise.<br>
+Equations of motion:&nbsp;
+d/dt(âˆ‚L/âˆ‚(dq<sub>i</sub>/dt)) -&nbsp; 
+âˆ‚L/âˆ‚q<sub>i</sub> = 0.<br>
+Solutions of the form q<sub>j</sub> = Re(A<sub>j</sub>e<sup>iÏ‰ t</sup>) can 
+be found.&nbsp; For a system with n degrees of freedom, n characteristic 
+frequencies Ï‰<sub>Î±</sub> can be found. &nbsp;Some frequencies may be 
+degenerate.&nbsp;&nbsp; For a particular frequency Ï‰<sub>Î±</sub> we solve<br>
+âˆ‘<sub>j</sub>[k<sub>ij</sub> - Ï‰<sub>Î±</sub><sup>2</sup>T<sub>ij</sub>]A<sub>jÎ±</sub> 
+= 0<br>
+to find the A<sub>jÎ±</sub>. &nbsp;&nbsp;Since it is difficult to evaluate the 
+determinant of a 4 x 4 matrix, we find the solutions of this system of 
+coupled equations using physical insight.<br>
+(a)&nbsp; 
+d/dt(âˆ‚L/âˆ‚(dq<sub>i</sub>/dt)) -&nbsp; 
+âˆ‚L/âˆ‚q<sub>i</sub> = 0.<br>
+(-kq<sub>i-1</sub> + 2kq<sub>i</sub> - kq<sub>i+1</sub>) + md<sup>2</sup>q<sub>i</sub>/dt<sup>2</sup> 
+= 0, i,j = 1, 2, 3, 4, (cyclic).</li>
+<li>Details of the calculation:<br>(b)&nbsp; 1.)&nbsp; Ï‰<sub>1</sub> = 0, A<sub>1</sub> = A<sub>2</sub> = A<sub>3</sub> = 
+A<sub>4</sub>, &nbsp;âˆ‘<sub>j</sub>k<sub>ij</sub> = 2k - 2*k = 0.<br>All other modes can have no net angular momentum.<br>2.)&nbsp; Assume A<sub>1</sub> and A<sub>3</sub> are fixed.&nbsp; A<sub>1</sub> = A<sub>3</sub> 
+= 0, A<sub>2</sub> = -A<sub>4</sub>.<br>The equation of motion for i = 2 is k<sub>21</sub>A<sub>1</sub> + k<sub>22</sub>A<sub>2</sub> 
++ k<sub>23</sub>A<sub>3</sub> - Ï‰<sub>2</sub><sup>2</sup>T<sub>22 </sub>A<sub>2</sub> 
+= 0,<br>2k&nbsp; - Ï‰<sub>2</sub><sup>2</sup>m = 0, Ï‰<sub>2</sub><sup>2</sup> = 2k/m.<br>3.)&nbsp; Assume A<sub>2</sub> and A<sub>4</sub> are fixed.&nbsp; A<sub>1</sub> = -A<sub>3</sub> 
+= 0.<br>For this mode Ï‰<sub>3</sub><sup>2</sup> = 2k/m.&nbsp; Mode 2 and 3 
+are degenerate.&nbsp; Any linear combination of these modes is also a normal 
+mode.&nbsp; For example, the mode with A<sub>1</sub> = A<sub>4</sub> , A<sub>2</sub> 
+= A<sub>3</sub> = -A<sub>1</sub> is a linear combination 
+of modes 2 and 3 and is not linearly independent.<br>4.)&nbsp; Assume A<sub>1</sub> = A<sub>3</sub>, A<sub>2</sub> = A<sub>4</sub>, A<sub>1</sub> 
+= - A<sub>2</sub>.<br>The equation of motion for i = 2 is k + 2k&nbsp; + k - Ï‰<sub>2</sub><sup>2</sup>m 
+= 0, Ï‰<sub>4</sub><sup>2</sup> = 4k/m.<p>For the eigen-vibrations we have:<br>1.)&nbsp; q<sub>i</sub> = vt.&nbsp; (uniform rotation)<br>2.)&nbsp; q<sub>1</sub> = q<sub>3</sub> = 0, &nbsp;q<sub>2</sub> = C<sub>2</sub>cos(Ï‰<sub>2</sub>t 
++ Ï†<sub>2</sub>),&nbsp; q<sub>4</sub> = -C<sub>2</sub>cos(Ï‰<sub>2</sub>t + Ï†<sub>2</sub>)<br>3.)&nbsp; q<sub>2</sub> = q<sub>4</sub> = 0, &nbsp;q<sub>3</sub> = C<sub>3</sub>cos(Ï‰<sub>3</sub>t 
++ Ï†<sub>3</sub>),&nbsp; q<sub>1</sub> = -C<sub>3</sub>cos(Ï‰<sub>3</sub>t + Ï†<sub>3</sub>)<br>4.)&nbsp; q<sub>1</sub> = q<sub>3</sub> = C<sub>4</sub>cos(Ï‰<sub>4</sub>t + Ï†<sub>4</sub>),&nbsp; 
+q<sub>2</sub> = q<sub>4</sub> = -C<sub>4</sub>cos(Ï‰<sub>4</sub>t + Ï†<sub>4</sub>)<br>The C<sub>i</sub> and Ï†<sub>i</sub> depend on the initial conditions.&nbsp;&nbsp;The 
+mode with the highest frequency is mode 4 (non-degenerate) and the mode with 
+the lowest frequency is mode 1 (non-degenerate).</p></li>
+</ul>
+
+<h4>Problem:</h4>
+<p>Consider six equal masses constrained to move on a circle of fixed radius and 
+connected by identical springs of spring constant k. <br>
+(a)&nbsp; Find the normal mode frequencies of the system for small displacement of 
+the masses.<br>
+(b)&nbsp; Find the (time dependent) displacement of the masses for each normal mode.&nbsp; 
+Give a physical description of the motion of the masses for normal modes with 
+the highest and lowest frequencies.</p>
+<p>Solution:</p>
+<ul>
+<li>Concepts:<br>
+Coupled oscillations</li>
+<li>Reasoning:<br>
+<img src="images/coupled021.gif" alt="image"><br>
+L = Â½âˆ‘<sub>ij</sub>[T<sub>ij</sub>(dq<sub>i</sub>/dt)(dq<sub>j</sub>/dt) 
+- k<sub>ij</sub>q<sub>i</sub>q<sub>j</sub>]&nbsp; with T<sub>ij</sub> = 
+T<sub>ji</sub>,&nbsp; k<sub>ij</sub> = k<sub>ji</sub>.&nbsp; <br>
+Here T<sub>ii</sub> 
+= m, T<sub>ij</sub>(i â‰  j) = 0,&nbsp;&nbsp; i, j = 1, 2, 3, 4, 5, 6, (cyclic).<br>
+k<sub>ii</sub> = 2k,&nbsp; k<sub>ij</sub> = -k if j = i Â± 1,&nbsp; k<sub>ij</sub> = 0 
+otherwise.<br>
+Solutions of the form q<sub>j</sub> = Re(A<sub>j</sub>e<sup>iÏ‰ t</sup>) can 
+be found.&nbsp; For a system with n degrees of freedom, n characteristic 
+frequencies Ï‰<sub>Î±</sub> can be found. &nbsp;Some frequencies may be 
+degenerate.&nbsp;&nbsp; For a particular frequency Ï‰<sub>Î±</sub> we solve 
+<br>
+âˆ‘<sub>j</sub>[k<sub>ij</sub> - Ï‰<sub>Î±</sub><sup>2</sup>T<sub>ij</sub>]A<sub>jÎ±</sub> 
+= 0<br>
+to find the A<sub>jÎ±</sub>. &nbsp;&nbsp;Since it is difficult to evaluate the 
+determinant of a 6 x 6 matrix, we find the solutions of this system of 
+coupled equations using physical insight.</li>
+<li>Details of the calculation:<br>
+(a)&nbsp; <br>
+1.)&nbsp; Ï‰<sub>1</sub> = 0, A<sub>1</sub> = A<sub>2</sub> = A<sub>3</sub> = A<sub>4</sub> 
+= A<sub>5</sub> = A<sub>6</sub>, &nbsp;âˆ‘<sub>j</sub>k<sub>ij</sub> = 2k - 
+2k = 0.<br>
+All other modes must have zero total or net angular momentum<br>
+2.)&nbsp; Assume A<sub>1</sub> and A<sub>4</sub> are fixed.&nbsp; A<sub>1</sub> = A<sub>4</sub> 
+= 0, A<sub>2</sub> = A<sub>3</sub>, A<sub>5</sub> = A<sub>6</sub>, A<sub>2</sub> 
+= - A<sub>5</sub>.<br>
+The equation of motion for i = 2 is k<sub>21</sub>A<sub>1</sub> + k<sub>22</sub>A<sub>2</sub> 
++ k<sub>23</sub>A<sub>3</sub> - Ï‰<sub>2</sub><sup>2</sup>T<sub>22 </sub>A<sub>2</sub> 
+= 0,<br>
+2k&nbsp; - k - Ï‰<sub>2</sub><sup>2</sup>m = 0, Ï‰<sub>2</sub><sup>2</sup> = k/m.<br>
+3.)&nbsp; Assume A<sub>2</sub> and A<sub>5</sub> are fixed.&nbsp; A<sub>2</sub> = A<sub>5</sub> 
+= 0, A<sub>3</sub> = A<sub>4</sub>, A<sub>1</sub> = A<sub>6</sub>, A<sub>3</sub> 
+= - A<sub>6</sub>.<br>
+For this mode Ï‰<sub>3</sub><sup>2</sup> = k/m.&nbsp; Mode 2 and 3 are 
+degenerate.&nbsp; Any linear combination of these modes is also a normal mode.&nbsp; 
+The mode with A<sub>3</sub> = A<sub>6</sub> = 0, A<sub>1</sub> = A<sub>2</sub>, 
+A<sub>4</sub> = A<sub>5</sub>, A<sub>1</sub> = - A<sub>4</sub> is a linear 
+combination of modes 2 and 3 and is not linearly independent.<br>
+4.)&nbsp; Assume A<sub>1</sub> and A<sub>4</sub> are fixed.&nbsp; A<sub>1</sub> = A<sub>4</sub> 
+= 0, A<sub>2</sub> = A<sub>5</sub>, A<sub>3</sub> = A<sub>6</sub>, A<sub>2</sub> 
+= - A<sub>3</sub>.<br>
+The equation of motion for i = 2 is 2k&nbsp; + k - Ï‰<sub>2</sub><sup>2</sup>m = 
+0, Ï‰<sub>4</sub><sup>2</sup> = 3k/m.<br>
+5.)&nbsp; Assume A<sub>2</sub> and A<sub>5</sub> are fixed.&nbsp; A<sub>2</sub> = A<sub>5</sub> 
+= 0, A<sub>3</sub> = A<sub>6</sub>, A<sub>1</sub> = A<sub>4</sub>, A<sub>3</sub> 
+= - A<sub>4</sub>.&nbsp; <br>
+For this mode Ï‰<sub>5</sub><sup>2</sup> = 3k/m.&nbsp; Mode 4 and 5 are 
+degenerate.&nbsp; Any linear combination of these modes is also a normal mode.<br>
+6.)&nbsp; Assume A<sub>1</sub> = A<sub>3</sub> = A<sub>5</sub>, A<sub>2</sub> = A<sub>4</sub> 
+= A<sub>6</sub>, &nbsp;A<sub>1</sub> = - A<sub>2</sub>.<br>
+The equation of motion for i = 2 is k + 2k&nbsp; + k - Ï‰<sub>2</sub><sup>2</sup>m 
+= 0, Ï‰<sub>6</sub><sup>2</sup> = 4k/m.<br>
+(b)&nbsp; <br>
+1.)&nbsp; q<sub>i</sub> = vt.<br>
+2.)&nbsp; q<sub>1</sub> = q<sub>4</sub> = 0, &nbsp;q<sub>2</sub> = q<sub>3</sub> = C<sub>2</sub>cos(Ï‰<sub>2</sub>t 
++ Ï†<sub>2</sub>),&nbsp; q<sub>5</sub> = q<sub>6</sub> = -C<sub>2</sub>cos(Ï‰<sub>2</sub>t 
++ Ï†<sub>2</sub>)<br>
+3.)&nbsp; q<sub>2</sub> = q<sub>5</sub> = 0, &nbsp;q<sub>3</sub> = q<sub>4</sub> = C<sub>3</sub>cos(Ï‰<sub>3</sub>t 
++ Ï†<sub>3</sub>),&nbsp; q<sub>6</sub> = q<sub>1</sub> = -C<sub>3</sub>cos(Ï‰<sub>3</sub>t 
++ Ï†<sub>3</sub>)<br>
+4.)&nbsp; q<sub>1</sub> = q<sub>4</sub> = 0, &nbsp;q<sub>2</sub> = q<sub>5</sub> = C<sub>4</sub>cos(Ï‰<sub>4</sub>t 
++ Ï†<sub>4</sub>),&nbsp; q<sub>3</sub> = q<sub>6</sub> = -C<sub>4</sub>cos(Ï‰<sub>4</sub>t 
++ Ï†<sub>4</sub>)<br>
+5.)&nbsp; q<sub>2</sub> = q<sub>5</sub> = 0, &nbsp;q<sub>3</sub> = q<sub>6</sub> = C<sub>5</sub>cos(Ï‰<sub>5</sub>t 
++ Ï†<sub>5</sub>),&nbsp; q<sub>1</sub> = q<sub>4</sub> = -C<sub>5</sub>cos(Ï‰<sub>5</sub>t 
++ Ï†<sub>5</sub>)<br>
+6.)&nbsp; q<sub>1</sub> = q<sub>3</sub> = q<sub>5</sub> = C<sub>6</sub>cos(Ï‰<sub>6</sub>t 
++ Ï†<sub>6</sub>),&nbsp; q<sub>2</sub> = q<sub>4</sub> = q<sub>6</sub> = -C<sub>6</sub>cos(Ï‰<sub>6</sub>t 
++ Ï†<sub>6</sub>)<br>
+The C<sub>i</sub> and Ï†<sub>i</sub> depend on the initial conditions.&nbsp;&nbsp;&nbsp; The 
+mode with the highest frequency is mode 6 (non-degenerate) and the mode with 
+the lowest frequency is mode 1 (non-degenerate).</li>
+</ul>
+
+<h4>Problem:</h4>
+<p>Three point masses of mass m move on a circle of radius 
+R.&nbsp; The equilibrium positions are shown in the figure. &nbsp;Each point 
+mass is coupled to its two neighboring points <br>
+by a spring with spring constant k.<br>
+(a)&nbsp; Write down the Lagrangian of the system.<br>
+(b)&nbsp; Find the normal modes of the system.<br>
+(c)&nbsp; If at t = 0 mass 1 is displaced from its equilibrium position <br>
+clockwise by 9<sup>o</sup>, what is the subsequent motion of all the 
+masses? </p>
+<p><img src="images/t1.htm5.jpg" alt="image"></p>
+<p>Solution:</p>
+<ul>
+<li>Concepts:<br>Coupled 
+oscillations</li>
+<li>Reasoning:<br>If L = Â½âˆ‘<sub>ij</sub>(T<sub>ij</sub>(dq<sub>i</sub>/dt)(dq<sub>j</sub>/dt) - k<sub>ij</sub>q<sub>i</sub>q<sub>j</sub>), 
+the solutions of the form q<sub>j</sub> = Re(A<sub>j</sub>e<sup>iÏ‰t</sup>) can 
+be found.&nbsp; We can find the Ï‰<sup>2</sup> from det(k<sub>ij</sub> - Ï‰<sup>2</sup>T<sub>ij</sub>) 
+= 0.&nbsp; For a system with n degrees of freedom, n characteristic frequencies Ï‰<sub>Î±</sub> 
+can be found.&nbsp; While the secular equation det(k<sub>ij</sub> - Ï‰<sup>2</sup>T<sub>ij</sub>) = 0 can in principle always be 
+solved, it is often simpler to find the normal modes by using physical insight 
+and noting the symmetries of the system.</li>
+<li>Details of the calculation:<br>(a)&nbsp; T = 
+Â½m((dq<sub>1</sub>/dt)<sup>2</sup> + (dq<sub>2</sub>/dt)<sup>2</sup> +&nbsp; (dq<sub>3</sub>/dt)<sup>2</sup>),&nbsp; 
+U = Â½k((q<sub>2</sub> - q<sub>1</sub>)<sup>2</sup> + (q<sub>3</sub> - q<sub>2</sub>)<sup>2</sup> 
++ (q<sub>1</sub> - q<sub>3</sub>)<sup>2</sup>),<br>
+L = T - U = Â½âˆ‘<sub>ij</sub>(T<sub>ij</sub>(dq<sub>i</sub>/dt)(dq<sub>j</sub>/dt) 
+- k<sub>ij</sub>q<sub>i</sub>q<sub>j</sub>).<br>
+The q<sub>i</sub> are the displacements of the masses from their equilibrium 
+positions, q<sub>i</sub> = rÎ¸<sub>i</sub>.<br>
+Here T<sub>ii</sub> = m, T<sub>ij</sub>(iâ‰ j) = 0, k<sub>ii</sub> = 2k, k<sub>ij</sub>(iâ‰ j) 
+= -k for i, j = 1, 2, 3.<br>
+(b)&nbsp; Equations of motion:&nbsp; <br>
+Solutions of the form q<sub>j</sub> = Re(A<sub>j</sub>e<sup>iÏ‰t</sup>) can 
+be found.&nbsp; <br>
+We can find the Ï‰<sup>2</sup> from det(k<sub>ij </sub>- Ï‰<sup>2</sup>T<sub>ij</sub>) 
+= 0.&nbsp; For a system with n degrees of freedom, n characteristic frequencies Ï‰<sub>Î±</sub> 
+can be found.&nbsp; Some frequencies may be degenerate. <br>
+For a particular frequency Ï‰<sub>Î±</sub> we solve &nbsp;âˆ‘<sub>j</sub>(k<sub>ij
+</sub>- Ï‰<sup>2</sup>T<sub>ij</sub>) A<sub>jÎ±</sub> = 0&nbsp; to find the A<sub>jÎ±</sub>.<br>
+<br>
+<img src="images/t1.htm6.gif" alt="image"><br>
+<br>
+Ï‰<sup>2</sup>(Ï‰<sup>4 </sup>- 6(k/m) Ï‰<sup>2</sup> + 9(k/m)<sup>2</sup> = 
+0,&nbsp; Ï‰<sub>1</sub><sup>2</sup> = 0,&nbsp; Ï‰<sub>2</sub><sup>2</sup> = Ï‰<sub>3</sub><sup>2</sup> 
+= Ï‰<sup>2</sup> = 3k/m.<br>
+Ï‰<sub>1</sub><sup>2</sup> = 0:&nbsp; A<sub>1</sub> = A<sub>2</sub> = A<sub>3</sub>, 
+constant displacement or uniform circular motion.<br>
+For the degenerate frequency we pick two linearly independent modes.<br>
+Ï‰<sub>2</sub><sup>2</sup> = 3k/m.&nbsp; A<sub>2</sub> = 0,&nbsp; A<sub>1</sub> = -A<sub>3</sub>.<br>
+Ï‰<sub>3</sub><sup>2</sup> = 3k/m.&nbsp; A<sub>3</sub> = 0,&nbsp; A<sub>1</sub> = -A<sub>2</sub>.<br>
+(c)&nbsp; The most general solution for each coordinate q<sub>j</sub> is a sum of 
+simple harmonic oscillations in all of the frequencies Ï‰<sub>Î±</sub>.<br>
+q<sub>1</sub>(t) = Re(A + (B + C)exp(iÏ‰ t)),&nbsp; q<sub>2</sub>(t)&nbsp; = Re(A - 
+Cexp(iÏ‰ t)),&nbsp; q<sub>3</sub>(t)&nbsp; = Re(A - Bexp(iÏ‰ t)),<br>
+dq<sub>1</sub>(t)/dt = Re(iÏ‰(B+C)exp(iÏ‰ t)),&nbsp; dq<sub>2</sub>(t)/dt = Re(-iÏ‰Cexp(iÏ‰ 
+t)),&nbsp; dq<sub>3</sub>(t)/dt = Re(-iÏ‰Bexp(iÏ‰ 
+t)).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Given: q<sub>1</sub>(0) = Re(A + B + C) = D,&nbsp; D = R*9<sup>o</sup>= 
+9*0.05Ï€, <br>
+q<sub>2</sub>(0) 
+&nbsp;= Re(A - C) = 0,&nbsp; q<sub>3</sub>(0) &nbsp;= Re(A - B) = 0.<br>
+Therefore Re(A) = Re(B) = Re(C) = D/3.&nbsp; <br>
+dq<sub>1</sub>/dt = dq<sub>2</sub>/dt = dq<sub>3</sub>/dt = 0 at t = 0.&nbsp; 
+Therefore Im(A) = Im(B) = Im(C) = 0.&nbsp; <br>
+q<sub>1</sub>(t)/ = (D/3)(1 + 2cos(Ï‰t)),&nbsp; Î¸<sub>1</sub>(t) = 3<sup>o</sup>(1 
++ 2cos((3k/m)<sup>Â½</sup>t)),<br>
+Î¸<sub>2</sub>(t) &nbsp;= Î¸<sub>3</sub>(t) &nbsp;= 3<sup>o</sup>(1 - cos((3k/m)<sup>Â½</sup>t)).</li>
+</ul>
+
+<h4>Problem:</h4>
+<p>Three point masses, one of mass 2m and two of mass m are constrained to move 
+on a circle of radius R.&nbsp; Each mass point is coupled to its two neighboring 
+points by a spring.&nbsp; The springs coupling mass 1 and 3 and mass 1 and 2 
+have spring constant k, and the spring coupling mass 2 and mass 3 has spring 
+constant 2k.&nbsp; Find the normal modes of the system.</p>
+<p><b><br></b>
+<img src="images/tp.htm3.jpg" alt="image"></p>
+<p>Solution:</p>
+<ul>
+<li>Concepts:<br>Coupled oscillations </li>
+<li>Reasoning:<br>If L = Â½âˆ‘<sub>ij</sub>(T<sub>ij</sub>(dq<sub>i</sub>/dt)(dq<sub>j</sub>/dt) 
+- k<sub>ij</sub>q<sub>i</sub>q<sub>j</sub>), the solutions of the form q<sub>j</sub> 
+= Re(A<sub>j</sub>e<sup>iÏ‰t</sup>) can be found.&nbsp; We can find the Ï‰<sup>2</sup> 
+from det(k<sub>ij</sub> - Ï‰<sup>2</sup>T<sub>ij</sub>) = 0.&nbsp; For a system 
+with n degrees of freedom, n characteristic frequencies Ï‰<sub>Î±</sub> can be 
+found.&nbsp; While the secular equation det(k<sub>ij</sub> - Ï‰<sup>2</sup>T<sub>ij</sub>) 
+= 0 can in principle always be solved, it is often simpler to find the 
+normal modes by using physical insight and noting the symmetries of the 
+system.</li>
+<li>Details of the calculation:<br><br>Formal approach:<br>T = m(dq<sub>1</sub>/dt)<sup>2</sup> 
++ Â½m(dq<sub>2</sub>/dt)<sup>2</sup> +&nbsp; Â½m(dq<sub>3</sub>/dt)<sup>2</sup>,&nbsp;
+<br>U = Â½k(q<sub>2</sub> - q<sub>1</sub>)<sup>2</sup> + k(q<sub>3</sub> - q<sub>2</sub>)<sup>2</sup> 
++ Â½k(q<sub>1</sub> - q<sub>3</sub>)<sup>2</sup>).<br>L = T - U = Â½âˆ‘<sub>ij</sub>(T<sub>ij</sub>(dq<sub>i</sub>/dt)(dq<sub>j</sub>/dt) 
+- k<sub>ij</sub>q<sub>i</sub>q<sub>j</sub>).<br>The q<sub>i</sub> are the 
+displacements of the masses from their equilibrium positions, q<sub>i</sub> 
+= rÎ¸<sub>i</sub>.<br>Here T<sub>11</sub>= 2m, T<sub>22</sub> = T<sub>33</sub> 
+= m, T<sub>ij</sub>(iâ‰ j) = 0, <br>k<sub>11</sub> = 2k, &nbsp;k<sub>22</sub> = k<sub>33</sub> 
+= 3k,&nbsp; k<sub>12</sub> = k<sub>21</sub> = k<sub>13</sub> = k<sub>31</sub> = 
+-k,&nbsp; k<sub>23</sub> = k<sub>32</sub> = -2k.<br>Ï‰<sup>2</sup>(Ï‰<sup>4 </sup>- 
+7(k/m)Ï‰<sup>2</sup> + 10(k/m)<sup>2</sup>) = 0,&nbsp; Ï‰<sub>1</sub><sup>2</sup> = 
+0,&nbsp; Ï‰<sub>2</sub><sup>2</sup> = 2k/m, Ï‰<sub>3</sub><sup>2</sup> = 5k/m.<br>Ï‰<sub>1</sub><sup>2</sup> 
+= 0&nbsp; --&gt; A<sub>1</sub> = A<sub>2</sub> = A<sub>3</sub>, constant 
+displacement or uniform circular motion.<br>Ï‰<sub>2</sub><sup>2</sup> = 
+2k/m&nbsp; --&gt;&nbsp; A<sub>2</sub> = A<sub>3</sub> = -A<sub>1</sub>.&nbsp;&nbsp; Ï‰<sub>3</sub><sup>2</sup> 
+= 5k/m&nbsp; --&gt;&nbsp; A<sub>1</sub> = 0,&nbsp; A<sub>2</sub> = -A<sub>3</sub>.<br><br>
+Using physical insight:<br>Equations of motion: <br>(2k - 2mÏ‰<sup>2</sup>)A<sub>1</sub> 
+- kA<sub>2</sub> - kA<sub>3</sub> = 0,&nbsp; (3k - mÏ‰<sup>2</sup>)A<sub>2</sub> - 
+2kA<sub>3</sub> - kA<sub>1</sub> = 0,<br>(3k - mÏ‰<sup>2</sup>)A<sub>3</sub> 
+- kA<sub>1</sub> - 2kA<sub>2</sub> = 0.<br>(i)&nbsp; An angular displacement of 
+the system as a whole does not stretch any spring, A<sub>1</sub> = A<sub>2</sub> 
+= A<sub>3</sub>.&nbsp; Then Ï‰<sup>2</sup> = 0. <br>(ii)&nbsp; Mass 1 can stay fixed (A<sub>1</sub> 
+= 0) if A<sub>3 </sub>= -A<sub>2</sub>.&nbsp; Then (3k - mÏ‰<sup>2</sup>)A<sub>2</sub> 
++2kA<sub>2</sub> = 0, Ï‰<sup>2</sup> = 5k/m.<br>(iii)&nbsp; The system cannot have 
+an angular displacement as a whole.&nbsp; Assume A<sub>2</sub> = A<sub>3</sub> = 
+-A<sub>1</sub>.<br>Then (2k - 2mÏ‰<sup>2</sup>)A<sub>1</sub> + kA<sub>1</sub> 
++ kA<sub>1</sub> = 0, Ï‰<sup>2</sup> = 2k/m.</li>
+</ul>
+<h4>Problem:</h4>
+<p>A large number N (N = even) of point masses m are connected by identical 
+springs of equilibrium length a and spring constant k.&nbsp; Let q<sub>i</sub> 
+(i = 0 to N - 1) denote the displacement of the ith mass from its equilibrium 
+position.&nbsp; Assume periodic boundary conditions, q<sub>i</sub> = q<sub>i+N</sub>.&nbsp; 
+(You can, for example imagine the masses arranged on a large circle of 
+circumference Na.)<br>(a)&nbsp; Write down the Lagrangian for the system of N 
+point masses.<br>(b)&nbsp; Find the equation of motion for the jth point mass.<br>
+(c)&nbsp; Assume solutions of the form q<sub>j</sub>(t)&nbsp; = |A|exp(iÏ†<sub>j</sub>) 
+exp(-iÏ‰t)&nbsp; = |A|exp(i(Ï†<sub>j</sub> - Ï‰t)) exist, where Ï‰ is a normal mode 
+frequency.&nbsp; <br>Assume the phase of the amplitude depends on the position 
+of the mass and write Ï†<sub>j </sub>= p*ja.<br>What are the restrictions on p 
+due to the boundary conditions?<br>(d)&nbsp; Find the N normal mode frequencies 
+Ï‰<sub>n</sub>.&nbsp; Make a sketch of Ï‰<sub>n</sub> as a function of mode number 
+n.</p>
+<p>Solution:</p>
+<ul>
+<li>Concepts:<br>Lagrangian Mechanics, coupled oscillations, normal modes</li>
+<li>Reasoning:<br>This is a one-dimensional problem.&nbsp; We are asked to find 
+the normal modes of coupled harmonic oscillators.</li>
+<li>Details of the calculation:<br>(a)&nbsp; L = T - U = âˆ‘<sub>i = 0</sub><sup>N-1</sup>[Â½m(dq<sub>i</sub>/dt)<sup>2</sup> 
+- Â½k(q<sub>i+1</sub> - q<sub>i</sub>)<sup>2</sup>] <br>= âˆ‘<sub>i = 0</sub><sup>N-1</sup>[Â½m(dq<sub>i</sub>/dt)<sup>2</sup> 
+- Â½k(q<sub>i+1</sub><sup>2</sup> + q<sub>i</sub><sup>2</sup> - 2q<sub>i</sub>q<sub>i+1</sub>].<br>
+(b)&nbsp; d/dt(âˆ‚L/âˆ‚(dq<sub>j</sub>/dt)) -&nbsp; âˆ‚L/âˆ‚q<sub>j</sub> = 0.<br>The terms in 
+the Lagrangian that depend on q<sub>j </sub>an dq<sub>j</sub>/dt are<br>
+Â½m(dq<sub>j</sub>/dt)<sup>2</sup> - Â½k(2q<sub>j</sub><sup>2</sup> - 2q<sub>j-1</sub>q<sub>j</sub> 
+- 2q<sub>j</sub>q<sub>j+1</sub>).<br>(They come from the terms in the sum i 
+= j and i + 1 = j.)<br>The equation of motion for the jth point mass 
+therefore is<br>md<sup>2</sup>q<sub>j</sub>/dt<sup>2</sup> - k(q<sub>j+1</sub> 
+- 2q<sub>j</sub> + q<sub>j-1</sub>) = 0.<br>(c)&nbsp; Assume q<sub>j</sub>(t)&nbsp; = 
+|A|exp(i(p*ja - Ï‰t).&nbsp; The periodic boundary conditions imply that<br>p*ja = 
+p*(j + N)a Â± n*2Ï€,&nbsp; p<sub>n</sub>Na = n*2Ï€,&nbsp; p<sub>n</sub> = n2Ï€/(Na),&nbsp; n = 
+integer.<br>(d)&nbsp; Inserting solutions of the form q<sub>j</sub> = |A|exp(i(p<sub>n</sub>*ja 
+- Ï‰t)) into the equation of motion we obtain<br>-mÏ‰<sub>n</sub><sup>2</sup> 
+exp(ip<sub>n</sub>*ja) - k[exp(ip<sub>n</sub>*(j+1)a) - 2exp(ip<sub>n</sub>*ja) 
++ exp(ip<sub>n</sub>*(j-1)a)] = 0,<br>or<br>Ï‰<sub>n</sub><sup>2</sup> = 
+-(k/m)[exp(ip<sub>n</sub>*a) - 2 + exp(-ip<sub>n</sub>*a)] = -Â¼Ï‰<sub>0</sub><sup>2</sup>[2cos(p<sub>n</sub>*a) 
+- 2] <br>= Â½Ï‰<sub>0</sub><sup>2</sup>[1 - cos(p<sub>n</sub>*a)] = Ï‰<sub>0</sub><sup>2</sup>sin<sup>2</sup>(p<sub>n</sub>*a/2) 
+= Ï‰<sub>0</sub><sup>2</sup>sin<sup>2</sup>(nÏ€/N).<br>Here Ï‰<sub>0</sub><sup>2</sup> 
+= 2k/m.<br>Ï‰<sub>n</sub> = Ï‰<sub>0</sub>|sin(nÏ€/N)| are the normal mode 
+frequencies.<br>There are N frequencies which we can label with a mode 
+number from n = -N/2 to (N/2 -1). All but two of the frequencies are 
+two-fold degenerate.<br><br>
+<img src="images/modes.gif" alt="image"></li>
+</ul>
+
+
+
+
+</body></html>Ytext/htmlUUTF-8¯"&*.26:>BFJNRW[_Ô_WebResourceResponse_<http://electron6.phys.utk.edu/PhysicsProblems/propstyles.cssO¤ï»¿body {
+	font-family: "Trebuchet MS";
+}
+h4{
+	color: red;
+}
+h3{
+	color: #663300
+}
+p{
+    color:black;
+    text-decoration:none; 	
+}
+/*classes*/
+.rightfloat{
+float:right;
+margin:4px
+}
+
+.center{
+clear:both;
+display:block;
+margin-left:auto;
+margin-right:auto;
+text-align:center;
+}
+
+.redclass{
+clear:both;
+display:block;
+margin-left:auto;
+margin-right:auto;
+text-align:center;
+color:red;
+}Xtext/cssObplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯'-.4567QRSTUVWXYZ[\]^_`abcdeiU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_<http://electron6.phys.utk.edu/PhysicsProblems/propstyles.cssÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÅCiSN< ÈÓ89:EPWNS.keysZNS.objectsª;<=>?@ABCD€	€
+€€€€€€€€ªFHIJKLMNO€€€€€€€€€€€VServer\Content-TypeTEtag]Last-ModifiedX__hhaa__]Accept-RangesTDate_Content-Encoding^Content-LengthTVary_Microsoft-IIS/10.0Xtext/css_"efdd842c5c6d81:0"_Mon, 12 Sep 2022 16:32:32 GMT_ü
+
+YnBsaXN0MDDZAQIDBAUGBwgJCgwOEBIUFhgaVlNlcnZlclxDb250ZW50LVR5cGVUVmFyeV1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV8QEENvbnRlbnQtRW5jb2RpbmdeQ29udGVudC1MZW5ndGhURXRhZ6ELXxASTWljcm9zb2Z0LUlJUy8xMC4woQ1YdGV4dC9jc3OhD18QD0FjY2VwdC1FbmNvZGluZ6ERXxAdTW9uLCAxMiBTZXAgMjAyMiAxNjozMjozMiBHTVShE1VieXRlc6EVXxAdRnJpLCAxMSBBdWcgMjAyMyAyMDoyMDo1MCBHTVShF1RnemlwoRlTMzM5oRtfEBIiZWZkZDg0MmM1YzZkODE6MCIACAAbACIALwA0AEIAUABVAGgAdwB8AH4AkwCVAJ4AoACyALQA1ADWANwA3gD+AQABBQEHAQsBDQAAAAAAAAIBAAAAAAAAABwAAAAAAAAAAAAAAAAAAAEiUbytes_Fri, 11 Aug 2023 20:20:50 GMTTgzipS339_Accept-EncodingÒ/0fg_NSMutableDictionary£fh3\NSDictionaryÒ/0jk_NSHTTPURLResponse£lm3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d † Œ § É ë î5<^ad†¨«­¯±³µ·¹»¼¾ÀÂÄËÓßáãå$)4=CFOXZ\ckvƒ…‡‰‹‘“• ¢¤¦¨ª¬®°²´¶½ÊÏİæôù 5>Sssy™¢´¹ÏÓàåùı             n              Ô_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled047.gifOGIF89aÃo w 1!şSoftware: Microsoft Office !ù    ,    Ân ‡        3  f  ™  Ì  ÿ 3  33 3f 3™ 3Ì 3ÿ f  f3 ff f™ fÌ fÿ ™  ™3 ™f ™™ ™Ì ™ÿ Ì  Ì3 Ìf Ì™ ÌÌ Ìÿ ÿ  ÿ3 ÿf ÿ™ ÿÌ ÿÿ3  3 33 f3 ™3 Ì3 ÿ33 33333f33™33Ì33ÿ3f 3f33ff3f™3fÌ3fÿ3™ 3™33™f3™™3™Ì3™ÿ3Ì 3Ì33Ìf3Ì™3ÌÌ3Ìÿ3ÿ 3ÿ33ÿf3ÿ™3ÿÌ3ÿÿf  f 3f ff ™f Ìf ÿf3 f33f3ff3™f3Ìf3ÿff ff3fffff™ffÌffÿf™ f™3f™ff™™f™Ìf™ÿfÌ fÌ3fÌffÌ™fÌÌfÌÿfÿ fÿ3fÿffÿ™fÿÌfÿÿ™  ™ 3™ f™ ™™ Ì™ ÿ™3 ™33™3f™3™™3Ì™3ÿ™f ™f3™ff™f™™fÌ™fÿ™™ ™™3™™f™™™™™Ì™™ÿ™Ì ™Ì3™Ìf™Ì™™ÌÌ™Ìÿ™ÿ ™ÿ3™ÿf™ÿ™™ÿÌ™ÿÿÌ  Ì 3Ì fÌ ™Ì ÌÌ ÿÌ3 Ì33Ì3fÌ3™Ì3ÌÌ3ÿÌf Ìf3ÌffÌf™ÌfÌÌfÿÌ™ Ì™3Ì™fÌ™™Ì™ÌÌ™ÿÌÌ ÌÌ3ÌÌfÌÌ™ÌÌÌÌÌÿÌÿ Ìÿ3ÌÿfÌÿ™ÌÿÌÌÿÿÿ  ÿ 3ÿ fÿ ™ÿ Ìÿ ÿÿ3 ÿ33ÿ3fÿ3™ÿ3Ìÿ3ÿÿf ÿf3ÿffÿf™ÿfÌÿfÿÿ™ ÿ™3ÿ™fÿ™™ÿ™Ìÿ™ÿÿÌ ÿÌ3ÿÌfÿÌ™ÿÌÌÿÌÿÿÿ ÿÿ3ÿÿfÿÿ™ÿÿÌÿÿÿÿ ±	H° Áƒ*\È°¡Ã‡#JœH±¢Å‹3jÜÈ±£Ç CŠI²¤É“(Sª\É²¥Ë—0cÊœI³¦Í›8sêÜÉ³§ÏŸ@ƒ
+J´¨Ñ£H“*]Ê´©Ó§P£JJ•e««W±aÕš5kÕ¯`Ã¦lÅk×³d5
+bq¥-Aná¶½ò–EZ±xóêµØŠíÚ¹lãÎ…«±­ V‚#V|øp«+‚öJLa_Ä˜¯6ÆÜ˜Eá+eC“råÓ¨õÂİÊº+WÏk=<[³YÓ©së–º«c³´ƒÎ¸ú7Ùß¿ßî^Î\éjßĞcK#äÖ£ÑânÎ½ûÏµeÍfÿÎJ8öòè5sİî½½ûšp#«ß*sõ‹¸½f']:òûÿ ºDXk‘vÜp=7]zˆi…rF(aIÏa· m÷YtxbÅŞ„ †Hœgr8‚)ˆW‘ö¡ˆ0ÆøĞj,^8ŞaV´a‰â½(ã@r<¶¥h<šÕ_L6)ĞsÆù^íˆ‡>:©å„½%™]yÖÉç c.¹å™!VX&™WQ9‘•^f‰æœŞè¥f(Z¤"tó™IçŸîÑh!‘nJgxJÊ	è¢©'¢äå©#hM'šŸŒfª[…Wî×WaEÙ¡¢š–š—F	fŠç'¥z.úÿgê¬“õÚŠ‚
+Ÿ·aAë¯{õ¦*¯FÆÖ"ƒûa
+ì²UAy+yZRhD×‰Æëc²2«-ovÙÆZpWIJQbk–K©İµ-DêØ®€Ã±¹æ§ÆŞéa¶½»¾–ñkÙLşä•C\ğI„ï¾	Ø0IsõĞÀEì¨½«jˆ$²‰.¼ØŒ'ôØŒçÅTmÅâZF›C%Ã42Áä²2B·aCèæ;mA=¬&}îüP[£Ñ¶ë½	ÀÌÑ5´]ÙúR_)$5C}1ÍóÍ.]@Ã­,ı[OÇ¶Ö± ô@JOüõŒİİ‚5{ŞŠD’Åµ@sÿİò¾t5LÚ%Q0bo7ôÁlEœnàQ“]qã“¯M’[c[>]â)]uÒ­+xõÚ‹­wN4Ê9?ö–ãõÜºlXÇ—pb³¤Øç
+ÛùÕ
+=–³H„Y»êÃÇ7¤%Öı¦˜lºÆŞéè.æ¼‰­üy¼“¤Xƒ¿+Æ+ÜWœ=á"õÜ3Î—)~zçï·dZî	­Öı‰/3ä™æ‚š;&½aJvÂ•­òÄl!¡SÜf:šªätë[Èî†™êq}!Áı¬Ö@ÂÌ	iÕıBbÀûµjmä‚à„Á‹	P;GB”µô–-Š/x´Ù ABG8Âœl,/‹ BÿJB‘]ßÃàGh46°{4ZlT¸vo}R<W#“¼òh6šC`”˜G@¶!Hˆ–A©ÖWÄ¤G‰ù›öÒØ"Â™&õ“)$«ë±m4BßóåŸA„‰¥)ØËÚHzùQ P ãv§G­U7âÌ‚¶³±h£øDV2ÌàŒ.¨d‹*SÉÊUª’mÚûáA‚È;S¢±ii¡¢BşâÊVú²—iyŒ+RËR2‘|+XyğHÊ^:ó—€1{H3ß¥±@;[_û:GI"!‡tlĞÑ2ƒ›Œ1–â]ÌLIÊS+†ñVCOë!n4ìyä29ÿJ~®ìœÄœ§=½ÉÇ@èCül™¢"N„´L’"{Ëf6³˜†J3‘Ì5q™N1¦3`|ç‰l$*ßŒ¼ªÏqÌ¤K­ìAˆ4â]¹2O"PI@›Ï•"“QÍÑ§²¢i?—¿˜ÎÒ4ÒÁƒTzÇí{ii¨ÀÎHTí­í27š¡8ÑC#ú1Ó Õa'Bn¦(!æ~¶Jê«°Æ!nEbúIË|U3±&í>ƒ”ä9…xCRæMœàòø ¶Á¼Êñsôã!êP£m5U8õĞA÷É|!6[ƒ\@±	XÁŠê¢#5êƒü5ÌjE~”#
+‘$±ÖŞÅ’,c­Jo…LÿşTadšû
+ÖF¶´iFóŸ¼Hã™º]‘¼mdªfS»Î’\Ãî˜LóÛ[S]¿-7Ğ×^±”ÒnAòTtZ6¼mG¯‹ÒK°­!ïÅX¾U-w¢}R¶¬«_åì{&²—Kù;JÊ*¬~-‰ÉıïQ[#³[›€ÖO]Î³k}·v§†§oG¡º¾êÎåò+cHl ÆN*ÁV‘”¶)Tr9«Ü„èÒ¦éÅ×;wôáµàN:Àyw"ãve©ÀıÑo7lÙc¹ê¬†‘ğµærâ™™ÓÊ?½o»6‹U‚FA°:+…	üS
+ç.~Ø+¡¦V¶IÿWÁtXh6Ç´VP*ÄéÕ×-ù¡G
+XLèÅ‚ TvªF¶r»HÜDŸLÊ¶Tš*©ƒSá”w½I[˜›Š˜]£®±[áK]b,Ÿ‹^%Ğ
+é´¤Ú¸ç™yŠ¬%P™`{JÓ§4†gÈ^ä£¯ÖÍ¹3VóEó5w)«’£Ùm¿Jb4ÃS_…¶¶Ú"#IxGÆñÚBmDM+ù]½^˜Ÿ(¢9Í/£CÌ¥û»ÃŸ¶Qª.=ê¢©Ù`]	¾l‘Ô²§¶‘»Îé¥'¬|í2œO®áiµ]¿É|øm‡Üİ+™ÛE<J¶C¾Á"Z—Ä/b´Îlä»˜»Ş&ÿ©¤Nboäh3’éhRÏÖˆ‹¡—¸î£ÂîZkY ÒD-êÈ’…sòæYÏßõî•‹ ÓNÑß2¸YëÚ£PXšİRgG<Õ”ÌN`ˆè•Ò‡Ÿ[ßùOL5SìI¼+û…H
+|·yXÊù–Söje¼áCTÎ£¾™xšhámgo¦â
+,„Ì×)›Ö±ßŠ­øØ®RÇd,«s4áyC»Îj“¡ğ,O´&tËêá6Q÷wD‡h¢»‹‡¸±$ÅŠ!ôsu?Ç‹üÇ®Ô yªÌ<±½f{ä6!]Í´ªÿ…£Ò»Û7cš-7õº-ıóç©Gã‹‘Ì¶ÿ§-CáøÚBf±{»·ß£-NŸƒ¬Ç³EüÜì™.Iˆ7ç}•NÅ/ƒwleG#¦^'®`€RuNnÒ3vQR÷—_½ó~2…[ı§_zf€"Ä}_2{æ ĞS.H¤="Q…²`Í§g !eAwaödØ€t%lèå0÷…Z{T_ÖÓ‚åd™äu;„"¿‡Zø ¨tĞF@×â‚Y%„tl—L1f«"'›‡?îõ`LF-(*s…5#-"C‚’WCşR7DDQr-fG²Â_pgä—^©x˜$¡‡h^òw€ÀeFgè1'Ä%;…LC>oX„Uè/ ÿw ójèPµgt–R=‰0.ÆpíôQ¶w|ãXOöX¡æ ˆç'[˜?z(D†mQ'7Ï¢Sz„>aPÛQ„¨HTò1êƒ~k5[N¨]A¥5‰ET0U„ÀFD¥”RS*¡Rjú–3Û±p`rzqèVifg@LÙ!g‡GA0Å;%ş±zğg½ø$İH q¥,cU­X¸XT‡„ñvZ…]ñN‰t²P-óHNUqóY®BsäƒÀ˜ëVc¡|Ê–KFdhã@ DjÃ 6^“‘–‘©6‘©Uh!›E:"‡MÕç:©‘ù‘™‘ª”‘è	ÿÅ’8„O1§.ùÁ‘2¹‘ )”…’/ùN ”s¥sş1«RT˜ôbß¢~jFDÌˆ4`ˆO¸—K¸çù‡"§’ ´B†@{ø@ÃÁei¨?zôhT;ÁF¸¸ Ï¶/Ğˆ—3õZ$RˆEÃ‰´fçc¥E¸×AÄ7XS;jT;Ô„å†4¶íóNlæ~Ò±KòGN„…œùf[i_Şuk¾H•İåZ‘E˜€wŠGš°Õ2a	Ÿ²Y‘	qäÅEµæ‡*!BÿÅEDOYy—º£bY‰›êãDeÉ6})uQ˜)Ò‚ƒ2€Q³@ú3Zì[‚§šahéNáÿ¢@º9UW×²£8©#™zØdI†öÇ>Hy>îã›œòWoä¡}yG0 Ö•#Tx·³‚rÉÇÃ:è“5zVS#Qá `l™ÖÒÃÄ@"%ºg}	äôœÁŒ8¢DC9#D50Ó˜K¤qÛ&RR›TW áQ#6ŠÃ¢~å™¡n³8““¡ñ„:ã¤†Ôgö2<ÓQ›gC0¨ö µ™>6*™šã4&j2ü£¤Qº/8ºÀ<áiY'9¬7s“ÈAKu)Hº…66C¥0ñ¥î¤Djê[2Ê7Kš„ïh6.ª§9fêa*5§2Ã~m81pGo<3ÿQ—t3¡£¶)§S©uºoUŸó0‹š¤áá0­¡¢•Ò£¨—êœŠªCá8©Ú®zª	•è÷ šnÑ·.ºú.„«&¥Û8Šb‚¤»Z¬<!(•²úùÔ¸i¬Ğº.dk¾©#
+éap­Újj‚Ÿ`¤+$W"Äº­äú½`r$)%%·W®îª¶’S™´¬×X°ø¾ò®úÊ­*ö-£x§Ô²1‚y‰’º¯4¢T>H¯Ûh-éT°±fÜWJµ']ã*±C–boÂ°÷÷…[²&*^"ªğçfs‡s&û²‡d•²ØŒ¥#OÑÚ±0›³»v6Ë"eJYãƒÙª³D«nv¯ğV%ÚŸEÛ´zòœ)û³jæ+ÑEë´X‹…Uk«5‹‡~šµ`´^{±³Jª‡¶h»KDdklõ³´W›¶9{lÉRÛ]xÃ+C+·E{ŸlX¤¥³´eÄ·„‡¶ô·wKé!•_[¸N‹¬‹# 2K¸4§²IC”2Y“0™¥•¶’f”Ai”ËJˆò¹|+€¯Šº¬Ûº®ûº°»²;»´[»¶{»¸›»º»»¼Û»¾û»À¼Â;¼Ä[¼ ;Yimage/gifOybplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯'-.4567MNOPQRSTUVWXYZ[\]aU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled047.gifÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÅCiSXû ÈÓ89:CLWNS.keysZNS.objects¨;<=>?@AB€	€
+€€€€€€¨DFGHIJK€€€€€€€€€VServer\Content-TypeX__hhaa__]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/10.0Yimage/gif_ˆ
+
+YnBsaXN0MDDXAQIDBAUGBwgKDA4QEhRWU2VydmVyXENvbnRlbnQtVHlwZV1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFRFdGFnoQlfEBJNaWNyb3NvZnQtSUlTLzEwLjChC1lpbWFnZS9naWahDV8QHU1vbiwgMjIgRmViIDIwMjEgMTY6MTQ6MTQgR01UoQ9VYnl0ZXOhEV8QHUZyaSwgMTEgQXVnIDIwMjMgMjA6MjA6NTAgR01UoRNUNDYzNaEVXxARImJmY2MyYzMzNTlkNzE6MCIIFx4rOUdMW2Bid3mDhaWnra/P0dbYAAAAAAAAAQEAAAAAAAAAFgAAAAAAAAAAAAAAAAAAAOw=_Mon, 22 Feb 2021 16:14:14 GMTUbytes_Fri, 11 Aug 2023 20:20:50 GMTT4635_"bfcc2c3359d71:0"Ò/0^__NSMutableDictionary£^`3\NSDictionaryÒ/0bc_NSHTTPURLResponse£de3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‚ ˆ £ Å ç ê18Z]`‚¤§©«­¯±³µ·¸º¼¾ÀÇÏÛİßá@EPY_bktvx‡’›Ÿ¡£¥§©«´¶¸º¼¾ÀÂÄÆÍÚãñÿ-7Ããé	"'=ANSgk             f              Ô_Yhttp://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/couple1.gifO~GIF89a.S w  !ù     ,    .S ‡   f3 3 f34f36f38f39f3:~3535f3_f3`f3af3bf3cf3df3ef3ffffW…fW‡fYŠfYŒfZfZf{Šffv§fw¨fx©fz®f{°f|±f}³f~µf¶~”È—Ì—Í˜Î€3 3 ”3 •3 —3 ™3 ›3 œ3 3 €36€38€39393:3:3fZ Z::®W ¯X ±X ²Y ³Y ´Z ¶Z f¶Zfÿ  Ãx Äx Äy Åy Ë| Ë} Ì} Î~ Ï Äy6Î~9Ï:ÏfšYŒZ¶ fÔ”4Û˜6Û™6İš6ß›8â8ã9ã9ä9æŸ9ç 9ç :Ş›bàœcæŸeé±]ë²^í´_ç fğ¶`ò¸aô¹bõ¹bø¼cù½dú½dû¾dçÁfıÀeşÁfÿÁf€š®³  ¶˜¹®€™Ï€›Ò€Õ€Ö×ŸÚ Û˜¹Ñ›¾×”±è•²ë–´í–µî—¶ğ—·ñ˜¹ó˜¹ô™¹õ™»÷›½ú›¾û›¿üÁ¶¶á¶ÁÛœÀıœÁşÁÿ«Ïê«Ïë¬Ïì®Óï®Ôğ¯Ôñ¯Õò°Öó±×ô±Øõ±Ù÷²Ûø³Ûù³Üú´Üû´İüµßı¶áÛ¶àş¶áÿÚÓ†ÏáçËğÔ‡ñÔ‡óÖ‰õØŠöØŠ÷Ù‹ùÛŒúÜûÜüİıßçáşàÿáèè¦ëë¨ìì¨ğğ«ññ¬óó®ôô®õõ¯øø±ùù±ûû³üü³ııµşşµÿÿ¶ÚÓïÁêêÄğğÇóóÈõõÉ÷÷ÊøøËùùÌûûÍüüÎııÏşşÏÿÿØííŞôôññÏööÓùùÖúúÖûû×ııÚşşÛÿÿÛâââäääæææçççèèèéééêêêëëëìììíííîîîïïïçáÿãúúãûûçÿÿğğğñññòòòóóóôôôõõõööö÷÷÷øøøùùùúúúûûûüüüııışşşÿÿÿş ÿ	H° ÁƒıìÇO Â{åÆÑCH±¢EŠ
+2tø¢Ä‹ C"Ìøoã¿‡'Š\)’¤I”YÊ´è²áÉ)gêi¼tòğÜ·äÎ£{ş:´(Ò§ÿ”ê¨Q¨3¥2­êëN­T­z•ÙO£½xğäñ[KòêØ‹eKM»–_Û·+ãö›«–í@·x)êå[÷n`zcõw/^ºy÷lFÕ§x%cÇ%ó£\9äåÇ‘nîì¹1hÍœI«V¼^9xùD§^-ØkØ²i[lı:vÒÙºòÆı;¸ñ£qKâwnŞ¾…Ç	&ï·¼ùsÑ¡k¬î\{öéÜ¯ş—Ì<F~Éÿ¥K§®»ù“è	®o/¼¿øç»7?½şúÙõ÷ ]µÏ<ç SOY€éf ‚
+2È_A&¸àMö	Dà?Fˆa€’¶>æOQü °¡y#–xâ}ï-Ô‰&¢£†3ºhãùãOzÿ¬¸Ú>ñ”SÎ< ôÓ >ú¤qD9zı4é¤yQI¥•?F·a–S*Éd“OV$deO©š?>©J*#›ğ¸©’FeG§ÒåI{¾$3©XšÑíSÏO–ä'”‹¦Ó'Š2ºĞ£ª­Xi:+ÊY¨ˆª¢†Îä£hô¨sÏ†]ÚG?ş©Şs?¥ÒvjR±ÎŠ©Š•ÑŠ* ²:”^­˜š+nÈ+V&qX ò0yc³Š¥­ÆªFm=Ö6H²• Ù> tkP¶ß‡lºƒbÅÏ>’
+ pÙ½+Y?ç¬CeèvfïBùîk©Š ¯†øêı6ºZ¶à.¦¤B>Ö3<ö`ºÚUäÅ/ùÇ|qÆf²[`’
+1	2Ê1¼RÃ!ìğ¨…2<&Cå#Ow:kHób?®õÏÎ)»ìqN4€¡ª|¬“âıs}2‹44K³ë«†?Æ9Hgª©Ï=«.«¶AWµêéxP½ªÃµ­×Øq£MoşÌßÚMhy3ÓıÜœ%;RAa;êR]µ‹Ğ˜îÜ–¼òªlø_ûä“¹|şWÛ?å8W¥9“ıŞúyÇ=eúæ¬ºC¡ÿ%SÄCiîÔåÍdí­?Åºãç–´OY£âÓ¸ïÅvN|Ñèñnh?Ç¤|[ŞZÆ3ÎˆU?ĞõŸCığQóM}zàÓ~;İã·\9Bç»|ö–µZ*«vı® ¾•D?İ¼«’•’ÀŞåï$ú GÿÈ·úˆI"ëÑı‘Àş1\jUùuŸŒPP¹`ñÚåÀ&•í[øóàş,8û5¯s À’Xxé…ğ[qáİHdBˆp7ş$àĞØ4ú*äÓ`ùÔDD#2ptKâ	¥æòï†^¹•¨($ÅÜc^±xÅ=õ	Mgh¤È>î1/ÎÏu•ûĞµÆ6¦ÏcpLˆ·–6:º{ëk—êŞ×Å¥É$^Ğ¥yÀcöp’è²ÓÈGFx¢¤#!)IÛ™§’œÄäa¸!Òœ¤W¼VnyHq€ËcKZ™W¾Mc-¥BúáÊÁnâÓ%-m‰·Àd»	/k¹ ±-n•½û:Ì±{ğèCø˜f5¯I’lRÓš<ê¦6Á‰Ü±äkŞÜæ1VôĞã'ê Ô¢ãNxÊsZşy'{î£zîs¥ôb
+©Ïx^gk:9“MÖRs¨£ =ÎBùÑĞ‡FÔ8­(Dy”Q‡nt,æIG-ê¼ÎÊó˜9ĞÁOn¦t¥-çKYzÑè T¥4]¤@=3Ó˜"ôS±‡9Ì±šFG¨Dµ‡QƒÔ¢^s MUê±v
+’¨è§ü>Öa¤rs«]åÆÀZ¯†“¬f)Uë†V·`•%gš:Îx¤G¬Š‘+]íšéµ®wõë\ÛWh®ó"å«'ßjÌ”åĞ‡>ê3±÷<6²“í^	 ÌRö‰Æ¹¬d?»ÙnM´™½Ô×:³¤†ğRåXşGÿŞC=×Ö¶²åQm[ÙÙu0v,»}mlg{˜
+ç`ÂÍ-E~{‘ç ªè‡Sc$Ewºï©.t¥‹Êi÷ºR5éZ9ô—íb÷…•iì®‚V¢PmoYß‹Ñøº—¹P‘{İ[ZcK¿òEOöğ[Ãxœƒ®äœêLôa`çŒ`^ağãaMcEÂ¦¢Zû-S8™¤#L"Æ!é12¡x3£XÅ¨ãÑ‹YJâ8Zx‰K1Wü¸r–ª¾]‡P’‚K ®ÈùrTŠ,8ãêÉB>ãwe%ã‡ÃPqrÌ‚lå]ey§éğmjšT\™„Y`´ë¯ş–Í¬°Ïõ/gó Ù‰å ‰ÙÍ6C
+„	ÂÒ8™µÄ-$HvÌ£ z¹-F¨ŠĞÁ«BëqPj›2Eıç¯•ñËu =ülèØÕŒª’îqÅ{³„nğ\‘¯ºTÔZéÄ1#±ö|ê£Èú„¡†5¤'kË•tƒ¯.X¯Ó%é5;Ï¶Ö0«WÉGİ”­ÙZs«¥Í£KÖÕ„Œ5¢õ¬ìQo8×Ûf—¢©-jÇ®ËF7‡§XjôJ9Ûî¾ßŸÒmØv»€å>¶—èíu×ÔŸöw¦"}îXW{Ö®!¡mpA'ü8g¸©×IHxË»fÓ~ªÆ7ÎqQc5ã&NYÇşGNòk®Ùf'M¨=§7¯Éå¤9ôÉ—ûpoóØÈoéÇŞ®©s’÷|ä?÷¸‚w³ó~‹uı îœ®ô‘1]ãÀKºÈ‹=’§'Û]øÈGF˜L~d}ë÷ºÖcy#±ƒ}ÛT?ˆÙÉÕ§(ªcßøÛã®ñ¹Ãü0v¯!¿N¡zÀıîöºß›#ÁÃã†'ü{¯w›· ŒøQ2¢‹‹›©<d–ê Ì[ó¶òüæ§>ôÂjşòvT×ñÈ§’Ä¬Ÿ‡ëWßzó,íõ±'½NÙF{Ù_ı-úp>lº»ÇMøÄà‚Ùä³üÛaşğ…¥Å½³¸"Ò—Ìã±ş²T…bWÎ®÷ñ~®w¦ûêø>|Ì_Îƒ _ıj÷[²õ~òO<çù`o´’D_ã$]ÿú $ı×mÀ•è (&|TpÓc€(€A¤j÷Vÿw€ˆsÁä$ğ  úRp¹¤ë / 'qD‚"x9$Ø~ˆC&ğ‚1Õ.³†+h‚wÒXY3ğ0æ07Ú"™—ƒ;˜ºV |:Èƒò7ULT„@N6qrYcƒÑôƒ:(ƒ Uå`"Iz´…&€Kåá…ñ †I857†YX†Ôs†Q³54ã…V8$üp[ç  uuxHR—†,Ñ‡w¨ç ˆş#ˆ4×E¨3îSˆ‡øQPèxÊFˆ·5‡2¡}³!ö@Øƒº¡‰
+që Š¦5¢H^ÿPŠ§hnÖç9Ø¦4²^ä`ŠO¸Vún'£(ö€‰˜ö@ã°xØä9è[ÃÆ7¸ŒÍH@'c¨F:Àök¾VÓŒ(Ò‚^CÓ0$Œ5+Uõ€ÚWt1‡+é`$ëØ¡’‚7ôzÈgt»x9¾+ñ¨`Ô({ÃERX7B¸}68åRñ QdF’ÑHñ‘E!F3—_Eˆ$)‘–fdÿØ9)’yóp‘Ïò@åÖd$Ø0¨ÈwxşAs’ÅÈFCÃs éP“u‘Š¬D4é[k±‘â¨äA”â2”îvX¢’j¦r’@à@ò0+\ØTi•X‰BJ#†¤C.*â\öx‚ÆkiTF[i0‚5e”m)—)ÊyÓdğpî¸&t9Tw™y"uÙ—ƒó—I¡ `—Î•—c´’‘z‡á;ô@â`Œ-W‘9™Šùr–)™”92W œÉ/÷g”=RZ¹Ö‡ı Cu"8YX%¡šæÀšßáš©¹šY™s®	-¶ùSë’’çù0U÷ÀLäœªEœÆ™È‰'­Rœ
+rœÂù5ĞY”x–HÍşé˜ï(hÈx#[7à©DâğPìWfè	Ô8šŠb±ö ğ€qñ|şRŸ÷™Ÿûi|_áŸø©Ÿfä%dŸ*2üùo‡ñ’bxeüpéÀÓG‘É1¡a¡/ÙuJ¡š"¡ šy:2¼ŸocŸç Oï" :Á1}d-
+/cS+J£.z£Î&,ÉÁ¢;
+£D £ïı#¤çT¤%q¤IjLÚNêI6¥S<·ªè=¯elï2òà¥ÀaºcªdZêgªiúL%·1>Z„ö` )£™W§kzx:8zŠ¢È˜úğ§hw¢ªÑ÷áUùä¨~!‹j¨¤á¨ŠÊ¨ÙA©$©7‘4‘AW±ø€¶Ÿ’ªGú©úª£ê¥êf\‚ªZ *ª÷@ªõsª¥©«²Áª·êª¹«»*¬½j«¸Ê ;Owbplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯'-.4567MNOPQRSTUVWXYZ[\]aU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_Yhttp://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/couple1.gifÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÅCiS_5 ÈÓ89:CLWNS.keysZNS.objects¨;<=>?@AB€	€
+€€€€€€¨DFGHIJK€€€€€€€€€VServer\Content-TypeX__hhaa__]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/10.0Yimage/gif_ˆ
+
+YnBsaXN0MDDXAQIDBAUGBwgKDA4QEhRWU2VydmVyXENvbnRlbnQtVHlwZV1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFRFdGFnoQlfEBJNaWNyb3NvZnQtSUlTLzEwLjChC1lpbWFnZS9naWahDV8QHU1vbiwgMjIgRmViIDIwMjEgMTY6MTQ6MTMgR01UoQ9VYnl0ZXOhEV8QHUZyaSwgMTEgQXVnIDIwMjMgMjA6MjA6NTAgR01UoRNUNDIyMqEVXxASImZkNmJlMWMyMzU5ZDcxOjAiCBceKzlHTFtgYnd5g4Wlp62vz9HW2AAAAAAAAAEBAAAAAAAAABYAAAAAAAAAAAAAAAAAAADt_Mon, 22 Feb 2021 16:14:13 GMTUbytes_Fri, 11 Aug 2023 20:20:50 GMTT4222_"fd6be1c2359d71:0"Ò/0^__NSMutableDictionary£^`3\NSDictionaryÒ/0bc_NSHTTPURLResponse£de3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‚ ˆ £ Å ç ê18Z]`‚¤§©«­¯±³µ·¸º¼¾ÀÇÏÛİßá=BMV\_hqsu|„˜šœ ¢¤¦¨±³µ·¹»½¿ÁÃÊ×àîü*4Ààæ %;?LQei}             f              ‹Ô !_Yhttp://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/couple2.gifOŠGIF89aû U w  !ù     ,    û U ‡   f3 3 f34f36f38f39f3:~3535f3_f3`f3af3bf3cf3df3ef3ffffW…fW‡fYŠfYŒfZfZf{Šffv§fw¨fx©fz®f{°f|±f}³f~µf¶~”È—Ì—Í˜Î€3 3 ”3 •3 —3 ™3 ›3 œ3 3 €36€38€39393:3:3fZ Z::®W ¯X ±X ²Y ³Y ´Z ¶Z f¶Zfÿ  Ãx Äx Äy Åy Ë| Ë} Ì} Î~ Ï Äy6Î~9Ï:ÏfšYŒZ¶ fÔ”4Û˜6Û™6İš6ß›8â8ã9ã9ä9æŸ9ç 9ç :Ş›bàœcæŸeé±]ë²^í´_ç fğ¶`ò¸aô¹bõ¹bø¼cù½dú½dû¾dçÁfıÀeşÁfÿÁf€š®³  ¶˜¹®€™Ï€›Ò€Õ€Ö×ŸÚ Û˜¹Ñ›¾×”±è•²ë–´í–µî—¶ğ—·ñ˜¹ó˜¹ô™¹õ™»÷›½ú›¾û›¿üÁ¶¶á¶ÁÛœÀıœÁşÁÿ«Ïê«Ïë¬Ïì®Óï®Ôğ¯Ôñ¯Õò°Öó±×ô±Øõ±Ù÷²Ûø³Ûù³Üú´Üû´İüµßı¶áÛ¶àş¶áÿÚÓ†ÏáçËğÔ‡ñÔ‡óÖ‰õØŠöØŠ÷Ù‹ùÛŒúÜûÜüİıßçáşàÿáèè¦ëë¨ìì¨ğğ«ññ¬óó®ôô®õõ¯øø±ùù±ûû³üü³ııµşşµÿÿ¶ÚÓïÁêêÄğğÇóóÈõõÉ÷÷ÊøøËùùÌûûÍüüÎııÏşşÏÿÿØííŞôôññÏööÓùùÖúúÖûû×ııÚşşÛÿÿÛâââäääæææçççèèèéééêêêëëëìììíííîîîïïïçáÿãúúãûûçÿÿğğğñññòòòóóóôôôõõõööö÷÷÷øøøùùùúúúûûûüüüııışşşÿÿÿş ı	ì÷¯ ÁƒıñóWĞŸ>zùöcˆ°¢ÅŠj$x¡BŠ!J¤Ø±äÁŒıq4ùïcÃ‡NdIåFš-¾)“$Î‹6z\ùÓ¾y<ÿÍüÙqiC¢8"©Ô'S„N[B¥)5iÖ«'}ªÛ•êW°=Bxuß½yñğí#ÉmB±VYº…+—n^²xÛ¾;×`]»3İKØ/bÃŠë›o½tk68¹òe•™7kîl³aÑ£)—}õÅ¿ö«—]=ıVnE|˜«RÚ¶qëvİ›¥là·eG]ÜäñÚÉ•.İ<ªA|êÌ­»çšúõìÛ»şo&‰];wñÉƒ?- ¬éÁK§Ş¾öh‰Ê§o?XıóÕwŸLÈß€L½×‚ñS?ü”c:õ è 2åà?JH¡…Ò´a‡V¢†FX"ˆ8eØ‹Í39èô'‚0F%#6È”?;ÖÈ¢ÎÙãU9Š–£=æ˜#=C^h“NBIäUT>å•ei¥]Inæ¢Që”SN†>e	—‘i&šp:ÇæœoÒ¤æcb :çÄO†y‚‰Ö<€
+JT¡šíy¢Æ³haX¤Š&–£†ş£`9 ”£¥…Ø{œ"T8¢êcanşŒº—ê?«¶úª©'âH+«ú¸z®ÍZ  P:å¬£+~~îÙÏ>Î†ì:T]™ä³Ñ›lµ”Dìo¡R‹š°@Yxß{şÔƒÎ8O.Ûí?¦»®–uæ¯ºì~ù®Aç¶¤. ô*©‹Åşc:sö³¬Ÿ²zº'ª82xpÂ±ŞXÃ4ñ™ÀÂYğÄÄvœ fV@<çÊ]ŸwjP˜“
+€>(«ü®»œÕ{ûš¬3¹,m‘>á Å’„ªEÍ6‹Ë-ûòËé İRÅ	6MêÔ0âSuV÷®ÑH ¶{›y}P=Ê®ƒÏÅü¬„ñ¦SGÍtİõ pşÛî–ëÖ±½÷ÛúM)Û ğíiÜR>&øAé(K´§Õ-4Ôvu: Ğ3ùÕX¿h÷?‘{Yè!F>óËgÓıXéÕøÂJ„óO˜Ã\7:ßöCçÕ\â¶R¿·N$Ø øN(êw?6üÓ7ípÄä2<·É–ZøÍ2oßs‹BÍì÷ä—o>Ú¯şúì×^øíÇ/ÿ¸ãÏoÿı¹ÖÿşüÓŸ~ÿ  ëŞ'À°$ğ3IKb¼ï5°gÜ—íô'~|®}œ_ågÁj8Ké·ÈÇ¥ŒL|
+ED¸¾Š0…Í?ğ‘®o†5”‰À2·ÚP}ş>”	Mæš}Ô£9dŸ‘È<ñmf‰I\)2Dè¡f†G<!ù°ˆDöYlcRÅJ1§ ú¨Ç<î±2âpfC£ÙØ8ÍP$kÜR£ìrÇ9¶…<cAì±xxÏGPÃIYúyp‘…œÇ‚ÂÉÊ\ntV>àª¦‰H2#9ÃI}x2#Hºh6)ªSF0›aå·´b¼%Éğ¢‡: €†(Äpş¹İ>t)^æ˜p¦:ŠéKÆ‰I4Êäe3‘9ÊjŠ²‚ù°ÀF¥ÈzEÍO"<˜<ô‘›eOM‹Ş²‰q–”VTåOÂ¹Íw:“îşcÎF§,=Ór)é<Ö±#ÅŸÑ‹B_³‘ÔŸ#³fQöIPûhÍ{¶”
+µÖ’—Òç)Yş¸ÖR^ÔE¹Óè(…E’M¤RàE¡—@¥Áã¥!Uà539É£ÅƒœõßËYrã§ÏŠ!æ2¹Ô«õ¨@Ó!İóT¤ú3£}Ì¤—·s|‘&#ˆ‚HÂcyÕDD´Û-İç¨­rÈ¬_İ£DM²Ub™õ¤i](E:‘#ë)qT°ªÀk¬RóyÍ¦Z„¯=+Xô‘²<œ,`+›Vİ1ËRşğÓ:È©ÂI/f¤‰?n:Z°F{·<ş'Ä„¦ZÖ’––Y£Ÿc[×eª$?è‘3Õ"½ œ(2Üâ–ã¸É}s‰k\äD¹Á{uŸk]Î„Ò?%›LqãQ¡Êí+¼óoy_‰ôªw.ìıß?Ä[òÂ·‰¸	¿Ò;·Aˆ³\rÊ>øë_õLÀF®÷Ç‚8ıU0€uz¥‡€ƒò?‚J$cXÃö‘‡3Ü{‘3ô¸0‰[bâ¹ŠÇ'üÈ9à1 ì.÷ 1nÑAËxÇó½YGôã—@Å¡9Ä1ZZEÉL¶q’¼ä&3xñ©²”)Œ·öCMŠG‹+¨)™€ÙbŞ—ş—Ïœf!·F)ls~’İL„#÷€Î¾ê\ª±ü#Ï¶Ù³ıèz0xĞxÖó‘¯´B{ÄñĞJùıèHûÙ2q4¤%§QzÓ—öˆOæÜ4íÃò€>\Ï+RäÔ©^ubzfjT«šÕ€Œ(Bjk\_W¤¤¾ˆ39äètLÎ”´^	?Š}ì	iØË‡±ÑèìºX¥8V6³©Â0ÖG*YÉ©Ïa~x[º¹á—=È­sw+Üêf·¹[-,O§ÛÁë.·»ËìFà–¸dıO<¨Òêñ@K" €4Á	G\àG_‹^sp™@üÍ	n§ödnİÈCqJ¡õ>ş8‚¡.ä!J¤‚:.“g|€öÈ[òéhæIÉ½çkY÷X+$×GÏ©YG6Şhú©®Õ’3JGÈ=€-ºo;$"I>¦Ş3o+d!
+Úzµë ¯gİ b—•¿óz³Ó)íw©‹šR’’]ëè”kYJ÷ö½8ü¸{ŞïáÚ±WÊvŠŒÕß­x¼ï¬ğ¢Ômbú®9ˆık¼ä]òÂY-ştT,É;Å²’{¬ã¸
+í.Ï’Ñ«Å ¦‡®aÏºĞÖ½õ°"=ìOßİœ°“Ÿ?¨ÂPi†İCÈkç'JùÉ‡¾ÔqëŸıAtØMõÌ§»ˆ¢ş¯û–T?Nr›éáÍv{“@ˆøOiÈ÷‡2º¥‰¯åPç¥¯0ïCM%g=è/ì¸mÅ‚ø`õ@í·zÍg~ş‡w'€Ø(‰g^¸s±€hmC#ÁÇTò·yXÁK¸Tùw€·§&şWù ñ $+L'úW%h'˜‚|tÌC~ä÷@1ˆ3¨‚O±0r;qC~<x21VÉÃÆ¡#È@—Çg#ÿµ„ä2„±…S8 ÿ}›b;å…”'…•"çÇX%„/ø{`XwRØ9çR…@˜}å÷„\á;ûjd¾ÕW@ƒ…Æ‡zh}J~‚xşV‚¸‡…X)§Õ=cµ†8=Oanz[
+³5!¨}ÎwsxúpğP-[jMx€8á;½"Š¤~È‰óŠ¬x®H‡˜Š²8Š´8›†<å`œ•ê®"ÉŒÃXŒev%ÇƒÉènÍxÂHŒĞˆmUwdqê ?U<pâ;NpİøÆ`Û¨ºä¦tW"CFìM'T»Hwæ0ÿåï¨Cù¸ı¸ŒÿrÉg‡qD‚ê¨Il—Ñ¦wVúnu_İA‘ë`‘©ZïÂ‘™{³Ö-"I!I’X‘E‡rãpşçÁj¾"D“2©Cû§‘Zu89“ÎÇ“ˆq“ê“@¹“°‘_.2 ¹¡èô`áÆ‚Ì¨N	•RYN"#LÙW•CaOU)_™•bÉ’öØQyhvB*q†\"÷À–goé…Œ¦sÙ–vé;xI$rI—né—¸lİ&(¦³—É„˜†¦˜œÇ˜\²Y*‹ù—ÌX™™’¹ÃAæ@äP>;G )š¤ù™¡9šäSšÿpš¬ù=P±sÆ6Şi²¹µ¹·ÙšºiD¼)(¾iÀÙ›¹ù+×µnè0û0fè!BwËÙœÇ	uÒÉœÎYADsÓ™9›mWğ0‹­ã©‹åÉ/âI²iìy`%aDóDD—Lâ™ô)E÷™Ÿê#ŸøYƒòcD•¶Bõé#
+ij>	Z>Ú -”Fğ õp‘›)AJ¡*$”¡
+¡*
+¢Ò¥ ;Owbplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯'-.4567MNOPQRSTUVWXYZ[\]aU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_Yhttp://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/couple2.gifÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÅCiSc‘ ÈÓ89:CLWNS.keysZNS.objects¨;<=>?@AB€	€
+€€€€€€¨DFGHIJK€€€€€€€€€VServer\Content-TypeX__hhaa__]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/10.0Yimage/gif_ˆ
+
+YnBsaXN0MDDXAQIDBAUGBwgKDA4QEhRWU2VydmVyXENvbnRlbnQtVHlwZV1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFRFdGFnoQlfEBJNaWNyb3NvZnQtSUlTLzEwLjChC1lpbWFnZS9naWahDV8QHU1vbiwgMjIgRmViIDIwMjEgMTY6MTQ6MTMgR01UoQ9VYnl0ZXOhEV8QHUZyaSwgMTEgQXVnIDIwMjMgMjA6MjA6NTAgR01UoRNUMzk3OKEVXxASIjRiY2VlM2MyMzU5ZDcxOjAiCBceKzlHTFtgYnd5g4Wlp62vz9HW2AAAAAAAAAEBAAAAAAAAABYAAAAAAAAAAAAAAAAAAADt_Mon, 22 Feb 2021 16:14:13 GMTUbytes_Fri, 11 Aug 2023 20:20:50 GMTT3978_"4bcee3c2359d71:0"Ò/0^__NSMutableDictionary£^`3\NSDictionaryÒ/0bc_NSHTTPURLResponse£de3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‚ ˆ £ Å ç ê18Z]`‚¤§©«­¯±³µ·¸º¼¾ÀÇÏÛİßá=BMV\_hqsu|„˜šœ ¢¤¦¨±³µ·¹»½¿ÁÃÊ×àîü*4Ààæ %;?LQei}             f              ‹Ô#$%_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled001.gifOŠGIF89aÎ : ‡       ÿÿ  ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ò( ÿÿÿ      L           6        ÑÂÇ         Bñ6lHò é ‘ `ÿÿÿ‘ ]ÂÂŞ6     ÂÂãòB_Bk   6Û6Û,  ñè   ôDBpÿÿÿBk×aq Ôó 6Û,     $  ¡¡¢                    6Û,òlñZò6  ‘"  6x6  9spòh×eô¬é ‘(ÿÿÿ‘"‘›òÌ6  ‘"  6
+x6  =£àò¤6  ôèé ‘(ÿÿÿ‘"‘›‘ÛµAä  œµA˜     <A9`  A9`        ¶…í                     6Û,     ” 6Û8@ØÄ¹   1    6Û×956Û Ô  ×ÛôŒBÁ~    Ô  …       äBÂ:B       BÂ   óÜØÂ±:R          A‹ÙGˆ6Û  BÂ<BÁé7.BÁ~:R    BÁ~9ÿ6ÂÂŞô¨DBÁğÿÿÿBÁéA‡4 Ô  …    BÁ~º«Í   ôŒBÁ~ô¸A‹Ù  ô¸  2ôxAˆ*  …BÁ~              9spáè    (     	òœ ôìé ‘àÿÿÿ‘ÛÂÃÉ   =£àÂÃÎ     ¨  6  òØ8Bœõ(é ‘àÿÿÿ‘ÛÂÃÉ6     ÂÃÎµAäµAäµA˜Â0öÂ0“!ù   ÿ ,    Î :  ÿ H° Áƒ*\È°¡Ã‡#JœH±¢Å‹3jÜÈ±£Ç CŠI²¤É“(Sª\É²¥Ë—0cÊœI³¦Í›8sêÜÉ³gOq@Ñ!DTœÏ£H| "nÂ9âˆ|à	tÀHU”Î‘à´eÕ«Y?líê³©Ğ‚Dı)®JQdjfe)÷mÜ¶GÅ¡#;°
+Ó²M?¸å*Xœ(¯Ï)|¸¬Õ³kXKUÜÔ@§N¦¬2³RÏ›ó@×X ‘¬œuV¸:4]Ê­[S8‡ÈÀÅ“Œ%ïİ½s®%-0-kİ¬a7ù;¹hÚ¶ıg¼úkë®$i7òì²S6ÿÏ¾“)ä9sæš¾âøö'ß/×_bÑÕèôn.ú°¾AşI¹ä_A ÖÀ 4”à"6A÷Ù„`‚1È`ƒ˜Ğ}²d!…	}ˆa†äTÕ€."B^8¢CÄÀD«¡Xc‡	 £‰¨P‹.b$ãŒ1i$‘İ¸Ğ86´ã“<B$ˆAäb•9¤KZÙŸr
+W”dJIåŠVyQ—[®Ä¦—‰ù˜‘igj²¸"–½Ù&J~Â¹$&r†âBv&šdÉ'ŒÊh¤nHèœ6‰P¢œ2Ÿô¨@|RZéH¦JfjËihcBœ*ÿºjj ¢9À¨·b™jŒ'íŠd¡¬"Ş€k§%&‹e¨¢Ú:Ğ„
+ä«I¾òÚ^p×fk)‡k++·>kk­!Rmµ¿†„î~ÜŠé»s.çíUù(¹­K’¾_ÂK ¶óÍ[f½hŞëì£üŠ”pœ½ÕŸC9‘½Î’:nÅ«»+¬Î§í¦ï8ñ[œfBÓR»±}ÁZê¯A!PÑ•%›,nÉ)—”sD²=èê€1ÏÌ¨áºó¾¦ºgè ™2±E43DòB©ªD©E=3Bó^u…E×,m¤,zQÖ«6íd¬©`Ø™İÒ›Åæ©¡š€lÛ**g8´Bt©*}káXà¡Æ>É‘š+v¾ƒ¿xw²îRb®~÷-ùH'6©¤LÑ:Äøæ Ë°å+…9®¤×î¬ˆŸÄzš·~vŞÉánûî¼÷îûïÀ/üğÄoüñÈ'¯üòÌ7T@ ;Ozbplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯'-.4567MNOPQRSTUVWXYZ[\]aU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled001.gifÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÅCiSgõ ÈÓ89:CLWNS.keysZNS.objects¨;<=>?@AB€	€
+€€€€€€¨DFGHIJK€€€€€€€€€VServer\Content-TypeX__hhaa__]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/10.0Yimage/gif_ˆ
+
+YnBsaXN0MDDXAQIDBAUGBwgKDA4QEhRWU2VydmVyXENvbnRlbnQtVHlwZV1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFRFdGFnoQlfEBJNaWNyb3NvZnQtSUlTLzEwLjChC1lpbWFnZS9naWahDV8QHU1vbiwgMjIgRmViIDIwMjEgMTY6MTQ6MTMgR01UoQ9VYnl0ZXOhEV8QHUZyaSwgMTEgQXVnIDIwMjMgMjA6MjA6NTAgR01UoRNUMTY3NKEVXxASImFhMzBlNmMyMzU5ZDcxOjAiCBceKzlHTFtgYnd5g4Wlp62vz9HW2AAAAAAAAAEBAAAAAAAAABYAAAAAAAAAAAAAAAAAAADt_Mon, 22 Feb 2021 16:14:13 GMTUbytes_Fri, 11 Aug 2023 20:20:50 GMTT1674_"aa30e6c2359d71:0"Ò/0^__NSMutableDictionary£^`3\NSDictionaryÒ/0bc_NSHTTPURLResponse£de3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‚ ˆ £ Å ç ê18Z]`‚¤§©«­¯±³µ·¸º¼¾ÀÇÏÛİßá@EPY_bktvx‡’›Ÿ¡£¥§©«´¶¸º¼¾ÀÂÄÆÍÚãñÿ-7Ããé	#(>BOThl€             f              Ô'()_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled003.gifOæGIF89aM    !ù     ,    M €   ÿÿÿşŒ©Ëí£œ´Ú‹³Ş¼û†âH–æ‰¦êÊ¶
+ ¸òL§pİİª÷¾ÇûU‚¦XÀ(L*#DCsˆ$=OÑ¥õz N¡ÅªÆj½—m®J¥ÃN6Ä\š×xf\<º_t·±oÁ3Ga‡Ñxƒhµx%§†´ÓX÷²'ÓÈˆ ùöG7IØ)qèT™p7ù)f:Šóø¡3¨y*z©W§¨ˆÚËÀ{ô7³œÕ†iœÄú«ì9Rúš;½éœŠì,ıË\wí`;q(®lİ|<­T¬»lÚ@<Îî%hŸ¿©é~ï'NiÊ1±—Ğ>Ô%DvO–7_×
+Ò‹‡f–8ş^ìP¥úxšÆ.>ĞÈGP1‹"µ¹|i)˜¡n-aÚ¼‰1 >]5qúô‰²M&ı
+™¢õ:u™ôQ’O«Ú˜pªÕ­`¢fÁ”«X)X9„:6m¯f©zTÛâl»²äò»"¢Z¶uİÄ0_vßÎ+˜.a¿YãÚÄ1?u2œ—mOç
+ë·¤ğà‡g‚–™gÇÀÓ]<K©Œú['ƒÿ,CFúp8Ø’XçÜIÚ5®©?ùıøÒøbÛgÛ#†\Xèhr—èÜMŞäÕ)=J&¨=YÈÁçH½ªûõwtm—gù–ï[é¹×z~ÛİÖˆşÁƒ]Ø‹5ëÍCy»ì‡ BÒ˜ƒÁYgZC²ãàbVßC±,uwQq!«ée€‚SRˆ¥eØÏR<	ušpş³t4º²Ì*Õ$Ta=Ê‚Õ®T— /êÆ‚0$â4ÚIšÁ†dÕ¤>n%³àH¥b>^©U–b‚å%X‰ff,.fšnš¹¦šd¾Ig eÆ4gz®èšŒ2î9V•v	è^Òjd…âµ$ŸîIöç¢aœwç mBbUú€hé ‰búß|Éizäk1yJŸ¢"¢x©—%êP½9G(a'%Y´y™†ªæp+“\&9,´(6ÀZ¯æÕzG°]Ù8"n¬Q÷˜uÀl¹ßå­øk‰¬Ú¤l`Ü¼ÇŞ¶®iîIºç,¸‘z2®‰©­Ë^
+ì·05úE¬å²Jn¶.zHs_É¢"T	ßæ/Cé¦ó0_DR_·wù#dx£.:vß*Eö¤T’Œh‘çZ|²)¿jp[-£\é¦†±<ó›*)U*¨9º³ÉøşìfdnEú.Ñûft1ÎJG‰‡Ì]<]4˜r^ç*Õdí´Öi%=B ;Oybplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯'-.4567MNOPQRSTUVWXYZ[\]aU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled003.gifÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÅCiSl¾ ÈÓ89:CLWNS.keysZNS.objects¨;<=>?@AB€	€
+€€€€€€¨DFGHIJK€€€€€€€€€VServer\Content-TypeX__hhaa__]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/10.0Yimage/gif_ˆ
+
+YnBsaXN0MDDXAQIDBAUGBwgKDA4QEhRWU2VydmVyXENvbnRlbnQtVHlwZV1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFRFdGFnoQlfEBJNaWNyb3NvZnQtSUlTLzEwLjChC1lpbWFnZS9naWahDV8QHU1vbiwgMjIgRmViIDIwMjEgMTY6MTQ6MTMgR01UoQ9VYnl0ZXOhEV8QHUZyaSwgMTEgQXVnIDIwMjMgMjA6MjA6NTAgR01UoRNTOTk4oRVfEBIiYWEzMGU2YzIzNTlkNzE6MCIIFx4rOUdMW2Bid3mDhaWnra/P0dXXAAAAAAAAAQEAAAAAAAAAFgAAAAAAAAAAAAAAAAAAAOw=_Mon, 22 Feb 2021 16:14:13 GMTUbytes_Fri, 11 Aug 2023 20:20:50 GMTS998_"aa30e6c2359d71:0"Ò/0^__NSMutableDictionary£^`3\NSDictionaryÒ/0bc_NSHTTPURLResponse£de3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‚ ˆ £ Å ç ê18Z]`‚¤§©«­¯±³µ·¸º¼¾ÀÇÏÛİßá@EPY_bktvx‡’›Ÿ¡£¥§©«´¶¸º¼¾ÀÂÄÆÍÚãñÿ-7Ããé	"'=ANSgk             f              Ô+,-_[http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled53.gifO)GIF89añ M w  !ù     ,    ñ M ‡   ÿÿÿ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ş H° Áƒ*\È°¡Ã‡#JœH±¢Å‹3jÜÈ±£Ç CŠI²äE &Sª\ÉR!J/GˆÙ²¦M’43æüørçÍŸ@Ovô	’hĞ£H¥¸thÒ§P6•ØSfT‡S¯œ¹1+D”\C‚ÕêÒ«Öª:0Ku&Û¤oŸÒŒ{®KvÉvÕ+ukZ˜xñ†Èu0B°=óâ¬¸åÜ¿{×6è¶2å‚Fİ
+¼²²fÌœùúØ8ôß±cªN¸Ú4RÔ¢A“†¬1±İÖ’Ïv}ôsìÑ¼©ªEKxwîºÆK®÷1Få£‰MÎšzTé¿sC‡>û³o¬…şc˜{×°ßc‹·hşxö÷ğ•ªO¿>ğÚöó×oß^¿ÿÅ€ı' _ühàYó¨`o	.è M>(aMNˆSWUh¡XÌ¨á†"aÕ‡ .7!‰Ïuf˜ˆ}˜bj>ñÇ"r“­·˜m”Ùh’Ó	ç^‡L©äÜŒuù¶;¾Ø£iıy×‰‡dI¥Ååœq‘¥g•vS†Ø]9Ù¢–åäÙ‘÷A©Ô™²‰	v¤±Y¦l4úEä™fùä’?6©fˆvÎ‡[›tRø'Vãyv–‡VD&‡[uYgD¡§ŠŠY™¦Ÿ§ƒ¾©İO—":)“•š ¥ 2šzş¤êY;Éˆ£XŠz'i™ä6Ø­QûĞm1–h,¤‘«l²ø-ë¬’Í>+mjNk­|^«íÑnëí¢Ì~+n§>;.Šæ*¸««B¥+¡ªuvëîƒl¡£º±nij¸Êšİº<İyª¼A²kŸ›³.WoµÔ¼_¾l/Ÿ'¹ÀÍ>ºæÅ`&V(mı:|œŸ:àŒt›¦~°±ó©¡Zç^Ëû’ûÆæ…[¥6ëÌgÈşş/ Bƒ[3¥XâljÅC½ÛmA‹šÓà¨kÅ[·U¯_Éğ¼ÒbM6ˆfŸmaÚj¿;vÛÇ²÷‚rÏ­õÛvo(u	Ş|÷í÷ß| ;Oxbplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯'-.4567MNOPQRSTUVWXYZ[\]aU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_[http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled53.gifÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÅCiSpç ÈÓ89:CLWNS.keysZNS.objects¨;<=>?@AB€	€
+€€€€€€¨DFGHIJK€€€€€€€€€VServer\Content-TypeX__hhaa__]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/10.0Yimage/gif_ˆ
+
+YnBsaXN0MDDXAQIDBAUGBwgKDA4QEhRWU2VydmVyXENvbnRlbnQtVHlwZV1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFRFdGFnoQlfEBJNaWNyb3NvZnQtSUlTLzEwLjChC1lpbWFnZS9naWahDV8QHU1vbiwgMjIgRmViIDIwMjEgMTY6MTQ6MTQgR01UoQ9VYnl0ZXOhEV8QHUZyaSwgMTEgQXVnIDIwMjMgMjA6MjA6NTAgR01UoRNUMTU3N6EVXxARImMyZjM5YzMzNTlkNzE6MCIIFx4rOUdMW2Bid3mDhaWnra/P0dbYAAAAAAAAAQEAAAAAAAAAFgAAAAAAAAAAAAAAAAAAAOw=_Mon, 22 Feb 2021 16:14:14 GMTUbytes_Fri, 11 Aug 2023 20:20:50 GMTT1577_"c2f39c3359d71:0"Ò/0^__NSMutableDictionary£^`3\NSDictionaryÒ/0bc_NSHTTPURLResponse£de3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‚ ˆ £ Å ç ê18Z]`‚¤§©«­¯±³µ·¸º¼¾ÀÇÏÛİßá?DOX^ajsuw~†‘šœ ¢¤¦¨ª³µ·¹»½¿ÁÃÅÌÙâğş,6Ââè!&<@MRfj~             f              ŒÔ/01_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled034.gifO‹GIF89a ³       ÿÿ  ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,      şpÈI«½8ëÍ»ÿ`(dihª®lë¾p,Ïtmßx®ï|ïÿÀ pH,‚  £rÉl:ŸdJ­Z¯X2Ëíz¿Ù-xL.›sbéôÌn»ßñ`¯Ûïß4~Ïï;·t~‚ƒ„8j…ˆ‰Š,€tR‹‘’iSk“™š{rr˜›¡¢f‡‡ £©ªm¨«®¯\­°³´M²µ¸¹@–º½¾>j·¿ÃÄÅÆÇÈÉÊËÌÍÎÏĞÑÒÓÔÕÖ×ØÙÚÛÜİŞß†àãâGæ$èêäïìQ¦çîõÂñôğğúø”’ÈÓĞ(D¥}û
+Öû40ß':œaµJ)<ÇĞ %‰ş§:e´M$Çíì˜ÎÑH’Ï<d²e…ŠâfÊ|	“™={q0é4ô&À=»™“Tã¼‰OQn :3i3PM–†©P¯ùxZ-ÆîVVŠf±6ìÊuëØ–ÁâÊK·®İ»xóêİ{Ö©Û [­İj6h^«|+^Ì¸ñaÀå¦ÊšLò_Â3kŞÌYì‹ªÄÊJ¶|Yk`Òë:«^Íyèal£B--5Mg¯eäöEìlÚ¹~•¶Fñ^9—]3¥ihÇµxÖ•ÜæóÀD•_Ç=½Eô\;qşF]´6w×İÁÌ˜İŸK÷æÏù®ş¶óæéâŸF;ş
+ÿµşÑ%#ıã‘}1¥÷Ÿ‚à•` G»õƒ) ØŸ„ù9H!-¢Ğ!qÂô¡	#¾%bˆ$¢h"I%¦¶â‹.Î§"ŒüÌ8B‹4’ƒã€9öÈÜ;ú¨”<
+iävÀy¤6A®´¤‘MÂ÷ä‘QZ·‹’SâWG•÷Éå’}ñåhAŒI%–2¢—f–4˜Éƒ›À½¹šBbD§p^çswÖy	{")çClÇ }’yå…Æ ˆê·†V&‘j™¤_§Tz‚B’’è~‹rš©E!˜Ç¨¶z«c™Dh§rÚC)îÀš®zˆªæº,uèuW«›—RgÅş%;áQÂ¦&–³¤–: O¶µÂ¾”í/Ü.’Kán‹m¹‚º
+¡·NUS„ø¸èFÄÔFå¶kİqÇk«l—ª“ª”¯L]¼‡Má|¿ÃJJ*hHÁª”ÿ¦)‡º÷•[VU®ÓF,A (£¼Åíu²»\+Ô\3²º¬*ÌË‚<rÌ	ûòĞ*Ë¬\Ë?â„´¢/aóÓ7QñM›WŞÆ¥åFt =lM´Ñø,¥ÄÛ]]uP§-5¹:ŸmŸÙn›:’×\ë@÷×ÕîÜsºHÂ=nuE¤-8bÏ³Óz—6àÜ]7§ìnXˆcİ·oş{çÍ‚«íÌiÅy¹p”Wîlä×€ºä ‹®7ædoÎ÷Å³ëĞùàW¢2˜ëX¯›æ‰ŸŒ:ä«PAÀ[şza­·^5Üî¹£z!ï|âgT–ö‚İUüÅ?Wå´óGòËwk‰I5û‰‘}e¼ËÓ÷u}oCøš½ï¼ºÂ?$¸ïiàxdç¿Ò50ZÎS ğ†>
+Æ¨vİ77!P Uø]ò ÈAI}Gû³à’Cº
+*Y…³ÂCÈBª-„`	Vg7Çyhišû›33¸ï
+Œ3İâ†ÿ¨°‚^³ô7 ’Çd"¸ş¦–´£M±7*ğa×†¶ Øİ„‰V›Â¸ µX¨ÄI?›¢Ü(D77 -
+r”›Ç”'Ÿ‚ulÁËÜ‡¶ö}íÛ:I*Œ,‘Ãb(µ°v$_óÂ%5Æ¨aajV¼Ø¯EB”Ü¤a$)ˆo$E0R¥õ.HSîŠ•Ê¥.wÉË^úò—À¦0‡IÌbó˜È\Õæ$ø1S“£\£L!0\â‚šCU539Í?Zò9³¥*ÂÙ'rÒÈœˆñæ—Ğù"vöÄmR§5¯)ÏXÕóğ|K>µ‰ŸuŞ³ÿ|g@gÀ«QF3ÿ0(Ái¯„.tRåëÑ¡FÎQ4T”¢uº(>5ÚN(q´¢Ò¬bùQŠ6óDÎI“ÉÒ–ºô¥0©LgJÓšÚô¦8Í©NwÊÓúô§@ªPß  ;Ozbplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯'-.4567MNOPQRSTUVWXYZ[\]aU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled034.gifÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÅCiStŞ ÈÓ89:CLWNS.keysZNS.objects¨;<=>?@AB€	€
+€€€€€€¨DFGHIJK€€€€€€€€€VServer\Content-TypeX__hhaa__]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/10.0Yimage/gif_ˆ
+
+YnBsaXN0MDDXAQIDBAUGBwgKDA4QEhRWU2VydmVyXENvbnRlbnQtVHlwZV1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFRFdGFnoQlfEBJNaWNyb3NvZnQtSUlTLzEwLjChC1lpbWFnZS9naWahDV8QHU1vbiwgMjIgRmViIDIwMjEgMTY6MTQ6MTMgR01UoQ9VYnl0ZXOhEV8QHUZyaSwgMTEgQXVnIDIwMjMgMjA6MjA6NTAgR01UoRNUMTY3NaEVXxASIjYzNDNmOWMyMzU5ZDcxOjAiCBceKzlHTFtgYnd5g4Wlp62vz9HW2AAAAAAAAAEBAAAAAAAAABYAAAAAAAAAAAAAAAAAAADt_Mon, 22 Feb 2021 16:14:13 GMTUbytes_Fri, 11 Aug 2023 20:20:50 GMTT1675_"6343f9c2359d71:0"Ò/0^__NSMutableDictionary£^`3\NSDictionaryÒ/0bc_NSHTTPURLResponse£de3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‚ ˆ £ Å ç ê18Z]`‚¤§©«­¯±³µ·¸º¼¾ÀÇÏÛİßá@EPY_bktvx‡’›Ÿ¡£¥§©«´¶¸º¼¾ÀÂÄÆÍÚãñÿ-7Ããé	#(>BOThl€             f              Ô345_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled035.gifO€GIF89aDM €     ÿÿÿ!ù   ÿ ,    DM  ÿŒ©Ëí£œ´Ú‹³Ş¼û†âH–æ‰¦êÊ¶îğL×öÉ¢¿ ß
+OÀOqH4‘ÌæeÉ:GÒ©õŠ¨f´Øh÷pŸÊXw¼B‡#jR{"ûä×8¾Şàao‰®_¶ èò³W3˜—€è±Øğ‡Õ˜è5©!©GXÇğg¸%æÉwiâYŠuJ˜)˜S¸™å:
+K§U„úT«;[yĞëÛêÃjWIlÌìØ¬<tŒİ²ÛKù‰éZÅŞ”=Ç­r­ùkş‹­°ş®¯Œ¾\ı>ı¨X¯hÌ¨¯…y¶Òy÷œ³{ìÌì¥ª!<\†úlºˆ' F~ÿneT(ˆâ°õ¸”t#qÇTIÂséd5™9Pœ|9g&£”‰VN‘†f'|ÚÆÅğéƒ(Mˆ>o.}
+õ†Ó¨T«¦ae5«V¬9·zıÚÍ!X°JÇN«5 ÚN\×nEšç¬Û¬p×ÈKµ®İ¶3ôÎÙãw Î;4™<4L¼²I[C,‹ŒNÈ‚G¦Ló`œ	¥VR‹—Z_ÉmDü¢Ï(Š£BQâ¸£»^î"Û&Bûò^ƒ¯jea½YİÜ­‘©YVrHÊíÑs@°NpS³}÷{†½ğ§ØÆáşœgt+ªÁ‹>œpz&ßKk{ö¾ôõÔgŸ~•¾‚ÄÚÛÿÌxøy¦_Pö-±D°Í³Ÿo1è‡İ7!y"İ'2Éü”™Q!u×~òµˆ$¡šbæ½òáŠ~œZŒtÁ(cP…hc4á¨c=&ècó	Iäg<‰¤ É–d“–‰åd”äeÈGŒ	¢$t4“å!Ë¹‡Xˆ×• T&NŠaf%™ÿ]÷•™
+¢uZwj²…æÔ 7Ñ€k’Do7Ú›~2eÔ’ĞêOúiŞ8éC ±u€h>w$—]öfàm“©|qºå9ÿ|Ú’.z†Ï†ß¢)`òuš¬‚´ä«îE:Ì¥ñ®¸ÕYi\WîÊÈ²É>g9¤L+h…ÆR¦›]94Æµ£e+)•;èm1¬nN7u›ªv¡£g®ï8ïl/Š+e¾=”«o¿¹¶ëoÀÿâ+pÁªŒpÂ
+/ÌpÃE  ;Oybplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯'-.4567MNOPQRSTUVWXYZ[\]aU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled035.gifÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÅCiSxİ ÈÓ89:CLWNS.keysZNS.objects¨;<=>?@AB€	€
+€€€€€€¨DFGHIJK€€€€€€€€€VServer\Content-TypeX__hhaa__]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/10.0Yimage/gif_ˆ
+
+YnBsaXN0MDDXAQIDBAUGBwgKDA4QEhRWU2VydmVyXENvbnRlbnQtVHlwZV1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFRFdGFnoQlfEBJNaWNyb3NvZnQtSUlTLzEwLjChC1lpbWFnZS9naWahDV8QHU1vbiwgMjIgRmViIDIwMjEgMTY6MTQ6MTMgR01UoQ9VYnl0ZXOhEV8QHUZyaSwgMTEgQXVnIDIwMjMgMjA6MjA6NTAgR01UoRNTODk2oRVfEBIiYjhhNWZiYzIzNTlkNzE6MCIIFx4rOUdMW2Bid3mDhaWnra/P0dXXAAAAAAAAAQEAAAAAAAAAFgAAAAAAAAAAAAAAAAAAAOw=_Mon, 22 Feb 2021 16:14:13 GMTUbytes_Fri, 11 Aug 2023 20:20:50 GMTS896_"b8a5fbc2359d71:0"Ò/0^__NSMutableDictionary£^`3\NSDictionaryÒ/0bc_NSHTTPURLResponse£de3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‚ ˆ £ Å ç ê18Z]`‚¤§©«­¯±³µ·¸º¼¾ÀÇÏÛİßá@EPY_bktvx‡’›Ÿ¡£¥§©«´¶¸º¼¾ÀÂÄÆÍÚãñÿ-7Ããé	"'=ANSgk             f              Ô789_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled037.gifO˜GIF89aoM €     ÿÿÿ!ù   ÿ ,    oM  ÿŒ©Ëí£œ´Ú‹³Ş¼û†âH–æ‰¦êÊ¶îÇ² óçú]ïUï{ƒÄbhhd “&[ÀÉŒJ#KCure§"(÷~zÅ›mÇæŒÓìâkŞGîzvoÿpHyş wñö'H¸ccÈ¨§”¨2‡¶ø³æ¸g‰W“™ÂÉ¨àYiˆø0IQj¥ô£Úú”kújjµˆ©{›€èØsêL¬gì[flºŠÛUé·¹ù+MEİ7g“z>Æ-³İ\ëp<Ê«œ+M
+Xï¦+Qª©»Nİ1Lì@9˜N]<Q‘5¤ÁŒ•=#Âá#cPb¥WÿÅõ™¸„¹~ù4ş
+©/â%À¢dí¢L*ÅéÉrÎ{_òô2º•9g’<Rn[GTJ½1ÕĞa›45š¯š +†ÂTºï’Ï£4»ˆ´ùi,µÈ–[‘ÓX¶µèº*iÁ®@·İÚÄR‡mĞqxQaı{êOU¸)Qş©WÈâ0;©ÄF0náÍœ§xU£vrçÑ¤?|^¦¹´êÕ’ùf“µìÙ'NÏ	™¶îÑ¶_ãŞ<8†ŞÃ?œ"Æ3Æ“Ï†Í™x¡ÔÎY®NR4t×<(Œ’[¬ËNg|(¼i©êçÙ^œ{ló{fÂW³¶hûáFö»ÿ”¿Š#ÇpuÒ{È uÈaçŒ`,ªBà|>$“_]Uµ´E£Ü‡ßV®çÍƒe#MúC¢~”IÕXebDOQ<€"?Ê#b^2âM=–‘“c;I¤`a}(_ŠÏ|åâ5½7HI=©£Nå)$…VZÆ]„Y¸cƒßÔÄ“ŠNf%‘KIi¢" :éÌ`NÄ£=•YW›Ub)áR?ÖÓ#o–sfâÙ÷§Kù‰ZiùUQ™(i–W1jy¹(ç-_&º'#‚©ÖtWø—g„UDª›bZÓ)uà(¨` ÖFë|“4ùj^·bìŒ½b#k°ÆÊf*%ÅÿË,iÉ2µl³Òö,ÍM‹mgÚ]›m·%m­·âz–T¦á‹îO[¢–jºî‚·îmçŞ•Ü¯>ız“¡})‡Ô„ø
+k#DªÆ‹ŞíÊâœ½üÅÄ‘´$_®¡
+§ğ¡%ö§å+AÌ-½·h1ç‹ãd
+ƒ¡_åq</dJÆé,5Òk	93·˜ñ£×]¼¤I=›;!¦Î
+}Ö;¬Ü;¤štšú²ÊZüË#Ô‚š1É'!¦ÒN¾	çÏ-“Ä:%6ÌÓiæÙû®™¡Ÿº*ä§-A¦ÔMùˆ€ŞŒ&Ÿfû=U—gÆzğŒ!#HíUêéÌ6f#£íx5n=©¡©o0¾³ÆÌ­H1Âf±JtµgGlwB {®…(ˆ36'ªıÚAtt¨Ó;`¡smº¾OÛQ5m½³-‡‰”Éï÷•ınò¾é¾<dÊ?odà 1}õª’UÖoN¹òjÏ}ø]~øâŸo¾wè¯_x  ;Ozbplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯'-.4567MNOPQRSTUVWXYZ[\]aU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled037.gifÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÅCiS|³ ÈÓ89:CLWNS.keysZNS.objects¨;<=>?@AB€	€
+€€€€€€¨DFGHIJK€€€€€€€€€VServer\Content-TypeX__hhaa__]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/10.0Yimage/gif_ˆ
+
+YnBsaXN0MDDXAQIDBAUGBwgKDA4QEhRWU2VydmVyXENvbnRlbnQtVHlwZV1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFRFdGFnoQlfEBJNaWNyb3NvZnQtSUlTLzEwLjChC1lpbWFnZS9naWahDV8QHU1vbiwgMjIgRmViIDIwMjEgMTY6MTQ6MTMgR01UoQ9VYnl0ZXOhEV8QHUZyaSwgMTEgQXVnIDIwMjMgMjA6MjA6NTAgR01UoRNUMTE3NqEVXxASImI4YTVmYmMyMzU5ZDcxOjAiCBceKzlHTFtgYnd5g4Wlp62vz9HW2AAAAAAAAAEBAAAAAAAAABYAAAAAAAAAAAAAAAAAAADt_Mon, 22 Feb 2021 16:14:13 GMTUbytes_Fri, 11 Aug 2023 20:20:50 GMTT1176_"b8a5fbc2359d71:0"Ò/0^__NSMutableDictionary£^`3\NSDictionaryÒ/0bc_NSHTTPURLResponse£de3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‚ ˆ £ Å ç ê18Z]`‚¤§©«­¯±³µ·¸º¼¾ÀÇÏÛİßá@EPY_bktvx‡’›Ÿ¡£¥§©«´¶¸º¼¾ÀÂÄÆÍÚãñÿ-7Ããé	#(>BOThl€             f              Ô;<=_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled011.gifO‰GIF89a(7w  !ù     ,    (7€   ÿÿÿş H° Áƒ*\È°¡Ã‡#JœH±¢Å‹3jÜÈ±£Ç CŠI²¤É“(Sª\É²¥Ë—0cÊœI³¦Í›8sêÜÉ³§ÏŸ@ƒ
+J´¨Ñ£H“*]Ê´©Ó§P£JJµªÕ«X³jİÊµ«×¯`ÃŠKV"  ÑjT[¶mÈ³l-ÂÍ8c]»qåæ­x6mØ»zû^„»×,`Š„é
+¼8ğßÆ|!#–<ñğdÊ-WÖœsÖÄŒ=Cä<šôCĞw}ZµVÓ­]—fİ¶CÛµiçÖ½uWß‘eßÆİ›¸Bà—¾¼ªñã¼‹7gø<!rÃÑ­W?xıuvíÓ¥ş+7<tóàÑ?í>[½Aö±İ„Ï\şüïÜ·¯ÇŸß>Aıïñ xØ”‚	2 }»!ø €–‡ „Î9èà„b(İ…ş§á†Hmhbˆ¢Ø`‡*rHŞW'ªèáy Ê8¢-–ØbŒ/¦V^Á‰uc5*G¤…H‚ÅãL†fd’>*¹#,Vù¤“Mz5czPWd——)¥•YzYfrgn&¡T¦‰˜QÆéØ˜@¢œAº¹Úš3æçŸ€*è „jè¡‡®è€(n‰£’¢”Vjé¥˜fªé¦œvjèO†*ê¨¤–jj©@%†–ª}êê«ş°Æ*«¤nÁiI­r8+¡µ.uk¯Àúôg°Ä2µh±Èh²Ìµl³Ğ‚êg´Ôî4lµØöùl¶Ü²$h·àªôm¸ä’4n¹è‚´mºìr´n»ğŞùk¼ô˜c½ô^‹ï¾jNËï¿íùğÀÎKp»ç¬°ˆú.ìpÂ|lÄL1Á_Ì/Äç›qÇõ¾r¼¯È&§Ë±G÷¦LTÉê¶ì²PDëÌ4×3Ÿ8;³»2÷ì³Îk-ôËDcyô˜I«yßÒ¿¡¼Ã<CÔÊ±¥h´ÕW[ŒÖ\3b]7‡İµ×_l6Ò?¼õÚ7Z4Úp;…µ—e×­mşÓòæ­wKw“ç÷ßâò–`jn+İ;k]µâ(µİ`ƒCn®äsSm¹²˜ÏéøæœÎW~ ³)zédz[ª¯úé®?–xìTuN;W­ßîìº_•{ïXIüV¿?UñÆÏ{òÎÎ¼±Ë?¯¼íÒ7ÏxõŸQ½TÈo¿ŸöŞÛ-|øµ_O~ù•ŸSôê~û¡›¿¯ìÏÏöãö¯ï|ş:ÉÍÿ‚…úŸR*%Àø!ª€÷M÷hE(>šy!è/ØÉO~Ó!ü1°‚£uõ6ú8°™Ñ3˜5Í1ŒFáY!wc¯
+¥Ç<ûcáaP(GñŠQştãØÊ¤&Ã‡If‡=¬N ©¦3ÿ1ÑkNt\úÂ…DÈ˜Æ‡Q|"e„ˆ2.ædG´b¿óE‘Lq`UÌË·TÆ·”PbbŒ#!(-.,6äR}ìÈ²7b,jdÍ‹¸8>Âq/U,˜pê8?bŒt¢ÎõÙHC*î]ã‹›#	w©œYrô$7(ÊQ.qh\`MÎ¸º6î“®£ä¤6ÙJ	Ê„•±T¥KpI»L®’–½´e%g¨E`ÖÉ”¾Ô$,7÷CTš0‹lûŸ.sÂËµ%³”ö“¥µŒiÍkÖ±€ĞŒæ½IMn^rš…$&		9ËeÆœíT§½ÌYš¦H‡Âş<É´îRM½²œÍÌ_@ód³pªo 3£A·‡P0¹1Ÿ·ƒçÔp%ÑŞA4BúÔæ;/*Éert£í¨;Ùù¼††É!iõĞéB]=”3i}>÷Py.ôC+ºœ<‹Ù/—t§Zì—+ÚJj”¨"•åG‘ZÔ£®ÓãiSû)P–FªUT…ŸUÏã@¦jĞ’¨Éjû¶zUšzU¨*¥QKÏŠÖ´Ö¥lÅ›[ã9²ÒU¡K½kA‡ªWÍµ¯)µ+`äÔÁúõ¯†=laûU¾2ÖmP}¬"a*Y "¶²Šu,f÷xÙÍÊU³…ábCû&±’VQ”õl^OKÁÔVvµ¬åşllWÚÙöÇ¶Şr­j¥Š[ÎÂ¶·¨½)pKû©áöq¼ek"!;ÕÈo.úâùF;A^QÏpÔEf(qÚAÌğ»Ë‘ag«K¹åÎq¯-¯9Ÿô®lÜmmwVµ*›š7§ñõ-Ú É_ˆõ·¶Øâa Ã«Ä†vñÀ%û¯i‘e™û^= >¦ÙIöÎô›œt°mÄa=qÂO³pRS¥[*†qÀİMªs	êOëföğ‡YŞLw¼&‰ñŒƒ˜İ½JÓRÎä±)dRM»‚}%y«d|®8°Oí‚Y;åÓV™´Wm–wåØny³_ön‰µ<f.7£]¦rg™Á¼f1§ÙÊmvï™sgÉ†YÎsN)\”ç'ñ³ÎÊ-nŸ‹ã9wĞt_“‹èyŞy°Lt%ıhÆêØ¶—–²¢-ıf+7úÓ µ¨GMêR›úÔ¨NµªWÍêV»úÕ°µ¬ ;Ozbplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯'-.4567MNOPQRSTUVWXYZ[\]aU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled011.gifÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÅCiS€ˆ ÈÓ89:CLWNS.keysZNS.objects¨;<=>?@AB€	€
+€€€€€€¨DFGHIJK€€€€€€€€€VServer\Content-TypeX__hhaa__]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/10.0Yimage/gif_ˆ
+
+YnBsaXN0MDDXAQIDBAUGBwgKDA4QEhRWU2VydmVyXENvbnRlbnQtVHlwZV1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFRFdGFnoQlfEBJNaWNyb3NvZnQtSUlTLzEwLjChC1lpbWFnZS9naWahDV8QHU1vbiwgMjIgRmViIDIwMjEgMTY6MTQ6MTMgR01UoQ9VYnl0ZXOhEV8QHUZyaSwgMTEgQXVnIDIwMjMgMjA6MjA6NTAgR01UoRNUMTkyOaEVXxASImFlNTdlZGMyMzU5ZDcxOjAiCBceKzlHTFtgYnd5g4Wlp62vz9HW2AAAAAAAAAEBAAAAAAAAABYAAAAAAAAAAAAAAAAAAADt_Mon, 22 Feb 2021 16:14:13 GMTUbytes_Fri, 11 Aug 2023 20:20:50 GMTT1929_"ae57edc2359d71:0"Ò/0^__NSMutableDictionary£^`3\NSDictionaryÒ/0bc_NSHTTPURLResponse£de3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‚ ˆ £ Å ç ê18Z]`‚¤§©«­¯±³µ·¸º¼¾ÀÇÏÛİßá@EPY_bktvx‡’›Ÿ¡£¥§©«´¶¸º¼¾ÀÂÄÆÍÚãñÿ-7Ããé	#(>BOThl€             f              Ô?@A_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled012.gifOşGIF89aº 7 w  !ù     ,    º 7 …     :  f : f¶:  : ::::Ûf  f :f fff¶¶f¶ÿ: :f¶ÿÛÛÛÿ¶f ¶f:¶¶ÿÿÛ:ÛÛÿÛÛÿÿÿ¶fÿ¶ÿÛÿÿ¶ÿÿÛÿÿÿ                                                                                          ş CH° Áƒ*\È°¡Ã‡#JœH±¢Å‹3jÜÈ±£Ç CŠI²¤É„ Nª\é1eH—,cÊœócÍ @0³§Å›nÌpáÃ‚>“Fº‘)Ç
+”Jmè4cU6HÌ	 €9¿N›@¬U‘W1r0û¤¼‚xàulˆ¹u5¦ı)’…n‘ìõîƒ¿
+°•šx1ß—!ãvu,0ğB
+ˆÛÑ¸)Ú„H K ïßv†ˆ{Ú¡å„s¿vN uÏÙ]mKÜ[‘ib &p .<¸@
+ µák„híu*õÂA:íÌİ@ÔÎş|×¬v×óºVç\ AY•æÏ×˜Ø=åİh¹HN_3wÍ¡}ç]a¹öVB˜õ[^Œ0ÙYAçß„_x×:wàAğÄYa`\ƒˆˆ]oŸI(…&À“bÀŸ†Ê4ÜyÉÍ6cR:ÖHSŠéÇ€ƒ I\‹  ]#Òhdèıœd;Ê$åTúoq¹Ù—zQ$Ù}y	æ™(JÄArd&špn)QlqÀBoÆ©çBoÂX˜Ÿxî)(„­)X›å9è¢ez6Îˆ(AŠ2:è›†
+Ô™›–vúPŸrªA•zçMæF«İÉ©©ş°ª&s“R«O\yHhDc*Tê­e”–]	ìLëaô+Ÿ&ÕzlVÕº¬¯%áE&¬kEd-©ÆŠ´é±u¦·ê†};Ğ´(™d.°PŞ÷\¡++I¸Í—Th£ÕfA©ñÄDïjªmÉû*½š%ëÓ•ÃgaÈ)7—«ÌŞWÉÌmF©ÚË}cı'Û€à‰wñeòA*0ÈçvÒ‚×†¤ß"Ÿl! Îd1Ì¶Fˆp‰MòÈbgZ–³A;+fbË>Ô#‰'ƒç¢¨QÉH¬ÎäÂñŒ'ZÒ•YâªS‘DiWJ2yâBƒİUr]÷n¬q3=7¬u7z7Ş.ï½hŞ! î7I‚nøáˆ'®øâŒ7îøãÃ ;Ozbplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯'-.4567MNOPQRSTUVWXYZ[\]aU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled012.gifÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÅCiS„ ÈÓ89:CLWNS.keysZNS.objects¨;<=>?@AB€	€
+€€€€€€¨DFGHIJK€€€€€€€€€VServer\Content-TypeX__hhaa__]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/10.0Yimage/gif_ˆ
+
+YnBsaXN0MDDXAQIDBAUGBwgKDA4QEhRWU2VydmVyXENvbnRlbnQtVHlwZV1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFRFdGFnoQlfEBJNaWNyb3NvZnQtSUlTLzEwLjChC1lpbWFnZS9naWahDV8QHU1vbiwgMjIgRmViIDIwMjEgMTY6MTQ6MTMgR01UoQ9VYnl0ZXOhEV8QHUZyaSwgMTEgQXVnIDIwMjMgMjA6MjA6NTAgR01UoRNUMTAyMqEVXxASImFlNTdlZGMyMzU5ZDcxOjAiCBceKzlHTFtgYnd5g4Wlp62vz9HW2AAAAAAAAAEBAAAAAAAAABYAAAAAAAAAAAAAAAAAAADt_Mon, 22 Feb 2021 16:14:13 GMTUbytes_Fri, 11 Aug 2023 20:20:50 GMTT1022_"ae57edc2359d71:0"Ò/0^__NSMutableDictionary£^`3\NSDictionaryÒ/0bc_NSHTTPURLResponse£de3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‚ ˆ £ Å ç ê18Z]`‚¤§©«­¯±³µ·¸º¼¾ÀÇÏÛİßá@EPY_bktvx‡’›Ÿ¡£¥§©«´¶¸º¼¾ÀÂÄÆÍÚãñÿ-7Ããé	#(>BOThl€             f              ÔCDE_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled016.gifO	ÿGIF89a‘ „w  !ù     ,    ‘ „…     :  f : f¶   (((000:  : f:Û@@@HHHPPPXXXcccf  f fff ff¶f¶ÿpppƒƒƒ: ::Û¶ÿÛÿŸŸŸ¯¯¯¶f ¶ÿÿ···¿¿¿ÇÇÇÏÏÏÑÑÑ×××Û:ÛÛ¶fÛÿÿßßßçççïïï÷÷÷ÿ¶fÿÛÿÿ¶ÿÿÛÿÿÿ                     ş qH° Áƒ*\È°¡Ã‡#JœH±¢Å‹3jÜÈ±£Ç CŠI²¤É“(Sª\É²¥Ë—0cÊœI³¦Í›8sêÜÉ³§ÏŸ@cnÈAFĞ†)ˆØ‰   GŠpš©S¨QNPUçĞ¢Y&Í°4¬Ù³h~5š–àØ²9›>µI@„ˆ¸µ«Èºwóî}(ëLz²Hü°ïHÄƒq,Ìp-Í.à 1àÅ²°»ğ­HÌš9{£.c 4”,[rg4ÄŒ=›Em\hş"(ïÍ·‰ãÖó¸jÛÅqØ 0¡å™5Ì¶ñAôíÍÌşš™}{wèmXPX˜ægİ-<”ø¬yùBÇ!ßãˆ?ŸCııÕ!ÔMxÙU`xàİGÕH8Pn]÷„b)Õ¡Õ B[Š9ZN£9U‡$
+$!‡ãÅuU‰8à§â\%ºˆÓ‰m¥Èâ8æÈiÙxÓ€$ÊøãŠ1.èQl‘è£L6é¤B<¢µdM@r(¤MU¶ueMQ5å“`†™c—f}9S–imIšh©9™a™)æœtšgVrÆÄæYnÊ´§Y}
+…$‹yÖiè¡;İU¡/ıV 09š¤/)z£ˆfª)L–…iK’FE©K¡5jKõé¦¬¶ZRªş?­ºR©AÊ­@Ùº¬>Éêê¯ÀjÄkO¾¦„ëOºªt¬OÉ¦4,OÅ+í´=»S´'-ÛS³(iË·'Y«¶Ô–k.AâæDnIŞî®Iíêôî«ƒ–¸î¹øJ›.N÷oNó’ô/N´ïMıæ«0«Û”pHßT°HÛ4qH×ôğÂÄÀ¢	 ‹`ŒAù¢aVªŒ
+'œ0‹1ÄÌrÇ8çûqÈ#—|òÍiº<$Ê-sµÌ2ÓlsÎLë²È%’ì€É:U\ÓÅ YMÖ!=s‰5Ÿ tÓdÿº3Ô$JMõÊ,rí‘Ö3¹İ‘×J‹]öİÁİóşÔ?·-4–D¦l´Ntƒ½4Şˆ³ªwÔ>WxÑ~á·LrsT8‰aøæb.vãl9øA ƒìÒ BRó”©KSN‘ú8A[ÎìßÑ€íDãN{äÛò.ïÀk;ñßò Ş>Ğòµ:ı­ÒD}®ÖÓ<BÛ#Û}íÑ?ığÕë^Ğõ³fß"úÜ«OûÊºşîò÷î}ùÊÃ/~şÇÛöÌ§=ÿáyú#ß ûç<‚ïwüŸ‹Àç	°}|_%öÀïä~D` ˆAVĞ¤Ÿ±ì7Áæ¥ğ‚	¡Ák6²'D†”‰›TxÀ¼…şôaÜ:¸éTà;4bˆDQ!,h ;RÃ*FŠ3|Éaht xAPFªh</‚qbtÉIx	„#’i*BF º±5q”cK²F&„õ¡ ş“ :*Q„€ÄÍ o¸G’ôQ!˜ñ >dCfĞ†8ˆ¤ï(YÉ”<2!Q$D!ŠÔ¡È(	RJ”|ò å!fÂÓJ‰œÒ ±È,YÙÈ‘¼² ‘dŒ&oSËˆÜR– €0“	€ï“OœÈ3	sHŠLÓ—ÑŒHˆ8iÌjJd›*ùeı.iEyes…äÜ ÅÎÙ-oşO„d#:MOÂ“‡Ùşrç‚Òù®t'ËRPºĞ¥3A2IJr-ˆJ;|Í]›(EPB†RÔ)Ø§G)
+ÑˆJ”¢éI%ÉÑT’!U)AúĞD£½¨EˆS ´Ô¥/iüDHS§”¨+@Jß™ş©3¥]L™Ššª™èR©Š<«ièT¹z\¬y€Ne:4Í	d­l\¥ÎF¹®'ÔÓ]UW
+®z+_ó©½Nª¯`+ØÃÖ®bmªØ¾UÖq‘5ÕdÑŠ×ÅBÖ­ƒõ¬_!gÙ¿––´˜­cE›XÓ¦Öoş­–6kR×†Î¶’3¬dcÛZÔŞÖ·¹ÍlúXKYÜ¶¶ÄålhO;[Ş¸Ç½ìo››ÜÚBW®ªİmuç‰\æÍ¹Ê]­wÛD[îJ7¸ÙÕ,x­Kİñò©¼íîPİÛYú.÷µç®q±Û]üî—JºUïvã›ŞáÚW¼ş½.€åKVı*xM6p‚Û;áï8Ÿë‚<ß
+“w½æı/„3¼P¿Äîït-|`í¶XÀ/–ğŠ?|axE¸Ã3>±S‚Àr¸Á |¬b·8¥ÇŸ-r2ä$ç)ğ’{Ka‚@ÀwMfÈ©xãGY’SVˆ92¹˜éÊ’ÌrşB˜$’x§F¦h˜Å-»ùÇ2E³CÕÜÅ/†‘ËoÆèè¾üÑ9³òC«|£2s‘2;qtz¦(ŸEÈEnf8Mlt—5ŒOdJ’›Ó	P7mÎüuúŠ¢Ì£z,‰ç¯‹ÀÔ2ÔQºÕp6È©ƒ9˜açšq´ywê†¸QC¦Ü´«çë‡„ yÔ4©Fìf§øÉñô#•Y¬kkc×‚F`±Ù¥ì\¿Zìåö¹µıÜ*3İ!Vğ¸VîpdŞşªw©ÅímOÛ÷î7¹ÿÍÁü•ÎŒ÷¾U/%Y¯(n&9W‰Sü|ğ•x9/^ÀŒ3ÍâùÅşENq’sÎä›CyâT8–ãÍåwƒyÙdN6škÜã9³ùÇ7rÜç%úÉ…r¢¯Üè-GúË•óÛ9éÎ3ÔÈæ¢¯ÎYœ¹Íøç£óî‰VtÖó…ÉDnÆÒ—FOÇl¨IÚqS:ÔÁ™SùÆh¯ZîÌ¥@vIZçÜ€¼Ş;3ÙËsÁüØZ»ÒŸm²3]ë8Ç{ä?yéüï•_Øå%ñg^a›§|ç1?zÎ×˜ô§7=ÇzË?¾æ¯¿yéEŸzÚ¯^‚Ÿw|î©µ¢d@Ïğ=\(>|ôÈ·ßÀñ'Í¹âúö&’4ôßj|0O?úX¾>õ¥%¬}ì€ù·w> =}åƒúÅ'ÿõÕßıö»ÿığ¿üç?“€  ;Oybplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯'-.4567MNOPQRSTUVWXYZ[\]aU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled016.gifÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÅCiSˆL ÈÓ89:CLWNS.keysZNS.objects¨;<=>?@AB€	€
+€€€€€€¨DFGHIJK€€€€€€€€€VServer\Content-TypeX__hhaa__]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/10.0Yimage/gif_ˆ
+
+YnBsaXN0MDDXAQIDBAUGBwgKDA4QEhRWU2VydmVyXENvbnRlbnQtVHlwZV1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFRFdGFnoQlfEBJNaWNyb3NvZnQtSUlTLzEwLjChC1lpbWFnZS9naWahDV8QHU1vbiwgMjIgRmViIDIwMjEgMTY6MTQ6MTMgR01UoQ9VYnl0ZXOhEV8QHUZyaSwgMTEgQXVnIDIwMjMgMjA6MjA6NTAgR01UoRNUMjU1OaEVXxARIjViYWVmYzIzNTlkNzE6MCIIFx4rOUdMW2Bid3mDhaWnra/P0dbYAAAAAAAAAQEAAAAAAAAAFgAAAAAAAAAAAAAAAAAAAOw=_Mon, 22 Feb 2021 16:14:13 GMTUbytes_Fri, 11 Aug 2023 20:20:50 GMTT2559_"5baefc2359d71:0"Ò/0^__NSMutableDictionary£^`3\NSDictionaryÒ/0bc_NSHTTPURLResponse£de3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‚ ˆ £ Å ç ê18Z]`‚¤§©«­¯±³µ·¸º¼¾ÀÇÏÛİßá@EPY_bktvx‡’›Ÿ¡£¥§©«´¶¸º¼¾ÀÂÄÆÍÚãñÿ-7Ããé	"'=ANSgk             f              ÔGHI_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled017.gifO#tGIF89aÛ ½ w  !ù     ,    Û ½ ‡   			
+
+
+   !!!"""###$$$%%%&&&'''((()))***+++,,,---...///000111222333444555666777888999:::;;;<<<===>>>???@@@AAABBBCCCDDDEEEFFFGGGHHHIIIJJJKKKLLLMMMNNNOOOPPPQQQRRRSSSTTTUUUVVVWWWXXXYYYZZZ[[[\\\]]]^^^___```aaabbbcccdddeeefffggghhhiiijjjkkklllmmmnnnooopppqqqrrrssstttuuuvvvwwwxxxyyyzzz{{{|||}}}~~~€€€‚‚‚ƒƒƒ„„„………†††‡‡‡ˆˆˆ‰‰‰ŠŠŠ‹‹‹ŒŒŒ‘‘‘’’’“““”””•••–––———˜˜˜™™™ššš›››œœœŸŸŸ   ¡¡¡¢¢¢£££¤¤¤¥¥¥¦¦¦§§§¨¨¨©©©ªªª«««¬¬¬­­­®®®¯¯¯°°°±±±²²²³³³´´´µµµ¶¶¶···¸¸¸¹¹¹ººº»»»¼¼¼½½½¾¾¾¿¿¿ÀÀÀÁÁÁÂÂÂÃÃÃÄÄÄÅÅÅÆÆÆÇÇÇÈÈÈÉÉÉÊÊÊËËËÌÌÌÍÍÍÎÎÎÏÏÏĞĞĞÑÑÑÒÒÒÓÓÓÔÔÔÕÕÕÖÖÖ×××ØØØÙÙÙÚÚÚÛÛÛÜÜÜİİİŞŞŞßßßàààáááâââãããäääåååæææçççèèèéééêêêëëëìììíííîîîïïïğğğñññòòòóóóôôôõõõööö÷÷÷øøøùùùúúúûûûüüüııışşşÿÿÿş ÿ	H° Áƒ*\È°¡Ã‡#JœH±¢Å‹3jÜÈ±cAsŞBŠI²¤É“(Sª\É²¥Ë—0cÊœ)AosêÜÉ³§Ds7}
+J´èE q]Ê´éR¤•:JµjF¨ÿ¤ZİÊµ+B¬Z½ŠK,Ù³hŸMË¶­N³n‰öã×ÏŸ¿|øúıÛgO_\ŸpÿöÔGî´vé|İ7š*`õï,Yg=_hÄèrõFŠ¦`’šP¹V9'åÒù-S²ãÓªD=Ì„BEåÆ3ÔOãÖØÏ˜­¼=rQf0*WÂíŞ¨{ùÅz§TLÑÆN‰Ië`		tÏùÕµŞ3şÛóâ’=jPŠ£W)Ç)½á-6Ñß5+G¬ù“5DĞ;t},!L<ùĞGÑ|:”Ï-Fä±N?‰ä0K?ÍhE*ÓD–`Dn¸P=«”K>ú$5û #Æ¡¨ã!‡à½øP>Öü²Î?ü8CŒ<ş¨ó-àø#ãCi?ûè?ûÙ>ùidCENien1^©å[Yné%s]~)¦|a9Ğ>ôÈ#=QšyP•[òÃN.w„QÆª„ã—›Áyå>× bÃ °€t,S Ÿù9%?ÛØÁ <P€ Tp†5ğñé¨‘Ğµ   ¼A  ğA%ó0úÏ§şC¶Ó‡  @CWÈÀ@ l¡”nÂZ>¹"‰.çtZ‘?íHó$=@@h´K-$  –P“?Á–yÖ<‰ŒpOÌáÉ5‹:ÔÏ:É RHRQC
+ p@_DÎ0š 
+C@ásÎ>^
+KÕ>½ĞP-\ÀA
+Eü‘‹8òä£ì?ıà4Œ`1C
+#d`ÁOœQ€–<  [äAœ0‡ƒ>ü û¢ÃT‰S†”PcK N°`Â'H!É0à°c=â H|PÂh8’Ë5ã óÎ9~H  -œAÅ9/ğFş7íŒ“/‘¤ñ
+" „·tO“ÙÕÏÇg1=•=¨ô9üĞ³N6«àÑ„' „˜<òÄ*ğÀÅ"Àó=Jç³ÌÍ `@°´ÛÏ=ï³'dÁB
+KR7°'4×>ò sÍ2½@Ó[’;å4V0ÌHÎ30ŠèP t ëÂcäµ£‰	Ä| ìà‰;Jä>í˜Æ(Ş` @˜=àó¤{ÄÊ¸)‡)ì iÀJäÄ…–w<¢xGAîIô€&¸Â!za|ôï ş`Ç*Â0ƒL _pÿru Cşc¨
+¨`	f€£¿8E#ğ†%Ü@%°.`A´£-Ù{ÈÿĞÑq0ì"ı Æ²ğpı/—Â	j`Wlc±‡7’HŠ\hÃ	Y8vá°`O8‚fPì`u€„*vA‰ !_LKİ¥;áWÄÈ: ñ‚P¸š`Â`p‡a¨#’±‹]–Åc,Â„š@`ñfl#ï»GFp‰VMdïPÇ:ğ!”I6ÄôALŒìÃ<5šA†˜ Ã`üšÒy(C(H t¡¡ğ‚F ÆâNtú9âEÌ@ëş4ˆ>Øq|¾Ê&ˆB	(0…X´c›Té=vá…| Û€Ï:ÊpRìé—¦ Ál"Ï¤å_x6 ”p!baØC-¾Q}(Íï8 NÀ£-÷˜Å$€„U¬#™È@4~¨…ˆG1ç©,ƒkøÆ0\á‹r˜Ô ù8…*Hñğ?ÀA‰0`²@èX¢a‡¨à®B
+€q|üÁ«À‡>ôqUÓ05#ö0.‘=DßèkAºQ… À!ˆ±n(,ĞÁ>yü¦¨XB	Z =d²"îÂÁ`Ãj=şÊ_1‚:Ô`¹ Ä(Æ¡Ö{d"[`E(Î`à 
+Fà@`AŒ !±Ç/ªÀ€B„ËBÆ°Rl(šÌl/²'¤À„Ğ…Ry,¡ó0ö   <À„0È O´+.ápC,°I°£"ûĞ.ÁŒA ‚ğğ'FŒ¹}ƒ0|ÉxX¢u<pÁ	0@AtĞ€+pCÂbÉ.|…@ø€pAüdÔâPH>ì°ADbİ@¥_=Ú“x\â;Êáe!·`‡&\ĞƒR„#°À4 ˜¢™nGş^À	s£*ˆÄ7ÎÑT@":X¡tD¡  (7»ä¨ F6xrP‹Ì]4!ğ°„¼0‡ğ€xô‡>ä1O áºxtZì±
+t!H’E
+8P0ü@ Ápg(D00A‡É;éÇ3˜ğ„qØâ[H…0tü}ĞÃ…é5¼Ğ€/|R<}–~\0ÀD.>‘‡*p ÀúpŠR˜ ¬ğ§?N,‚’Ç>b+[`ëDÃ "âq¶šÄ|f$yôµİxƒf0%£¦–è€lpƒx€_ ƒş €mä£xÃz28˜`Õ@BnAŒd‰×ß9é‡:ŒÁ}ğ#¢†g›‰l`
+8F:üÂcLà ?Ø…¨Q£9„ 8èB"^ñŒp¬COXA$jac!ã`ÃÌñFÌà
+¬Ø!—p®`!	X½ùÁ:°!èßh‡)~ ƒ'À@éğ=jq	Z8#ó Ö=vÀ`@3Bâa‹^ğÕĞ8øM&º/¥~Hâğ„à …HÂ.‘*!¤g‹?ì1nÿÃ²p x@Ô#Ù£™úxyBa‹ğ#J˜Â/!Š2€Xn8&şñ‚;œöEıÆ
+à‚bø¾,ãå	:øÀƒK¸Cº6€ÀDP?(â@Fîq£=¨ÀĞÜ`|aqEÑ|¶@`€íğ"Ğ¤°<`*Pß— úĞ
+6 ÅÀØµğ ¸À	Ö0hè A`	¤ E€ûÑ`	J°0Ëàk¨ÑÑ@8ùĞNĞ¥€Ùà
+p ! ¤p~ehV± E6@¥Iù © \À@Xèà& ë°i˜2€9`%° PƒeXhY1şpí@.u$ß@€ypxşä yô¯0OÕ –°€ 
+s@.ğ¡`€DÑ‚	¡Ì@`äPãĞ5`T¸!ş€Y°X0Ås:p>p ši@e,˜~q¥P%{à
+Øà_ÄÕp ¯à‰/r‘p°\Æ Ò°
+<0¢€0€mègz9±¸@à8 ^	Ä0ÀÃ	8 & Å'#ô g““ÔPMÂ„p-àˆPNNŠ	!9`¤Ğ	bğEğ¬@
+N ‚0:pwèúĞ§0ßàpx§> ?ĞVş‘!]0¾@áÀŠ7  S ‘ m€Zò?÷à{ÖÀP6Œê˜õ€3P
+vÁàP
+E ``"À»0’2‘ğ
+°½“Äx®@{ğ}î *0F0 ° pS|²ÁĞ;°0xDı€&22‰Çğ]Pş³L ¿ °@5$€(&æ0'	×@( şğ$Ñƒ¾ 	… ÖÈ‹yãà=q‡p#ÿÌP
+ÂP˜f’± Wpü@
+Gäœ`[ P£ ˆsg…CAˆÀœş°(İÀDJVnâÚÀ,0
+ğ¯ /àZpBĞDÀ+¯¨¯©Oª{ ú 
+5àºé*Q G 
+¥ YĞB@‡Ğ
+Æğ	+†¸TQ™üĞ\ Òğ*s ´pŸ^âÎpĞDğ5°P0$À	ß0LúÀ%yŠÙ–Aq ÀĞÀP^ÀQ*ü	9`v€	¾Ğj ñ&ç€(`dYùiğ < 
+ë0	*0	&ê%üw	·0^³W£P‚0t¾0[ ŒjCq°tğg ky¤şá@cwÖ K08Ò@
+û7a<ê|ÏP? AF¨/û0` Ñp€“º,âğ2p, ÔÉ©¨€„à¹`iÀ—;º¡:á€€«ÑÒÀXp@Ÿ°¥¥§§{Z6P £A¬QfĞ¢ < FÑ¥ÁĞ@›i­ñ‹K°hà"¦Ê«:!t0’@èªŒ —ğªÌwªs ·ğ_ùZşĞB  <`~ß*°aY@Õà¬®Â\  h¡ñ
+­B±Ãb°©	‹ß0  	C÷ş±yhõà
+G€Fy²QtÀ™€¯+¯ €]6kô°	-p-û‰;ë I@
+<[´Ñ¸sp®=®şÅ@9€	ë€±®‚? ı°>«û ”À$pQ°	Øp¦œº¿à=p™§/‹RRš‘ÈĞÀ 0 k@†Tûş¬P M Çp=Ç¸[ê0ı0Ú0RğPÅö µğ+†y\P?…’* üHµşP†ÀÚ  Là
+Oé?ûĞØ ú6× í@¿#é0ïP
+HPŞ€	R@™Àş@>€+÷î€r†BP  PgV´ô@3˜" @ 8Ğ;údŠàš „Àt`ª°H€
+S§£¬`Yà
+¨€+`¨P	8 Ì&ßpP PxK`P `äP´Âp` ğ#°  0ÊQµŞĞ=`¦ğ	IP”P
+l@šÀ	á0ù0
+#@¼Pm0†`ªÀ|ğ_Øğp 2Àª 	[°p a6ë—3	 YPK@‰›½@hãP¯{ÀÀ€@
+Î9à
+vû*<Úx€r àà.ğ
+ş÷0	#
+q> -+P¿ 
+lP
+p _ Å'kxP(°ƒ 
+ Ú‚¢ œáÕ`2 
+ñÀ
+4 Ì€kPË©U R‡Ûğp?ÀÁMP PL ‚€#€?r06m  `K	É 	<  àÉ üùĞKàÕ€ˆ@˜ğÅ°ı	#kk˜ÃÀe€ûÀ'`QÔPe€š—{ğ  P  E'Ğ  ›Ğ·Öª‡0 ° 5 – *¸6p¢˜°šæ N°÷°
+N@	è ¹TÒ–óà.
+÷pşfPÉğ· làÊ<ùA3  ` P X ]'Û#  Aà&@+	 ªë?ÖÅ"NPèà«AP4:Òé<ìLğ<oà"¯PVKûò@
+,0 ©’3P¶ĞšœÚp` sÓ 
+À•Ÿ\ü@op£—X€
+ı€‹u "ÍÂRÄÀJ¼ B®eA³ +Ğ À~€Ùœ°‹0 1s_0à5k˜è0Ñğ>à TvÑğ
+Ë@Ğ!,šÆ8OÂ@ú`ûP®0;@î©ºĞ@#şG9ğ´ «U»o{˜RÒóM+ãğK`Î}¤ığªĞJzâ²a!é Kı¸ş°3àY½« ëí0	M 
+Sû¸§ ƒ€İşı·DA©ğŒ µË	4p	ŞàñíúğN0kàÿpz°¬ °jûß=áĞ \°áEë`€ÈPÇøŞ±b Ì`ãG:I€0©[½/x¨pß6«µ€rÛğÍÉôJ+âj]	>ğ	¾]…NìÈÎxú¸é @dû¬]>ıPHÇpæbâÙ 90p~ 8^TÀÀş# 	>Î'ù0.p¤°å[›ç) sğ»';‡Ğ  !Î´E®é`  N°‚k`   @mé*Şá 2P2P+¤;PUP¡Fä§lÍSĞ(à¯ù !à	Ÿ eëiîô 
+G°¹ BÀËEÛnÂ€gPé~ã<á’`—0 š ä°ê¨‚`ØğÉpŞıvë:á£Eø°<àÛ Cœªc@³ğïp»Ÿ€°\Îí:ÑÖ°T@ÿ€l0'Nô`ÓabÂØÀ<şc  †È«`tğşë‡~é‘¾0p üà
+6`0éğĞğdÕb2` –xämĞ|&Ç\ í'/ï1™ Àlá <°
+èpzp° PğÊbRU`Á@€Ñ0*P§c€ÈĞ³Lßë€4À
+{’ª J .$ĞUDáFÒ °  À›x
+±
+nŸì;!çbÂ ¹üP Ğ0@ 	»à:`<l%á Nğ†@ğ {0ßı»x€âxˆğÁJ€@†WPà Hpü ,€¶n2tP¤ Q2ş .pÉğû Wàlê¯ùĞ	80Èà	\!À€07ğ	ä:kîWÂ¯Ğu	*Ğ½°BÀ;Ğ¼ª"ğƒ ñOà@‚D8ĞAo	>t8ï† KJœ¸BJ¾Y>¨dJ"$š?ˆ%MD™2¡¿lKT°‘k_¿e‰ˆ„ÀçŠ„NùTş¸p`C ?¿‰ †›TØúıó7®Š)î¼+šUkQ÷HŒghÀAíÚCÖÈÉ	Ğ ÛzR¨@¢qK~Óƒ$O-rûê+…
+ZüªKæL]ÆZÍ©ŠÕíiA{•¼àõu ¼hªœşĞR·1Â¹ÿD>xoÛ³tú¶k¤A…0ƒõ–ñáá¥jŞ'!QF–;‚ş¸aÀb—f‚ô´©ªµ¸·ÁÒ§§ô7ù5"a¸#xÑv]ıAqÈ°¸#ŒÀz€8løPi>B|ø˜«¯n½“ú™†‹
+HÁ•™ÌÅˆFÈ€ƒMâ°Âú‚XX †C¾ÙÇ’¸¤‡,¬³:†R|¨Rx0Ãœpå&88¡O„8™ÿXä-d`…,"N°E4VæG ƒZqJƒ¢ÒCXĞ‰£8P]àA@Î±òº~â(¡x”áƒ`şây49á
+Ó$(@>Ê)° Å% „GÌéÇœ3\˜Åµ?y£E†1ÂùšA0fÙ% °‘H?'eÇ‘t¸b†¢à=ºÙG´HoRŞÎ©b]ÄY$(4Á‚Ì°aQüšôT>û±æ‹ËBkdAÂ…F¬ñãMêÑ¨RÂ‡ÖĞc(Š™çšI¦ AÆ ·Ù*¯ó‡Ÿ{ŞIÇ0ƒö&˜°äpãAEˆĞØÁ	h¤ôGŸxèÑ.Üô)œı®|f‡4¸¡Ÿú‰ç™EŒp Líj½~Ê¹äDÖ9ˆŸn2±¤™x¾òçTŠş°`@æ«IÖ …qù<§*AÆŠ¡â‰^‚ø‡™G$¡¹ ~êyç|–fÌÙŞü‰G”ÎØÓ ~ì±Ç_ìäéDÑz ~â™f'ƒ´­üf"¨¡bàÑF< ‹o~œ{©ÿ™Ç–9î˜¦Bµ{«”.9ü_V`X DÊ™;\è˜!,(!{,.HF¡öâÈ…œ}1„ FR“öÁ…vpô]å¸¡˜}òÉÇnˆÄ™c‡-r@^Hù¢Œx¤!˜8Æ{Şı†‡(€©d­ÌØ˜p…!\àˆ¸™$2`CØşÖc½ÑøÃRX‚6¢bÀ®$ü°PR¬ /0Á¶°‰mÌã)€Ã8R‡8,èàöÀF%nL€ïøEÀÀşƒhÁ%è±}ğ£‡?a`cğa‹ÈèÂ#°á<‡°9PC)á	8 b@†=ü<`í¼3È<‘HÜ£â@
+60\Á£BhAÅ‡Ì-àÅ8’±Œr0«7IdŒ;qKƒ‘˜Æ!Âhd!2ØA’P‡2Ì ’Ğ?°'4csh†¼ÀmX‚8 D)ê ô èƒYL‚#0Á¹`C!œşá“é Ò.ä(
+qˆU ã”©Ç*jĞ€DAÃ(6&!„ÈÁ¨hˆF‚ˆƒ9@„jpMˆCäĞÅ€Ğô€+œÅş0IĞÁëx¦]Œ¹~<c	Aàr’y¤Â
+_ğD4Üa˜~´cWXŠ€5|3†° P…X´c2û@Ç1¡%Hc…“ÀÀ8	fˆ@÷"]*rğP(Aé5ÆQ©áƒz€JÀ	]zT ğÆ`9@Ã+á‡<¦aŒ¾A¤sHÀHÁÇCâ”7í„,¤âóèhIü1®~ÀÃ`€áşÍ¡±ó€Æ!z 
+ğ@ò+N?VØ$| Ù;bQª•nˆaÌ€†GZ!uØox %H‚ÍÊ\çª•}°#jV&æ‚Hm+ş …	‰¢ø ëh&[”~T#z ‡<Aƒ4èB:Zñ‡4†ĞfğB? Á±Œuœ%şÈ;ºlˆ†<	x×AŒB8!E(3öáA‘=ˆ=Q‚Z€#
+H€Å2uáŠ‹Á`†W¤A‰W,t+úø„
+~¤lğÀ˜`ˆ^|#ˆ=È‹Áˆ.D
+kØ„5ˆ	ì#ÜØ…!pş
+\J3| “­°ãQF=,‘ƒ-œâKÅ5“ğÀ•1íp ÷ÁwDC9@À\`6pâåp£CèQ‹*|€   X`‡i ÷ û˜Ç7„Ñ‰5*À †ÅŒtà£ŒÁ$À“zØ‚Ó"!7£FÉhô3– „j€Ã“Ãj „2à¡
+4xÁø`ŠbŒÃú˜Ú>”q ÀÕ®@ş ÍõCòà/8!‡$ĞÀW'ü@…Ğ 
+ƒ`…4Ná3d¿ñ‡<vö} CÁ®YÊŸL¤ 	‰ˆh /Dß8G44Ñ†(şÄ M˜$T1n¸£nT!&  H@  UÔ#bouÇ7ˆ¡ŠF¤0¨Áä€Šj¤#èxÆ'Ş€„Ü eXvím+DÛ%/H9Ìà ˆÀ^8Ä-¼IıUÎøÄ¢PÄà]¨ƒ$DR! ˜@–´qpF2dÁ‰CÄ!J˜Á	l@…>Bç°©@úAsãlØ0N<å*jÙÛÂ1|@txÅ6ä±)õí€F-,±&° ,˜fà , l,¼p  I0B\@‚È@
+p „-¦î%ş„ø@Ç.!€¢€r7yÜa_yğÂ:K	?Ø‘cÜÈö 	[Ãb° š!ğ&”Ÿ¸…2¸9•èƒËèËìòh42Y+TŞ-† €ˆ€€ø(  ˆ¡Ö<H®}ÇœœşŒIÇ€\`-Ğ €…¹?Şà¾4‰{¨8 WK (€  €2SÀ$³¿L­uĞˆ è·à ,Ø…záÀl“½´‹Fa5àX#bp;¨ÄÁŸğ‡zà`˜Z8†sX±ÌÁ4Â­è"*¢gKÂ„HÀ'”B‰Â)´şBÓÁ+ÔÂ©B+;ŠÑ‡u€œ}à—°ÛB“èÂ'ô‡y Xà¬fÀ„THp0H8†"<Ã‡HÃ$ôsĞ*\è,ˆYˆ8‚F0À<tˆ=LBw˜„HƒT .€E¨…DA°-FÔÃ,ôDh@ 7˜†k`‚ènp„Ø„İ	ÅFÅP10P ah)x†qĞƒ) ŒE*AÂa$ˆ}@†(è‚mèONÈ‡hø‚rÂ)tÄ¬‡P ‚K˜v¸X}È%èƒm4cÜ¾YdÄuğƒ!¨†+Xƒv ‡Qğ8à…r¨Æ'¼Fô‡tq „Bø©kÈƒUèAZ0ƒApIBÇt,Æ†´‡lĞ†œtğ!tPk@Á†ìuÌÃó—û
+[FtìG4IDÉ•<ˆÒ0o€É˜”É™¤Éš´É›ÄÉœÔÉäÉôÉŸÊ Ê˜ü)–4Ê£DÊ4	 ;Ozbplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯'-.4567MNOPQRSTUVWXYZ[\]aU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled017.gifÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÅCiSâ ÈÓ89:CLWNS.keysZNS.objects¨;<=>?@AB€	€
+€€€€€€¨DFGHIJK€€€€€€€€€VServer\Content-TypeX__hhaa__]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/10.0Yimage/gif_ˆ
+
+YnBsaXN0MDDXAQIDBAUGBwgKDA4QEhRWU2VydmVyXENvbnRlbnQtVHlwZV1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFRFdGFnoQlfEBJNaWNyb3NvZnQtSUlTLzEwLjChC1lpbWFnZS9naWahDV8QHU1vbiwgMjIgRmViIDIwMjEgMTY6MTQ6MTMgR01UoQ9VYnl0ZXOhEV8QHUZyaSwgMTEgQXVnIDIwMjMgMjA6MjA6NTAgR01UoRNUOTA3NqEVXxASIjVjMWNmMmMyMzU5ZDcxOjAiCBceKzlHTFtgYnd5g4Wlp62vz9HW2AAAAAAAAAEBAAAAAAAAABYAAAAAAAAAAAAAAAAAAADt_Mon, 22 Feb 2021 16:14:13 GMTUbytes_Fri, 11 Aug 2023 20:20:50 GMTT9076_"5c1cf2c2359d71:0"Ò/0^__NSMutableDictionary£^`3\NSDictionaryÒ/0bc_NSHTTPURLResponse£de3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‚ ˆ £ Å ç ê18Z]`‚¤§©«­¯±³µ·¸º¼¾ÀÇÏÛİßá@EPY_bktvx‡’›Ÿ¡£¥§©«´¶¸º¼¾ÀÂÄÆÍÚãñÿ-7Ããé	#(>BOThl€             f              ÔKLM_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled018.gifO¦GIF89aß Á w  !ù     ,    ß Á ‡   			
+
+
+   !!!"""###$$$%%%&&&'''((()))***+++,,,---...///000111222333444555666777888999:::;;;<<<===>>>???@@@AAABBBCCCDDDEEEFFFGGGHHHIIIJJJKKKLLLMMMNNNOOOPPPQQQRRRSSSTTTUUUVVVWWWXXXYYYZZZ[[[\\\]]]^^^___```aaabbbcccdddeeefffggghhhiiijjjkkklllmmmnnnooopppqqqrrrssstttuuuvvvwwwxxxyyyzzz{{{|||}}}~~~€€€‚‚‚ƒƒƒ„„„………†††‡‡‡ˆˆˆ‰‰‰ŠŠŠ‹‹‹ŒŒŒ‘‘‘’’’“““”””•••–––———˜˜˜™™™ššš›››œœœŸŸŸ   ¡¡¡¢¢¢£££¤¤¤¥¥¥¦¦¦§§§¨¨¨©©©ªªª«««¬¬¬­­­®®®¯¯¯°°°±±±²²²³³³´´´µµµ¶¶¶···¸¸¸¹¹¹ººº»»»¼¼¼½½½¾¾¾¿¿¿ÀÀÀÁÁÁÂÂÂÃÃÃÄÄÄÅÅÅÆÆÆÇÇÇÈÈÈÉÉÉÊÊÊËËËÌÌÌÍÍÍÎÎÎÏÏÏĞĞĞÑÑÑÒÒÒÓÓÓÔÔÔÕÕÕÖÖÖ×××ØØØÙÙÙÚÚÚÛÛÛÜÜÜİİİŞŞŞßßßàààáááâââãããäääåååæææçççèèèéééêêêëëëìììíííîîîïïïğğğñññòòòóóóôôôõõõööö÷÷÷øøøùùùúúúûûûüüüııışşşÿÿÿş ÿ	H° Áƒ*\È°¡Ã‡#JœH±¢Å‹3jÜÈ±£Ç CŠI²¤É“(Sª\É²¥Ë—0cÊœI³¦Í›8sêÜÉ³§ÏŸ@u ´¨ÑŠC‡]ÊtaR¥M£Jı÷”èÔ«.ûíëçïŸ¾uñ²;—OáS¬hW²{ÅèU¹Zp•ÓfÈÌ+|f¡¦İ[r¥d\IrâCÓ©<$Ä¼Ëk•¯c‘¡$\á…lŠ<ÁPÅxCñãÏó:€f7" NÑ›TãS×„IAËŞK‡UÿvuHrÎšËœêMœâ°UØñ‹„‚Ò¿pO¬”ã
+{xñëûqâĞèŸ:1B¨şåÇ:~Õc_¿ğÆşYûá%¿J'¶ÔR÷ú`lö &Ä$’Øó7¤Â?¶¤aH6ıùg]€ş³O:î”Ï:ıCO9ü16a…$JTÕˆ%¦ÈĞ‰ê©èâ‹0Æ(ãŒ4ŠÎ/ºøM=5ÒÏ*V„À=<ØcŒëÒAU\ÑÌ‘.Şƒ‰ %Àå@™";TeÀ<ˆpÀP!¼âåOøŒÓM:úp´<ÀŒ € &´É:, @s¨³fOØ€ñB†ğrM†ÍN4¾xbH3d¹€˜¤SŒ …B˜Èr6ê 7hMåpÀ@ÀBş‘ğâMCò8Ë há€ĞB p€‰TCK»@	"<À@UìJ0ãœ:Ó&ğ€H@t A¼I0Œ.‡l±B ¤0„vHÊ0¥x€&ˆ¡ÁPØÊf,ñ‚`€D©tcíKÕ$ñƒ3æ’ÉAH  	Oø¡Ê4ñ,HKZpp)Àlƒ×@ï„1Ô (A‚ CµPÌ@ş˜ƒŒ*‰ŒôG+ä,¼R?ƒ|`I?é³Í.”„BÄ Ä
+tpF)Â|!Aşä²BR
+ 0T‘Üƒ<Ñ´’ÇlÀÁğ˜P?ùÀM,’ÀA…ş-BWÌM|sP;›ˆ0T?HÒŒ<éó
+gjÙ&r+tÏ6¬¤a €ÁË<ùc;ã43ÊWĞ@‚«Éš[S„O¸!?Õ²Â0ÔÑ:I‰8Ç/û@T5“(‘Á]˜"Ë$p!‚„@PĞ±… DXÓ#?ÔâI5Ùò*;ñóL$ÀC$Ü ]Ñ>÷àûCó¬rÁ
+À‚°„,"ÍpG?ŞQŒâHú¸Å
+* ¼$†wÜ A›‰>vÁ… @§8H-.AQä¿@1NöuxÁÓĞˆ?L‚0”b
+şÁ ´x¤¢
+8#ÎAt4¡©°H7Ìp <˜4¾ğÃ|#Ş0ÕAĞÁ„8àjPÆşhâJÀ` JğzüA‰!,¹G"ğ‰ÙtB— Ç:Î±8!ddØ@èĞ‹rˆQ ” \ ‹Êñ$dX€
+qmàÀÈ¸ˆ:Ê eÈFw€A/Á0°™   ^Ñ@Ä0GWà	4 KáOàA
+(à
+\ø@ ®XiÔ 
+äÀ‡<äaÈ½P
+Sè†-š ‡n<Ò Ì¸Ü†L H€,Şd¢" …Qñ âş¹H*. ˆwb¡H‡ch‘‚5Ü"« İBêÁ8¢Ûˆ„F€¬êøºĞ£L# €@#àa‘xÌ¸ ’Ğ
+ÆíÅšX ®°Šä58ø4²6À P@ØpŒ FÉhÜ‹¹‡<ê±Fˆ#	FX&ø0obesP€D0Œ‡Ô£ „@Nñ0"‰ B"%3¬#(êĞR%4 \¤‡9¬QŠ:€Á.DH4Rğ,BaFŠĞ=ö[H2lğƒa¢'…!½‹6Ì KßOü1
+
+„Gãş‚àTÀÁ+à@°z <„ô£€™sãWt âˆBˆ!­1¤‡6`XØt ô˜†,€áRŸlÃ2à<¶‘9ÅÁ Ğ„T`U¥L€PA˜{©"FğÀMx€‹À†@ê^tô Ì  bp‹«Üc	ĞÁ!Ê°ƒt€%¨’ ºá>  Õ<H9t tB«°‡8hˆ{¼‚Ùø‡8àà„UœìWà€pqW‚àCÀâ‹›ÜÉ) ‚±^PÁ kø3.¬Ú„£dø‡2Z DìÂ@iñÇ=æa¿u£,Iş @€\³úG?ZAƒ``
+ù”Ê3ºğ:DBß°Çk®1…¸	èDU’Œ6´â¢iÁÄ±hÇ×è(0BHA #ŞHy)õÈ8˜YkPa  8˜Bp(ÔfÕ:4÷ˆ_Ü˜A
+.À{@ƒC€ØlVa  ÂZ®XÁŞ¡lÈáLXÂ*¬a`T6õ¨ƒ@bœj\HA,ş?X`T”@,!Ïi…®À‡0!×éÇ7¶fù-xC;Z‚!$ã™sŸ @‰‚óÅCPA2âQ‡ÙBØP…!ş0pÌ(`ˆ °Ü„ÁğC`†óÅxh !º2#dÀ©¨C‚€ NF¬M8 XjÈŸøòc\ñ%€ƒí `` FH HbìàCĞ@Çuâ'  
+^8”@K<CZ	–N\ƒ	8ƒÓ×C7¼À¢˜F‡R#@ƒŸM>
+a "8Áú°Š$XÀİĞÁ	BI¡sX ¡‹qØïÀ@ ğ$ìDC’˜Áü€tšÏBáU³ïU€Ã2p0Tbõ d°„Â’³¡F®şÀ`(‡ ùD°ª ğ ùÃ+ ;œñ,¼àC`Ã0ÀbÉ0»9HŠc8@ ™"Â°[À>ÿ C‰ ÍV j0h€~°x$¢’Ğl€pjìaXpĞ@û:   €,`/?Ğ)b(°#À3C"ô°+P
+Â7ğ« 	I0€¬"ò 	Ğ y0dú`Éàøüp
+0p³æq¡àåpoĞ¾"°Qpçà*°Sü°Íğ
+“°2èCĞ FXÆ`N@D1ì@U$RIp»  ~pĞşG@ °$Aw³AQP¦ôö,@	k§"ü€Pé0· -à,àrĞa ~`q AŠ ™Ğ×`AC1R( fF0'0“	ºû0oĞvµàs€¤ÀuĞ„)2m  P%ğ^ 	…0oåB0 á€Ï€S ğ`/2Rf \Ğ¨ğ¤HùÄZğ®(ã ;`ÌğIg0RÊ°åĞ]rv€	]Qf@³°ö 	,	™Ğ~ PkR  ³9åW´°Y ,p‘§’şN0;õY|PvÄáCĞ×`-ı 	 
+û#  rn ,|À§â İ@B  ¢–P P
+B“<~€“Å±)À 4ğ € °Œ ’CP1&4”p&Kpt R1³f-¸ {‡@–Äáœğ‘Ğ7ÿ0'pµ@!ó 'À•}c. µ æà<ˆ}ãN°ñ Û Q€‹BÓw@A¢D€zi— OìáÀ0€ª`ss
+ĞÅ÷ı t@ÂÈ 2PËœ5¢Ú`p¥ „ùô`6÷` şÃçpñW  UÁ U™^"Ÿ0ØL0
+‘Gü0É#èPø@íY+‘§ ÌĞŸP¨Â0tğ¡v%  ` Í¦ xÀ›=rBy"$0	ÔèÚ 
+• Ø 	u ğ j€&×ä	¹Ğ#°¼`	Y`…/€) %6–Pâ´`'@ ° ,(à±Á0C 	¨À.µÀ<àæÖõ€ÀÌ ,p£°yP.7¦Ğ !v€hP&Ä‰3ò¥Ub $p?@Y xğ—şAO0€›ĞMĞ
+¿à9À.Dà ”ÀÁ=pô@.€oÿğ	YÒ$¿Œ@!Àu%â€C‘W@  kL°a™2Pò	ğß DpåØÄp:ğ“à {àè°Tàÿ 
+E : 	² QP °›P/Ò7P%(€´ w °¶æ:©À^ÀğP(ğ@µ ‹@¨)
+ ÿ°P z3 ßtvò-;P] b£J^BF6 ÀºÀi , °¸Zğ 6 
+ÿ@E`æğŒ|Si!ş\P¦#x(`
+áğ—á0Áò' Í6 hĞ[G"e0 pĞ3À C‘gH@Õ¢
+=s²B`ä ¯&1$pf#ÀÿÀ^†Ğ–äÀ`dU! APVk"ö‚z"	 3#@Ñ51 ı€…@H©S XÚ€"û¼Ğâ±–À¡P.‘¶À 3Ğ\ÿX#òs'RMgü@‚–ö€
+“p²äÀl0 ©*æRğP*ÿàîïù»ØĞ	P€ D°
+àÀ²1{~B `’@´\şé`6üğï€Yê0ë°`u ˜íğ]p I€	ÆÀjÅÁ@pj-ğ “ ŸØ!P Ü ˜ÿàPA?ñgÀÁÑ7í ' A>q€€Ù7İà:LÀÑ˜P ˜Ê@UÀD=Q¡
+%@Ìy$·°x€§7¡œ¿ÀCÛ7– •pÂ4Œ"Á[€Êf-ôğ)à¤q"5Œò% ÀÖòEğ'»Ä,’zñÄÁ Œ ®4r ğá,âÅ1l\ı 	ĞÅ:(şĞ	 ÖknüÆÑÇş-‚öĞ Àt;(í 2$ÀKl<küÈÑ[¡ĞÂ2r3  àìÈÜÆ‘Ä@0 ¸&©ğ.pi ­MLÊ+2Ê¡L¯ğWP>°Sk2^P¦Ğ8€ AËŒÌ1„09€P— Ã3Ò&°ñ`ğƒÇ|Ë|¬ÌeÄ *€Å^Â0!Œ
+0–Ç¼ÍÜ<Î@V0ëÀ/é%äğ'ğ“ÒàIPÇZ~,´vĞ¤@n Ëù Í…éU˜à m :ô€”³üûĞ	,p	Á3Ù…¶ ª şËÅa† 
+«¼J ]úŠPœ°Ñ?¡q Hu¶—Às`6æ
+]Ğ  ¶° €ŸÀD« hĞ]²€tà¾ÈñÌ0>PûÙ@9 
+Ÿ€â	 `
+-VÌfp…P)ğ‚Võ7€HÉ:ñ'  9y°ph °? ıpğ€ª ğpo@½p¶œøp	) ]‘Ì&0X€ô°	PXuî €z6ğ)ª0@	ø«Æzép9÷pwP	8Ğÿ ê¢ÄM@Üşà{ P >Ö0b€} É·ıp –¥Ø0$´ ^`Â¢0.€Î€ÓP$ S‡Ğ;Pı[şP*ğ'àĞUÁ
+'°R€˜"Ö@ fIÏ *Ğ B­À¼WÁ©Ğ,G€	)ér` ğ¨YıP¥»Àë¹Kı&DX¡…	p ­xØp	¨’Ñ?  màİÿP›`5uû@
+I€¾€ÕâÀ À/À¢å"å  ğ5ë 
+S Œî<üà	±=|@×e|p&9€_Á!/2ş5  
+bºp@K. îÚàµT -€¢a
+PR°”	%÷P%@*°àÁ ° M ğI}ù ä9%0 FĞ
+µ È`^°&ÛÀAğ´ : &à E 
+ß “ƒÉFa í°kğØ# †à!:€‰İ#ş°
+7p„ÄCÁ–Ğ%ŞC°âWÁ5zÙùğ	‘3Áà—ğ ‰ %ê€"„` ŒE@DAÉt°¡Qá¥@ÑH	 PÀ90
+¨µÊ426 À;Œ U jÀëĞ&PÁ{‘7şÇ 	 ÇPğà 0I#û	
+ &Î<Ë ™càŞEá-¼…P?p$Ğ¥Îù%%~Û×Ñà ¤€‚¡™ g ¬FG° «œêà® Ğ5™ğ	× Í·@%  
+Ï€3Pi,ş Hp °?ş Ûà” eELä 
+]à ¹7Ñ À > ÊàŠö ~¢dyØ@iÑÂP
+¼@ğh¡d@$-| V	IA^hY‚‡lÎ°p `°Wd– P ‘@Æş`i0ã|J@~ÑZ0@pàõpyğ0e _ó €‚` o İ	#Àƒ`BP—¡‰ğ  Q¨ß?‚D˜PáB†&Œ¥BÏ<väÔé{HĞ”‰9´¢`€bfGyˆ¥Ó£aÒ¾Œ-]><âO<k‹lXhQÃA
+_ıôPPõR¶^Eš´!¾F'Deëc¦»Œëà´ %nĞ  2ø©†ï:#*”)Eë²$ØFC ëŠTëV#Ïå·#D²ác×î^ZÂ…†™°-t¢ñËø«F‹2KB¨à‘áC¢vk™ş(ÓÙğèƒôât õoß«ºtab	&¢¹ä5";Yy<‘#œ02Qf)¥®å¼B 8h¦5N64 ‘¦ĞPÂ½1§¢(¥ƒëÌ	 ‚üpŸ"¡ÒÅYRJ´wş-ıÁª „*6¡Ç¥pÈ° ‡=xŸ^ `	FŠĞá™şH»¦‰FÊ•z
+Š§=nHàŠ¢Œl9EaXº0Æ†ä1d‚*@å¥v`ñd™|â¦"P ‹pd$¬Ÿf `1è ~’ID±JGˆ	ªàc$¿TÈ)t¨ƒ†6âQÍŸÂŞ9Å FP¤›øÀtşéPœ˜€€*¸a¨Ÿ|Ô|È €@éDTÈ0'\éF	ó¦ˆHÈàOÀ™Ñ…Ì‰ŒjĞB'¼1ŒŸ?H0‡ ªñ”Î~Jaá‘nqD94-XX}…@àÂ“l:=ÊŸ~zMJVĞH0„IgVa6©x¢€!M4`Äpì‰UÆ~‚!d™ØdŠPæ1Œ;N0åxl)£„
+¨ÀDšÁ\êçWY„YP=*nNñ‚¨`Å‚D4	ÃÆ)îÙ
+ÁE¯rcÌ'øÖçCÃ²éÁ·§ö 8B[ÆÁÈ¡~~ƒşHà3˜iiŸt„IdŠ  HĞ)(~°¦0mæğ¤Ÿ~8¹am²9ì£^)}ô!—?à A8H¡ŠHA‡Ü…š9¢+½8 XºÇd*ùâT¸â‹<x‹L˜‰G9V8ì—îá†ªÔ!†ËÅİ!zæ(!b$±âb€cdŒaˆJ˜!Dp±¦xz'¦õ&´I:ö+t°Ñe-l¡ƒ!áå›q†q„‰HÈ!QîĞà‹C_ìij`@Vˆ‹IÙŸkz!dT@‡-ü…f¼q–  €2Ğ‚P€P- F>şÒeèbŒ ƒTP¬ÀÆ•¢nØ¢BHA	: €!\#|'-:  $!Â0G”‚pä‚e‚L€apÂà€Øá†¸ÓC¨a
+?(AP ƒp¶øÆî2m´B:€ŒB2"Šn˜C*º¡Á†äCÛ%â0†)ğ` @  `„[ĞA Àì€	]€C$d1vü+#ğx†$02VIø8‡Â{ÄÃÀ8…Ú£€#\b“Ø\€…J¤âØh$²^¢|ÈĞ’·Äå?~á @;XÂ>ş   È@ŸËe2•ù’ttAo˜@˜†€7(g™×ÄæQˆáƒà€MHF6Å9Î†ğãYp á˜ä„g<âo”tøÃ*Æ!O~ÊÓø°û9P‚Ô EhB¯¹·®(Ô¡ác¨Ş:Q¥è#ÓP?°ÑqŒeÄC"ÚPŠ–´%ı°†!Ê`‹eb	’‡)¤`d8 Ù›Iuêll¡‰pE$\àSŒÂ
+(˜…MBÒ65!äpÂáZ¬à¶ØZ0F—0Õ©_-H4H‚`ôCÃ:¸Á*©%k\ÿ‹ Áõƒ	jñ\ü`“²iNåêÔzè!¸ø‡6Š0…uüC4p?rXÁV§ßØ:Ó
+,ÂôpC@Aïe®–5é2„05m¢	ÁøÇ9ØDë%•EíDÁÁŠªõã·èŒ=~Ñ	fL¶«7ÍmI÷ñ'‚ğcNüè[½š\ê>dºÕÅnArzÚìv÷õnxqŠ\ñ–×¼çEozÕ»Şƒ ;Ozbplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯'-.4567MNOPQRSTUVWXYZ[\]aU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled018.gifÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÅCiS—Ì ÈÓ89:CLWNS.keysZNS.objects¨;<=>?@AB€	€
+€€€€€€¨DFGHIJK€€€€€€€€€VServer\Content-TypeX__hhaa__]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/10.0Yimage/gif_ˆ
+
+YnBsaXN0MDDXAQIDBAUGBwgKDA4QEhRWU2VydmVyXENvbnRlbnQtVHlwZV1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFRFdGFnoQlfEBJNaWNyb3NvZnQtSUlTLzEwLjChC1lpbWFnZS9naWahDV8QHU1vbiwgMjIgRmViIDIwMjEgMTY6MTQ6MTMgR01UoQ9VYnl0ZXOhEV8QHUZyaSwgMTEgQXVnIDIwMjMgMjA6MjA6NTAgR01UoRNUNzg0NqEVXxASIjVjMWNmMmMyMzU5ZDcxOjAiCBceKzlHTFtgYnd5g4Wlp62vz9HW2AAAAAAAAAEBAAAAAAAAABYAAAAAAAAAAAAAAAAAAADt_Mon, 22 Feb 2021 16:14:13 GMTUbytes_Fri, 11 Aug 2023 20:20:50 GMTT7846_"5c1cf2c2359d71:0"Ò/0^__NSMutableDictionary£^`3\NSDictionaryÒ/0bc_NSHTTPURLResponse£de3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‚ ˆ £ Å ç ê18Z]`‚¤§©«­¯±³µ·¸º¼¾ÀÇÏÛİßá@EPY_bktvx‡’›Ÿ¡£¥§©«´¶¸º¼¾ÀÂÄÆÍÚãñÿ-7Ããé	#(>BOThl€             f              ÔOPQ_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled021.gifO0ÓGIF89a© ¶ w  !ù     ,    © ¶ ‡   			
+
+
+   !!!"""###$$$%%%&&&'''((()))***+++,,,---...///000111222333444555666777888999:::;;;<<<===>>>???@@@AAABBBCCCDDDEEEFFFGGGHHHIIIJJJKKKLLLMMMNNNOOOPPPQQQRRRSSSTTTUUUVVVWWWXXXYYYZZZ[[[\\\]]]^^^___```aaabbbcccdddeeefffggghhhiiijjjkkklllmmmnnnooopppqqqrrrssstttuuuvvvwwwxxxyyyzzz{{{|||}}}~~~€€€‚‚‚ƒƒƒ„„„………†††‡‡‡ˆˆˆ‰‰‰ŠŠŠ‹‹‹ŒŒŒ‘‘‘’’’“““”””•••–––———˜˜˜™™™ššš›››œœœŸŸŸ   ¡¡¡¢¢¢£££¤¤¤¥¥¥¦¦¦§§§¨¨¨©©©ªªª«««¬¬¬­­­®®®¯¯¯°°°±±±²²²³³³´´´µµµ¶¶¶···¸¸¸¹¹¹ººº»»»¼¼¼½½½¾¾¾¿¿¿ÀÀÀÁÁÁÂÂÂÃÃÃÄÄÄÅÅÅÆÆÆÇÇÇÈÈÈÉÉÉÊÊÊËËËÌÌÌÍÍÍÎÎÎÏÏÏĞĞĞÑÑÑÒÒÒÓÓÓÔÔÔÕÕÕÖÖÖ×××ØØØÙÙÙÚÚÚÛÛÛÜÜÜİİİŞŞŞßßßàààáááâââãããäääåååæææçççèèèéééêêêëëëìììíííîîîïïïğğğñññòòòóóóôôôõõõööö÷÷÷øøøùùùúúúûûûüüüııışşşÿÿÿş ÿ	H° Áƒ*\È°¡Ã‡#JœH±¢Å‹3jÜÈ±£Ç CŠI²¤É“(Sª\É²¥Ë—0cÊœI³¦Í›8sêÜÉ³§ÏŸ@ƒ
+J´¨Ñ£3ıõKnÎ1}õ–>a"V?øìÅÃ‡´(?~şöëwoŞ.¼şÑ«mEbÿúáË‡oi×¡ûøÜGß²RŸ¸Dû‡/¬7H–	ë/ì]™:–¼oŸcùÜµSÔCR²yşôéÇÂF¯½øôEŒü¢Ò±Wò«Woß@| Yÿ›Ío»|úŞı3ç	„BõÇƒ§o]
+ şÙ‹êï¼|õå³«û_hwÉ[ş?lÜ8¶À~ìâõÓ¾”½y…÷é-P5>yÿòM"#Å††•ˆõO<u¤ ŠZêıs<öp§Wfõès=sõ3vâID^cü¼ó=z)H¡múØEP=ãD#K'  € ”ğ„"`â9ğÄSM-æ”=÷ô³O=ñ ™Ï<êĞ“=÷Ğ¥Ïd®ö?°-Y…JÊ³–;şĞƒM1¬dB‹/Ÿ°a @ĞÀ ğ@pƒv²Š+²óL;ıÈV>ùÄÃÎ;óÔ“O^&bfY”ã½†¨w÷à3d’­SÎ9º#	5`@ Œ ÒÅ
+0 @ p ÈDş?”€<p{°K3ñØ–=¢)õUXü,Ê(CşTVXùS<Øñ£9èL“ÈO˜ %‘I+Ò¬  °ğÈ:ğXsÍ4·ˆG34ğÀ/€ğ'ƒ^—_;íÈ£=ğÈ¤wP‹\ùP9ÙRúpõÏ2jÄ0Ãˆ0G(¼(£Ì3ËÙó>Ğ rB/äáK8»É³”?öD“2»c$@x B5tAJ:Ş×>ö(YŸ¯
+/ÜğeûÜC¯½´QÅLB‰'²x¥´òØV$sTĞÍ0=õHŠp\ò8“‹%Y˜ÀB ¡	5•-–UşXs%­‰çõc-ì†‘hc?üÌ7:÷ğó"<`"1>õ„vuî:›<dN.ƒDÑ›G2Ù‚óáLÀIvYÂk/ì°°ıĞÕ,?ù˜Œ%^$‘E#ÙÔWl>¡JX¢á²‚²èó<ù\™—e[Ù3|Õù+9¬è`G.@;&dÄ…yGånû˜7|óÓ·püJÑn<á-fŞ°aX6´!ùàO;î‘?ğ¢i0	(P0Âz\EÁ?@€€#YË"|Æ"={ÈCb‚«ÇæBDa0Â
+ ÀşpÇ@eòHP=®#¡ÔHo}ş…ZLÑ—¬¯˜h%Â	'b!(1î‚$O±,C»¸#GÖ0D” eàG !ÒNB,³7D€ì¸Çã¡šfáƒŒâXÂz´CrHÁ6 _¼#8î@@öÑæÄ#DéÍ:è´÷yçHi{B’…{è¯.öhØWö¨`ÉŠQ¬mR£{Øƒ“ÏXƒ
+˜ğ	nôÊ;òÑK?‚8Éğ?pÆ>æñ´EåCğ’>ÔñöÌÃŒ¬‡:¨#4¤#zˆAZ°†]¸Løˆ‡:–ÉyXr1Õ	ænŞc}ŒJr™G<î¡ yˆfŠ€#ˆ0¨‘x¤­,ïşh‡;Tóš9F‘€ËŠ¤b³‹'á[€Ä/ÈK	½ÃêØÊ$±c¬ÁïğÓÈŞÁa¼ÂÄG<¨¡®İcæpÇ?ÄAo„*?ÒF9ºq‰¸H^ğÃ)tqŠfxCOíF*±/¬a´¨F8¾af,#æ0G5šaOtT²˜…0¬‹UcÁø5ÆÑÆ‚TÃë¸|¬xØF€ DØ??Ô#ŸBø ŒA>X`ÙG<¶Aƒ$YÿCvpD%/ô(G5’aŒi,rİP >è‘¹cé8åÀ"4h”ãîÈE"Ä  Àšxş†9ÆñnÌËà*"‘I¤‚Ø(:ÄÑo”`â …ÜñføbÔ‡0rql#ÙPGYÂ@± qËšİ?'´¨~Ä£œ0æ!&YˆP‡
+!ãÁ c	RØG:ØÁ»x¸S,Éâ%Ò”‚´õTˆq â¤@àAŠ(,  Y¸…7”—ídsG¬+VÚHJ ù€–w²Pnˆ®€2Ö\ıL‰yIÈ„3ÔÁ¡¹Ğ±zí[OÃrU¼ ÿ˜‡^ì‘tÀq,œü08ÁhÊØ;˜ÓK=ÒÚz\ã ÀVñeVò*dÉ;óÓ ¹Ğ£/D³'ş"‹Å¬ìÄ÷ +œ’²¾BW|HJ¼QÌK¹!Œ`(#‹j’nv)°¸èìEˆ9è‚?H5õ° ã²R"¼úˆG;ìq™Ù	,BÂaXÎñ À	À ‡Væßü-ù5ŒÙĞy—š9.™Ä ´Ğ Ã>IÊ5Šİ½Ç4VQŠg$X ÷ˆv’u•%Q‘a	É‡#¨pŠw^:hH®‡7©ˆmJ.ÅBúˆŸ¿©Æ¡Ö#@€ñ}´£DŒÑµÃr§¶İ\N Í›Ş…)dB®M‰Ğ—Be2–*ä;D‘…DP»9ıbãê[#„ÖXwSõ‹ã²“_dş”â>»Æâ°Àœaq$Ç„Éò<ªH%†¸=ó©k³bO‡€cÿ°ÌW6'¡{„P¼ƒÖ/2
+M$c–*}ŒöR/œK×ˆhÁ”ÄzZ&/_¡ğ<zŞ‘p ç©Í€ÖQzjd»DDĞ.uDı.õø£@p< í…¢ô'+5âş8H&Çˆˆ+óx‡?àÑ”FÛ@/Ş£šØµ¦Ã»ÄÅ0 E¤ïòéîüø’ƒ68…mÒ–¬ù¤&Yí`Æ.xAÉ[Ãæeäc“w¸Ã6Ù€p‡oœí°d½3lÔw#õ€ÃÆş€gIJà`GæÊ‘Š:xa±Çñór(•LâA$`a°F—Qï$ö¿0"C¥€10! aï )ø ©P
+©Pô 2vÔzwDEdgÿ ‘PP× oş ğ%T–C9¶Àp	ÉÀjøàr]vw]¡W¤Ù¤ôp
+%° | çÀHmö–`ÚE¶  ê;î!)Â!XÀ#,v–v÷uÖ5‚9ìTq  Ğ
+ó%t!ÒeàWá+äQ"¬ğ.€˜áñ€½³àğğşœ$|ğ`‰væáj»Äb5 7 qQ=ûäÊ°h,ŒãdŒs}	±@ÎR×€>Kç )ğ›Ô4ñÀ  ¸c·8~Ó,"C>€ SÀ¶=ÒMµĞeô_üĞ İÁ¦Ğ6Ğ·
+ åP@‘@›ĞêĞÅx¹¨añœ€ĞÔÈIş0<0ÈƒNÃ²Œ¹ƒ4Á˜ó”P 5€ÒaÉ`pı RßàÕóÚ0såxX’äî0	0  Q~p™0 ÇÄ$íğù$òÓB²=¢
+Pˆ]†á şÀ	á‘,€Ù í (ï—‹ü @ïÓU 3 0À¿B2Np(øèëÿ@ ®€MT¡`Q€
+×Ğ‹PÙ0ëş¥x™v›•9ü€s°X€~¡‡@óRˆ¤æĞ?Q‡A`ô ©ã  l €`çxâğ:kÙ,rA(±Ñ<sp
+f@Š±±ğq¾@_»±cø ü 
+­à$à]Öe~ğ @ìT’|±QY™ vË(_  PĞÔè/ C`Şğm'$Š’1t{ş€ŠPh Ä ÿ`€ 0  P^xdjIœA!›%a  `j!pŒµ°ĞEà~H%94œ
+î@%åĞ%àÂ!$³Ğ& àŞ@™¡•ÿEœç!dZÑ$Ş   0 
+p	ÿğb@× {0ø ËØ !$§$µ@LĞ|qºeP Àæ@Jï9ËÔÇı%÷È;öÍ²j·¤Ñ!WbIîa[0    ÖU	9ÀÜà4!)&Š€„ÍÀâ hùÍP° _
+(OB0D@'©şMÚò1Gú&, †™„†‹ƒæĞzëĞ†âèi zñ*  \  ÖïA‡2%1™A£ò RÙ`7°Y€À¶diÔJqõàH—ø4P„m¿´*Ö“æXJÄ€Œ dğ–hgÏ0@a 	°Áô2ÇCõå¨™$_îpH†ñ‰à0½P|éphÔPÁâv¦s¼†!òñ2‚NÂ"åÀN¡Qí#øfIùÖ`¨ğäpÿ@†Ópp€)0U@óÚLJ¡úó÷p×Àø1×À@şŸ ¬ ÊPÀÀàÛP"ÊFô€oJ‚¬Ñçp\4jı`ÜÀ%#6i=ËKArÃ œôô00@{ıPAqQ@¤:¥0 ¬æ•éÒ@Àp¤âğzghÿÚqßæÙğ{Ò±ÆĞ#Ë0 úÀxp PÍp§„êä_ÛÁG;â8bŠÉğ–;òâäVï€¦°¼$~$ı°Cª±î 0ğ÷0°Ûb
+T’ì°ë°«ĞÓ0
+¯ğíp=N3²Mù“î 2
+W¤ÿÀ
+!*u$Î`@¯  DGÚşq(ƒz¥¸4»C%ö0SÚeDî¡ã0èÀFöÂÀ†‚zÁîÀõ@¾À àğ€ÉP§Ğ‚  WñÅ[Ø0çPyÛ+!·Á²DqgzpÅ£ êAfƒP=å€HµSd½o¦>YA!!£Â¤ë_¹sŠ 
+2J=ÉÁ7 ßPıéŠÂ±Y„“TÒ8Pa!—ğ€9€bIø0Mpª O7º8’ª!²¦kGôáæDÅÂ;¦ÂÁ¨BØà
+Ö°Qí@	Ó!í0m%£‰nÀ*·Ü‘N†¢fÀ@ÃşÅb@×	@Àäp$…áDÍÄ¤&(qo¶óQn“Á;ñµKFº]C=–ô2±	 ç!ƒv|á‘;òù~µâv%8€ªQAÉ–9ÿ ¿ÊĞÁU¼ÍrOf±r”dô Z 2 D‘;µÇ8 zğ†ÀH±1 ÖèğEÚîÆáö‘°1;H`²Œ’K’È›ãº`N;¬
+ëÅuñÁß¼0=»øQEpä˜H¦¤ÊæÈy¹£lş ¨»š1Î”qµß,,ô…Q £Àv1†ÆğmsÀŸt’¢ş=TW¡AÑğÉ8ó—ˆ  P RyÁ!ÙË½a÷p¤»1GÀOÒ¸MâÉ9½Ï‘ŠÂ©ÏĞ+p†¶f.H]Cá±1€¦p)dbo!2ºJÍv|$ÉhÕ _‡bú7—]†	0¤ÌÖÓnÉ,°VÖ	1‡f»Ì…`
+W82á‘¤û«]&2Ï°Y€
+ìû49¨Å±@wØagE(ã0;€ÇÀ!¦IHÔ$ãŒ:àğÀ?LdB©ÿäÌ¨™¦ì 
+N°Èù9ÁAr%AB°	M³Ô»Ü(¹şısT|ØaÉ + AWb…æW1/ÃCp
+K7Í¤¹İ;A?#ÃB¦´`oc±¡ãXïs³º ×»ÎÚ»Ş‘7çáÎ¥t"“µ”Ù´ÌÂ˜pÌ°Ô‡ª¯±Şì­ÒLzæ  	»±àqLº‡bK±w`Šn·Óşy%óÊğ€@_½³àı>TbOĞäĞİ¾æ1Nİ¾J,\á#`×°êÌŞtü@,@ÇI¼áæ(àf˜’t„|4ı,DTÕÏ'_şğ
+àn?Ì¬ŞÓ½¾¢c^ƒ&
+4vşz£kª ©`‹\’¶†G>IFÔ½üË;çOQ,`)KQWğª`oSoÉ8öää S0e±9Üëè‡5ç«1$Ôã?å¡Ed‚°ñâ°D>4¨‹¬Ïµ$Wqp óı4Yà
+±˜ƒÊúÀ< (•tg))ØÔnĞ¿Vê«‘ªïf)N°‹¥×c@Ë²,ST‰Bg].oBs0 ;@h^xñ£%ı@kPn¦¹ázÇT<WÁ,[nv<n•áDº!$°¡Û×NBæa`q@åqAÿğ:  ¡ åÚqBã±•ªAfí–ş »B’Ïè,¬>÷À
+42Şcê rÿÛ~bFJÂåí@`
+K½Œ—ŒÛMÃûp
+`¶0Çp‹ûDò Ç§tW«.ğ,Šñ0·pè "³Ì°T4?+WBR=ñ`|92…ÂÚm†Ü
+x°÷s¨9÷ì#
+øÀâ@ÔSÕ›ôKi³
+#`›À·€]3ğPåĞ D!*ŸõQ¤!ücñÿ `	[µ©q`cQ=pot&Ø4¯ªè`ç€êÀˆfù!’;ïa÷Áó8ä³ÿĞL  ‘ ÛÀÍp3Ïò½!Rş0V½şP¾» ¤î„ôÀ1®-ßDóMôğÆ€Vß¤cšT’¦”ë‹qx²CErp F”¶š=´ÁNÙ`S¢,Éobs¡¸` ñAZ?~ıüıÛ·?}üüüñaDŠÿ=Ä˜ÑâFñ½ƒ—ï¡>|ûJÔW¯Á~-[Näøğ%DŠ-k6ìX1£Áƒ×( õÏ^>|÷ôÑÌI‘_>zøDşK…aµıòİÃWcÄ}÷ŒòK*1£Æ°ıaÕ—¯a=xõò³Wï+¿}Hu.ÜÚñáB“m†Åø÷Ÿ5VısWĞ=°e#öÛ‡Oß=°ÕÂxpö¡Z‡êş3i×±Ø±yÍê;J‘)cÍDŠ¶èo&Y²_¦¸ï¨¿‚^ÿUË –¿y›ÂÎ	×öÅM˜á†³´éèÕ­WG}±ß¿zòşQ³ "—?‘øæ5Æm5/§Â®WŸNıı|ú±[êÛ¾ÏŞw=2ëÓŒ²ùd¥ƒWê->˜d¾~²jÀiFèâ„.êË:ŞòùGXi0C$Ñ:}ÃğiH¸£ Œ¨ è¬ÂÇ¡í¹áK4kD,‹©üpr„EîùŸíªB®£~î™gŸ‹şAF0À²¶ø²ä’£|ê‰h{Ú…NÊ§®Ü§°ğùg˜B@ş¦Ë‹|´ÓÎ”"zg?{Ùà@ö)Ÿ%£{
+Ìd&°;l2OOäs¿n¶àÀ½Öø‘FÜMsĞ¶ñ¢jÚK¾ú •ÔN¦d“G¤]fø@™zIèô9/Ö÷Á	Rä9§¤uŠÚ¯UeŒ¬ŸzÆ|G‘
+Z ¦ª£ú™ÇÓÑ–".~ÀdçRø¹‡ vˆŠrYu'URÀmÂ  l’ó,ô óÇ…¢DÇKà‰HŸxLRk]ƒd(2)kùÀMÀ”ç‹jÔP_J²•6dÁŸ•.º÷`‘á‹ÌJ 0AšªŞ‘øâË’é)ò&Ğ@§ĞZJhdŸgş‹·ı9À‹x^ŒÌ'_KgÔğ£È!`0†¢´œú9ë²Š¢È}a ÓZèªCG£qĞİ"R¢ H *ª.­çîH7Šà±†Œ„)hf|ô­îÁBíi© ; #Û«X£»ñØ ‚§–'ªF6ÊàºG&èÈk1Ùêæ…-ªÂª-ÇO(Ÿy8ô§1
+ñ¸’è‘2Íô,‚¸»#ˆY [
+@Ù$,@§hš&HDÍFºĞ„³*û!üNŠû$ÏÚ.~²ÂNòVòGv Ç2ª™¸“`”N¥L
+2Ôä@e˜è!œˆTšØQîÆĞ¯MöÈÜ“ş.Çå-¯4Vñ–lG¯ÇÈôÚXşa6“t…2)‘LCèR—¥ÜKş àEè!‡¼#ş É&.‡Ç(% ºG=$#—ä„7ƒ2	ANÄ¡IĞ 9‡:"R”~Ğƒô˜ŒS2}¸Ì‹§3‚$ÄF<lğ¦ƒĞÈŒP¨aSê‘zî{R²ßÓÔ4Â¨!D%CpA.¬âÅ³´Ã-ú’µ4I&¼ÉašæáU°KNYˆK©3w¬cu¡Ñµ¨ Õ¨++”G”øávp¨ëğõÆâ’ NxÙ¡>hf¹ˆµ£îGKæAÇ8„7ûHäş —uì#÷JÇâ1C!‡zÏRK¨ŒãŒTãì°=Èx`,„ÇWx"Ûd“;á	AòÅ§<I|cÄ	bP
+èbp|–AR¸„ğ!AS:ôav„£	PDŒª²Î	@x‰”S$µºìøÂ8ú¡'êIÂÃJQ¼•›y€)jêÍ9×$ĞĞF÷¡6ºÜ$5êŞ÷¤ÙË”ÄƒG‹H<vô›(AéG5`ñAçé0G9Îqt@õÜ`˜dÑƒGT£Ïq‡1±zøF?ñpÇ; Ø&]IÄ¥øQ)K	iw Cß G9ŠSşjÃ	q‡Ç²wlãÕH‡ÇÄÑ\<cÚX5Îadp£3#Ç5’ÑŒxĞÃÅ F-&1ˆK(¢“à	º‰Jä…x„(haŠGtÌX…(|‘aä‚ĞˆEŞ1l|CæXÇ-ßÁwœc”y€œ@X\£|ÛG¹,2v´ã<fy«&¨³¬ÔãçG7¸1âÌ£½ÈhŞ!Ø­ìcÒøE2ÈÓmôÂÉğF_1q'É‡;À!a$C2Ü(F.L‘;ğ! `   ĞN,Âr Ä"@!k<ÃˆpBj€^ô¢ùmkE ÄËş•£Æˆ†5|*rÜa€`¦‚èãÁ †-~ñrı“Ù»šx7éV’EI(D‡[ºâËÒ¤‰Gñò<Ş¡»Ğ<³Ì„ºG\H?Š,ƒ	 àˆTî£Ò8F0xÁ
+KÌ;˜0D)‹L6È€„Šcì"À 4Ì€&„Â·ĞÅ+öĞ!œ@š‡v®r/Ş ¦™qhn¸$Şx,ƒù›RŞlçb^[Ò[ÁrcôÂÚ7Ì:¤` @èÀaÃU°Áb0dáÑØ¦CâÂ½Üã7 €†cà&$an€4,şÔÀ;ÂP`DCtÉIGh½ÀF6Z“p‰ÔDßªŒÈ:Äà 1àA
+P 0`¨ T€‚ 4¡sH. ¡vx¦39á•fÒÀ4`Â©(-pÑ    hÀ6‹YĞbµ˜ÅnåKÔ…ÅÅ)PAŠTl& € 4<‚GÜ"­ ­*®q6~[Ä*y‚ÒQğˆ˜c'ˆÀ:p³Ô£)rärÑ³D1 € +HÃ*ÒŠ=0Â$9ˆQ."³]…äQ Á(8±‹ˆä°Ëø#
+á=Däcç<V·Ns®IîïáÇ;¤$æÆ°ş $@…‹Ü¡§ Ôu= 8ÜÜãk´Â¶ĞƒÄñÈÕ’â‘
+A#ïXGìÆåÒ|>şĞ¡>ÖaÈô¢PÄQ¼Ö	H İ¸ <ºù­§|
+,ïÀ ÒÁØà¼YDäáˆ(42ÚàŸ†ªÊ®;?)Ul.€Y `€Fàz€‡v@\€‚!X‡è¬mq^¹mÀ…y€g°—yH‡w8ˆ_ğ‚?h^‡Tyœƒó?ëØu¥kpƒƒmø¥l1‡Ch‚H h‰Ù wØ?Çxcğ‚#xƒ9H‚˜„Ì¦6ÚzÈ‚hĞşŒwP‡—9¤¼&Š°¸+€€pê)~€Eà€¸Ep{«¢è”èXŠm@8 m {à¥~Ğ¼˜!˜ƒ’{–yà6íè?.Œ…Ø]0€ „u€‹gY
+6  €¨:‘.JÄä k=Hƒ>@†ƒ€#YBC^‚[p…M8†Ô‘zˆ‡í°
+:bÄˆ Šfèƒ’ã™Ê_˜„O`<ÒÉ’á)†ˆ‚ £D¬$Èx‡À²›]äó¸‡|°‡¬ÀÊ‡l¸ˆ‰É‡xĞ—{@‡S0>{øè… Úq·è’|ş¡K.P¢xˆ}˜tx‡PÇ‘%yÌ¥“jØ°ƒlàn@Í¨…Ğ?Ø) oH’‘†}€Av¨„#øyğÚÁ‡7,sjHğº3Òh°è+äè³Š] °€àZx(\Ü 6’z€€aUà‚)ø…ºhu€Ÿ/¼I³8”yğmøkHz ‡â ‡b‰‡g˜…XøhH¥
+.©‡¨*%0 €°Â¿‰‹|€˜ìJ¿Ø{H‡Ë‰†3  0„Ès˜/˜šŒŠØœ€ŒerJYË}x‡r`P874 Š¸&zØ©şÂ¬Š6A>“°<H(mH!¼ŠBê¡j<uğL$ù	ZÄ.Ç”XXE(ƒ ë" !
+Õôu 2\ƒ% bH¡¸¢Á“ƒ€v˜™upr„¡àœ}8š‡nĞèƒP«¡dQÍ&ò~Ğ…( 2À†ù¤Q:—)CIo€‡º€"Á$œ5z?¤+(Š’C@„sğCY§Øx¿Ğ Z›%˜ĞPÒ	‰¨‡EšY€‚XN8Š˜zª!¹åsğšîP&}\‡riŠÕ~Ó—hÈøvx…#°€ĞÚ„¾x§á8’Fky2âş§2[Ä
+CÑ.¯à‡lIÈ³o¬ \Ì–‘%}¤(5 *h…gÀ’Ö¨ËnyNèÛ‘šj<x¼{“£@È…”é‡]`½8*‡³î”Š!ˆYB”ˆ‡ä%è“é¼èáÉŠIr†(ŠJ!ƒxr
+Gp€ „%òGH"”„)+S4››øz‡vĞÌ‰	)SÜ†?Ø%„y<aÕ·hŒ½` |#ˆb¨w8P!¤hr
+¬@ ¢ğ
+¢šÎ€VB³ø!‡@h˜;ÀÈR&Îë'BJˆW]’Xˆ¿1
+ı0	1£G=©~Â×„0Ï0şÙ…  ,Ø…\¢=-‰çA
+ B×~RĞQ"G´H3ñCÔ¬X‘"§˜)„ÜµT‚^ ƒˆ€: ?“¸ ¹ÙBŞğ2—ˆ$“õÃ5"¯½˜y¸Å\å¼›İ×ø½q‡K @E0†v@HwÈ’€+¯Û'Û`ÙšA†rH‚– N@¦ı•¨CY
+™¡v¨CĞ€èC‡* ’ò²¥0ˆ§!¤²)G’Œu"ˆ/©Ğ0íìøPÖ|“ y‡F`	 A8A®èåñ'ÒÀˆEJ…,…} ‡tÀ¦kÂ“À‡˜²˜yp‡‡ĞRVSˆŠ —şxX=ˆ
+à 9¸‘Ù?A²–±µ\³ªĞSzØÚÜ¨‡´BI	ºÙuB¦í[¡HYR	y0 ƒbX‡':8ò˜‡yq¼r$ORÀ;3Î¨‡s¸–|	«X!vxZ=‡yˆ'Ö`Í ‡T°‚›Nğ†~E^r¢Û«¸œ²Sr©SH‚(ºX
+1[äh­e`7Ñ‹à]'Ât™Í•u`((€¸,@ÜÇxŒŞ'†°ŸJ‡tH¾Âz†NØØn¸ËoH†X†hXlx¯l †iĞ_ğp‡bø] …a`hø´ª\…@pş €h%(ƒIx†v@«„à¨|¸†p@@³Ürhx sø=sètØ†Hx„Yè{X‡c(I¸„Zøµ\xA( Œ¥ˆÖ?6½ÈW|ŒvX‡lÊ—u hø*P7(DP¢¡Ù+cóZ‡äŠb!†e ğ jÀ‡¦†[àoÈ†q¨bbm(‡e@†tPg0†ep†i°†n8}è…: u;:R Khm‡r$İ}‡j ĞzP‡sĞ¼ŸJÈt()tè†t(X8_‡™”]€X(†p ‡e@…P8…â0àHÒbİ‰mX„+ş¨€3bĞÕy(ò¨Ö–â‡tĞk‚	†%’wğ÷‘‡ÌùªhŠ“C`˜„/€-…í $²û‹~ˆ˜c=ÖÇXıªáÅ÷`•~£'“:˜@€! c°†CæŠï™T[“½È°… ƒs@€!	´h¦0#‚ˆwØ`ø  €-ø„r ;˜#ƒyir¢©4[’{à^hƒÈ €ÀpP«Šğ •Åqğ‚Xh®px3·p‚ˆyhiX$È€@ ƒW˜†dY
+Úõ¡-k<éHé¡a‡bpƒˆº	è58şp O¹6
+y ‡Ä…`lA¥“ƒˆÁ“0`Øƒx ©C5€ƒ¶šxX¤;‰ì¯^—°®ì¢µÈØ‘|h‡m([(„°9(xƒLP†Cˆƒà†¸*2È…ÆX‡_„) ‚Hh ¨:àr˜™²ièdñ<-i¾É–l±ÖˆÈoİHy0©‡[D  ƒ È8èAĞD¸l˜S( s€5 Yˆ„CxD˜58*X·àƒOè\@j¤yCÈ –bÇÕ ıîâîoo9›/aèó.Š;hƒ2X 2 ».ş‚à ©  p	@ 8r”±8¸ƒI0†sñëm•ç?ÚPâŞ·¯fÙÚ¥}Ü‘ÅP‰ÆH‡T0ƒ˜vÃ€º«&€@€›Ó0˜ PXƒ4`ƒRP"cšÕğ¥ø›PÙ¹ñeAsü^¥“X
+5ó–zh‡3år ‡ã]Áqp†f†b8&  ğ 	xrH ø*0@…_°˜
+‡’#İ4y‰”°„ì\´×î©te¹te× ”8V::ÉˆŒÙ68iør…È€°€Øsh‡ã*ÇçŠh­‹Õ¨İ·ˆ‹ QàşÂq3¿ÉÌQÍ€ ®€«¡‰z8bPC ,8ˆ“ğ
+¤ğÛÕ´hâÑ·©…Î<‰x‡ç>€6˜ÊË1›x.”lÍƒ?Â‡uÀƒ	ÈGäÓS”yºÙ’~‡4í¢hfˆ‚U \zy‘}`‡â¸K(f Á‡XøWÈ!vpù×NÒ^‚hà„I °ˆ‡)0SøÂ„úÏ‹õ€“_h‚j L(‡rü‡^‚(Ã‡{Ç‰ixàg i€^@à‡QÈeà‡r ÷¹o:‹gx8ƒNHŒÊå”dRŞ6|Êş”"»şJ–0§¢8ˆd°x 8‡Îi8‹‰‹èÎ]íwà¦}"ìÛ|‹$WZÙ.Ú'ƒxR›Ô‹.µVRVËq_¯ŞíÀ†9ğĞìÖ	ŞŸ¢LçÁ"E”.²Ÿ”²ø„¿İĞİÕì6
+¬r$$dÑŞ¬H³ÅÎP"eeU¯ğŠ¬ˆ2¢™¾À–¨‡mP*ğ ˆ,h ?|÷òåÓ·o¿~ıù+è¡C}
+êãØQÈõÑ»'P?~÷ğ¼WÑ Ä˜2gÆŒHS¦¿”ı^úë—’âË@oNô²ß?~øôõ«ÇO^:“ûìZwPàN‹öìşçğ¡ÍŠ=)Z¼§¢R|ü€æÜ÷5%J~õŞÉcŠÒë>ûò%øğ/`°üBúìçV§D~nBÜ™sp¾À€k*ÉïßaÃKõÉÛW<’BÕ»Šy_QÍy…²Èš+Ğ‚¨ú„éÚjÏñèå+üú·AÄDG	R8Ü{û‚¶Néü9eÅ{‘¶ŞÙ/_D…øò)ËÆšíPÇ{BüÌól“v¼,¹p±ngSt³¯iÓøM¯ÅíğeDù]åu<!e=I±³ĞZD!…•OÎ=xPu÷5ç\R
+¹÷OC]A·ß@c=–ÕA÷,ÄŠ)ŞC<õ4”O=óØ³HøØ3O<ş{½£N;¼áƒ#‹ï´Ó;ğÈCÏvù(dO=ôÌµ’.‡<ù¤#Î<õ¬“Ï?+:˜Ï=õÀ3$‘î8e“x²æÓC™7Ş?¾QøVıÑ6áAæ¨3Ÿ}öù:áx3:ï°CN8æ ³Îé”óM7óÜsÎ7á¤Ï<ğúÍ6ØXƒ7ßˆ£;ê¤ƒ9äˆ#Î7à¬#Ï;fzÆ£Ú`SSı¨£N„Ğí:åx“6ÚxÎ9ì°Sd‹+İ•ØbØ±VYGK=øT;òÈ%«}>ı8O^ıØ#‚øød=L¸İsíò“Ï<ï¤ûP=ò,õ—>÷ŒÙÛ;ä”ãZ`*¦İ“øl—QGÓ£9u™¸?ô C<Ôd³=ÊÚ#DúÀ“N8ÙP#M5Ûš6¡cN:ë(»Î®§šSÎ8¡õTÙRôˆÓÎNîXÓ6ıRã:ğĞ“©©î¨³Iü¼“N;çS*«ç´³¡š²İ³¡WáãÔ?òœƒNI8`JğœSWg	tO:YcMÄæ¼ÃqÇÀŠƒÍ4ÑP³8ÜLSÍ5ÚˆZÎØ3“£j8àpêPljÄ™6çì”3Ã@£7ÌX#Î:ğ¼³9„¢“N‚üD½N8İ¤ºM6È®öO@ ;Ozbplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯'-.4567MNOPQRSTUVWXYZ[\]aU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_\http://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/coupled021.gifÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÅCiSN ÈÓ89:CLWNS.keysZNS.objects¨;<=>?@AB€	€
+€€€€€€¨DFGHIJK€€€€€€€€€VServer\Content-TypeX__hhaa__]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/10.0Yimage/gif_ˆ
+
+YnBsaXN0MDDXAQIDBAUGBwgKDA4QEhRWU2VydmVyXENvbnRlbnQtVHlwZV1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFRFdGFnoQlfEBJNaWNyb3NvZnQtSUlTLzEwLjChC1lpbWFnZS9naWahDV8QHU1vbiwgMjIgRmViIDIwMjEgMTY6MTQ6MTMgR01UoQ9VYnl0ZXOhEV8QHUZyaSwgMTEgQXVnIDIwMjMgMjA6MjA6NTAgR01UoRNVMTI0OTmhFV8QESI2ZTFmNmMyMzU5ZDcxOjAiCBceKzlHTFtgYnd5g4Wlp62vz9HX2QAAAAAAAAEBAAAAAAAAABYAAAAAAAAAAAAAAAAAAADt_Mon, 22 Feb 2021 16:14:13 GMTUbytes_Fri, 11 Aug 2023 20:20:50 GMTU12499_"6e1f6c2359d71:0"Ò/0^__NSMutableDictionary£^`3\NSDictionaryÒ/0bc_NSHTTPURLResponse£de3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‚ ˆ £ Å ç ê18Z]`‚¤§©«­¯±³µ·¸º¼¾ÀÇÏÛİßá@EPY_bktvx‡’›Ÿ¡£¥§©«´¶¸º¼¾ÀÂÄÆÍÚãñÿ-7Ããé	#(>BOThl€             f              ÔSTUV_Yhttp://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/t1.htm5.jpgO`ÿØÿà JFIF   H H  ÿş LEAD Technologies Inc. V1.01 ÿÛ „ 
+	
+ "!#(3+#&0&,=-0569:9"+?C>8C3897	
+
+7$$77777777777777777777777777777777777777777777777777ÿş          Z             ÿÄ¢          	
+       	
+   } !1AQa"q2‘¡#B±ÁRÑğ$3br‚	
+%&'()*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyzƒ„…†‡ˆ‰Š’“”•–—˜™š¢£¤¥¦§¨©ª²³´µ¶·¸¹ºÂÃÄÅÆÇÈÉÊÒÓÔÕÖ×ØÙÚáâãäåæçèéêñòóôõö÷øùú  w !1AQaq"2B‘¡±Á	#3RğbrÑ
+$4á%ñ&'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz‚ƒ„…†‡ˆ‰Š’“”•–—˜™š¢£¤¥¦§¨©ª²³´µ¶·¸¹ºÂÃÄÅÆÇÈÉÊÒÓÔÕÖ×ØÙÚâãäåæçèéêòóôõö÷øùúÿÀ  ¾ ¥ ÿÚ   ? ÷ê (  €
+ (  €
+ 2SŠ (  €
+ (  €
+ (  €
+ (  €
+ (  €
+ â>$_Á¥GáËë©¼›h5hŞWçB>zPEáıJóWÓ~ßud¶‘ÌÛ­Ó~ç17`O\v Z (  €
+ (  €
+ (  €
+ (  €
+ (  oxz-|é¢iv¥•ÚÜ”(I€FÓÇu /‡t&ğí¤Ö1Ş<ö"BÖ±:ón‡şY†îéè8 Š (  €
+ (  €
+ (  €
+ (  €™QK1
+£©' P<Ş'Ó–c©–úqÕ-PÉ©è?:ÑR–ïC7R;-H¿´<Crsm£ÃlÔüÿ ß+ŸçO–šİ‹šod8[xšN_P°ˆú$À~f‹Ó]Z§pûˆ×¦³lŞÆÓÖj}‚Óî!ÿ „¦ŸÙ·CÓç¿¨£÷oºŞ.À5ëËQÿ -ê:É&OÓŸÒfŸÂÃ¯‰¶Ÿ©®lîã”ª}AäTJè¸Ê2Ù—jJ
+ (  €
+ (  €
+ (  kİx¦°ÒíÍõòıà§Åşûvúu­#OKËDfç­£«"OK|Ë.»x×l9éò@¿‡ñ~4ı¢V³¿ÆÍ¨ †Ú!$QŠŠ •fÛ{š$–Ä”† P@ g_èZv¤wÍna÷fŒì‘~Œ9«Œåˆ”#-Êµ­—-«X¤ 'Œ'şu~äüŸàO¿4kiú¦©j.,æGĞö*}êg(¸»2ã%%tZ©((  €
+ ó¯ê:äz÷‰íí5©í`±ÑÒşH£;dN2Tü§`Ïq@4=gX>(´Šæõ®âÔtA¨yª‹¡”a†îOJ ê´]uÍ,^ª¢1ãıÜ›Ôíb¹ ãà Ó$ I8½ s¯uuâ9šßO•íôÄ%e»^SİcöõoÊ¶²§¬·1»‘ØÙ±°µÓmVÚÒŠ%ì;ŸR{šÎRrwf±ŠŠ²,ÔŒ(  €
+ (  €
+ ÆÔtF7-¨éR‹]GŸà˜z8ïõëZFzrËc9C[Çr}'WMDI‘{è8šİú¯¸õSØÒ”9uè8Ï›N¦•Agêú¦£mŠo¢ñärizİ¼vÉç‚_É¬¿Ä¿;pxÓh7Wöş&ñ^‘¦n’ÌÛÍ_Jdò¼Äbı9ÆTqÆ3@^‘y=ş‘iwsmöiåŒ3Åœí4ZëÃ:%íÕÅÍÎ—o,÷1ùS;¦L‰ıÓê=¨‡ÂÚDn“YÚ%•ÜPùÜÀ I
+z) €=±Š Ò+6…®‘dC+´®ªÒ9êqÀü…5öBrKvgŞHş!¿“K¶®s!æCÿ <Ôÿ 3øV±^Ís=ú?}ò­ø¢R($h6ª¨À²nû›%mú@ P@  P@  PN±¥Itc½±q¥oş©û8îêéZBVÑìg8ßU¹>‘©¦«d&b™	I¡o½ Òœy]Š„¹•Ä}G“Ìß¥Y7˜Ûß6èw7©ã“É¨(¯¨xgL¿¶š³iˆó&³>L8.¼ãÅ hXÚ%…”V©$Ò¬cæÈíîXòM X €>jñ]Î£/‰¯óIç	HÁÏ<\ê•áU(¶£ÒÇŞpî/©‚æšŒ§¯5íu÷ì¬zïÂ·»oÿ ¤©%o(‘Œÿ ­z7›„]OŠÚŸ‹…bªGğ'§õêw'8P@  P@  P@ â_|C{eâÛ«}>G³PJcb¾i‚:ÃŠ1Œ7zŸGÃù5ÁÔ«^öNÖNß6tß<O¨ë)wc+Oä(t‘ºã8Á5t*ûz\íYŞÇs—Ã.Å{*nñjêû®–=´< €
+ ålô«ê×Ú­õœSB¯ö{pËÔ/V÷ÉşU¼¤éÅEF*mÉDq¤1¬q"¤j0ª£ 
+Á»›¥mê (  €
+ (  €
+ (  €
+ å|Qà-3Äó­Ì®ö÷ m2 Îáî(”aR<µÑÓ…Æb0SsÃÏ•½ú§ò#ğ.g¡G¨éñÇ‹¸&Û,‡«©Cì1úÖ’Œa ¬z˜Š¸š²©^W—s®¬Ä Poˆ/_OĞ®î"ÿ ZlïêjéÇšI7ËÉô»%Ó´«[5éaIõ=ÏçJOšM+•$[©((  €
+ (  €
+ (  €
+ (  ÃöXÜş6·“İ—æSüÅjµƒ]ŒŸ»4û›Õ‘¨P@>"ıõŞby^aêÿ 
+ÖŠOÈÊ¦­/3z²5
+ (  €
+ (  €
+ (  €
+ (  //Hğ}ëKˆæÓıkKâ·s*ºFıß¥dj Pÿ Ïã¹ÏúıkXéM™KãFídj P@  P@  P@  P@>(]ŞÔ‡¤.kJ_3©ğ2ı“o°¶oX”ş•İ–¶Dô†…}òxÇHoïA2ÿ è'úV±şùKãFídj P@  P@  P@  P@>'m¾ÔıíØ~c¥/ÔøzÁviÖ«éĞTKv\vEŠC
+ Á×ÿ s©èww^Q>Î¤V´õRFSÑÅ›Õ‘¨P@  P@  P@  P@ aøµ‹hFØ}ë©£„~,+Z_ûUølm€  àVF¢Ğ@>%µ{¿İ,C3F±ÿ ¼§pşU¥7i+™ÔW‹±zÂí/¬-îã9I£?Q%Êì\]ÕË† P@  P@  P@  P¤>Ûâ.Ìr–Á®¤öãjş¤şU¬}Ø7ò2–³HŞ¬B€
+ (@'O¼½Ñ$à@ækx˜çô9­Oy)™Cİn&õdj P@  P@  P@  ë3¹
+ª2Iì(Œ?+]µæµ  ß8òíğ¿Ÿ'ñ­jihv2§­åÜİ¬B€
+ ãõ?cxŞåo®Ìz\:HœÇŒæC)QÔ±è _ÕD×V~ ²¶•.í—Ìò$]®ñ¼„v8çê+Zm|/fg4×¼ºvwpßYÅunáá•C)•›N.Ì´ÓWDÔ† P@  P@  P@ `k²¾¡ulØiÆû§òÎãêİ?:Öšå\ìÊo™ò#ZÊâÎh+)ct¶cÎv2õSèEe¹ªĞ³@ Âø£ÁWš÷‹«©nöÖKö9ÉÉád,2½Ôƒƒõ ÃM’ö]6İõÒƒÎ7Şªİğ{Š Åoø¥õ“h×O–ÇKi÷Oèkoâ/5ø˜ÿ ù~GF rB+ah  €
+ (  €
+ (  €3µ}Ut¸$fk¹È ^²7ô¹«„9Ÿ‘—*ó¢ém§@òÜ¸–şå¼Ë‰}[Ğ{‚‰Ë™Ùl*×sÏ¼3­^ÿ ÂY©øzÁãµyuk›™n&\‡Jƒc»zú
+‚ÏT €
+ (  KsÄñJãqµ•†AÓ¶¨¾‡<¯qáVÙ/™q¢ÿ Ÿyí}ª{ö­t©¶ÿ ™´ı?#¡†hî!I¡‘dÆU”äY5mªwÕ¤0 €
+ (  €
+ (3TÖ¢Ó™mâCs(ıÕ´xûŸAîjã-z)¨éÔJÒe†wÔuú”£‡Ü‰¸ƒ°÷ïNSMrÇaF6w{šõ™¡ÎÉà­"HÜbt”ßA&I1$rœd©ì0G¥ tT P@  P @ ‚2j À—EºÓ&{UŒ1ÜöRÿ ªsşÏ÷ÓŠÕMKIıæ\:Ãî&´ñ¬“­­ôo§Şùe?¿İn†“¦ÒºÕT[=³Û#¥fh P@ ^òú×O€ÍwqîØÿ õÓQrvBrQÕ˜çRÔõœ&“ZZ·—	‚GûzıMkË|_qŸ4¥ğèhiz=¶”®cİ-ÄœË<§t’sı*%7"£B ° €
+ (  €
+ (  €!º³¶½€ÃusDz«®E4ÜuBi=<8öd#R¸²óÉ›ıòİ?Z{KüJæ~Îß°‚_Úœ=µòâÌL‘úÑjoºÔ^fgˆ<g{¡i2\Üh’Á/İBò+&ï¨¤ãÅÍ½µTÄV-dì»6ñgYšô{glT
+GĞ×\+Ôö|¶¾ßğO¥Ì¸r¦ñ©ÍËºµ¾ãÓµuÉ×ıAØF¸¸UıMvòÁo#å9¦ö@,üEyÿ :•½’àµsßMş^šÙ\-7»±=Ÿ†ôëI…ÃÆ÷W?óÚåŒøgøRu$ô§©­Yš  P@  P@  P@  Pn½¢ZøƒI—O»ÈGä2õSØŠiÛG°ã)BJpvkTüÎGøGkaª%Õİñ¸Š&Ü±„ÆqëYÓ¡FŒ¹àµóèz˜Ìë¥ìkIrõ²µıOJéÅYå  P@  P@  P@  P@ ÎxçW¿Ğ¼'s©é¯ÜC$C¦å`Ò*‘Ôcïu cXñ'ŠtÑâÄKëm¯•Í©ıâ2±òˆİÇÜ?7^GÛÛë1ÏªÇ§ıU‘íĞãaÎsÏ¥ iĞ@  P@  P@  P@  P@úÖ‹câ5ôıJ7’ÕÙY‘ddÉ#%H=@?… g\x+D»mE®"¸êQ¬WdİIûÔ_ºÍîzzŸZ µo¡ı—Z‚ö+“äAgöE…Ô³cp9.NOAÚ€5è  €
+ (  €
+ (ÿÙZimage/jpegO|bplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯'-.4567MNOPQRSTUVWXYZ[\]aU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_Yhttp://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/t1.htm5.jpgÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÅCiS¢¾ ÈÓ89:CLWNS.keysZNS.objects¨;<=>?@AB€	€
+€€€€€€¨DFGHIJK€€€€€€€€€VServer\Content-TypeX__hhaa__]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/10.0Zimage/jpeg_Œ
+
+YnBsaXN0MDDXAQIDBAUGBwgKDA4QEhRWU2VydmVyXENvbnRlbnQtVHlwZV1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFRFdGFnoQlfEBJNaWNyb3NvZnQtSUlTLzEwLjChC1ppbWFnZS9qcGVnoQ1fEB1Nb24sIDIyIEZlYiAyMDIxIDE2OjE0OjE0IEdNVKEPVWJ5dGVzoRFfEB1GcmksIDExIEF1ZyAyMDIzIDIwOjIwOjUwIEdNVKETVDQ0NDihFV8QEiIyYmYyMjhjMzM1OWQ3MTowIggXHis5R0xbYGJ3eYSGpqiusNDS19kAAAAAAAABAQAAAAAAAAAWAAAAAAAAAAAAAAAAAAAA7g==_Mon, 22 Feb 2021 16:14:14 GMTUbytes_Fri, 11 Aug 2023 20:20:50 GMTT4448_"2bf228c3359d71:0"Ò/0^__NSMutableDictionary£^`3\NSDictionaryÒ/0bc_NSHTTPURLResponse£de3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‚ ˆ £ Å ç ê18Z]`‚¤§©«­¯±³µ·¸º¼¾ÀÇÏÛİßá=BMV\_hqsu|„˜šœ ¢¤¦¨±³µ·¹»½¿ÁÃÊ×àîü*5Ååë%*@DQVjn‚             f              ÔXYZ_Yhttp://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/t1.htm6.gifO
+fGIF89a¸_ w  !ù     ,    ¸_ „   ###444GGGWWWiiizzz‰‰‰˜˜˜§§§µµµÃÃÃĞĞĞİİİìììÿÿÿ                                             ş !H° Áƒ*\È°¡Ã‡#JœH±¢Å‹3jÜÈ±£Ç CŠI²¤É“(Sª\É²¥Ë—0cÊœI³¦Í›8sêÜÉ³§ÏŸ@ƒ
+J´¨Ñ£H“*]Ê´©Ó§P£JJµªÕ«X³jİÊµ«×¯`ÃŠ«    Œ]Ë¶íG <p0 €·xó¦lÀ ïR* `êƒ¾îêx¸¯âÅá@È—Áƒƒ …:˜ÁÔu(€ôÙÑ,%UM°l€4Ë5ˆ @¨W=Û€tDŞ-Yn€ŞÔ%@ ‚§[=ëû÷äàÔƒo@@íÀÙ	şšõÜô  äT `^İ¡zö©Ãÿ$~P2zšF]5óöù÷v×'_}: À 5ÆÀ}9`Ù@|]&„daA
+U €w•M`A"’ˆX‡#Ñ×“‹™g@AƒÍ]gà° ÜÕ€Ûˆ!€A
+°¡è(PJ%€]S5ä‰]©˜ liŒ;‘)z°h^aÉø½ùØÀ—‰x ½_ƒ±A˜ RB âY„V	Õa„¨t\*šhƒaú)’™9™©£ÕEŞ‡#	 Ö ypí	AŸ&6f¥'ŸşN6JĞ«É+J”âd¦Y’f§@ ä%T"bÄ"&)¤çdV 5T›ÔV¥y %a±Øú5´É0[×f[¬³ÿ)÷-®¾˜®@"V+\,À+Cwöhï½öjx·äå@í*À’«ºíI)€ïÂöäc	Ğo[
+3¼°Ã„E<qJ¹Şcmî
+T› >b9Òš)È ¿&CĞì@ùŒğVgp¥²TóÍñ8_ºàAä†>&¢Ğ É)X\)o6yU¾—)’[Á˜‚çüîfX÷¼Z‚w¬fwñK’|Ô.³ 3¿|ã£[ùgc]Ç(·@t¯Ô±şMôù¸ ±µ‘‡&Ì×±¸Q©S£Ç­…wÛÄGwe›6˜óäYhø¤ë–)Ÿd„†NŞ`;—À­q;|şĞ¤g\™  —´êÕ•È)( HÈû…h®Ï>W1ÃÈ%@ EÀæ!@@°Üéı=P/jòÀ½Wô8+Ëeù{.€¾ú%í]“üZ×Ï%ı3áoÿş¤é“ÿü [ ø
+ğ€a1 È@ )ĞkŒ d¨·ÎIğ‚	´`¥4ˆÁVƒ¡£Â€è„ÉP¤ JT8Â¡,ˆH» Ò ³ …™aHÂE½¥ğp)ş&SĞÆâ V¯$x™F‚DWjYQ*³9(ÅˆIQ›bÑ,$WÚĞ•BÖ'‚Ä8Fqldc84>Å<Xt
+p (³lˆ1ã[ÖSã G9|ŒL ›²Ÿé c"¼ˆˆE@=z¤rDáw<”.H2%hV‘ÚER4‚((YqdGÆÃû„”LIâÚ¦bÉ
+R¡‹¥èrøÕr"¢äHß…£¸h—ÅéåGó)êA	Ù‹ ´Ê©¤èL+:I.rK,”‰t‰ï”u–•ÅMtlèÍ8À ‘
+P2µXïJúú¦.4Ïx“;TşùÀ$¦øe³"Õ\İ5søO–ØàAPĞÄ¢ƒ&´‡Q€;Gd€»}£AÔ!Óf{.-–¦rÊ¢5O’L¥æ@!rRŒ@ÍÊ¥üôÒ ¦Ñ #™*dA¦È¼ÈZ•O¡ş|eGê‚Â³@4!-%È°Ä%TÇ,‰ÁÊ¼â#Ï`u!á¢ª¶RhùÇ›ÛªmÔ
+ğàT(a+¹c®§îQ©j•¥^á'™nÅ+Hêe±|Y“(3JRËÄ*dy…5BF*3ş¸íT ŒÖÌ—°ÈŞc›+IâŸ=]–¥]a˜DFŸ AŸÒşLk7rP “müI«@Pé²AjegLT­`5ò ²¬{˜äB¢Z‘ÚÌˆtEÁ$…6äÜŞâÑ#Ïjšn¢O„ú6fmÒİ¯Ø#’d0¸K+EåæRÄ,-ïO 4Äßq3¾YIW¿\İö>ş^Ü˜˜7ášd¡‰WdDË÷ND3È!¥]kâ7ÀÂ»5Ø„)‚6Â°ÕrêÙ®’²]®`nŸÛ°FœC¤k!‚ùºA½^ÆÖñ÷´ß3¡Å}l2Kú””Ä0 6 êŠ€}g<i¦&.Î£øœ%¾8â²øâé”·Ue Ùa¦²^úâ< à20Òş˜»Â¾ó­ÙÉÃaœ[Hg>¹€w®³û˜çMîùÏR‰²EèB›´Ït4´¢•Bè&"zÑ–I£qùèH[ÚÏÉ«ô¥7m^Í™Ó .ÉÊB€ÀoÒØüt¨W’ITSAu`YMk•\S=k“5jUİQeÖ~ Ë*S|]·Õ8J_ºÎ£¦G^ûF£4öÉ¨Eœy_Ë®‰Ô—ìöf;$œà·S"›»à¨œ[iRT	Ë¯9›%ƒ‰§ıTfß~~ñv
+»Û­qä™Ì7SÎ‚4€/E9Hıë»¡ìoÔÅÊ²â(W
+‡3á›ëvÎÊÚVKõ+ğ ş~†ÄãQÌïFš´ Ë$àJèÂ2à© 6ïPt,ä½XsÜ?_ñ ıX?ùœÆ($|ˆ::™±£1ëä2¸‚,à¦ÀÄ¬f/’ù|áx;JTWñôÖ/Ü™‰¶O7×Øâ.]wŒ3±¹!O¿¶î£ñ=#~ëVT¬—ÚH	Åæ	\bxå~$>bV˜xX(İs÷»Ø1M’’Ù˜P{ÒÌ €·~Å×Ÿ—Y$ÂÛ$‰	‡€èIoú¡¦P
+qêÓ<LÉÜ?
+÷rÿ¾#â[D=¡S®Ö4C(yÅò›C>¡”¿ã©=Æ±gÛ$iì¥ywï¤uš­}ugµ¢`!à¯îHÈıÿuO·U÷û½ù’DÎ¿9+qwƒû J÷'N!Á[p11ÙWZ$55Ô‡}7|õF×ä~9³Há%l;!]bm,Cø¢w0U"|ğ²4Û¥è¦x5ò ¦–3°$|„ [”Q$Kš-ø‚a‚,ğò 4ˆ7^Ä 0ja„%¥gÜW>²€Õ±‚»§?ccÒ„>¢`qYX0Tx#6t=.s×Vkfx†h˜†j¸†lØ†nø†p‡r8‡tX‡vx‡x˜‡0 ;Owbplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯'-.4567MNOPQRSTUVWXYZ[\]aU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_Yhttp://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/t1.htm6.gifÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÅCiS§ë ÈÓ89:CLWNS.keysZNS.objects¨;<=>?@AB€	€
+€€€€€€¨DFGHIJK€€€€€€€€€VServer\Content-TypeX__hhaa__]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/10.0Yimage/gif_ˆ
+
+YnBsaXN0MDDXAQIDBAUGBwgKDA4QEhRWU2VydmVyXENvbnRlbnQtVHlwZV1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFRFdGFnoQlfEBJNaWNyb3NvZnQtSUlTLzEwLjChC1lpbWFnZS9naWahDV8QHU1vbiwgMjIgRmViIDIwMjEgMTY6MTQ6MTQgR01UoQ9VYnl0ZXOhEV8QHUZyaSwgMTEgQXVnIDIwMjMgMjA6MjA6NTAgR01UoRNUMjY2MqEVXxASIjJiZjIyOGMzMzU5ZDcxOjAiCBceKzlHTFtgYnd5g4Wlp62vz9HW2AAAAAAAAAEBAAAAAAAAABYAAAAAAAAAAAAAAAAAAADt_Mon, 22 Feb 2021 16:14:14 GMTUbytes_Fri, 11 Aug 2023 20:20:50 GMTT2662_"2bf228c3359d71:0"Ò/0^__NSMutableDictionary£^`3\NSDictionaryÒ/0bc_NSHTTPURLResponse£de3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‚ ˆ £ Å ç ê18Z]`‚¤§©«­¯±³µ·¸º¼¾ÀÇÏÛİßá=BMV\_hqsu|„˜šœ ¢¤¦¨±³µ·¹»½¿ÁÃÊ×àîü*4Ààæ %;?LQei}             f              ‹Ô\]U^_Yhttp://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/tp.htm3.jpgO«ÿØÿà JFIF   H H  ÿş LEAD Technologies Inc. V1.01 ÿÛ „ 
+	
+ "!#(3+#&0&,=-0569:9"+?C>8C3897	
+
+7$$77777777777777777777777777777777777777777777777777ÿş          Z             ÿÄ¢          	
+       	
+   } !1AQa"q2‘¡#B±ÁRÑğ$3br‚	
+%&'()*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyzƒ„…†‡ˆ‰Š’“”•–—˜™š¢£¤¥¦§¨©ª²³´µ¶·¸¹ºÂÃÄÅÆÇÈÉÊÒÓÔÕÖ×ØÙÚáâãäåæçèéêñòóôõö÷øùú  w !1AQaq"2B‘¡±Á	#3RğbrÑ
+$4á%ñ&'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz‚ƒ„…†‡ˆ‰Š’“”•–—˜™š¢£¤¥¦§¨©ª²³´µ¶·¸¹ºÂÃÄÅÆÇÈÉÊÒÓÔÕÖ×ØÙÚâãäåæçèéêòóôõö÷øùúÿÀ  Ï ³ ÿÚ   ? ÷ê (  €
+ (  €
+ (  €
+ (  €
+ (  €
+ (  €
+ (  €
+ (  €9êšÆ…ê0Mjö¢x¢ß.æ
+pÙá¹à`ô Ïk1hßt¹ï/ô»‰$RÇi!—w=‡z êômB]WJ†ö[¬ŒÃp†|oØ:dv ô P@  P@  P@  P@  P@ rº–‹®İø¦=H>Ÿ=ª²A3:ùN~ô‡ ‚İ‡  ÿ øOxÆâãjZCe,bel<3–VGQßPMáã¬cÄšìq.¡(ïee£LqÚ€5(  €
+ (  €
+ (  €
+ (  €
+ (  €+İ_ZY&û«˜ _Y
+j-ì'$·2[Æ:Am¶ï=Ùô·ŸúVÆ]t3ö±è'ü$³7ú­SqÛ÷a™£Ù¯æAíò°ÿ „’é~ÿ ‡u%î©şFŸ³_ÌƒÚ?åbÂ]cÅÕ­õ¯©–Ù°?G±}{T·4lµÍ/Qÿ Køe?İ†ü5„£º)N2Ù—ê
+ (  €
+ (  €
+ (  €
+ ('Qñ¥…À´d»¾=-íÆæü{(úÖ‘¦Ú¾ÈÎU]º•§ˆ5Qºîít¸ü±¶ÃIw=?UxGeqZrİØ³kámÕüÃh'›¼·ÈÇñ5.¬ŸQªq]uEB¢… ™ ´ P@÷º•¨suaıí¸oÌsWÊ;2#-ÑŸıƒ¨iãv«Hª:[İşö? =E_<eñ"y%…‹‰¬Ëo®Z6Ÿ+,¹İŸgíøÒtï¬ÁT¶“V7 ©Aë#Qh  €
+ (  €
+ (  É"CI+ªFƒ,Ìp ¡+ìá¼Ô<JÆ=5ŞËKè×dbI}£‡ûU½£OâÕ˜ŞSøtFÆ›¤Ùi¬á	YÏ,çÔ¦²”Ü¦‘ŠŠ².Ô” P@  P@ÍW0´3Æ²Dã¬24ÚÕ	¤ôg<Úeÿ ‡˜Í£¹±êöÙ*=c'§Ò¶æŒô–ıÌ¹\5İ3TµÕ­~Ñjä€vº0Ã#zØÖR‹‹³4Œ”•Ñr¤  €
+ (  €
+ l’$14²¸HĞe™ %}lsQE/‹&£Ñ¿s	àÜ‘üMşÏ ï[¶©+-ÿ #½¦¯c¦UTPª¨ X@  P@  P@ …ªéÇtumˆµ¼Œğ—ıÖ÷ô5¬f­Ë-Œ¥Ÿ4w/éZ¬µ˜£)Û$MÃFÃª‘Q8¸;2ã%%t^©((  €*jhï¦Î#šx›nw[¨i1Ü(=èŸğf¡suq¬ÛOsq$v×
+!ğs•çèNvûP|Sãı7ÃÕãk›¬d¢æ‰JãÍQÙ8\#7<9šß¢_3?Mñ.â²M½”#Í¹‰›æ˜ƒÂÿ »ÜÖ´åOiĞÃ…¯‡«ìkÇ•ïëèwŠ¡*€ª dH´ P@  P@  P@ Îë0I£Şÿ oÙ&T^Â¿òÑ?¾?Ú_å[Aó.Gò1šå|ëæş9ğåÕâÚÅ©Gæ7p õ5>ÎKN¦·j*m;w³·ŞnÜFó[Is4.ê@‘@%}Æk1œ×†®.ÿ á#ÖìVş{ı2×ËTšr–lè>_¡8 ª€+ß[ÍshÑ[İ½¬¼•1\CÁCHĞÆ›wy}=Ü——÷›³:…ùTªp ÉüèÊ¾%ø[P_ø#3Ex~@¼Àr1øV¬,±1NT}CœÑË9éWNÒwMkòf·Âï	êZ~£&©}ÛÆ¢#ğXŸoJ¬=‡¦ã'«ü|ó4§™×Œ©+F)ê÷wıPk¨–ñ-3™™Kí—¦O¶x­Oš€ q}´ÚVmbƒüKœ>„ŒıG­ O@  P@  Pd‘"¤‘‚"Œ’N  ªÁ”0èFG É4qó.öÚ¹î{
+ ç<~—oàËág»~`½vçš¸^îÛÛOQÇ‘N.§ÃuKê|ïÈfAßİkÀ£
+ŞÙ%~kŸ­ã+`ş£'6½¾_#é=:ÒöçÁ¶ö“]Kky%¨C2 ^2GQâ½ú–æv? §~Uq<9 MáûD³‰¸µ6¢=Ø‘É'¾}j7(  €9ë1ı«â»»Ææ8}MäeÏò³÷`—s%ïM¾ÇCXšœô1IŒõy.7<W60y ¡›Ô{üêàB€8<9«¯‡ÖÒnşĞ|5$$Ş^N~ğä†íë@Ô±]\ø‹Ã2êÖöóItr"¨Ü¶üĞM@  P@  P?â³8ƒIXÆ`mNÜ\¹»ü{e s)Õµ+][Äm¨]F,×O{xÓî†iXJ1˜mÆG= Yk¹åğ§-ä¸–o±Í2Z4¬Kä£&òx[Û¨¸·óÎ/´¨óLcÌ³h˜×¼1¦ÚYÉªéÚ|QßZ°œ^)ÉéÓ5½:¾V÷1©£uĞê-®#»µ†æ#˜å@ê}ˆ¬Z³±ªwW%¤0 €+ßİ-svü,1³şBœUÚB“²¹Ÿá{F´ğõ¯™şºeó¤>¬ÜŸçWUŞLŠjÑFÅfh5‘X©e©Ê’: u 4"«3›©ÇZ u  P@  P@Íw¼3 xÜa”÷ ¨Ú¡A''&€4Îe]Ê¬)é‘Ó?Î€$ e¥XeHÁƒáF0Ù]é¬~k‡ˆ¹ÕCZÕÕ©w2¥¢qìoÖF¡@ `xÅ‰Ğ²œ©£ƒö˜V´~+ö2«ğØŞU¡T`(À‘¨´ P@  P@  P@  P@ ÏÚ³xçPˆp·6±Íu%kg­5äd´¨ÑĞV&¡@ `x“æ¼Ğâì×ÊqôRkZ{KĞÊ¦ñ^fıdj P@  P@  P@  P@ wòxçM=7ÚJ¿‘¶_Ã~¦Oøˆß¬MB€
+ ÀñË©hØ^ãóF­=¥èeSxú›õ‘¨P@  P@  P@  P@  P÷Íã$rÚcùí´†ÌŸñ¿Xš… Ïø»÷Zu¥Øÿ —kÈ¤'ĞnÁşuµ-Úò2«¢OÌè+P €
+ (  €
+ (  €
+ (  €
+ (  ÿ Hñä‡øml@ú37ø
+Ûj^¬Ëzˆß¬MB€
+ Ï×l¿´t+ÛQ÷¤ˆíÿ xr?P*éË–I‘5Í…Ñ/´4;+¬äÉ–úãõ¢k–M4S/Ô P@  P@  P@  P@ sşÿ J½Õõ3ÈçÊCşÄchıs[TÑ(™SÕ¹bj P@şÿ ıSSÑ›…I>Ñ ÿ ¦oÔ£gó­ª{ÑR2‡ºÜN‚±5
+ (  €
+ (  €
+ (  €
+ (  ÏjMÑ.'™ˆòáË·õ5tãÍ$ˆœ¹crm"Át½"ÖÌrb@ú·sùÒœ¹¤ØáX¤]©((  ë­nÒÏ[Óô‰|Ïµ_¬+„ ¶On´GÄ‘Ihöºåº’Å¿z«Õá?x~
+Ö›½àú™TV´×Cr£¸‚9¡pñÈ¡•‡BfÕ™¢wWCé(  €
+ (  €
+ (  €
+ (  qˆ×<R¨¿5–”rÇ³ÎzøıMmğCÍşF?ü—ætu‰°P@ yŸÄVóDñW‡õ3wqµã,c°Ú¹b;€9Àô ÏÂñøFí]µWÕÅÂy­u!È“w<ËØÔOKfğö©ı‹9?b¸bö2‹ÜÄ~«i{ñæ[õ1¸ù^İ–±6
+ (  €
+ (  €
+ (  €
+ Ç×µIl¢ÎÉCêWgdıßW>Â´§õ{#9ÊÚ-Ù‘­ÜËà
+Ù}RYZòdiA;Ì·×“S9s;•ò«<Wö“^ÍgÌOs X•d¦GlÔ”X €
+ £s¤Y]ê¶zœÑn»³WX_qC€‡8 é%†…m-¶	†	%i|½Äª³rvƒĞg°â€ªijÖ-k>@Îäuá‘‡FÔUFN.è™EIY”4VxîN«º„c÷rt[„şòûúŠ¹Å[š;~DBM>YnnVF¡@  „…$ï@Çuo,ÒÃñ¼±`HŠà²g¦Gj –€rj Z (  €3õm^"ÔI 2Lçl0§/+v UÂL‰IE´]*xe“SÔ˜I©\6>ì+ÙÛÔ÷§9'îÇaB-{ÒÜÃø£³øRŞ8’C¨[mu]Å?x>l{Vf‚|>#N†…}nc×-å2İNA?m~Yƒ¹éØÅ vÔ P@  PSJ¶Õ­|™ÁVSº9PáãnÄ¨ÉÅİ(©+3.ßYºÒ&KXí†ùF#“Ğ7÷[ô­•á÷©¸é?¼èAAèEbl- ƒqs,¾9³ÓÙX[Gc%Èôi7¢Èÿ }Pdv!ñ\WÚKÙÛÜZE4naeİrì*À¸]¤œ÷ühŸ_ëÇB7Í=¯˜|<ºÀ©ù“¯İo^¢€;›É`ñvˆ°¡òõy„àÀŒ¬~™#ş@  P>©¯Gg8±³ˆŞêN>Xıßw?Â+HÓº»ÑÊvvZ±4­Hn[RÔå:“Œnä‰ºƒ°÷ïD§uË‚0³æ–æÍfh P@  P@ ğCuÃ<K,N0Èã ÓM§t&“Ñ˜Øú–ˆÅ´9Ä¶½MÃ÷¨ú+^xÏãûÌ¹%ƒî'¶ñE“J-õ}6ëşyÜŒôn†“¤÷¨j¢Ùèm«+¨e`Êzr+#R½Å”SÜÁrr³A¬?º~òŸcù
+ «máÍÊvš×F°‚gR¬ñ["±¨$†€$şÂÒ<½ŸÙV{<¿'o¸òó>î{t 	c°‚;Å¹
+7¤~L@ÓŒ€=Èô T—â3Mo.kóö†!½Ïà*ãNRØ‰TŒw(®ëcj©Ò,›«šwİ—ùÕûóüü‘«¦iZD&;8B–åÜœ»ŸV=Mg)¹ni(ì^©((  €
+ (  €
+ (  €
+ ŠâÚ¸ŒW¤±ªê¦›[	¤ôf+xNÖ-¦İİéÍé§gıòr+OjşÒ¹Ÿ²KávYø¢ÛˆµK;¥>ÑSù©§zou`µE³8ÿ ø¯Äz5œV’$²O“æÛ¹$Û••z‘¡IÔŠ»ÛSÓÊp/0Å¬=Gefİ·Ó¢9
+øß^³Ö!ˆ\½ÒLÁLS1 “ü«—	‹–"~Î¢ù£ŞÏr7ÖpÍ«5tİïÔö/ÅwgÓ­ı”i~|Wî—sã¿xû	ÿ Ü÷\êzÕåÈ=cŒˆSò^Z=¢_
+fßÄÍ;#OÒÓm•¤pú°_˜ıOZÎS”·eÆÈ»RPP@  P@  P@  P@  P/‰<3câ{¶¼Yc‘z©§ug+¦]:“£5R”¹d¶hÁğ÷Ã3BÔRõç{©c9Œ2à)õ÷©„)Ò¿³®tâó^9%ˆÒék#¸¦q…  P@  P@  P@  P@  P@ï­òÊ[xî¥µi<è±½~™š ç~4‡ÁV¢Yå’YÓÌ™Ë¹W$òx ª€
+ (  €
+ (  €
+ (  €
+ (  €
+ (  €!º·ûU³ÁçKññ6ÖC@ú‡í|;hÖ¶sİ<%‹RûI$œzd’hZ€
+ (  €
+ (  €
+ (ÿÙO|bplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯'-.4567MNOPQRSTUVWXYZ[\]aU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_Yhttp://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/tp.htm3.jpgÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÅCiS¬æ ÈÓ89:CLWNS.keysZNS.objects¨;<=>?@AB€	€
+€€€€€€¨DFGHIJK€€€€€€€€€VServer\Content-TypeX__hhaa__]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/10.0Zimage/jpeg_Œ
+
+YnBsaXN0MDDXAQIDBAUGBwgKDA4QEhRWU2VydmVyXENvbnRlbnQtVHlwZV1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFRFdGFnoQlfEBJNaWNyb3NvZnQtSUlTLzEwLjChC1ppbWFnZS9qcGVnoQ1fEB1Nb24sIDIyIEZlYiAyMDIxIDE2OjE0OjE0IEdNVKEPVWJ5dGVzoRFfEB1GcmksIDExIEF1ZyAyMDIzIDIwOjIwOjUwIEdNVKETVDUyOTGhFV8QEiIzODE5MzBjMzM1OWQ3MTowIggXHis5R0xbYGJ3eYSGpqiusNDS19kAAAAAAAABAQAAAAAAAAAWAAAAAAAAAAAAAAAAAAAA7g==_Mon, 22 Feb 2021 16:14:14 GMTUbytes_Fri, 11 Aug 2023 20:20:50 GMTT5291_"381930c3359d71:0"Ò/0^__NSMutableDictionary£^`3\NSDictionaryÒ/0bc_NSHTTPURLResponse£de3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‚ ˆ £ Å ç ê18Z]`‚¤§©«­¯±³µ·¸º¼¾ÀÇÏÛİßá=BMV\_hqsu|„˜šœ ¢¤¦¨±³µ·¹»½¿ÁÃÊ×àîü*5Ååë%*@DQVjn‚             f              Ô`ab_Whttp://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/modes.gifOÈGIF89aŠö ÷ÿ        ::  ! +: :;4 :::  f 5`: fKsf  f :f3 f3:f ff3fsKfZ:N\KXvm ::: B” Q¡]³ f¶,o½f:N~·M}¸L»fZf}³f~µf¶:¶:ÛM€¸N€¼O½N‚½Y€­T€·Q‚½Sƒ¾S†¾Tƒ¾V†¿W‡¿`§W‡ÀX‰ÁHâaÄdÄeÄwËf¶Ûf¶ÿ3 : ›3 œ3 3 3:::3:3fZ:f ´Z µZ ¶Z ¶Z:¶f ¶ fÏ Z¶:uÛ:ã9ç 9ç :Û¶fÿ¶fşÁfÿÁf†††‡‡‡’’’•••¥”¥¥¥¥Ğ Û¯Õ“°ç›½ú¶Û¶á¶ÛÛœÀıÁÿÛÿ´Éâµßı¶áÿ¶ÿÿÛÛıßÿÛçáşàÿá÷÷°ûû³ııµşşµÿÿ¶ÏÿÿÛÿÿüüØşşÛÿÿÛâââäääæææçççèèèéééêêêëëëìììíííîîîïïïçşşçÿÿğğğñññòòòÿÿÿ                                                                                                                                                                                                                                                                                                                                    ,    Šö  ÿ ÁlH° Áƒ*\È°¡Ã‡#JœH±¢Å‹3jÜÈñ¡ÀI CŠI²¤É“(Sª\É²¥Ë—0cÊœI³¦Í›8s²¨³§ÏŸ@ƒ
+J´¨Ñ<*]Ê´©Ó§P£ŠL*µªÕ«X³jJu«×¯`ÃŠuÚu¬Ù³hÓª-Yv­Û·3#:·.Ì¶vóê%	‰¤½€Ùn±Y&°á¬6Œ×¥nH^Lù(£ÊM'#<ÓM5"‡|,z¤fÌX± àu‘$Ô>O†ì³ñJÏ)r‡‰{·HÒ°¯2ÙÀ„µÓ?HDˆLÔ(xNà¿?ûÎi;%îÜºİ\]ºwiçQ‹?ÿµÓcÉ×àizı9»Îê'uÄÀN¿…
+úÜ'mŸRvz¢â™$A^üdEœ÷_K§íÙvîáßIcÀ€(à—[9´‡İtĞ- q)qfÒôA R J!Š*N‚Ç.ŠXt‚†Ã|Æ ƒ„&ÂT!v0Œq$}0È $~Bê'İw:ş`‰'U‘¢H,ÊˆÒBÀ’[†”^VÉÛ”òi˜B4XÈäÔi¤…I‚´d
+yî™[ŠäŸš3]‰’!í„Œ€(‘#™5Â#+.:	 I(7‰–‘:'›ƒ~òIçyÖYÓ/ĞÒ‘¥NB*=úÿ"¡21À­´eIZ< f£9ŞÑ'±H,H½şªÄ ‘w¬s!ÆêÆ««â©ª©5İ@ª×êií$m©Ãz´…(²¾^ê(HÂ¦I’eN’¬º9’'#Œ¤KÙzáB©«İºšjmçŞ¤í¶{‹_’–;”‘€”EºÀ²;ìIOäˆ®²õ^œñ$RzX ¡–ÊmIo¶TÊ
+ÿ9†´‚:ŒTH…¤.
+›.w@Ñ„Ëb†ÄbÎ=ìœâĞb‚Yt^šÁLmH,5!Q ÷K_”úÑ&³„ -¢ÈHsôïZ ½¥°ÄÂ«bÈ#	›/Y¨­¢Ó“0­pZcÿ%ÀP]uÂ%«Jî×5qÖœKxãÓE¨¨·]ë¾jÂO	NËS7ŒøL«Ôx˜2á=9\$Ë)êHU7¥ùR€K‰Ÿ¿zJ£?ı’Şwº–Ôßjõ:ì	÷½á“ZûI·Iºã0Áè¢£¥™ñoyòVÃ¯,’å]S¹<ó¥?OºL,:ïY!‚?IëWuUçS¯Róö>µXòÏ¼çöcËVÆ&ÏÅn,ı›_Â`@få‚( ‡"$°€…%P9ö¸ÖÀ©d…‡XÜW6ˆ¼÷¥ƒUq_ò:8	ü)E…@VN£Bµ 0…ªkUø:èB£(b.^™ÕşÿÜrC®=ù	`‡‰D$"b[9œ«‚—"¦s²£àò–¨# n¯.V¬
+Ë¸ÅüM0‰ ßZÂˆ‹ÿqc`Øˆ•"ÿ±c^èXÇLyUÂ#lhèÇÅğ±GœøÔ$HÌ‘ŠŒiäY¾¸&4ÒJ’‹‘"%#‰šªĞ-ª¹•	FJ ŒrWå ÷rH°q-|h€®èP ]­H–“ ƒâ€JB½3­ôŠ×‚…„„	§Ì.uÉËC•k˜ÀÄäZôx–)$SHf.  4Ó™å¢æa‚ù•!®Åš!É¦H¦€ 4àš$Ğ@¸ 3sFsAìZĞ	ÿd†ğÃ$á™DšuñO>aCN°lrVc¡å,kùÏ€æuà‚ ZÁÿ4,¬ZJÉ>`t¶åıD$Å4.è£fùdpú;ÑND0•àì	Ìÿüò¥4­4š¡z4¨u'e:IÕ¹ŒP9‹=‰šÇBB•©I…¤>QƒU¯(T«:ŠêX6¹Ã:ÒkßÃ"#»Z—Öµ”1©HV	T3~ˆ§zaëUd*3±ªå§¬Ü×oê0¿¢Å¨y]b/©W½(Œ”yl ëX«²2S-,e+›ÈËb¬_3ì4ÕºÕÄF¡¤½ãf÷?¾eµJá(]5ËB’ÿ¼•ˆ{¹­a;2›â-¼%
+_í'ZÊö·f	®P ûFåêe±gqîO û¹âfua´a^$Zérö©vñîO2ÛÜÚd¡¯İzhİí¦·ê}ïnÍKø(¥Ôf?oåÍ^ZÏ$³-/}­ƒV¢Är¢¶ì'<Wú×˜$íí­%…RÌc&“ø&ƒÑ¢ÛG80Ãí	?'¡NĞá ÜÀ‚E"Ï-Ğ“Ã¾}°`dlÛãeÄ%Îå./šQÃx§4ŠxCİ›ŒØŸ&Ş1J{<’!Ã¤È<tr`¸[‰æ’¢ !(k¬N³Py¾Aşe‡BRoóVLnrZÈKßOÿ´TËzeìæ)Ë,R–	Yƒ\çÀ¨ñ¾UÉ³Jà6:8®_Xæ&5–Ê£w$×FtÒ‚½«W0M[úÒŸ>	s£ÂéJÒ‡°Ÿî³bŸ´µ*Z+P¦s©ßŒ]îyåËVudÇŒ•YOIÙµ®wİÙ¬øú×:µ•’=¿ºœwNõ±SèÀ‰¥Úaö ­”Gs›Ù·cœ9«0ZÜáF·J"}A³[İÚFtŒI-•«»…ÓÎô©‘kµ¨ŒŞù>L¬¹•;à‡ÁõO¤¬pKÇ6l6J#î‡CÎKôœï‹C<Úí¶Š³9Şq„WÛ'ÿÉoI¦°šKåàöx•¾­L„8Bš=¸š“<İ?7¿'Qá~j3Chƒ¡º”sÂ&Ï»q¬Mu.]£Ey·a A—¯ÈÜ§ó>	ÕCÂÌ%ˆ /ÎzØÃ
+/ê°ù÷‘“YJ•vy(ÿ^Œ"ÜŞk¸cºVæòH®îc¢\/h„ûşô•<¶Ì&5(áÕ\”†ƒ¥w"aÛH QD´Ä
+i²Ğ&¥²Æ«„âÔ9
+êÑ",Ò[ìY!9„! ˆ»x)YÒ+½éS²ñ…+¥÷n‘›Æ4OF$â2(áƒl?Ğul}6ù:>A>³ßS_-ÂrBĞ^oCbñ#	ÄÿÒ`©v!kûØÚ½J`~é²ß,l³Bºˆ’´íşg(ÉÈĞ¥IŸşíçwğöišÇ3c‹ D$AKS~€Ñ'€jâsw!hš#!Pˆ€‡@{çG,ı÷€ê×ä6@át€A|,2%8	us@c"ôJ@ƒ@Cæ'/úB$'ZW?1„Ør{&!†Àw•"#Gò¸Qk§‚=ao{€i£„%Áˆ€5Ã%–ò|}ĞT„acïáy—ø^Ø}„ ~h8	O°ƒ£†,qx.w~ø’† ØmU˜–ww8‘ˆÿ!6dÿqˆˆÈkí7^’8>‘ 	…h.‰Å†…=|Ÿ#	cØn›ˆˆ×G„ãuŠ_	Šaˆ|ï·B‹å’WŠ©öŠV!}tLGº˜8¸¨&,ø‡B˜‚Á¸ÃØE•Òd„É¸lÑøZè_Ôx…ÓX"Ëv@&’ô†ÙXrá¸Øq2Q¯È‹ŸÃˆ’Äˆ|¨ëp+  ¤t+e.±záŸÀ0 X–7à¥_X 8âè+00H69F>§¢Šı¸bMs‘YVPg7O‘Êh’*1v¹b¿ˆ’VÃ‘ÿ1w‚2ù¨'á‹.ÿù9YWn` ĞKTŒ;)EIÇ 6P@ı¥ˆ¢ÖŒGÉ<0I+ÕØB·S	u[il•5Ö]9ccYEÖ<è8şØ@’…?î¸‘eI!•Xx¼7—e¹–ÔXéxw—UN§¸D#—xÉB(ÇE´ˆ’…sq™~éƒR08é—Iäv.DY™‹ù`-…(ĞH˜Y; d'Wù˜›i^dT$àØ˜§ÉBrd"i¹“­ÉBîS$o™“³I›cf'üš•Ù…(ziš¡¹<du.ƒù›!‘›æ?“˜[ÉœÙ¦œ4!A6Ô	:ÅY[nğC—\	 ÿ¡rQ9aâ©çy`W–`#Qšçi2St(¥Yäiç‰5á±ŸüÙŸşI  º ±à&°ÿ¹ Ú ûY Ú}T•*y^NÕ‰5¡ÎˆPÛ¹—
+Oi¡ÀVê¡*¡\µ=É"šlp¥¡wÁ¡0zeÖl'l€Q¢˜tC_ =Š,à£Áñ£ŞX¢÷sFz¤ÊŸJÊqLÚ¤ ¥Rj‚SZ¥Ej¥Xj;Iš¥¹¶¥\j^Oú¥ÙÖHtbğDPü¥apÁO9P>¦z¦İ¤¦yÁ¦ß$§múez+gú¦sêòƒa¼T¦§Äe¨&õ§ıÿt¨5¹¦š¨y±¨mŠ¨(õ¨j!¨ÛT¨‘*”5ëibé†zOÉe‚§§X–ªuQª§ºª£ÚªÆ„ª±z(ŸjLXğ”‘—¹ÚL½º"'U¿jf€1¬Ãº«zªÇ¬+BeÊìÔL	É«O­!IŸú”ÓZ¬Õª­>€­jñ¬$æ­à2AP×d­nZ®4Ú­Òú­v¡®ÛºÃ*¯ğjèŠMäê©,ÁrhvLù¸¬;çşÚrãù”k	Ë­¾ª«Ì
+©‰º°Í*IvJv°Ê¢ ôª¶Äª*z±1¬´Š±jQ±¢º±µJ•µ’§ùŠR,™±ïzM Š¯> ³-+¬ŞÿJ³vA²!‰³ü
+{J¹rQø(©o‘R¸¢+‹
+ ˜úI»´kJ ´MK´*šbG+´JKµø)¦\t]ûµaúµ]*¶b¶d[[f{¶Q¦¶\›¶lK\^ú¶İ%·\ê¶t[]q{·Œ¥·Vj·|K[•ÉrNËhÊ®p¸Y[…;•~‹‚«µM±¸GÙ¸˜ñ¸Šû¦†›”{% jà§Æ”R5ù³¦$¢‰{fv'û¹C+´Æñ¸­º(õºhZ~:ºV›L¶²˜«~›kr
+µÄ›®Ä«bûE¼Uw«’ÇkL‹»Y;¼ÇË§nú¼ãy¼…
+µ5ë¤y{¹QÿÛrÊ¶P‹j¼¹r¾gPhjeª²o´åëÑ‹MÓ¿âë§ä{¿á[»¹Ò¾&6 ı•Rë½'(¹¶rMªáMª´°ÛÀ¶ô¸¤´ì)¹õKbü»½
+<§’»§<0ÁW›Àj¼àËÁÙËÀŒ½l¿%Âı<§,»¿[»ìMÌM!lµŒÃ%ü½RÀÈKts
+Á¼H¬Á/< l3ìM5¼Áû•Ãq°Ã«Q¦OlºE|‚&<Ä7LÂFìM{
+³sº§£´§æË ]L“DÅWü¦³ÊMìÆE|Áh*¿4ÌÆğäÆ@„_DlÅµK¼Û«¼U°ô­ø¨p¬Áˆ<È)ÇØëÈP{¨]¼B,ÈvLÈ”l°×«´r0 Ë½$ÑÈ…l¡\Ç¥ûÇxìK»ÿDÊUÄ;¥\ËéqË¸ìº¼Ë•É¾<SÀÌ\5ÌÄL¢Æ|Ì†”ÌÊÌIÍœ½üÌsÄÌÒœWÔ\ÍáuÍØ\EÚ¼ÍDÔÍŞlCàÎÀ5Îäœ\æ|Îü“ÎêŒgìÜÎ›Ö:Ïô\Ïö|ÏøœÏúŒ] ;Oubplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯'-.4567MNOPQRSTUVWXYZ[\]aU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_Whttp://electron6.phys.utk.edu/PhysicsProblems/Mechanics/6-Oscillations/images/modes.gifÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÅCiS±ê ÈÓ89:CLWNS.keysZNS.objects¨;<=>?@AB€	€
+€€€€€€¨DFGHIJK€€€€€€€€€VServer\Content-TypeX__hhaa__]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/10.0Yimage/gif_ˆ
+
+YnBsaXN0MDDXAQIDBAUGBwgKDA4QEhRWU2VydmVyXENvbnRlbnQtVHlwZV1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFRFdGFnoQlfEBJNaWNyb3NvZnQtSUlTLzEwLjChC1lpbWFnZS9naWahDV8QHU1vbiwgMTIgU2VwIDIwMjIgMTY6MzI6MzUgR01UoQ9VYnl0ZXOhEV8QHUZyaSwgMTEgQXVnIDIwMjMgMjA6MjA6NTAgR01UoRNUNTA2NKEVXxASIjUyMTI3NDRjNWM2ZDgxOjAiCBceKzlHTFtgYnd5g4Wlp62vz9HW2AAAAAAAAAEBAAAAAAAAABYAAAAAAAAAAAAAAAAAAADt_Mon, 12 Sep 2022 16:32:35 GMTUbytes_Fri, 11 Aug 2023 20:20:50 GMTT5064_"5212744c5c6d81:0"Ò/0^__NSMutableDictionary£^`3\NSDictionaryÒ/0bc_NSHTTPURLResponse£de3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‚ ˆ £ Å ç ê18Z]`‚¤§©«­¯±³µ·¸º¼¾ÀÇÏÛİßá;@KTZ]foqsz‚–˜šœ ¢¤¦¯±³µ·¹»½¿ÁÈÕŞìúÿ(2¾Şä	#9=JOcg{             f              ‰            1   <   K   b   t   Š   ¨      ®€  ®Š  ®  ®§  ®°  ®Æ  ¯  °­  °¶  ·Õ  ·Ş  ¸=  Ê\  Êf  Ğã  Ğì  ÑH  áÊ  èE  èN  èª  ø8  ş³  ş¼  ÿ © ' 0  y ö ÿ ] Š $ $ $n *ı 1{ 1„ 1ã 5g ;ä ;í <L @è Gf Go GÎ O[ UÙ Uâ VA ZC `Á `Ê a) k, q© q² r •‰ œ œ œo » Á— Á  Áÿ òÖ ùT ù] ù¹  ( ¨ ±  w "ò "û #W 8 >† > >é Rµ             c             Y.

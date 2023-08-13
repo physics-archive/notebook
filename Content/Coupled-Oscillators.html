@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>       
+        <script>
+            MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+              },
+              svg: {
+                fontCache: 'global'
+              }
+            };
+            </script>
+        
+        <script type="text/javascript" src="../MathJax3/es5/tex-chtml.js"></script>
+        
+        <title>Classical Coupling</title>
+        <link rel="stylesheet" type="text/css" href="./Coupled-Oscillators.css?ver=1.2" /> <!--links CSS style sheet-->
+    
+
+        $\newcommand{\vect}[1]{\mathrm{ \vec{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
+        $\newcommand{\vecta}[3]{ 
+          \begin{bmatrix} #1\\ #2\\ #3 \end{bmatrix}
+    
+        } $ <!--3 vector takes 3 inputes-->
+        $\newcommand{\hata}[1]{\mathrm{ \hat{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
+        $ \newcommand{\blbox}[1]{\bbox[8px,border:1px solid black]{#1}}$
+
+    </head>
+
+<body>
+
+<div id="buttons">
+
+        <div id="home" style="float:left;font-weight:bold;left:450px;">
+            <a class="home" href="../index.html">Home Page</a>
+        </div> 
+    
+        <div id="nextpage" style="float:right;font-weight:bold;right:450px;">
+            <a class="nextpage" href="./Vectors.html">Next Page</a>
+    
+</div> <!--closes buttons-->
+
+<div id="container">
+    <h1 id="header">Classical Coupling</h1>
+    <p class="eqcomment">Page under heavy development. Not chronologically ordered at the moment (7/25).<br/></p>
+
+    <p>In classical mechanics, systems must transfer energy through some medium in order 
+      to achieve coupling.</p>  
+
+    <p>Why do we care about obtaining a mathematical model for a system of coupled, oscillating masses?</p>
+    <ul>
+
+      <!-- <li>In classical electrodynamics, material-coupled charges describe many real materials (i.e. dielectrics). -->
+          
+      </li>
+      <!--<li>In quantum mechanics, the harmonic potential describes and approximates nuclear systems quite well (i.e. vibrations of diatomic molecules, and 
+        general molecular-energy approximations).
+      </li>-->
+      <li>Coupling may be undesired: parasitic electrical potentials, vibrations affecting a civil structure, and so on.
+        We need to understand coupling if we want to minimize disruptive cases.
+      </li>
+    </ul>
+
+    <p>Recall that a particle on a spring is subject to a linear restorative force (Hooke's Law):</p>
+    $$\blbox{F(x) = -kx} \tag{Eq. 1}$$ 
+
+    In terms of energy mechanics, the particle is subject to the familiar harmonic potential $U(x)$:
+    $$\blbox{U(x') = \int_{0}^{x} -kx'\ dx' = \frac{1}{2}kx^2} \tag{Eq. 2}$$
+
+   Our mechanical oscillator has total energy $E = T + U$, where <i>T</i> is the system's kinetic energy:
+
+    $$\blbox{E = \frac{1}{2}m v^2 + \frac{1}{2}kx^2} \tag{Eq. 3}$$
+
+    <p>For a mechanical system undergoing non-rotational motion, <i>x</i> is the center of mass (of the rigid body). 
+      Describing motion of a rigid body is a step-up from particles (point-masses in analytial mechanics). 
+</p>
+
+    <p></p>
+ 
+      <!--Later, we will return to closely
+      examine $\Psi$ and its perplexing properties from the beginning.
+      Consider this page a motivating preface to a volume on early Quantum Particle Mechanics.
+      </p>-->
+      <hr/><h3 id="section">Placeholder</h3>
+  
+
+
+
+</div></body> <!--closes container-->
+
+<footer>
+    <br /><br /><br />Notes by &copy; Tyler DeFrancesco 2023 | BS Physics '21<br />
+</footer>
+
+
+</html>

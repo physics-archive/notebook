@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+        
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+          },
+          svg: {
+            fontCache: 'global'
+          }
+        };
+    </script> <!--MathJax 3 config script-->
+    
+    <script type="text/javascript" src="../MathJax3/es5/tex-chtml.js"></script>
+    <link rel="stylesheet" type="text/css" href="./dim.css?ver=1.26" /> <!--links CSS style sheet-->
+
+    <title>Dimensional Analaysis</title>
+    $\newcommand{\matr}[1]{\mathrm{ \boldsymbol{#1}}} $ <!--\vect to make bolded non-italic--> 
+    $\newcommand{\matrc}[1]{\mathrm{#1}} $ <!--\vect to make bolded non-italic--> 
+
+    $\newcommand{\vect}[1]{\mathrm{ \vec{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
+    $\newcommand{\vecta}[3]{ 
+      \begin{bmatrix} #1\\ #2\\ #3 \end{bmatrix}
+
+    } $ <!--3 vector takes 3 inputes-->
+    $\newcommand{\hata}[1]{\mathrm{ \hat{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
+    $ \newcommand{\blbox}[1]{\bbox[8px,border:1px solid black]{#1}}$
+
+    $ \newcommand{\ddp}[2]{ \frac{\partial ^2 {#1}}{\partial {#2}^2}} $ <!--second partial derivative 
+    w/ two arguments-->
+
+  </head>
+
+
+<body>
+  
+<div id="buttons">
+
+    <div id="home" style="float:left;font-weight:bold;left:450px;">
+        <a class="home" href="../index.html">Home Page</a>
+    </div> 
+
+    <div id="nextpage" style="float:right;font-weight:bold;right:450px;">
+        <a class="nextpage" href="./Classical-Energy.html">Next Page</a>
+
+</div> <!--closes buttons-->
+  
+
+<div id="container">
+<h1 id="header">Dimensional Analysis and Limiting Conditions</h1>
+
+<div id="transformation">
+<div id="intro">
+
+  <p>Here's a powerful tool to demonstrate why theoretical physics is an effective approach when modeling real systems. 
+    I aim to showcase the advantages of working with dimensional units when performing quantitative analysis. Dimension refers to a quantity's unit of measurement (i.e. the quantity $2 meters$ has dimensions of: length $L^1$.
+    </p>
+    <ul id="listb">
+      <li>We can verify our work in physics by checking for balanced
+        units in our quantitative relationships. This is invaluable in experimental physics, since your own computations via programming
+        are dimensionless; the researcher must interpret the results, and code the dimensionally-correct calculations. 
+        Even raw data are stored as dimensionless number sets.
+      </li>
+      <li>We will explore extreme cases of system parameters - i.e. infinite mass, zero gravity - as a means
+        of verifying that our <i>mathematical</i> results make <i>physical</i> sense.
+      </li>
+      <li>Deeper than that: we can find physical relationships in real systems using
+        unit-balancing as our rationale for constraining variables.
+      </li>
+    </ul>
+    
+    <hr/>
+    <h2 style="text-align:center;">Case I: The Pendulum</h2>
+    Using dimensional analysis and basic linear algebra, let us determine the exact form for a pendulum's cycle frequency. 
+    Physical observation will guide our mathematical logic, and vise versa.</p>
+  
+  <p>Consider: what real-world parameters determine a pendulum's frequnecy ($f$)? 
+    Mathematically, we're curious what system variables $f$ depends on. Here are some realistic possibilities:</p>
+    
+    <img src="../Index/theoretical/pendulum2.png" height="127px" width="80px" style="float:right; padding-right:70px;"/>
+
+    <ul id="list1">
+      <li>Gravitational acceleration ($g$)</li>
+      <li>Length ($ \ell $) of the pendulum</li>
+      <li>Mass ($m$) of the pendulum</li>
+      <li>Initial angle $\theta_i$</li>
+      <!--<li>Initial angle ($ \theta_i$) of the pendulum</li>-->
+    </ul>
+    
+    
+    <p><br/>Conveniently, all quantities except for $ \theta$ are dimensional. Whatever form $f( \ell,g,m, \theta_i)$ takes on,
+      it must be dimensionally valid. Not all proposals for $f$ make sense, and so we can start to make some deductions.
+      For $\theta_i$, we will provide justification for considering its contribution as functional $\theta_i \rightarrow \Theta(\theta_i)$
+    </p>
+
+    <p>Let me express this proposed relationship for $f$ as an algebraic function of those parameters:</p>
+    
+    <p>$$ f\left( \ell,g,m \right)\ \text{~}\ \ell^{ \alpha} g^{ \beta} m^{ \gamma} \tag{Eq. 1}$$</p>
+    <p>Here, $\alpha, \beta,$ and $\gamma$ are entirely unknown -- they might even be zero. We require a system of equations
+      to make any determinations. There are three unknowns and three dimensions, so we may be in luck.
+       <br/><br/>Since $f$ has units of frequency ($T^{-1}$), then
+      the quantity $\ell^{ \alpha} g^{ \beta} m^{ \gamma}$ 
+      must also have units of frequency. This allows us to transform our statement so that we equate the dimensionality
+      of our relationship, thus producing multiple equations for our multiple dimensions:
+    </p>
+    
+    <span>$$ \begin{align*}
+      T^{-1}
+      &=L^{ \alpha} \left( L T^{-2}\right)^{ \beta} M^{ \gamma}\\
+      &= L^{ \alpha} L^{ \beta} T^{-2 \beta} M^{ \gamma}\\ 
+      L^0 T^{-1} M^0 &= L^{( \alpha + \beta)} T^{-2 \beta} M^{ \gamma}
+      \end{align*} \tag{Eq. 2}$$</span>
+    
+      <span>We obtain three equations from this - one for each dimension that nature inevitably balances. 
+        For instance, to balance out our dimensions of mass, there is only one possibility for $ \gamma$: 
+      </span>
+    $$\begin{align} M^{ \gamma} = 1\\ \gamma = 0 \end{align} \tag{Eq. 3}$$
+
+    <span>Clearly, $ \gamma = 0$ is the only way to make $M^{ \gamma}=1$. So, $f$ cannot depend on the pendulum's mass.<br/><br/>
+      This type of quantitative deduction is at the core of dimensional analysis. 
+      We eliminated mass as a variable in pendulum frequency through pure mathematical reasoning. 
+      Now, let us clean this up and actually write-out the
+      system of equations, and then represent it as a matrix:
+    </span>
+
+    <p class="system">
+      $$ \begin{cases}
+      1 \alpha + 1 \beta + 0 \gamma = 0 \\
+      0 \alpha -2 \beta + 0 \gamma= -1 \\
+      0 \alpha + 0 \beta + 1 \gamma = 0 \end{cases}$$  
+    </p>
+
+    <p>Joining both sides of (Eq. 3) to form a 3x4 matrix, we can row-reduce that object to obtain $\alpha, \beta, \gamma$:
+    </p>
+
+    <span id="matrix1">$$
+      \begin{bmatrix}
+  1 & 1 & 0 & 0\\
+  0 & -2 & 0 & -1\\
+  0 & 0 & 1 & 0
+      \end{bmatrix} \stackrel{rr}{ \rightarrow} 
+  \begin{bmatrix}
+   1 & 0 & 0 & 1/2\\
+  0 & 1 & 0 & -1/2\\
+  0 & 0 & 1 & 0
+     \end{bmatrix} $$
+    </span>
+    <p class="ans">
+      $$ \begin{cases}
+      \alpha = \frac{1}{2}\\
+      \beta = - \frac{1}{2} \\
+      \gamma = 0 \end{cases}$$  
+    </p>
+    
+    <p>These exponents produce the following frequency relationship for our pendulum:</p>
+
+    $$f(g, \ell)\ \text{~}\ \sqrt{ \frac{g}{ \ell}} \tag{Eq. 4}$$
+    <p>This result states that the frequency of a pendulum scales with the square-root of gravitational acceleration, 
+    and with the inverse square-root of pendulum length. 
+    Mass did not factor into $f( \ell, g)$.</p>
+
+    <p>We can plot and algebraically evaluate these relationships for $g$ and $l$ to convince 
+      ourselves that our expression makes sense.</p>
+    <ul id="list1">
+      <li>Decreasing $g$ should decrease $f$, since gravity is our only source of acceleration / motion.</li>
+      <li>Intuitively, effects of changing $ \ell$ are less clear, so (Eq. 5) proves insightful.</li>
+    </ul>
+    <div id="imgpair">
+      <img src="../Index/theoretical/pendulum_g.bmp" height="150px;" width="220px;"/>
+      <img src="../Index/theoretical/pendulum_l.bmp" height="150px;" width="220px;"/>
+      </div> <!--Section that was originally located below the next section.-->
+
+<hr/>
+    
+<p>Writing this as an equality rather than a dependency relationship will require us to 
+      address any dimensionless constants that would not have been encoded in the dimensionality of $f$.
+      Values like $\pi$ or $1/2$ may appear, and we know that some function of our initial angle $\theta_i$ probably
+    contributes to $f$, since 
+    <ul id="lettered"><li>an initial angle of zero should give us no pendulum movement: $f(\theta_i = 0) = 0$</li> <li>$\theta_i = 90^0$ probably does result in $f_{max}$ since 
+    the pendulum sweeps the largest angle (and distance in $\Bbb{R}^3$) at $\theta_i$.</li></ul><br/><br/>
+  Therefore, we transform (Eq. 4) into an equality by including some unknown function ($\Theta$) of intial-angle:</p>
+
+  $$ \bbox[8px,border:1px solid black]{f(\ell, g, \theta_i) = \Theta(\theta_i) \sqrt{ \frac{g}{ \ell}}} 
+  \tag{Eq. 5}$$
+
+  <!--Old images section that I replaced up above to match content focus.-->
+
+<p>Perfect. We have determined an essential quantity to describe pendulum motion. The contribution to <i>f</i> by our starting angle, $\Theta(\theta)$, can 
+  be determined using empirical methods or boundary conditions. In dimensional anylsis,
+  any unitless coefficients or constant will need information from other sources. This should make sense. 
+</p>
+
+<hr/><h3 style="text-align:center;">Verifying our Work Using Limits of $f(g, \ell)$</h3>
+
+</p>
+<p>To further convince ourselves that (Eq. 5) describes the correct dependencies for $g$ and $\ell$, consider our 
+  frequency at extreme inputs; we can use calculus to take interesting limits of $f$ and see if our math "holds up" physically.</p>
+  
+$$ \blbox{ \lim_{l \rightarrow \infty} f( \ell) = \Theta \sqrt{g}\ \lim_{l \rightarrow \infty}  \sqrt{\frac{1}{l}} = 0 } \tag{Lim. 1}$$
+<p style="text-align:center; font-size:12pt;"><b>Lim. 1</b> - If $a \lt \lt b$ in a rational ($a/b$), then ($a/b) \rightarrow 0$. Infinite length gives us no motion.</p>
+
+<p style="padding-left:100px;">$$ \lim_{l \rightarrow 0} f( \ell) = \Theta \sqrt{g} \ \lim_{l \rightarrow 0}  \sqrt{\frac{1}{l}} = \text{Diverges to}\ \infty \tag{Lim. 2}$$</p>
+<p style="text-align:center; font-size:12pt;"><b>Lim. 2</b> - $f$ grows as length approaches 0, but $f$ becomes undefined at $l=0$.<br/> This makes physical sense since our pendulum does not exist without length.</p>
+
+
+$$ \blbox{ \lim_{g \rightarrow 0} f(g) = \frac{ \Theta}{\sqrt{\ell}} \ \lim_{g \rightarrow \infty}  \sqrt{g} = 0 } \tag{Lim. 3}$$
+<p style="text-align:center; font-size:12pt;"><b>Lim. 3</b> - Zero gravity gives us no pendulum motion. Matches our physical expectation.</p>
+
+<p>Let us finish this off by verifying (Eq. 5) for sure, while determining $\Theta(\theta)$. The Euler-Lagrande equation
+  for motion is best for systems with easily-identifiable energies, as will become clear.
+</p>
+  
+<hr/><h3 id="header">Verify Our Results w/ Euler-Lagrange Equation of Motion</h3>
+<p>
+</p>
+  
+  
+  
+  
+  
+  <!--<p>Once we begin studying classical mechanics theoretically, familiarizing ourselves with the underlying mathematics becomes a serious priority.
+    The rigor of our approach intensifies in pursuit of obtaining exact solutions. 
+    We can revisit trivial problems to answer them more generally and with greater elegance. 
+    More importantly, we can expand deeply on Newton's equations in order to determine the motion of systems that were previously unsolvable.</p>
+
+    <p>Physical quantities are often dimensional (assigned a unit).
+        This is important because it limits our math statements, just like with code. I.e. adding some velocity to a voltage is nonsense--if we find ourselves performing this operation on a problem, we have made a mistake.
+        <br/><br/>So, dimensional analysis is good for fact-checking our math. What else?
+                It enables us to determine the forms of function, given no information about the system outside of obvious deductions. Physical logic and observation determines our mathematical logic, and vise versa. Therefore, let us made a set of basic observations about a pendulum, and then determine the analytical expression for its cycle frequency $f$. 
+    </p>-->
+
+</div> <!--Closes Intro-->
+
+
+</div> <!--Closes transformation-->
+</div></body> <!--Body and container closure-->
+
+
+
+    <footer>
+        <br /><br /><br />Notes by &copy; Tyler DeFrancesco 2023 | BS Physics '21<br />
+    </footer>
+
+
+</html>

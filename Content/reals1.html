@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+<head>       
+        <script>
+            MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+              },
+              svg: {
+                fontCache: 'global'
+              }
+            };
+            </script>
+        
+        <script type="text/javascript" src="../MathJax3/es5/tex-chtml.js"></script>
+        
+        <title>Introductory Real Analayis</title>
+        <link rel="stylesheet" type="text/css" href="./reals1.css?ver=1.62" /> <!--links CSS style sheet-->
+</head>
+
+<body>
+
+  <div id="buttons">
+
+    <div id="home" style="float:left;font-weight:bold;">
+        <a class="home" href="../index.html">Home Page</a>
+    </div> <!--home tag-->
+
+    <div id="nextpage" style="float:right;font-weight:bold;">
+        <a class="nextpage" href="./convergence2.html">Next Page</a>
+    </div> <!--nextpage class-->
+
+
+</div><!--closes my top buttons-->
+
+  <div id="container">
+<h2 style="text-align:center">Resolving Paradoxes in the Real Number Set $\Bbb{R}$</h2>
+
+
+<p>Let us motivate some analysis of the real number line and its properties. In this section, I aim to demonstrate the following:</p>
+<div id="transformation">
+<ul id="introlist">
+  <li>Paradoxes in our real number line are numerous, clearly demonstrable, and 
+    require resolution using set theory</li>
+    <li>Extending our number system from the naturals through to the reals ($\Bbb{N} \subseteq \Bbb{Z} \subseteq \Bbb{Q} \subseteq \Bbb{R}$) is required if 
+      every length along the number line is to correspond to a value that we can actually define <span style="font-size:13pt">(Abbott, 2000 pg. 4)</span>.</li>
+    <li>Functions may be generalized to a definition that is much less strict than what is covered prior to Real Analysis. This is instrumental in Physics, as it allows for numerical techniques (via computer) to be carried out when analytical solutions do not exist, which is often.</li>
+</ul><!--Ends intro list-->
+
+<hr/><h3>The Holes in our Rational Number Line</h3>
+<p id="intro">Consider this bizarre function proposed by Dirichlet:</p>
+
+<span>$$
+
+f(x) = \begin{cases} 
+1\ \ \text{if} \ x \in \Bbb{Q} \\
+0\ \ \text{if} \ x \notin \Bbb{Q}
+
+\end{cases} \tag{Eq. 1}$$</span> <!--Cases-->
+
+<p>Plotting this function over the real number line $\Bbb{R}$ produces a figure that prompts discussion about 
+  continuity, and more generally into the "fine structure" of $\Bbb{R}$. The plot conflicts with our limited definition of functions
+$(f)$ leading up to this point, as it cannot be expressed as an algebraic relationship and seems to test the borders of being single-valued.</p>
+
+<div id="fig1">
+<img src="..\MATLAB\dirichlety.png" height="210px" width="285px" />
+</div>
+<span id="fignotes"><b>Fig 1.</b> - A plot of f(x). This is a single function, coded numerically in MATLAB; this is not a plot of two functions stacked on top of one another.</span>
+<p>Here are some important observations about $f(x)$:
+<ul><li>The irrational number line (at $f(x)=0$) is constructed from the "holes" in the rational number line above it (at $f(x)=1$).
+</li></ul>
+<ul><li>This is a loose way of visualizing the property that elements of $\Bbb{Q}$ are dense in $\Bbb{R}$</li></ul>
+<ul><li>Paradoxically, both sets of points consist of infinitely-many elements, no matter our scope along $\Bbb{R}$.
+        
+</li></ul>
+
+</p>
+<hr/><h3>Providing Visualization for $\Bbb{Q}$'s Unique Density in $\Bbb{R}$</h3>
+<p>An interesting way to show that $\Bbb{Q}$ has density, as opposed to its subsets $\Bbb{N}$ and $\Bbb{Z}$,
+  is to plot an analogue to Dirichlet's function, using the integers at $f(x)=1$ instead of the rationals. This time, the empty intervals between the upper set of points ($\Bbb{Z}$) 
+  will be filled by the rationals of $\Bbb{Q}$ -- analogous to (Fig. 1) where the holes of $\Bbb{Q}$ were filled by the irrationals:</p>
+  
+  <span id="z">$$
+
+    f_{\Bbb{Z}}(x) = \begin{cases} 
+    1\ \ \text{if} \ x \in \Bbb{Z} \\
+    0\ \ \text{if} \ x \in \Bbb{Q} \land x \notin \Bbb{Z}
+    
+    \end{cases} \tag{Eq. 2}$$</span>
+
+<div id="fig2">
+<img src="..\MATLAB\dirichletz.png" height="210px" width="285px" /></div>
+<span id="fignotes"><b>Fig 2.</b> - A plot of $f_{\Bbb{Z}}(x)$ over a 
+  domain that demonstrates how 
+  empty intervals in $\Bbb{Z}$ are filled by densely-packed rationals. 
+  Notice that irrationals are omitted in (Eq. 2) from the second piecewise condition, yet the number set at $f_{\Bbb{Z}}(x)=0$ still looks like a continuum; it is not a continuum as it is missing the irrationals.</span>
+
+  <p>This property of $\Bbb{Q}$ to appear continuous, regardless of domain scope, is why the rational numbers form a field and support the identities for multiplication, division, addition and subtraction.
+    For example, every element of $\Bbb{Z}$ has the multiplication inverses to support division. Still, we are missing many numbers in (Fig. 2) such as factors of $\pi$ or $\sqrt{2}$.
+  </p>
+<hr/><h3>Properties of our Number System</h3>
+
+<p>To proceed with mathenatical rigor, we must invoke axiomic statements to 
+  begin showing how rationals are packed together in the real number line $\Bbb{R}$. 
+Following modern math cirricula we will start with the <i>Axiom of Completeness</i> and its consequence -- the <i>Archimedea Property</i>.</p>
+
+<ul id="axiom"><li><b>Axiom of Completeness</b>: <i>Every nonempty set of real numbers that is bounded above has a least upper bound</i> (Abbott, 2000, p.14).</li>
+<li id="arch"><b>Archimedian Property (i):</b> <i>Given any number $x \in \Bbb{R}$, there exists an $n \in \Bbb{N}$ satisfying $n \gt x$</br></i></li>
+<li id="arch"><b>Archimedian Property (ii):</b> <i>Given any number $y \in \Bbb{R}$, there exists an $n \in \Bbb{N}$ satisfying $1/n \lt y$</br></i> (Abbott, 2000, p.19)</li></ul>
+</ul><span id="fignotes">The AoC applies to sets bounded below as well, with greatest lower bounds.<br/></span>
+
+<!--<span id="fignotes">These statements rely the fact that $\Bbb{N}$ is not bounded above.</span>-->
+
+<p><br/>Starting with the <i>Axiom of Completeness</i>:
+what does it mean for sets to be bounded, and how does this lead to resolution for paradoxes involving infinite sets?</p>
+
+<p>To use an example, consider some set $A$ with elements that are ordered as such:</p>
+
+$$
+A = \{r^2 \gt 2\ :\ x \in \Bbb{Q}\} \tag{Eq. 3}
+$$
+
+<p>Set $A$ contains all rational numbers $r^2$ that are greater than 2, not including 2 itself.</p> 
+<ul><li>Rational numbers form an ordered set (field) that is countable.</li>
+<li>Set A contains all rationals greater than 2, so it is also ordered and countable like $\Bbb{Q}$.</li>
+<li>$A$ must be <u>bounded below</u> with a <u>greatest lower bound</u> of 2, despite $2 \notin A$. In other words, 2 is the <i>infinum</i> of $A$:</li></ul>
+
+$$ \bbox[8px,border:1px solid black]{ \text{inf} A=2} $$
+
+<span>Evidently, this axiom generalizes the concepts of minima and maxima, applied abstractly to sets. Going back and making some observations about our number system:
+</span>
+
+<ul id="observations">
+
+  <li>The natural numbers $\Bbb{N}$ begin with the number 1, therefore they are bounded below with inf$ \Bbb{N} $=1; however, it is <u>not</u> bounded above.
+  This fits our historical notions of the infinite: our natural number line begins, but it never ends.</li>
+  $$\Bbb{N} = \{1,2,3,4,\dots \}$$
+  <li>The integers $\Bbb{Z}$ are not bounded below nor bounded above. However, they are ordered and countably infinite, like the natural numbers $\Bbb{N}$.</li>
+  $$\Bbb{Z} = \{ \dots , -2, -1, 0, 1, 2, \dots \}$$
+  <li>The rational field $\Bbb{Q}$ contains the set $\Bbb{Z}$, so $\Bbb{Q}$ cannot be bounded below or above either. Ordered and countably infinite, still.</li>
+  $$\Bbb{Q} = \{ p/q : p \land q \in \Bbb{Z},\ q \notin 0 \}$$
+</ul>
+
+<span id="fignotes">Notice that defining $\Bbb{Q}$ requires more general notation to address this property of density. Despite being countably infinite like the naturals and integers, it is tricker to list <i>adjacent</i> terms.<br/></span>
+
+<!--<p>This points towards the rational set being undoubtably "bigger" than the integer set. However, this is untrue. 
+  Cardinality and equinumerosity give us the result that $\Bbb{Z}$ and $\Bbb{Q}$ actually have the same number of elements as each other and $\Bbb{N}$.</p>
+<ul><li>In fact, it's even less intuitive. If |$\Bbb{Z}$| denotes the cardinatlity (# of elements) in the integer set $\Bbb{Z}$, 
+  then it is fact that:</li></ul>
+
+  <span>
+
+    $$
+
+    |\Bbb{N}|=|\Bbb{Z}|=|\Bbb{Q}|=\aleph_0 \tag{Eq. 3} $$
+  </span>
+
+  <span>Using real analysis, we can arrive at this conclusion by showing that each set can be bijectively mapped onto any of the three.
+  </span>-->
+</div> <!--Closes fig 2-->
+
+</div> <!--Closes transformation-->
+
+</div></body> <!--Closes container-->
+
+<footer>
+  <br /><br /><br />Notes by &copy; Tyler DeFrancesco 2023 | BS Physics '21<br />
+</footer>
+</html>
