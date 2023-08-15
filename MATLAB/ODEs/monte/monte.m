@@ -1,6 +1,6 @@
 %%montef(a,b,N)
 a = 1;
-b = 100;
+b = 3;
 N = 10000;
 h = 1/N;
 
@@ -17,6 +17,4 @@ mu_x = mean(x); %%just for error interest
     v1=y;
   end
 
-  integral=sum(v1);
-
-  integrate(x,100,1);
+  integral_n=sum(v1);

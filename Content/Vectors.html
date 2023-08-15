@@ -173,21 +173,21 @@
 
 <p>Finally, the chain rule can resolve the velocity-dependence of $m \ddot{\vect{r}}$. 
   This is needed when expressing the energy quantities we care about (such as kinetic energy). 
-  For each component $j$ in the coordinate $\vect{r_j}$
+  For each vector component <i>j</i> in $\vect{r_j}$:
 </p>
 
 $$
 \begin{align}
 
 m \ddot{x_j} &= m \frac{dv_j}{dt}\\
-&=m \frac{dv_j}{dx_j} \\
-&=m \frac{dv_j}{\cancel{dx_j}} \frac{\cancel{dx_j}}{dt}\\
+
+&=m \frac{dv_j}{dx_j} \frac{dx_j}{dt}\\
 m \ddot{x_j} &= \bbox[8px,border:1px solid black]{m v \frac{dv_j}{dx_j}}
 
 \end{align}
 \tag{Eq. 7}
 $$
-<p class="eqcomment"><b>Eq. 7</b> - Interpreting physical meaning from this in-between quantity is tricky (see Fig. a).
+<p class="eqcomment"><b>Eq. 7</b> - Interpreting physical meaning from this in-between quantity is tricky.
 </p>
 <!--$$ \begin{align} 
       \vect{F} &= m \frac{dv}{dt} \\
@@ -238,7 +238,8 @@ $$
 <p class="eqcomment"><b>Eq. 8</b> - To keep the expression neat, consider the case where our initial system position and velocity ($r_0,v_0) are zero.</p>
 <p>We should leave this sum as a path integral of our 3-vector $F(\vect{r})$, 
   to keep directional information in-tact. Notice that dot products take <i>vector inputs</i> but produce <i>scalar outputs</i>, 
-    resulting the scalar-value of energy.
+    resulting the scalar-value of energy (and an energy-dependence on velocity magnitudes).
+    $$v^2=\vect{v} \cdot \vect{v}$$
   <ul><li>Force applied to a system may be path-dependent (i.e. generalized magnetic force). In contrast, a force like (classical) gravity will vary
     only with distance from the source.
      
@@ -257,21 +258,25 @@ $$\blbox{\ Total\ Energy\ =\ Kinetic\ Energy\ +\ Potential\ Energy}$$
   statement back into a scalar equation. 
 </p>
 
-<p>Derive the dimensionality of energy by considering the K.E. term $\frac{1}{2}mv^2$:</p>
+
+
+<hr/><h3 id="section">Dimensionality of <i>E</i> and ($\vect{F}(\vect{r}) \cdot d\vect{r}$)</h3>
+
+<p>Compare <i>E</i> to the term that outputs kinetic energy ($\frac{1}{2}mv^2$):</p>
 
 $$\blbox{[E] = [m][v]^2 = M^1L^2T^{-2} } \tag{Eq. 9.1}$$
 <p class="eqcomment"><b>Eq. 9.1</b> - In S.I. units, this is $kg\ m^2 / s^2$ -- Newton-meters -- Joules.</p>
-<p>A reminder: this quantity followed <i>first</i> from mathematical analysis,
+<!--<p>A reminder: this quantity followed <i>first</i> from mathematical analysis,
 and <i>then</i> we assigned physical meaning to it as the total system energy <i>E</i>. 
-<!-- <ul><li>Deriving mathematical relationships first - and interpreting the Physics 
+ <ul><li>Deriving mathematical relationships first - and interpreting the Physics 
   of these statements later - is a common way that we construct 
-  theories in modern Physics.</li> -->
-  <li>In Newton's era, the field had not yet progressed to this extent. Newton never obtained this statement from his own equation (not even its one-dimensional case).</li></ul></p>
+  theories in modern Physics.</li> 
+  <li>In Newton's era, the field had not yet progressed to this extent. Newton never obtained this statement from his own equation (not even its one-dimensional case).</li></ul></p>-->
 <hr/><h3 id="section">Newtonian Energy Mechanics with <i>E</i> and $V(\vect{r})$</h3>
 
 <p>Let's take a second and appreciate what exactly our conservation statement is saying.</p>
 <ul><li>The sum of these quantities (kinetic and potential energies) remains constant for 
-  all $\vect{r}$, t. Considering the complexity of our operations to Newton's Equation, leading up to (Eq. 6), 
+  all ($\vect{r}$, t). Considering the complexity of our operations to Newton's Equation, leading up to (Eq. 6), 
   it may be surprising that any conserved quantities were resolved.
 </li></ul>
 $$\bbox[8px,border:1px solid black]{\frac{dE}{dt} = 0 \text{ if } \vect{F} \not \equiv \vect{F}(t)}  \tag{Eq. 9.2}$$
@@ -282,7 +287,7 @@ in statistical mechanics. More rigorously, this time-energy conservation relatio
 
   <ul>
   <li>Vector calculus allows us to recontextualize our path 
-    integral as a scalar potential to our force field: $V( \vect{r})$</li>
+    integral. The gradient of our scalar potential ($V( \vect{r})$) is equal to $\vect{F}(\vect{r})$: </li>
 </ul>
 
 $$ \bbox[8px,border:1px solid black]{
