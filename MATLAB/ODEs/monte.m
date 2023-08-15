@@ -1,17 +1,22 @@
-function mIntegrate(a,b,N)
-
-b = 1;
-a=0;
+%%montef(a,b,N)
+a = 1;
+b = 100;
+N = 10000;
 h = 1/N;
-  for i = a : N b
-         x = (b-a).*rand(1,1000) + a; %%size N uniform random numbers
-         mu_x = mean(x); %%just for error interest
+
+x = (b-a).*rand(1,N) + a; %%size N uniform random numbers
+mu_x = mean(x); %%just for error interest
+
+%(mu_x);
+  for i = 1 : N
          
-         %%factor = (b-a)*1/N; Legacy code
+         
         
-        y(i) = sin(x)
-     
-
+    y(i)=x(i);
+    
+    v1=y;
   end
-  
 
+  integral=sum(v1);
+
+  integrate(x,100,1);
