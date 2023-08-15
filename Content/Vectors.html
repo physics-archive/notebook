@@ -64,15 +64,18 @@
           we are rewarded with a clearer picture of
          conserved quantities and system behavior.</li>
           <li>This rigor will make the vector (and matrix) formulations of quantum mechanics far more approachable.</li>
+          <!--<li>Vectors are rank-1 tensors</li>-->
           
       </ul>
       
         <hr/><h3 id="section">Rewriting Position, Velocity and Acceleration as 3-Vectors</h3>
       <p> 
-        In transitioning from $x(t) \rightarrow \vect{r}(t)$, The following will serve as a brief overview 
-        on vector-valued functions, and is best achieved by expressing our vectors
-        in several equivalent forms. <br/><br/>The three elements of $\vect{r}$
-        correspond to motion in the respective directions:
+        Transitioning our picture from $x(t) \rightarrow \vect{r}(t)$: the following will serve as a brief overview 
+        on vector-valued functions. There are many equivalent ways of expressing vectors, and so it 
+        is advantageous to cover a more than one when introducing the topic. 
+        
+        <br/><br/>In $\vect{r}$, we have a weighted sum of three standard basis vectors which
+        correspond to position in the <i>x,y,z</i> directions:
       </p>
     $$ \bbox[8px,border:0px solid black] {\vect{r}(t) = 
     \hat{ \mathrm{ \boldsymbol{r}}} \mathrm{ \boldsymbol{r}}(t)  =
@@ -83,14 +86,14 @@
     y(t) \vecta{0}{1}{0} +
     z(t) \vecta{0}{0}{1} } \tag{Eq. 1}$$
 
-    <p class="eqcomment"><b>Eq. 1</b> - A vector in $\Bbb{R}^3$ measured from the origin (0,0,0), 
+    <p class="eqcomment"><b>Eq. 1</b> - A vector in $\Bbb{R}^3$ measured from the origin (0, 0, 0). 
       expressed in four equivalent forms.</p>
 
 
-    <p>Since our particle (and $\vect{r}$) exist in flat space, we can say that the length of our vector
+    <p>Since our particle (and $\vect{r}$) exist in flat space, we know that the length (magnitude) of our vector
        is the sum (in quadrature) of its elements: </p>
       
-      $$\bbox[8px,border:0px solid black]{ |\vect{r}(t)| = x(t) \oplus y(t) \oplus z(t) = \sqrt{[x(t)]^2+[y(t)]^2+[z(t)]^2}} \tag{Eq. 2} $$
+      $$\bbox[8px,border:0px solid black]{ |\vect{r}(t)| = \sqrt{\vect{r} \cdot \vect{r}} = x(t) \oplus y(t) \oplus z(t) = \sqrt{[x(t)]^2+[y(t)]^2+[z(t)]^2}} \tag{Eq. 2} $$
     <p>Notice, our radicand is <i>not</i> a sum of vector-valued quantities; $x, y, z$ are scalar functions of <i>t</i>. 
       Operating on these scalar functions with the unit-vectors ($\hata{x}, \hata{y}, \hata{z}$) results in $\vect{r}$'s directional information.</p>
       <p></p>
@@ -127,7 +130,7 @@
 
       <hr/><h3>Generalizing to N-Dimensional Vectors</h3>
       <p>Notice, too, that this formulation is not limited to 3-vectors. For any choice of $\Bbb{R}^k $ ($k \in \Bbb{N}$),
-        (Eq. 1) and (Eq. 2) can be generalized, and so a <i>k</i>-dimensional vector may be defined as follows:
+        (Eq. 1) and (Eq. 2) can be generalized as <i>k</i>-vector:
          </p>
       
          $$\vect{Q} =\begin{bmatrix} x_1(t)\\ x_2(t)\\ x_3(t)\\ \vdots\\ x_k(t) \end{bmatrix}\ \text{and}\ \ 
@@ -135,10 +138,9 @@
       <p class ="eqcomment" style="text-align:center; font-size:10pt;"><b>Eq. 5</b> - Generalizations 
        of (Eq. 1) and (Eq. 2), s.t. $\text{dim} \vect{Q} = k$. Typical (Lagrange) notation is $x_k \rightarrow q_k$.</p>
       <p>Why would we even care about generalizing a system beyond our 3-dimensional, flat coordiante system?
-        <ul><li>Generalized coordinates may span very large indices, and coupled systems may 
-      contain non-diagonal matrices (i.e. nondiagonal mass-matrix).</li>
+        <ul><li>Generalized coordinates may span large (sometimes continuous) indices.</li>
         <li>In programming: the 
-          size (dimension) of an array (matrix) may be quite large, dynamic, random, etc. 
+          size (dimension) of an array (matrix) may be quite large, dynamic, random, etc.
 
 </li>
     
@@ -169,8 +171,9 @@
 <p class="eqcomment"><b>Eq. 6</b> - Differential elements for our Cartesian unit vectors are equal to 0, as they are always constant. 
   Other coordinate systems do not produce such a clean vector operation.</p>
 
-<p>Finally, let us invoke the chain rule to express $m \ddot{\vect{r}}$ as a relationship involving velocity, in order to match 
-  the quantities we care about when discussing energy relationship (think kinetic energy). For each component $j$ in $\vect{r_j}$
+<p>Finally, the chain rule can resolve the velocity-dependence of $m \ddot{\vect{r}}$. 
+  This is needed when expressing the energy quantities we care about (such as kinetic energy). 
+  For each component $j$ in the coordinate $\vect{r_j}$
 </p>
 
 $$
@@ -264,20 +267,22 @@ and <i>then</i> we assigned physical meaning to it as the total system energy <i
   of these statements later - is a common way that we construct 
   theories in modern Physics.</li> -->
   <li>In Newton's era, the field had not yet progressed to this extent. Newton never obtained this statement from his own equation (not even its one-dimensional case).</li></ul></p>
-<hr/><h3 id="section">Characteristics of System Energy and $V(\vect{r})$</h3>
+<hr/><h3 id="section">Newtonian Energy Mechanics with <i>E</i> and $V(\vect{r})$</h3>
 
 <p>Let's take a second and appreciate what exactly our conservation statement is saying.</p>
-<ul><li>The sum of these quantities (kinetic and potential energies) remains constant for all $\vect{r}$, t. This is an interesting conclusion
-  given the complexity of our quantities.
+<ul><li>The sum of these quantities (kinetic and potential energies) remains constant for 
+  all $\vect{r}$, t. Considering the complexity of our operations to Newton's Equation, leading up to (Eq. 6), 
+  it may be surprising that any conserved quantities were resolved.
 </li></ul>
-$$\bbox[8px,border:1px solid black]{\frac{dE}{dt} = 0 \text{ if } \vect{F} \not = \vect{G}(t)}  \tag{Eq. 9.2}$$
-<p class="eqcomment"><b>Eq. 9.2*</b> - Total energy of an <u>isolated</u> system is conserved. Our universe's total energy is unchanging in time. Developed 
+$$\bbox[8px,border:1px solid black]{\frac{dE}{dt} = 0 \text{ if } \vect{F} \not \equiv \vect{F}(t)}  \tag{Eq. 9.2}$$
+<p class="eqcomment"><b>Eq. 9.2*</b> - Total energy of an <u>isolated</u> system is conserved.  This topic is developed 
 in statistical mechanics. More rigorously, this time-energy conservation relationship is a consequence of Noether's theorem.</p>
 <!--Then, we will 
   explain the terms in our result, and address some powerful consequences.-->
 
   <ul>
-  <li>Vector calculus allows us to recontextualize our path integral as a scalar potential to our force field: $V( \vect{r})$</li>
+  <li>Vector calculus allows us to recontextualize our path 
+    integral as a scalar potential to our force field: $V( \vect{r})$</li>
 </ul>
 
 $$ \bbox[8px,border:1px solid black]{
