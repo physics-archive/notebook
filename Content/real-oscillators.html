@@ -49,18 +49,21 @@
     <h1 id="header">Damped Harmonic Oscillator<br/>
     <a href="dampingref.html" target="_blank" style="text-decoration:none;color:darkslategrey;"><span style="font-size:12pt;">Dimensional 
     Analysis on $\beta, \gamma, k, m$</span></a></h1>
-    <p>Oscillators are a natural phenomenon. Rotating bodies have cyclical motion, as does some mass on a spring. 
+    <p>
+      
+      <!--Oscillators are a natural phenomenon. 
       Moreover, systems that are elusive to direct 
-      observation (i.e., an electric-field propogating through some insulating material) are accurately accurately modeled 
+      observation (i.e., an electric-field propogating through some insulating material) are accurately modeled 
       as physical oscillators. <br/><br/>Many nuclear and microscopic systems behave like damped oscillators. 
       Maxwell's Equations lead to a wave equation whose solutions are our  
-      electromagnetic model for light (oscillating <i>E-</i> and <i>B-</i>fields that propogate with a velocity). 
+      electromagnetic model for light (oscillating <i>E-</i> and <i>B-</i>fields that propogate with a velocity). -->
+
     </p>  
     
     <p>
       
-      Often, it is easier to mathematically identify the sources of change to our system, 
-      rather than arriving immediately at a mathematical model. 
+      <!--Often, it is easier to mathematically identify the sources of change to our system, 
+      rather than arriving immediately at a mathematical model. -->
       <!--<ul><li>For instance: an object in free-fall is subject to a total force of $mg$ -- but what 
         is $\vect{r}(t)$ exactly? It can be easily determined or recalled, but you can see that our logic <i>begins</i> with 
         change, which progresses to a comprehensive solution for motion (position). 
@@ -77,14 +80,14 @@
       </p>-->
       <hr/><h3 id="section">Constructing and Justifying our Differential Equation</h3>
   
-      <p>Hooke's law describes a restorative force: $F=-kx$. What is $-kx$ <i>really</i> describing? 
-      <ul><li>As our system moves away from equillibrium ($x_0=0$), a force directed towards $x_0$ grows in order to 
-        is restore system position; its direction always points towards the equillibrium point $x_0$.
+      <p>Hooke's law describes a restorative force: $F=-kx$. What makes this force restorative?
+      <ul><li>As our system is displaced from equillibrium ($x_0=0$), a force directed towards $x_0$ grows in order to 
+        restore system position. The force acts to restore the system to its equillibrium configuration.
       </li></ul>
       <!--<li>Notice that if our sign is reversed to say $F=+kx$, our force is directed <i>away</i> from equillibrium. Position will never 
       return to $x=0$ once displacement away from $x_0$ occurs. This describes exponential, positive feedback.</li></ul></p>-->
 
-      <p>Let us use methamtical intuition to describe each contribution to the total force $\vect{F}$:</p>
+      <p>Each contribution to the net force $\vect{F}$ may be written:</p>
 
       <ul><li>$F_{spring}(x)= -kx$: A restorative force that depends explicitly on position. 
         <br/>Proportional to our spring constant $k$.</li>
@@ -295,13 +298,15 @@ margin-right:auto;" /></div>
 
 <p class="eqcomment"> <b>Figure 2</b> - Plots of <i>x(t)</i> for different damping strengths.
 The complex nature of <i>x(t)</i> encodes our lack of real roots in the overdamped case, and we lose 
-our oscillatory behavior.</p>
+our oscillatory behavior, slowing the system before equillibrium is reached (hence no real roots).</p>
 
 
 <p>We have mathematically modeled oscillatory motion, with energy loss, about some equillibrium configuration with an 
   eigenfrequency $\Omega$. This frequency is influenced by the damping strength,
- implying that our mechanism for energy loss causes decay in amplitude <u>in addition to</u> 
- adjusting the oscillation periodicity from its undamped value ($\gamma=0$). 
+ implying that the mechanism for energy loss causes decay in amplitude <u>in addition to</u> 
+ down-shifting the oscillation periodicity from its undamped value (when $\gamma=0$). Indeed,
+ the overdamped case is an exaggerated form of why amplitude decay <u>must</u> be occompanied
+ by a down-shift in oscillation frequency. 
 </p>
 
 <hr/><h3 id="section">Brief Verification of our Solution</h3>

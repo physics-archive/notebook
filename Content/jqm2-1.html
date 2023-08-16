@@ -173,8 +173,10 @@ $$\blbox{u(x,y,t)=\frac{1}{\pi^2}\left( \frac{ab}{mn} \right)
 <p class="eqcomment"><b>Soln. 1.5 </b>- Quantized wavenumbers (eigenvalues) and coefficients $A_{x,y}$. 
 Physical consequence of having a bounded system.</p>
 <p>The spatial behavior of $u(x,y,t)$ has been determined. To solve our system, we just need to know 
-  how <i>u</i> evolves in time. Taking 3-D Plots of 
+  how <i>u</i> evolves in time. 
 </p>
+
+<p>Consider </p>
 <hr/><h3 id="section">Solving for <i>Z</i>(<i>t</i>) (Time-Component)</h3>
 $$Z'' + \left(v^2 k_t^2 \right)Z(t) = 0 $$
 
@@ -199,12 +201,22 @@ $$\dot{u}(x,y,0)=G_0(x,y)$$
   <li>Physically, these conditions describe the initial, 
   spatial structure (and velocity) of the wave. </li>
 
-  <li>Mathematically, $\alpha,\beta$ are more difficult to obtain than $A_m,A_n$. Requires fourier analysis.
+  <li>Mathematically, $\alpha,\beta$ are more difficult to obtain than $A_m,A_n$. Requires Fourier analysis.
   </li>
 </ul>
-  
 
+$$
+
+f(x) = \frac{a_0}{2} + \sum_{m=1}^\infty \left[ 
+a_m\cos{(mx)} + b_m\sin{(mx)} \right]
+
+$$
+
+Compare this definition to $u(x,y,0)=F_0(x,y)$:
 </p>
+
+
+$$F_0(x,y)=A_{mn}\sin{mx}$$
 <!--$$-\omega^2 + \omega^2 = 0 $$-->
 
 
