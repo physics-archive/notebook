@@ -27,6 +27,9 @@
         } $ <!--3 vector takes 3 inputes-->
         $\newcommand{\hata}[1]{\mathrm{ \hat{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
         $ \newcommand{\blbox}[1]{\bbox[8px,border:1px solid black]{#1}}$
+        $ \newcommand{\bblbox}[1]{\bbox[8px,border:3px solid black]{#1}}$
+
+
 
         $ \newcommand{\ddp}[2]{ \frac{\partial ^2 {#1}}{\partial {#2}^2}} $ <!--second partial derivative 
         w/ two arguments-->
@@ -166,8 +169,9 @@ A_x &= a/ m\pi \\
 A_y &= b/ n\pi \end{align} }
 \tag{Soln. 1.4} $$
 
+
 Substiting our currently-known information into $u(x,y,t)$:
-$$\blbox{u(x,y,t)=\frac{1}{\pi^2}\left( \frac{ab}{mn} \right)
+$$\bblbox{u(x,y,t)=\frac{1}{\pi^2}\left( \frac{ab}{mn} \right)
   \sin{\left(\frac{m\pi\ x}{a}\right)}
 \sin{ \left( \frac{n\pi\ y}{b}\right) } Z(t)} \tag{Soln. 1.5}$$
 <p class="eqcomment"><b>Soln. 1.5 </b>- Quantized wavenumbers (eigenvalues) and coefficients $A_{x,y}$. 
@@ -181,7 +185,7 @@ Physical consequence of having a bounded system.</p>
 $$Z'' + \left(v^2 k_t^2 \right)Z(t) = 0 $$
 
 Dimensional analysis reveals that the quantity $vk_t$ is an angular frequency (denote by $\omega$):
-$$[vk_t]^2 =L^2T^{-2}T^{-2} = 1/T^2 $$
+$$[vk_t]^2 =L^2T^{-2}(L^{-2}) = 1/T^2 $$
 
 This 2nd-order ODE has analogous form (and solutions) to the eqn.s for X(x) and Y(y).
 However, our time constraints lead to different behavior 
@@ -212,12 +216,12 @@ a_m\cos{(mx)} + b_m\sin{(mx)} \right]
 
 $$
 
-Compare this definition to $u(x,y,0)=F_0(x,y)$:
+<!--Compare this definition to $u(x,y,0)=F_0(x,y)$:
 </p>
 
 
 $$F_0(x,y)=A_{mn}\sin{mx}$$
-<!--$$-\omega^2 + \omega^2 = 0 $$-->
+$$-\omega^2 + \omega^2 = 0 $$-->
 
 
 
