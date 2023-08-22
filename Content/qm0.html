@@ -16,7 +16,7 @@
         </script>
     
     <script type="text/javascript" src="../MathJax3/es5/tex-chtml.js"></script>
-    <link rel="stylesheet" type="text/css" href="./qm0.css?ver=1.62" /> <!--links CSS style sheet-->
+    <link rel="stylesheet" type="text/css" href="./qm0.css?ver=1.7" /> <!--links CSS style sheet-->
 
     <title>Quantum Mechs 0</title>
 </head>
@@ -108,10 +108,10 @@ $$
 </p>
 <hr/><h3 id="secheader">Where is Classical Position Encoded in Schr&ouml;dinger's Equation?</h3>
 
-<p>Undoubtably, as bizarre as (Eq. 2) is in comparison to Newton's Equation, they <u>must</u> agree 
-in the classical limits of our system. If Classical Mechanics can accurately predict 
-behaviors for a variety of systems, then those classical solutions should appear 
-in our quantum mathematical models as well.
+<p>Undoubtably, as bizarre as (Eq. 2) is in comparison to Newton's equation, they <u>must</u> agree 
+within classical limits of our system. If classical mechanics accurately predicts and explains
+behaviors for many [mainly macroscopic] systems, then those classical solutions should appear 
+in our quantum-mechanical mathematics as well. 
 <ul id="introlist"><li>In other words, we need to verify that Classical Mechanics 
   actually <i>is</i> an approximation for Qunantum Mechanics.</li>
 </ul></p>
@@ -119,19 +119,21 @@ in our quantum mathematical models as well.
 
 
 <p>Schr&ouml;dinger's partial differential equation for energy conservation
-  has solutions not of $x(t)$, but of $\Psi(x,t)$, which are related to $x(t)$ 
-  statistically as an expectation value:
+  has solutions not of $x(t)$, but of a wave $\Psi(x,t)$ which related to $x(t)$, 
+  statistically, as an expectation value:
 </p>
 <span>
   $$
   \bbox[8px,border:1px solid black]{ \lt x(t) \gt = \int_{- \infty}^{+ \infty} \left[\Psi^* x\ \Psi \right]\ dx} \tag{Eq. 3}$$ 
 </span>
 
-<p id="eqnote"><b>Eq. 3</b> - Expectation value for position as a function of time, 
-  according to Schr&ouml;dinger. Here, $\Psi^*(x,t)$ denotes the complex conjugate of $\Psi(x,t)$.</p>
+<p id="eqnote"><b>Eq. 3</b> - Expectation value for position as a function of time. 
+  Here, $\Psi^*(x,t)$ denotes the complex conjugate of $\Psi(x,t)$.</p>
 <p>In Quantum Mechanics, $ \hat{x}$ 
-  is known as an operator ($\hat{x}$ is the operator for position). Operators are how we obtain
-  observable quantities in Quantum Mechanics, since $\Psi(x,t)$ itself is not observable. 
+  is known as an operator (where $\hat{x}$ is the operator for position). Operators are how
+  observables are encoded in $\Psi(x,t)$. The wavefunction is not directly observable, yet its probability density (|$\Psi^2$|) 
+
+  <a class="link" href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.110.213001" target="_blank">may be imaged with very modern technology</a>.
   
   <ul><li>This is a bizarre way of describing a system's motion; it is highly indirect in comparison to Classical Mechanics,
 which has solutions to its diff. eq. that are directly observable $x(t)$.</li> 

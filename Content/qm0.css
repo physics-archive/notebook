@@ -23,6 +23,11 @@ body{
 
 }
 
+.link{
+    text-decoration: none;
+    color: darkgreen;
+}
+
 #buttons{
     background-color: #FFFFF0;
     display:block;
