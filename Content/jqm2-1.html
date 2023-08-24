@@ -195,7 +195,7 @@ $$\bblbox{u(x,y,t)= \sum_{n,m}^{\infty} u_{nm}=\frac{1}{\pi^2}
 <hr/><h3 id="section">Solving for <i>Z</i>(<i>t</i>) (Time-Component)</h3>
 $$Z'' + \left(v^2 k_t^2 \right)Z(t) = 0 $$
 
-Dimensional analysis reveals that the quantity $vk_t$ is an angular frequency (denote by $\omega$):
+Dimensional analysis reveals that the quantity $vk_t$ is an angular frequency ($\omega_0$):
 $$[vk_t]^2 =L^2T^{-2}(L^{-2}) = 1/T^2 $$
 
 This 2nd-order ODE is analogous in form X(x) and Y(y):
@@ -205,9 +205,10 @@ This 2nd-order ODE is analogous in form X(x) and Y(y):
  </li></ul> -->
 $$Z(t)= C_1 \sin{(\omega t)} + C_2 \cos{(\omega t)} \tag {Soln. 2}$$
 
-<p>The two initial conditions need to be applied to obtain the two coefficients:</p>
-$$u(x,y,0)=f_0(x,y)$$
-$$\dot{u}(x,y,0)=g_0(x,y)$$ <!--
+<p>The two initial conditions need to be invoked to obtain the two coefficients:</p>
+$$u(x,y,0)=f_0(x,y) \tag{I.C. 1}$$
+$$\dot{u}(x,y,0)=g_0(x,y)\tag{I.C. 2}$$ <!--
+
 
 <p><ul>
   
@@ -235,23 +236,36 @@ $$-\omega^2 + \omega^2 = 0 $$-->
 <p>Keeping the coefficients $A_m,A_n$ in-tact, we can rewrite
   <i>u(x,y,0)</i> from (soln. 1.5) as double Fourier series:</p>
 
-$$ u(x,y,0) = f_0(x,y) =\frac{1}{\pi^2}
+$$ u(x,y,0) = f_0(x,y) =
 \sum_{n=1}^{\infty} \sum_{m=1}^{\infty}
 
   C_2 A_m A_n \sin{\left(\frac{m\pi\ x}{a}\right)}
-\sin{ \left( \frac{n\pi\ y}{b}\right) }$$
+\sin{ \left( \frac{n\pi\ y}{b}\right) } \tag{Eq. 3.1.1}$$
 
-$$ \dot{u}(x,y,0) = g_0(x,y) =\frac{1}{\pi^2}
+$$ \dot{u}(x,y,0) = g_0(x,y) =
 \sum_{n=1}^{\infty} \sum_{m=1}^{\infty}
 
-  C_1 A_m A_n \sin{\left(\frac{m\pi\ x}{a}\right)}
-\sin{ \left( \frac{n\pi\ y}{b}\right) }$$
-
+  \omega C_1 A_m A_n \sin{\left(\frac{m\pi\ x}{a}\right)}
+\sin{ \left( \frac{n\pi\ y}{b}\right) } \tag{Eq. 3.1.2}$$
+<p class="eqcomment"><b>Eq. 3.1.2 </b>- The factor of $\omega$ comes from taking $ \frac{d}{dt}\left[C_1 \sin{\omega t}\right] $.</p>
 
 <p>
+Since the spatial boundary conditions brought on the discrete nature of $k_{x,y}$ (pp. 5), leading to the same behavior in $A_{mn}$,
+ it should be safe to combine the coeffients $(A_mA_nC)$. In other words, I'm assuming that
+another index is not needed in order to account for the coefficients $C_1,C_2$ (unverified).</p>
 
-
+$$\begin{align} 
+\left(C_2A_mA_n\right) &\rightarrow \alpha_{mn} \\
+\left(C_1A_mA_n\right) &\rightarrow \beta_{mn} 
+\end{align} 
+\tag{Eq. 3.2}$$
+<p class="eqcomment"><b>Eq. 3.2 </b>- The convenience of rewriting the product of coefficients is why we 
+  chose not to expand (Soln. 1.4) when looking for time-dependent solutions, 
+  despite the valid finding that $A_{mn}=A_xA_y=\frac{ab}{mn\pi^2}$.
 </p>
+
+
+
 </div>
 
 
