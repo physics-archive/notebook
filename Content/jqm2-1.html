@@ -198,7 +198,6 @@ $$Z'' + \left(v^2 k_t^2 \right)Z(t) = 0 $$
 Dimensional analysis reveals that the quantity $vk_t$ is an angular frequency ($\omega_0$):
 $$[vk_t]^2 =L^2T^{-2}(L^{-2}) = 1/T^2 $$
 
-This 2nd-order ODE is analogous in form X(x) and Y(y):
 <!-- <ul><li>Without damping, coefficients in <i>Z</i>(<i>t</i>)
   $(\alpha, \beta)$ will not depend on time, analogous to how $A_{x,y}$ 
   and $B_{x,y}$ do not vary along their respective coordiantes, and they do not evolve with time.
@@ -264,8 +263,23 @@ $$\begin{align}
   despite the valid finding that $A_xA_y=A_{mn}=\frac{ab}{mn\pi^2}$.
 </p>
 
+<hr/><h3 id="section">Obtaining $\omega_{mn}$ and a General Solution for <i>u</i>(<i>x</i>, <i>y</i>, <i>t</i>)</h3>
+We can finish answering <i>problem 2.1</i> by plugging <i>u</i>(<i>x</i>, <i>y</i>, <i>t</i>) into (Eq. 1) and solving
+for the eigenfrequencies that fall out of the double-derivatives $u_{xx},u_{yy},u_{tt}$: 
 
+$$\bblbox{u(x,y,t)=
+\sum_{n=1}^{\infty} \sum_{m=1}^{\infty}
+A_{mn}
+  \sin{\left(\frac{m\pi\ x}{a}\right)}
+\sin{ \left( \frac{n\pi\ y}{b}\right) } 
 
+\left(
+C_1 \sin{(\omega t)} + C_2 \cos{(\omega t)}
+\right)
+
+} \tag{Soln. 2}$$
+<p class="eqcomment"><b>Soln. 2 </b>- The most general solution to our PDE. This can be written in a more 
+ insightful form, but we will worry about then when we finish determining the coefficients.
 </div>
 
 
