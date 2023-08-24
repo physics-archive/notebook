@@ -17,7 +17,7 @@
         <script type="text/javascript" src="../MathJax3/es5/tex-chtml.js"></script>
         
         <title>Jackson Solutions</title>
-        <link rel="stylesheet" type="text/css" href="./jqm2-1.css?ver=1.0" /> <!--links CSS style sheet-->
+        <link rel="stylesheet" type="text/css" href="./jqm2-1.css?ver=1.2" /> <!--links CSS style sheet-->
     
 
         $\newcommand{\vect}[1]{\mathrm{ \vec{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
@@ -51,7 +51,7 @@
 </div> <!--closes buttons-->
 
 <div id="container">
-    <h1 id="header">Vibrating Membrance (Rectangular)</h1><hr/><hr/> 
+    <h1 id="header">Vibrating Membrane (Rectangular)</h1><hr/><hr/> 
 
     <p class="problem"><b>Problem 2-1: </b>Show how eigenfrequencies of oscillation occur
     for the small oscillations of a uniform, flexible, rectangular membrane 
@@ -68,7 +68,7 @@
       Consider this page a motivating preface to a volume on early Quantum Particle Mechanics.
       </p>-->
       <hr/><hr/><h3 id="section">The Problem</h3>
-  <p>This is an exercise in solving the wave equation for two spatial dimensions (vibrating plane in $\Bbb{R}^3$). Eigenvalues arise 
+  <p>This is an exercise in solving the wave equation for two spatial dimensions (vibrating plane embedded in $\Bbb{R}^3$). Eigenvalues arise 
     as a result of our spatial boundary conditions (and single-valuedness of displacement). Two indices of eigenvalues arise due to there existing two spatial dimension.
   </p>
 
@@ -154,13 +154,13 @@ $$0 = A_{x} \cos{(k_{x}\ a)} \tag{Eq. 3}$$-->
 this result is why we obtain quantized energies when solving for matter (particle) waves.
 </p>
 
-$$k_{m}\ell = m\pi $$
+$$k_{j}\ell = j\pi $$
 $$\blbox{ \begin{align}
-k_x = m\pi /a \\
-k_y = m\pi /b \\
+k_x &= m\pi /a \\
+k_y &= n\pi /b \\
 \end{align} } \tag{Soln. 1.3}$$ 
 
-Finally, $A_x$ and $A_y$ can be found by substiting (Soln. 1) into each of our ODEs and evaluating:
+Finally, $A_x$ and $A_y$ can be found by substituting (Soln. 1) into each of our ODEs and evaluating:
 
 $$-k^2A +k=0$$
 
@@ -170,35 +170,44 @@ A_y &= b/ n\pi \end{align} }
 \tag{Soln. 1.4} $$
 
 
-Substiting our currently-known information into $u(x,y,t)$:
-$$\bblbox{u(x,y,t)=\frac{1}{\pi^2}\left( \frac{ab}{mn} \right)
+Substituting $A_{nm}$ and $k_x, k_y$ into $u(x,y,t)$:
+$$\bblbox{u(x,y,t)= \sum_{n,m}^{\infty} u_{nm}=\frac{1}{\pi^2}
+\sum_{n=1}^{\infty} \sum_{m=1}^{\infty}
+\left( \frac{ab}{mn} \right)
   \sin{\left(\frac{m\pi\ x}{a}\right)}
 \sin{ \left( \frac{n\pi\ y}{b}\right) } Z(t)} \tag{Soln. 1.5}$$
-<p class="eqcomment"><b>Soln. 1.5 </b>- Quantized wavenumbers (eigenvalues) and coefficients $A_{x,y}$. 
-Physical consequence of having a bounded system. Z(t) must have dimensions of inverse length in order for this model to make sense.</p>
-<p>The spatial behavior of $u(x,y,t)$ has been determined. To solve our system, we just need to know 
-  how <i>u</i> evolves in time. 
+<p class="eqcomment"><b>Soln. 1.5 </b>- Quantized wavenumbers (eigenvalues) and coefficients $A_{x,y}$, forced 
+  by our spatial boundary conditions. Z(t) must have dimensions of inverse length in order for this to work.</p>
+<p>To solve our system, we just need to know 
+  how <i>u</i> evolves in time. In verifying our spatial solution, we can plot the normal modes:
 </p>
 
-<p>Consider </p>
+<div id="fig2">
+  <img src="../Index/Jackson/m1n1.jpg" alt="n and m 1" width="260px" height="205pnx", style="margin-left:auto;
+  margin-right:auto;" />
+  <img src="../Index/Jackson/m2n2.jpg" alt="n and m 2" width="280px" height="210px", style="margin-left:auto;
+  margin-right:auto;" />
+  <img src="../Index/Jackson/m5n1.jpg" alt="m 5 n 1.bmp" width="280px" height="210px", style="margin-left:auto;
+  margin-right:auto;" /></div>
+<p class="eqcomment"><b>Fig. 1 </b>- Notice that the boundary condition holds true as we arbitarily vary <i>m, n, a, b</i>.</p>
+<!--First figure gotta figure out what this css line even is-->  
+
 <hr/><h3 id="section">Solving for <i>Z</i>(<i>t</i>) (Time-Component)</h3>
 $$Z'' + \left(v^2 k_t^2 \right)Z(t) = 0 $$
 
 Dimensional analysis reveals that the quantity $vk_t$ is an angular frequency (denote by $\omega$):
 $$[vk_t]^2 =L^2T^{-2}(L^{-2}) = 1/T^2 $$
 
-This 2nd-order ODE has analogous form (and solutions) to the eqn.s for X(x) and Y(y).
-However, our time constraints lead to different behavior 
-for the leading coefficients. 
-<ul><li>Without damping, coefficients in <i>Z</i>(<i>t</i>)
+This 2nd-order ODE is analogous in form X(x) and Y(y):
+<!-- <ul><li>Without damping, coefficients in <i>Z</i>(<i>t</i>)
   $(\alpha, \beta)$ will not depend on time, analogous to how $A_{x,y}$ 
-  and $B_{x,y}$ do not vary along their respective coordiantes -- or evolve with time.
- </li></ul>
-$$Z(t)= \alpha \sin{(\omega t)} + \beta \cos{(\omega t)} \tag {Soln. 2}$$
+  and $B_{x,y}$ do not vary along their respective coordiantes, and they do not evolve with time.
+ </li></ul> -->
+$$Z(t)= C_1 \sin{(\omega t)} + C_2 \cos{(\omega t)} \tag {Soln. 2}$$
 
-<p>The following initial conditions can be addressed using Fourier Analysis:</p>
-$$u(x,y,0)=F_0(x,y)$$
-$$\dot{u}(x,y,0)=G_0(x,y)$$
+<p>The two initial conditions need to be applied to obtain the two coefficients:</p>
+$$u(x,y,0)=f_0(x,y)$$
+$$\dot{u}(x,y,0)=g_0(x,y)$$ <!--
 
 <p><ul>
   
@@ -214,7 +223,7 @@ $$
 f(x) = \frac{a_0}{2} + \sum_{m=1}^\infty \left[ 
 a_m\cos{(mx)} + b_m\sin{(mx)} \right]
 
-$$
+$$ -->
 
 <!--Compare this definition to $u(x,y,0)=F_0(x,y)$:
 </p>
@@ -223,8 +232,26 @@ $$
 $$F_0(x,y)=A_{mn}\sin{mx}$$
 $$-\omega^2 + \omega^2 = 0 $$-->
 
+<p>Keeping the coefficients $A_m,A_n$ in-tact, we can rewrite
+  <i>u(x,y,0)</i> from (soln. 1.5) as double Fourier series:</p>
+
+$$ u(x,y,0) = f_0(x,y) =\frac{1}{\pi^2}
+\sum_{n=1}^{\infty} \sum_{m=1}^{\infty}
+
+  C_2 A_m A_n \sin{\left(\frac{m\pi\ x}{a}\right)}
+\sin{ \left( \frac{n\pi\ y}{b}\right) }$$
+
+$$ \dot{u}(x,y,0) = g_0(x,y) =\frac{1}{\pi^2}
+\sum_{n=1}^{\infty} \sum_{m=1}^{\infty}
+
+  C_1 A_m A_n \sin{\left(\frac{m\pi\ x}{a}\right)}
+\sin{ \left( \frac{n\pi\ y}{b}\right) }$$
 
 
+<p>
+
+
+</p>
 </div>
 
 
