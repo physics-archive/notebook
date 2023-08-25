@@ -290,17 +290,17 @@ $$0 = \ddp{u_{mn}}{x} + \ddp{u_{mn}}{y} - \frac{1}{v^2} \ddp{u_{mn}}{t} \Bigg|_{
 </p>
 
 $$ \begin{align}
-0 &= \beta_{mn} \left(
+0 &= \alpha_{mn} \left(
   \frac{m^2}{a^2} \right)
   \sin{\left(\frac{m\pi\ x}{a}\right)}
   \sin{ \left( \frac{n\pi\ y}{b}\right) } \\
   
-  &+ \beta_{mn} \left(
+  &+ \alpha_{mn} \left(
     \frac{n^2}{b^2} \right)
     \sin{\left(\frac{m\pi\ x}{a}\right)}
     \sin{ \left( \frac{n\pi\ y}{b}\right) } \\ 
 
-  &- \beta_{mn} \left(
+  &- \alpha_{mn} \left(
     \frac{\omega^2}{\pi^2 v^2} \right)
     \sin{\left(\frac{m\pi\ x}{a}\right)}
     \sin{ \left( \frac{n\pi\ y}{b}\right) }
@@ -308,7 +308,7 @@ $$ \begin{align}
   \end{align} $$
 
 $$ 
-0 = \beta_{mn} 
+0 = \alpha_{mn} 
 \sin{\left(\frac{m\pi\ x}{a}\right)}
 \sin{ \left( \frac{n\pi\ y}{b}\right)}
 
@@ -325,12 +325,33 @@ $$
 
   reduces this to an eigenvalue problem for $\omega_{mn}$, which should be expected.
 
-  $$\blbox{ 0 = \frac{m^2}{a^2} + \frac{n^2}{b^2} - \frac{\omega^2}{\pi^2 v^2} } \tag{Eq. 5}$$
+  $$ 0 = \frac{m^2}{a^2} + \frac{n^2}{b^2} - \frac{\omega^2}{\pi^2 v^2} \tag{Eq. 4.1}$$
+
+  $$ \bblbox{ \omega^2_{mn} = v^2 \pi^2 \left( \frac{m^2}{a^2} + \frac{n^2}{b^2} \right)} \tag{Solution} $$
 
 
-<ul><li>As expected, the 2-D wave behaves like the 1-D variant. The system can only oscillate harmonically 
+<ul><li>As expected, the 2-D wave behaves similar to the 1-D case. The system only oscillates harmonically 
   at discrete frequencies.
-</li></ul>
+</li>
+<li>The elegance of the characteristic equation (Eq. 4.1) follows due to the wave equation's
+  linearity and separability; demonstrably powerful properties of PDEs.
+</li>
+
+</ul>
+
+Still, the coefficients $C_1$ and $C_2$ are undetermined. 
+Extrapolating these from (Eq. 3.1.1) for general initial conditions will require
+ a return to Fourier analysis and orthogonality. However, Jackson's problem (2-1) is complete.
+
+ <hr/><h3 id="section">Extending Jackson's Problem (2-1): Fourier Coefficients</h3>
+Revisiting (Eq. 3.1.1), we obtain a clean, double-Fourier series to describe the initial spatial form of the wave:
+
+$$ u(x,y,0) = f_0(x,y) =
+\sum_{n=1}^{\infty} \sum_{m=1}^{\infty}
+
+  \alpha_{mn} \sin{\left(\frac{m\pi\ x}{a}\right)}
+\sin{ \left( \frac{n\pi\ y}{b}\right) } \tag{Eq. 3.1.1}$$
+
 
 
 
