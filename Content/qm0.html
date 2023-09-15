@@ -18,6 +18,15 @@
     <script type="text/javascript" src="../MathJax3/es5/tex-chtml.js"></script>
     <link rel="stylesheet" type="text/css" href="./qm0.css?ver=1.7" /> <!--links CSS style sheet-->
 
+    $\newcommand{\vect}[1]{\mathrm{ \vec{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
+    $\newcommand{\vecta}[3]{ 
+      \begin{bmatrix} #1\\ #2\\ #3 \end{bmatrix}
+
+    } $ <!--3 vector takes 3 inputes-->
+    $\newcommand{\hata}[1]{\mathrm{ \hat{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
+    $ \newcommand{\blbox}[1]{\bbox[8px,border:1px solid black]{#1}}$
+
+
     <title>Quantum Mechs 0</title>
 </head>
 
@@ -64,9 +73,9 @@ Consider this page a motivating preface to a volume on early Quantum Particle Me
   is encoded in a classical system. In Newton's formulation, recall that a particle's 
   position over time is the solution set $x(t)$ to the differential equation:
 </p>
-<p>$$ \bbox[8px,border:1px solid black] {\vec{F}= \frac{dp}{dt} = m \frac{d^2x}{dt^2}} \tag{Eq. 1}$$ 
+<p>$$ \bbox[8px,border:1px solid black] {\vect{F}= \frac{d\vect{p}}{dt} = m \frac{d^2\vect{r}}{dt^2}} \tag{Eq. 1}$$ 
 </p>
-<p id="eqnote"><b>Eq. 1</b> - Newton's equation of motion says that acceleration is the second
+<p id="eqnote"><b>Eq. 1</b> - Newton's equation of motion states that acceleration is the second
 time-derivative of the position vector $x$. Assumes constant mass.</p>
 <p>Solutions to (Eq. 1) provide deterministic solution set for the system's motion over all time and space. Of course, for real
   systems our $F$ probably does not have an analytical form for us to make such complete deductions as we can in theory.
