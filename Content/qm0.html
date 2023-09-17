@@ -76,7 +76,7 @@ Consider this page a motivating preface to a volume on early Quantum Particle Me
 <p>$$ \bbox[8px,border:1px solid black] {\vect{F}= \frac{d\vect{p}}{dt} = m \frac{d^2\vect{r}}{dt^2}} \tag{Eq. 1}$$ 
 </p>
 <p id="eqnote"><b>Eq. 1</b> - Newton's equation of motion states that acceleration is the second
-time-derivative of the position vector $x$. Assumes constant mass.</p>
+time-derivative of the position vector $x$. Assumes constant mass by treating it as a scalar.</p>
 <p>Solutions to (Eq. 1) provide deterministic solution set for the system's motion over all time and space. Of course, for real
   systems our $F$ probably does not have an analytical form for us to make such complete deductions as we can in theory.
 </p>
@@ -129,7 +129,7 @@ in our quantum-mechanical mathematics as well.
 
 <p>Schr&ouml;dinger's PDE for energy conservation
   has solutions not of $x(t)$, but of a wavefunction $\Psi(x,t)$ which is related to $x(t)$ 
-  statistically:
+  statistically (Gasiorowicz, pp. 46):
 </p>
 <span>
   $$
@@ -139,16 +139,22 @@ in our quantum-mechanical mathematics as well.
 <p id="eqnote"><b>Eq. 3</b> - Expectation value for position as a function of time. 
   Here, $\Psi^*(x,t)$ denotes the complex conjugate of $\Psi(x,t)$.</p>
 <p>In quantum mechanics, $ \hat{x}$ 
-  is an operator (i.e. $\hat{x}$ is the operator for position). Operators are how
-  observables are extrapolated from $\Psi(x,t)$. <ul><li>The wavefunction is not directly observable, yet its probability density (|$\Psi^2$|) 
-
+  is an operator (i.e. $\hat{x}$ represents the operator for position). Operating on $\Psi$ is how
+  observable behavior is predicted based on solutions sets to Schr&ouml;dinger's equation. 
+<!--<br/><br/>Operator algebra and commutivity starts to play a crucial role in understanding the mathematics of 
+physics, leading to a "type of math" that is entirely absent from undergraduate-level classical mechanics. -->
+  
+<ul><li>The wavefunction is not directly observable, yet its probability density (|$\Psi^2$|) 
   <a class="link" href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.110.213001" target="_blank">may be imaged</a> with very modern technology.</li></ul>
   
   <ul>
     
     <!--<li>This is a bizarre way of describing a system's motion; it is highly indirect in comparison to classical mechanics,
 which has solutions to its diff. eq. that are directly observable $x(t)$.</li> -->
-<li>Here, $\lt x(t) \gt$ is the probability of finding our particle between $- \infty$ and $+ \infty$ (entire <i>x</i>-axis). This boundary may be finite.</li></ul></p>
+<li>Here, $\lt x(t) \gt$ is the probability of finding our particle between $- \infty$ and $+ \infty$ (entire <i>x</i>-axis). This boundary may be finite, and 
+  (Eq. 3) must be a convergent integral if it is to be valid (Gasiorowicz, pp. 46).</li></ul></p>
+
+<hr/><h3 id="secheader">Operating on $\Psi(x,t)$</h3>
 
 
 </div> <!--Closes intro-->
