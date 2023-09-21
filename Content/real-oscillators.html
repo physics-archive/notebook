@@ -46,9 +46,9 @@
 </div> <!--closes buttons-->
 
 <div id="container">
-    <h1 id="header">Damped Harmonic Oscillator<br/>
-    <a href="dampingref.html" target="_blank" style="text-decoration:none;color:darkslategrey;"><span style="font-size:12pt;">Dimensional 
-    Analysis on $\beta, \gamma, k, m$</span></a></h1>
+    <h1 id="header">Damped Harmonic Oscillator</h1>
+    <!--<br/><a href="dampingref.html" target="_blank" style="text-decoration:none;color:darkslategrey;"><span style="font-size:12pt;">Dimensional 
+    Analysis on $\beta, \gamma, k, m$</span></a></h1>-->
     <p>
       
       <!--Oscillators are a natural phenomenon. 
@@ -310,7 +310,7 @@ our oscillatory behavior, slowing the system before equillibrium is reached (hen
 
 <hr/><h3 id="section">Brief Verification of our Solution</h3>
 <p>Prior to a discussion, we should demonstrate explicitly that <i>x(t)</i> really does solve
-(Eq. 1). Use the complex-valued form (Eq. 4) over the real part (Eq. 6) in order to preserve generality.</p>
+(Eq. 1). Use the complex-valued form (Eq. 4) over the real part (Eq. 6) in order to keep terms compact and avoid errors.</p>
 
 $$ \ddf{x}{t} + 2\gamma \frac{dx}{dt}+\kappa^2 x = 0$$
 <!--Simplifying the differential equation-->
@@ -333,7 +333,7 @@ $$
  \cancelto{0}{([ \kappa^2 - \gamma^2 ] -\kappa^2 + \gamma^2)} e^{-\gamma t} \left( C_1 e^{i \Omega t} + C_2 e^{-i \Omega t} 
  \right) \stackrel{\unicode{10004}}{=} 0
 $$
-Therefore, <i>x(t)</i> does solve (Eq. 1) for all values of $\beta, m, k$, and <i>t</i>. 
+Therefore, <i>x(t)</i> is a solution to (Eq. 1) for any choice for $\beta, m, k$, and <i>t</i>. 
 
 <hr/><h3 id="section">Understanding Initial Conditions -- <i>A, B</i></h3>
 <p>For a brief moment, consider how certain configurations of <i>A</i> and <i>B</i>
