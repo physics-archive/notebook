@@ -172,7 +172,7 @@ $$ \frac{d^2}{dt^2} [C_n e^{i \omega_n t}] +
 
 $$
 Perform our time-derivatives in terms one and two:
-$$ i^2 \omega_n^2 [e^{i \omega_n t}] + 
+$$ i^2 \omega_n^2 [C_n e^{i \omega_n t}] + 
 \left(\frac{\beta}{m}\right) i \omega_n[C_n e^{i \omega_n t}] + 
 \left(\frac{k}{m}\right) [C_n e^{i \omega_n t} ]= 0  
 
@@ -200,11 +200,11 @@ $$\blbox{C_n e^{i \omega_n t} \left(
 
 
 
-Define the following substitutions (to simplify math and compress system parameters), and solve our auxillary equation 
-for complex-valued eigenvalues:
+The upcoming math may be simplified by defining the following, algebraic substitions:
 
 $$\begin{align} \beta /m \rightarrow 2\gamma \\ k/m \rightarrow \kappa^2 \end{align}$$ <!--substitution of parameters-->
 
+<p>Solve the resultant auxillary equation to obtain two complex-valued eigenvalues:</p>
 $$ - \omega_n^2 + 2i\gamma \omega_n + \kappa^2 = 0 $$
 
 $$\blbox{\omega_{1,2} = i\gamma \pm \sqrt{\kappa^2 - \gamma^2}}  \tag {Eq. 3.3}$$
