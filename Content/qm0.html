@@ -63,25 +63,24 @@ Consider this page a motivating preface to a volume on early Quantum Particle Me
   <!--Let us motivate a study into quantum mechanics by showcasing a
   directly-observable consequence of the wavefunction $\Psi$.-->
 
-<ul id="introlist"><li><b>In Classical Mechanics</b>: <i>a particle's dynamics are known if 
-its position in time $x(t)$ is known. Solves a second-order <u>ordinary</u> differential equation</i>.</li>
-<li><b>In Schr&ouml;dinger's Quantum Mechanics</b>: <i>information about a system is encoded 
-  instead in a probability wavefunction, $\Psi(x,t)$, which spreads across space and evolves in time. Solves a linear <u>partial</u> differential equation</i>.</li></ul>
+<ul id="introlist"><li><b>In Classical Mechanics</b>: <i>a particle's dynamics are completely described by 
+its position $x(t)$ at a given time <i>t</i>. Solves a second-order <u>ordinary</u> differential equation</i>.</li>
+<li><b>In Schr&ouml;dinger's Quantum Mechanics</b>: <i>information about a particle system is encoded 
+ in a probability wavefunction, $\Psi(x,t)$, which spreads across space and evolves in time. Solves a linear <u>partial</u> differential equation</i>.</li></ul>
 <hr/><h3 id="section">Motion in Newtonian Mechanics</h3>
 
-<p>To understand how $\Psi(x,t)$ provides observable information, we need to first explore how information
-  is encoded in a classical system. In Newton's formulation, recall that a particle's 
-  position in time is the solution set to the differential equation:
+<p>To understand how $\Psi(x,t)$ provides observable information, we need to explore how particles are desccribed 
+  for classical systems. In Newton's formulation, a particle's 
+  position [in time] is described by the differential equation:
 </p>
 <p>$$ \bbox[8px,border:1px solid black] {\vect{F}= \frac{d\vect{p}}{dt} = m \frac{d^2\vect{r}}{dt^2}} \tag{Eq. 1}$$ 
 </p>
 <p id="eqnote"><b>Eq. 1</b> - Newton's equation of motion states that acceleration is the second
-time-derivative of the position vector $x$. Assumes constant mass by treating it as a scalar.</p>
-<p>Solutions to (Eq. 1) provide deterministic solution set for the system's motion over all time and space. Of course, for real
-  systems our $F$ probably does not have an analytical form for us to make such complete deductions as we can in theory.
-</p>
+time-derivative of system position. If a system's mass is non-constant, <i>m</i> is not a scalar.</p>
 
-<p>This ordinary differential equation (ODE) leads to our familiar relationships between $x(t)$ $v(t)$ and $a(t)$:</p>
+<p>Solutions to (Eq. 1) form a solution set for the system's motion over all time and space (i.e. deterministic model for motion). 
+  
+This ordinary differential equation (ODE) leads to our familiar relationships between $x(t)$ $v(t)$ and $a(t)$:</p>
 $$ \bbox[8px,border:1px solid black] {a(t) = \frac{d v(t)}{dt} = \frac{d^2 x(t)}{dt^2}}$$
 
 <!--<p>Since Schr&ouml;dinger's Equation is an energy conservation equation, let change (Eq. 1) using 
@@ -111,8 +110,9 @@ $$
 $$
 <p id="eqnote"><b>Eq. 2</b> - Schr&ouml;dinger's Equation for the energy and motion of a particle. Partial differential equation whose solutions are functions of both position and time: $\Psi(x,t)$.</p>
 
-<p>This is a linear, second-order, partial differential equation, with a similar characteristics to
-  the wave equation. Obtaining analytical solutions to this PDE, for a given system potential $V$, is almost never trivial and often it is impossible. 
+<p>This is a linear, second-order, partial differential equation, with a similar form to
+  the wave equation. Obtaining analytical solutions to this PDE 
+  for a given system potential, $V(x,t)$, is almost never trivial and often it is impossible. 
   
 </p>
 <hr/><h3 id="secheader">Where is Classical Position Encoded in Schr&ouml;dinger's Equation?</h3>
