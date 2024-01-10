@@ -1,30 +1,23 @@
-set(groot, 'defaultFigureCloseRequestFcn', 'close(gcf)');
 %%SCRIPT TO BE EXECUTED FOR COMPUTATION AND PLOTTING OF THE FRACTAL
 
 %%Define and establish the Newton-Raphson iteration:
 %%We want to discover roots (z) of some polynomial (f), for any order (Np)
 
-Adjustment = 2;
-%Adjustment = 0.1*pi;
-%Adjustment = 0;
-
 %%Acquire a polynomial function and its derivative
-func = @(Z) (Z-Adjustment).^3-1+Adjustment;
-dfunc = @(Z) 3*(Adjustment-Z).^2;
+func = @(Z) Z.^3-1;
+dfunc = @(Z) 3*Z.^2;
 
 %Obtain the roots of func (func(root) = 0)
 %reRoots = fzero(func,0,); Replaced by roots
 %syms v
 %V = coeffs(func(v),v,'All');
-Roots = roots([1-Adjustment 0 0 -1+Adjustment]);
+Roots = roots([1 0 0 -1]);
 
-Nx = 1200;
-Ny = 1200;
+Nx = 2000;
+Ny = 2000;
 
-%ITERATE EXPORT_FIG
-for scope = 0.1:0.05:1 
-    index = 100*scope;
-    
+
+for scope = 1:1:3
     xmin = -scope; xmax = -xmin;
     ymin = -scope; ymax = -ymin;
     
@@ -35,7 +28,7 @@ for scope = 0.1:0.05:1
     Z = Xmesh+1i*Ymesh;
     
     %%Iterate Newton-Raphson algorithm 40 times
-    NumIterations = 40;
+    NumIterations = 30;
     for Iteration=1:NumIterations
         Z = Z - func(Z) ./ dfunc(Z);
     end
@@ -63,9 +56,6 @@ for scope = 0.1:0.05:1
     xlabel('$x$', 'Interpreter', 'latex', 'FontSize',14);
     ylabel('$y$', 'Interpreter', 'latex', 'FontSize',14);
     title('Fractal from $f(z)$', 'Interpreter', 'latex','FontSize', 16);
-    
-    export_fig(strcat(['/Users/s285/Downloads/NewtonZoom/newtonzoom','-frame-',num2str(index)]), '-png', '-r200');
-    
-    clf;
-    close(figure);
+    fig_name = strcat('FIG_',num2str(scope),'_q');
+    export_fig(strcat('FIG_',num2str(scope),'_q'), '-png,r300)
 end

@@ -4,7 +4,7 @@ set(groot, 'defaultFigureCloseRequestFcn', 'close(gcf)');
 %%Define and establish the Newton-Raphson iteration:
 %%We want to discover roots (z) of some polynomial (f), for any order (Np)
 
-Adjustment = 2;
+Adjustment = [];
 %Adjustment = 0.1*pi;
 %Adjustment = 0;
 
@@ -22,7 +22,7 @@ Nx = 1200;
 Ny = 1200;
 
 %ITERATE EXPORT_FIG
-for scope = 0.1:0.05:1 
+for scope = 1:0.2:2 
     index = 100*scope;
     
     xmin = -scope; xmax = -xmin;
@@ -64,8 +64,8 @@ for scope = 0.1:0.05:1
     ylabel('$y$', 'Interpreter', 'latex', 'FontSize',14);
     title('Fractal from $f(z)$', 'Interpreter', 'latex','FontSize', 16);
     
-    export_fig(strcat(['/Users/s285/Downloads/NewtonZoom/newtonzoom','-frame-',num2str(index)]), '-png', '-r200');
+    export_fig(strcat(['/Users/s285/Downloads/NewtonZoom/ZoomDebug','-frame-',num2str(index)]), '-png', '-r200');
     
-    clf;
-    close(figure);
+    %clf;
+    
 end
