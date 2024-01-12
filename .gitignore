@@ -1,2 +1,4 @@
 **/.DS_Store
 **/notebook.code-workspace
+.DS_Store
+*.asv
