@@ -1,5 +1,7 @@
 set(groot, 'defaultFigureCloseRequestFcn', 'close(gcf)');
 
+%USE getZoomDepth(InitialZoom,NumberOfFrames) TO SEE FINAL ZOOM DEPTH.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                  LEGACY CODE                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -14,11 +16,10 @@ Adjustment = [0 0]; %Does not adjust polynomial.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                VARIABLE INPUTS                %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                    
-initialZoomMagnitude = 5;
-numFramesToRender = 10;
-%finalZoomValue = 1.4;
-
+initialZoomMagnitude = 3.5;
+numFramesToRender = 100;
 DebugDepth=getZoomDepth(initialZoomMagnitude,numFramesToRender); %debug
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %               DEFINE POLYNOMIAL               %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -32,8 +33,8 @@ dfunc = @(Z) 3*(Adjustment(1)-Z).^2;
 %Roots(Az^4 + az^3 + bz^2 + cz + d = 0)
 Roots = roots([1+Adjustment(1) 0 0 -1+Adjustment(2)]);
 
-Nx = 2000;
-Ny = 2000;
+Nx = 1900;
+Ny = 1900;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                  ZOOM ENGINE                  %
@@ -42,13 +43,13 @@ Ny = 2000;
 k_i = 1;
 k_f = numFramesToRender;
 
-%Pre-allocate an empty array of length(k_f) to fill w/ zoom boundaries.
+%Pre-allocate an empty array of length(k_f) to fill w/ zoom boundaries
 ZoomArray = zeros(k_i,k_f); %Num of iterations = Num of frames rendered
-ZoomArray(1) = initialZoomMagnitude; %Initial magnitude of the x-and-y axes.
+ZoomArray(1) = initialZoomMagnitude; %Pass to the for loop
 
-%Generate zoom values in array. Skip lead entry. k =/= 0.
+%Generate zoom values in array. Skip lead entry. k =/= 0
 for k=k_i+1:k_f
-    ZoomArray(k) = 0.9*ZoomArray(k-1); 
+    ZoomArray(k) = 0.95*ZoomArray(k-1); 
 end
 EngineIterationIndex=ZoomArray;
 
@@ -62,7 +63,7 @@ EngineIterationIndex=ZoomArray;
 %k_array = flip(0.1:0.1:1); %flip array to zoom inwards
 %for scope = 0.01:0.01:0.1
 for scope = EngineIterationIndex
-    index = 1000*scope; %For Filename purposes only.
+    index = 10000000000*scope; %For Filename purposes only.
     
     xmin = -scope; xmax = -xmin;
     ymin = -scope; ymax = -ymin;
@@ -78,7 +79,7 @@ for scope = EngineIterationIndex
     
     %Optimize with dynamic iteration size!
     %TIME-CONSUMING TASK OF THIS SCRIPT
-    NumIterations = 35; 
+    NumIterations = 55; 
     for Iteration=1:NumIterations
         Z = Z - func(Z) ./ dfunc(Z); 
     end
