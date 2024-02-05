@@ -57,6 +57,17 @@
     will-change:transform;
     transform: translateZ(0);
 }
+.research_bulletpt{
+    list-style-type:"* ";
+}
+
+.research{
+    will-change:transform;
+    font-weight:bold;
+    color: darkblue;
+    text-decoration:none;
+    transform: translateZ(0);
+}
 
 #index ul {
     text-decoration: none;
@@ -134,6 +145,14 @@ li + li {margin-top: 3px;}
     text-decoration:none;
     color:darkblue;
     font-weight:bold;
+}
+
+.subtopics{
+    padding-left:20px;
+    list-style-type:none;
+    text-decoration:none;
+    color:black;
+    font-weight:none;
 }
 
 #IT-header{
