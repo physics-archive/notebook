@@ -17,7 +17,7 @@
         <script type="text/javascript" src="../../MathJax3/es5/tex-chtml.js"></script>
         
         <title>Vibr. Characterization</title>
-        <link rel="stylesheet" type="text/css" href="./vibrations.css?ver=0.1" /> <!--links CSS style sheet-->
+        <link rel="stylesheet" type="text/css" href="./vibrations.css?ver=0.2" /> <!--links CSS style sheet-->
     
 
         $\newcommand{\vect}[1]{\mathrm{ \vec{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
@@ -53,7 +53,7 @@
 <div id="container">
     <h1 id="header">Vibrations in a Sensitive Research Space</h1><!--<p class="eqcomment"><b>Solving a Bounded 2-D Wave Equation</b></p><hr/>--><hr/>
 
-    <p class="problem"><b>Goal: </b>
+    <p class="problem"> <!-- <b></b> -->
       <!--Using a Wilcoxon seismic accelerometer, -->
       Obtain velocity measurements (m/s-rms) in 
       the frequency domain using one-third octave analysis. Compare these velocities against the International Standards Organization's (ISO) vibration criteria for structures.
@@ -72,18 +72,39 @@ of a Bluefors Dilution Refrigerator measurement system.
       <hr/><hr/><h3 id="section">Motivations</h3>
   
       <p>
-        A set of Vibration Criteria (VC) may be compared against to evaluate the stability of a research space.  
-        Dilution refrigeration systems can achieve temperatures as low as a few milikelvin; here,
-        quantum phenomena emerge, and the system becomes highly susceptible to vibrations. Excessive 
-        environmental noise can affect the cooling process, and will affect the resolution of whatever scope is used to take
-        measurements.
+        A set of Vibration Criteria (VC) are used to evaluate the magnitude of external vibrations within a sensitive research facility.  
+        The vibration-sensitive instrument of focus is Bluefors' LD closed-cycle Dilution Refrigerator System.
+        <br/><br/>
+        Dilution refrigerators may achieve temperatures in the milikelvin-range (mK). Here,
+        as quantum phenomena emerge, random movement of a system is generally unwanted. For dilution refrigerators, 
+        significant vibrations may affect cooling cycle(s), and will inhibit any technology involved in measurement, 
+        scanning, and imaging. 
       </p>
 
       <p>
-        
-      </p>
-  
 
+      </p>
+
+      <hr/><h3 id="section">Experimental Method</h3>
+      The following instruments were used to obtain raw, time-trace accelerometer data in Volts (V):
+
+      <ul>
+        <li>Wilcoxon 731a Ultra Low-Frequency Accelerometer
+          <sup><a class="citation" href="../../Index/Research/vibrchr/731A-spec-98078E.2.pdf" target="blank">[1]</a></sup>
+        </li> 
+        
+        <li>Wilcoxon P31 Ultra Low Noise Power Unit/Amplifier 
+        <sup><a class="citation" href="../../Index/Research/vibrchr/P31_spec_98443J.1.pdf" target="blank">[2]</a></sup>
+      </li>
+      
+      <li>Owon VDS 1022 Oscilloscope for PC
+        <sup><a class="citation" href="../../Index/Research/vibrchr/OWON-VDS.pdf" target="blank">[3]</a></sup>
+
+      </li></ul>
+      <hr/><h3 id="section">Data Analysis: MATLAB Code Review</h3>
+
+
+      <!-- <hr/><h3 id="section"></h3> -->
 
 
 
