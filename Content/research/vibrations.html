@@ -22,7 +22,7 @@
 
         $\newcommand{\vect}[1]{\mathrm{ \vec{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
         $\newcommand{\vecta}[3]{ 
-          \begin{bmatrix} #1\\ #2\\ #3 \end{bmatrix}
+          \begin{bmatrix} #1\\ #2\\ #3 \end{bmatrix} <!--I do not remember what this does...-->
     
         } $ <!--3 vector takes 3 inputes-->
         $\newcommand{\hata}[1]{\mathrm{ \hat{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
@@ -49,7 +49,7 @@
 </div> <!--closes buttons-->
 
 <div id="container">
-    <h1 id="header">Vibrations in a Sensitive Research Space</h1><!--<p class="eqcomment"><b>Solving a Bounded 2-D Wave Equation</b></p><hr/>--><hr/>
+    <h1 id="header">Vibrations Within a Sensitive Research Space</h1><!--<p class="eqcomment"><b>Solving a Bounded 2-D Wave Equation</b></p><hr/>--><hr/>
 
     <p class="problem"> <!-- <b></b> -->
       <!--Using a Wilcoxon seismic accelerometer, -->
@@ -78,12 +78,20 @@ of a Bluefors Dilution Refrigerator measurement system.
         significant vibrations may affect cooling cycle(s), and will inhibit any technology involved in measurement, 
         scanning, and imaging. 
       </p>
+      <hr/>
 
-      <p>
+        <p>
+          Signal analysis necessitates the use of computational methods for the following reasons: 
+          <ul>
+            <li>The mathematical methods which signal analysis builds upon is Fourier Analysis.</li>
+            <li>Data sets tend to be very large in size -- thousands to millions of signals per array.</li>
+        </ul>
+          
+          During data analysis, over 100,000 unique measurements were passed through the computational engine (a MATLAB script). 
+          
+        </p>
 
-      </p>
-
-      <hr/><h3 id="section">Experimental Method</h3>
+      <hr/><h3 id="section">Experimental Methods</h3>
       The following instruments were used to obtain raw, time-trace accelerometer data in Volts (V):
 
       <ul>
@@ -100,11 +108,22 @@ of a Bluefors Dilution Refrigerator measurement system.
 
       </li></ul>
       
-      <hr/><h3 id="section">Data Analysis: Mathematical Theory</h3>
-      <p>
-        Signal analysis requires automation due to the number of computations involved. In the case of this research,
-        over 100k voltages were passed to a single MATLAB script.
-      </p>
+      <!-- <hr/><h3 id="section">Mathematical Methods: Spectral Analysis</h3> -->
+
+      <hr/><h3 id="section">Mathematical Methods: Spectral Analysis</h3>
+      
+      
+      <!-- <p>
+        Signal analysis necessitates the use of computational methods, due to the following: 
+        <ul>
+          <li>The mathematical methods which signal analysis builds upon is Fourier Analysis.</li>
+          <li>Data sets tend to be very large in size -- thousands to millions of signals per array.</li>
+      </ul>
+        
+        During data analysis, over 100,000 unique measurements were passed through the computational engine (a MATLAB script). 
+        
+      </p>--> 
+      <!-- RELOCATED CONTENT REGARDING NECESSITY OF COMPUTATIONAL METHODS-->
       
       
       <hr/><h3 id="section">Data Analysis: MATLAB Code Review</h3>
