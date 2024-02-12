@@ -45,15 +45,15 @@
     
         <div id="nextpage" style="float:right;font-weight:bold;right:450px;">
             <a class="nextpage" href="./local-g.html">Next Page</a>
-    
+        </div>
 </div> <!--closes buttons-->
 
 <div id="container">
-    <h1 id="header">Vibrations Within a Sensitive Research Space</h1><!--<p class="eqcomment"><b>Solving a Bounded 2-D Wave Equation</b></p><hr/>--><hr/>
+    <h1 id="header">Characterizing Vibrations<br/> within a Sensitive Research Space</h1><!--<p class="eqcomment"><b>Solving a Bounded 2-D Wave Equation</b></p><hr/>--><hr/><hr/>
 
     <p class="problem"> <!-- <b></b> -->
       <!--Using a Wilcoxon seismic accelerometer, -->
-      Obtain velocity measurements (m/s-rms) in 
+      Within a research space: obtain velocity measurements (m/s-rms) in 
       the frequency domain using one-third octave analysis. Compare these velocities against the International Standards Organization's (ISO) vibration criteria for structures.
 <br/><br/>Performed across multiple laboratory locations, including the frame 
 of a Bluefors Dilution Refrigerator measurement system.
@@ -67,7 +67,32 @@ of a Bluefors Dilution Refrigerator measurement system.
       examine $\Psi$ and its perplexing properties from the beginning.
       Consider this page a motivating preface to a volume on early Quantum Particle Mechanics.
       </p>-->
-      <hr/><hr/><h3 id="section">Motivations</h3>
+      <hr/><hr/><h3 id="section">Acknowledgements Requried</h3>
+<p>
+  This research was conducted in 2021 for UConn's Department of Physics, and was intended by Dr. Ilya Sochnikov as a follow-up
+  to a 2019 paper co-authored by himself and a previous student, Jonah Cerbin: 
+  <a class="citation" href="https://pubs.aip.org/aip/rsi/article-lookup/doi/10.1063/1.5112088" target="blank">
+    <i>Isolation solution for extreme environmental vibrations for quantum-enabling cryogenic setups installed on raised frames</i>. </a>
+  
+
+    <br/><br/>
+    My research would not have been possible without Mr. Cerbin and Dr. Sochnikov's detailed investigation, nor without Dr. Sochnikov's laboratory resources. 
+    Supplementary resources to the 2019 paper were crucial when writing and reviewing my original MATLAB code during 2021.
+
+
+</p>
+      <hr/><h3 id="section">Introduction</h3>
+      <p>This module will provide a ground-up demonstration of how signal analysis is performed, starting from the raw voltage inputs of a seismic accelerometer.
+        In particular, a review of the following are necessary:
+        <ul>
+        <li>Mathematical methods: Fourier analysis, octave analysis, power spectrum density, and Fast Fourier Transforms</li>
+        <li>Experimental Methods: Accelerometers, amplifiers and oscilloscopes</li>
+        <li>MATLAB scripting: vectorization, nested for loops, and sorting</li>
+      </ul>
+    
+    </p>
+
+      <hr/><h3 id="section">Motivations</h3>
   
       <p>
         A set of Vibration Criteria (VC) are used to evaluate the magnitude of external vibrations within a sensitive research facility.  
@@ -77,20 +102,10 @@ of a Bluefors Dilution Refrigerator measurement system.
         as quantum phenomena emerge, random movement of a system is generally unwanted. For dilution refrigerators, 
         significant vibrations may affect cooling cycle(s), and will inhibit any technology involved in measurement, 
         scanning, and imaging. 
+        <br/><br/>
+        Given the extreme conditions of these research spaces, it is adavantageous to at least characterize vibrations in the space, 
+        even if one does not intend to implement any solutions to attenuate and reduce these vibrations.
       </p>
-      <hr/>
-
-        <p>
-          Signal analysis necessitates the use of computational methods for the following reasons: 
-          <ul>
-            <li>The computational engines in signal analysis are algorithms which perform many operations in base-2. 
-              A standard algorithm, and the one deployed in this research, is the Fast Fourier Transforms (FFT).</li>
-            <li>Data sets tend to be very large in size -- thousands to millions of signals per array.</li>
-        </ul>
-          
-          During data analysis, over 100,000 unique measurements were passed through the computational engine (a MATLAB script). 
-          
-        </p>
 
       <hr/><h3 id="section">Experimental Methods</h3>
       The following instruments were used to obtain raw, time-trace accelerometer data in Volts (V):
@@ -111,21 +126,26 @@ of a Bluefors Dilution Refrigerator measurement system.
       
       <!-- <hr/><h3 id="section">Mathematical Methods: Spectral Analysis</h3> -->
 
-      <hr/><h3 id="section">Mathematical Methods: Spectral Analysis</h3>
+      <hr/><h3 id="section">Mathematical Methods: Fourier Transforms</h3>
       
-      
-      <!-- <p>
-        Signal analysis necessitates the use of computational methods, due to the following: 
-        <ul>
-          <li>The mathematical methods which signal analysis builds upon is Fourier Analysis.</li>
-          <li>Data sets tend to be very large in size -- thousands to millions of signals per array.</li>
-      </ul>
-        
-        During data analysis, over 100,000 unique measurements were passed through the computational engine (a MATLAB script). 
-        
-      </p>--> 
-      <!-- RELOCATED CONTENT REGARDING NECESSITY OF COMPUTATIONAL METHODS-->
-      
+      <p>
+
+
+
+      </p>
+
+        <!-- <p>
+          Signal analysis necessitates the use of computational methods for the following reasons: 
+          <ul>
+            <li>Signal analysis uses algorithms which are realistically performed only by machine. 
+              A gold standard is the Fast Fourier Transform (FFT), which is used extensively in this research.</li>
+            <li>Data sets tend to be very large in size, with thousands to millions of signals per array.</li>
+        </ul>
+          
+          During data analysis, over 100,000 unique measurements were passed through the computational engine (a MATLAB script). 
+          
+        </p> -->
+        <!-- CUT BULLET POINTS PROVIDING MOTIVATION FOR COMPTUTING-->
       
       <hr/><h3 id="section">Data Analysis: MATLAB Code Review</h3>
       <p>
