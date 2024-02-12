@@ -17,9 +17,8 @@
         <script type="text/javascript" src="../MathJax3/es5/tex-chtml.js"></script>
         
         <title>Jackson Solutions</title>
-        <link rel="stylesheet" type="text/css" href="./jqm2-1.css?ver=1.2" /> <!--links CSS style sheet-->
+        <link rel="stylesheet" type="text/css" href="./jqm2-1.css?ver=2.0" /> <!--links CSS style sheet-->
     
-
         $\newcommand{\vect}[1]{\mathrm{ \vec{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
         $\newcommand{\vecta}[3]{ 
           \begin{bmatrix} #1\\ #2\\ #3 \end{bmatrix}
@@ -28,8 +27,6 @@
         $\newcommand{\hata}[1]{\mathrm{ \hat{\boldsymbol{#1}}}} $ <!--\vect to make bolded non-italic--> 
         $ \newcommand{\blbox}[1]{\bbox[8px,border:1px solid black]{#1}}$
         $ \newcommand{\bblbox}[1]{\bbox[8px,border:3px solid black]{#1}}$
-
-
 
         $ \newcommand{\ddp}[2]{ \frac{\partial ^2 {#1}}{\partial {#2}^2}} $ <!--second partial derivative 
         w/ two arguments-->
@@ -47,11 +44,16 @@
     
         <div id="nextpage" style="float:right;font-weight:bold;right:450px;">
             <a class="nextpage" href="./jqm2-2.html">Next Page</a>
+          </div>
     
 </div> <!--closes buttons-->
 
 <div id="container">
-    <h1 id="header">Vibrations of a Rectangular Membrane</h1><!--<p class="eqcomment"><b>Solving a Bounded 2-D Wave Equation</b></p><hr/>--><hr/>
+    <div id="header"><h1 >Vibrations of a Rectangular Membrane<br/>
+      <span id="small"> <!--COMMENT UNDER THE TITLE-->
+        Problem from <i>Mathematics for Quantum Mechanics: An Introductory Survey of Operators, Eigenvalues, and Linear Vector Spaces (1962)</i>
+      </span>
+    </h1><!--<p class="eqcomment"><b>Solving a Bounded 2-D Wave Equation</b></p><hr/>--></div><hr/>
 
     <p class="problem"><b>Problem 2-1: </b>Show how eigenfrequencies of oscillation occur
     for the small oscillations of a uniform, flexible, rectangular membrane 

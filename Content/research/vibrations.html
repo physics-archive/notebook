@@ -49,8 +49,18 @@
 </div> <!--closes buttons-->
 
 <div id="container">
-    <h1 id="header">Characterizing Vibrations<br/> within a Sensitive Research Space</h1><!--<p class="eqcomment"><b>Solving a Bounded 2-D Wave Equation</b></p><hr/>--><hr/><hr/>
+    <h1 id="header">Characterizing Vibrations<br/> within a Sensitive Research Space<br />
+      <!-- <span id="small"> OMMENT UNDER THE TITLE
+        <a target="_blank" href="https://www.math.cmu.edu/~bwsulliv/basel-problem.pdf" style="color:darkslategrey">
+        See Carnegie-Mellon's 'Numberous Proofs to the Basel Problem' for Mathematical History and Analytical Solutions</a>
+      </span> -->
+    </h1> <hr/><hr/>
 
+
+    <!--<div id="header">
+      <h2 class="title">Convergence - Infinite Series Can Return a Finite Value <br /><span id="small"><a target="_blank" href="https://www.math.cmu.edu/~bwsulliv/basel-problem.pdf" style="color:darkslategrey">See Carnegie-Mellon's 'Numberous Proofs to the Basel Problem' for Mathematical History and Analytical Solutions</a></span></h2>
+  </div>--> <!--THIS IS PART OF trumpet.html. REFERENCE.-->
+    
     <p class="problem"> <!-- <b></b> -->
       <!--Using a Wilcoxon seismic accelerometer, -->
       Within a research space: obtain velocity measurements (m/s-rms) in 
@@ -83,7 +93,7 @@ of a Bluefors Dilution Refrigerator measurement system.
 </p>
       <hr/><h3 id="section">Introduction</h3>
       <p>This module will provide a ground-up demonstration of how signal analysis is performed, starting from the raw voltage inputs of a seismic accelerometer.
-        In particular, a review of the following are necessary:
+        A review of the following are necessary -- ordered from lowest-level to highest-level:
         <ul>
         <li>Mathematical methods: Fourier analysis, octave analysis, power spectrum density, and Fast Fourier Transforms</li>
         <li>Experimental Methods: Accelerometers, amplifiers and oscilloscopes</li>
@@ -103,8 +113,9 @@ of a Bluefors Dilution Refrigerator measurement system.
         significant vibrations may affect cooling cycle(s), and will inhibit any technology involved in measurement, 
         scanning, and imaging. 
         <br/><br/>
-        Given the extreme conditions of these research spaces, it is adavantageous to at least characterize vibrations in the space, 
-        even if one does not intend to implement any solutions to attenuate and reduce these vibrations.
+        Given the obligatory low-noise conditions of these research spaces, it is adavantageous to characterize vibrations in the space, 
+        even if one does not intend to implement any solutions to attenuate and reduce vibrations.
+    
       </p>
 
       <hr/><h3 id="section">Experimental Methods</h3>
@@ -123,16 +134,22 @@ of a Bluefors Dilution Refrigerator measurement system.
         <sup><a class="citation" href="../../Index/Research/vibrchr/OWON-VDS.pdf" target="blank">[3]</a></sup>
 
       </li></ul>
-      
+      <p>
+        Signals are detected by the the accelerometer's electrical components, passed through the amplifier to achieve gain, and then fed to the oscilloscope for recording. 
+        Data are exported from the oscilloscope as time-trace voltages. The accelerometer's product manual provides the rates for converting voltage (V) to
+       acceleration (m/s<sup>2</sup>).
+
+     </p>
       <!-- <hr/><h3 id="section">Mathematical Methods: Spectral Analysis</h3> -->
 
-      <hr/><h3 id="section">Mathematical Methods: Fourier Transforms</h3>
-      
-      <p>
-
-
-
+      <hr/><h3 id="section">Math Methods I: Fourier Transforms</h3>
+      Fourier transforms is the lowest-level concept to be covered in this module, 
+      providing the fundamental algorithm(s) which enable signal analysis. For a deeper mathematical-approach,
+      look into properties of unitary matrices, and singular value decomposition 
+      (<a class="citation" href="https://link.springer.com/book/10.2991/978-94-6239-009-6" target="blank">Chui & Jiang, 2013, pg. 171</a>).
       </p>
+      
+      <p>These acceleration data are measured in the time domain, but meaningful signal analysis occurs when one decomposes the energy contributions at each component frequency.</p>
 
         <!-- <p>
           Signal analysis necessitates the use of computational methods for the following reasons: 
