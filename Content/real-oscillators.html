@@ -248,16 +248,22 @@ margin-right:auto;" />
  damped harmonic oscillator will behave. Changes shape if $\gamma \ge \kappa$ (critical/overdamping).
 </p>
 <hr/><h3 id="section">The Real-Valued Part of <i>x(t)</i></h3>
-<p>Our complex-valued solution is the most general description we have for damped oscillations in 1-D. 
-  However, the imaginary part (Im[<i>x(t)</i>]) does not describe any observable behavior, so we should disregard it
-  and pursue a trigonometric form for (Eq. 4), so that we may readily apply our model to physical systems:
+<p>Our complex-valued solution is the most complete description for damped oscillations in 1-D. 
+  However, the imaginary part ( Im[<i>x(t)</i>] ) does not contribute to any observable behavior, so we may disregard it
+  and pursue a trigonometric form for (Eq. 4). 
+  To drop the imaginary part and clean notation, make the following substitutions:
 </p>
 
 $$ x(t) \rightarrow \text{Re}[x(t)] $$
 $$ C_n \rightarrow A_n+iB_n $$
 $$ \sqrt{\kappa^2 - \gamma^2} \rightarrow \Omega$$
-<p>Note that $A_n, B_n$ are real-valued coefficients, and $\Omega$ is a frequency that we can think of as our 
-  damped oscillation frequency. Our real solution to motion comes out with surprising brevity:
+<p>Note that $A_n, B_n$ are real-valued coefficients. The <i>damped frequency</i>, $\Omega$, varies between the natural frequency and 0 for positive damping (i.e., $\gamma>0$). 
+  Damping results in energy loss, meaning the damped frequency ($\Omega$) is always 
+  less than the natural (undamped) frequency ($\kappa$). 
+  This mathemtical result makes intuitive sense (a luxury of solving classical systems).
+  
+  
+  <br/><br/>Given these subsitutions, the real-valued part of (Eq. 4) may be expressed in a very manageable form:
 </p>
 $$x(t) \rightarrow e^{-\gamma t}\ \text{Re}\left[
 (A_1 + iB_1) e^{+i \Omega t} + 
