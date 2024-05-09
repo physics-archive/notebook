@@ -69,9 +69,9 @@ its position $x(t)$ over time <i>t</i>. Solves a second-order <u>ordinary</u> di
  in a probability wavefunction, $\Psi(x,t)$, which spreads across space and evolves in time. Solves a linear <u>partial</u> differential equation</i>.</li></ul>
 <hr/><h3 id="section">Motion in Newtonian Mechanics</h3>
 
-<p>To understand how $\Psi(x,t)$ provides observable information, we need to explore how particles are desccribed 
-  for classical systems. In Newton's formulation, a particle's 
-  position [in time] is described by the differential equation:
+<p>To understand how $\Psi(x,t)$ encodes observable information, like particle position, we should start by describing 
+ classical motion. In Newton's formulation, a particle's
+  position in three-dimensional space ($\vect{r}$) is described by the differential equation:
 </p>
 <p>$$ \bbox[8px,border:1px solid black] {\vect{F}= \frac{d\vect{p}}{dt} = m \frac{d^2\vect{r}}{dt^2}} \tag{Eq. 1}$$ 
 </p>
@@ -79,7 +79,7 @@ its position $x(t)$ over time <i>t</i>. Solves a second-order <u>ordinary</u> di
 time-derivative of system position. If a system's mass is non-constant, <i>m</i> is not a scalar.</p>
 
 <p>Solutions to (Eq. 1) will describe a system's motion exactly for all time and space; this is a deterministic model for motion. 
-This ordinary differential equation (ODE) leads to the famous relationships between $x(t)$ $v(t)$ and $a(t)$:</p>
+This ordinary differential equation (ODE) leads to the well-known relationships between $x(t)$ $v(t)$ and $a(t)$:</p>
 $$ \bbox[8px,border:1px solid black] {a(t) = \frac{d v(t)}{dt} = \frac{d^2 x(t)}{dt^2}}$$
 
 <!--<p>Since Schr&ouml;dinger's Equation is an energy conservation equation, let change (Eq. 1) using 
@@ -116,19 +116,18 @@ $$
 </p>
 <hr/><h3 id="secheader">Where is Classical Position Encoded in Schr&ouml;dinger's Equation?</h3>
 
-<p>Schr&ouml;dinger's Equation seems bizarre compared to Newton's; the former uses 
-  fields ($\Psi$) to describe particle position, while the latter uses a tangible, single-valued variable (<i>x</i>). 
+<p>Schr&ouml;dinger's Equation seems bizarre compared to Newton's; solutions ($\Psi$) are fields, 
+  from which observable quantities may be extrapolated. 
+  while the latter uses a simple, three-dimensional vector ($\vect{r}$). 
   
   <br/><br/>
-If classical mechanics accurately predicts and explains
+If classical mechanics successfully predicts behavior of
 many [mainly macroscopic] systems, then those results should fall out 
 of quantum-mechanical models as well. That is, these equations <u>must</u> agree 
-within classical limits of any system.
+within classical limits of systems accurately described by classical models.
 <ul id="introlist"><li>In other words, we need to verify that classical mechanics 
-  actually <i>is</i> an approximation for qunantum mechanics.</li>
+ is an approximation for quantum mechanics.</li>
 </ul></p>
-
-
 
 <p>Schr&ouml;dinger's equation
   has solutions not of $x(t)$, but of a wavefunction $\Psi(x,t)$. The square-amplitude of $\Psi$ is related to $x(t)$ 
@@ -136,18 +135,18 @@ within classical limits of any system.
 </p>
 <span>
   $$
-  \bbox[8px,border:1px solid black]{ \lt x \gt = \int_{- \infty}^{+ \infty} \left[\Psi^* x\ \Psi \right]\ dx} \tag{Eq. 3}$$ 
+  \bbox[8px,border:1px solid black]{ \lt x \gt = \int_{- \infty}^{+ \infty} \left[\Psi^* \hat{x}\ \Psi \right]\ dx} \tag{Eq. 3}$$ 
 </span>
 
 <p id="eqnote"><b>Eq. 3</b> - Expectation value for position as a function of time. 
   Here, $\Psi^*(x,t)$ denotes the complex conjugate of $\Psi(x,t)$.</p>
 <p>In quantum mechanics, $ \hat{x}$ 
-  is an operator (i.e. $\hat{x}$ represents the operator for position). Operating on $\Psi$ is how
-  observable behavior is predicted based on solutions sets to Schr&ouml;dinger's equation. 
+  is an operator; $\hat{x}$ represents the operator for position. Operating on $\Psi$ with functional operators produces expectation values of physically significant quantites,
+  such as momentum and position. 
 <!--<br/><br/>Operator algebra and commutivity starts to play a crucial role in understanding the mathematics of 
 physics, leading to a "type of math" that is entirely absent from undergraduate-level classical mechanics. -->
   
-<ul><li>The wavefunction is not directly observable, yet its probability density (|$\Psi^2$|) 
+<ul><li>The wavefunction is not directly observable, yet its probability density (|$\Psi^2$|) is physically significant and
   <a class="link" href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.110.213001" target="_blank">may be imaged</a> with very modern technology.</li></ul>
   
   <ul>
@@ -155,7 +154,14 @@ physics, leading to a "type of math" that is entirely absent from undergraduate-
     <!--<li>This is a bizarre way of describing a system's motion; it is highly indirect in comparison to classical mechanics,
 which has solutions to its diff. eq. that are directly observable $x(t)$.</li> -->
 <li>Here, $\lt x(t) \gt$ is the probability of finding our particle between $- \infty$ and $+ \infty$ (entire <i>x</i>-axis). This boundary may be finite, and 
-  (Eq. 3) must be a convergent integral if it is to be valid (Gasiorowicz, pp. 46).</li></ul></p>
+  (Eq. 3) must be a convergent integral if it is to meaningfully describe observable quantities (Gasiorowicz, pp. 48).</li></ul></p>
+
+
+  <!--<p> ---- Bullet Points for x,psi --------
+    <ul id="introlist"><li><i>x</i>(<i>t</i>) is .</li>
+                      <li>$\psi(x,t)$ is </li>
+    </ul>
+</p>-->
 
 <hr/><h3 id="secheader">Operating on $\Psi(x,t)$</h3>
 
