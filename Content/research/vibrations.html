@@ -138,22 +138,20 @@ of a Bluefors Dilution Refrigerator measurement system.
         Signals are detected by the accelerometer's electrical components, passed through the amplifier to achieve gain, and then fed to the oscilloscope for recording. 
         Data are exported from the oscilloscope as time-trace voltages. The accelerometer's product manual provides the rates for converting voltage (V) to
        acceleration (m/s<sup>2</sup>).
-
      </p>
       <!-- <hr/><h3 id="section">Mathematical Methods: Spectral Analysis</h3> -->
 
       <hr/><h3 id="section">Math Methods: Discrete Fourier Transforms</h3>
-      Fourier analysis is the lowest-level concept to be covered in this module, 
-      providing the fundamental algorithm(s) which enable spectral methods. For a deeper mathematical-approach,
-      look into properties of unitary matrices, singular value decomposition, and the DFT matrix
-      (<a class="citation" href="https://link.springer.com/book/10.2991/978-94-6239-009-6" target="blank">Chui & Jiang, 2013, pg. 171</a>).
-      </p>
       
-      <p>These acceleration data are measured in the time domain, but meaningful signal analysis 
-        occurs when one decomposes the energy contributions at each component frequency.
+      
+      
+      <p>
+        Accelerometers produce [voltage] measurements in the time domain, but meaningful vibration characterization 
+        occurs when one quantifies the contributions of each component frequency; this is how engineers and physicists
+        predict and design-against unwanted resonances. <!--REQUIRES MORE, BETTER ELABORATION-->
         
         Given a discrete, 1-D array of time-trace data (x<sub>k</sub>), one may transform between 
-        representations in the time and frequency domains using the following algorithm (and its inverse):
+        representations in the time- and frequency-domains using the following algorithm (and its inverse):
       </p>
 
       $$ \begin{align}
@@ -161,7 +159,15 @@ of a Bluefors Dilution Refrigerator measurement system.
       x_k = \frac{1}{N} &\sum_{l=0}^{N-1} X_\ell e^{-i2\pi \ell k/N}
       \end{align}$$
 
-      <p></p>
+      <p>
+
+
+      </p>
+
+      <!--End of theory-->
+      <p>For a deeper mathematical-approach to Fourier transforms and analysis,
+        look into properties of unitary matrices, singular value decomposition, and the DFT matrix
+        (<a class="citation" href="https://link.springer.com/book/10.2991/978-94-6239-009-6" target="blank">Chui & Jiang, 2013, pg. 171</a>).</p>
 
         <!-- <p>
           Signal analysis necessitates the use of computational methods for the following reasons: 
