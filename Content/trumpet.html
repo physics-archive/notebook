@@ -78,8 +78,8 @@
                      $(0, \infty)$ such that $f(x \rightarrow \infty) \rightarrow 0$. 
                      Notice that each value of $1/n^2$ is contained within $f(x)=1/x^2$</div>
 
-                <p>So, we need to integrate $f(x)$ over our domain $[1,\infty)$ and see what analytical solutions - if any - occur.
-                    <br />Since $\infty$ is not itself a value, we should rewrite our <u>improper integral</u> 
+                <p>We need to integrate $f(x)$ over our domain $[1,\infty)$ and see what analytical solutions - if any - emerge.
+                    <br />Since $\infty$ is not itself a value of this expression, we could rewrite our <u>improper integral</u> 
                     using limits and a dummy variable $t$, and evaluate:</p>
 
                 <p>$$\bbox[8px,border:1px solid black]{
@@ -90,7 +90,7 @@
                     \bbox[#FF1,8px,border:0px solid red]{1}\ } \tag{Eq. 4} $$
                 </p>
                 
-                <p class="p_solution"><b>Eq. 4</b> - If $t \rightarrow \infty$, then the denomenator in $\frac{1}{t}$ approaches infinity. Therefore our quotient approaches zero -- and our integral is equal to 1.</p>
+                <p class="p_solution"><b>Eq. 4</b> - If $t \rightarrow \infty$, then the denomenator in $\frac{1}{t}$ approaches infinity. Therefore our quotient approaches zero and our integral is equal to 1.</p>
             
             </div>
 
@@ -99,10 +99,15 @@
                 
                 <br /><hr />
                 
-                <p class="question2"><b>How Can We Demonstrate that this Solution is Not Trivial?</b></p>
+                <p class="question2"><b>How Could We Demonstrate that this Solution is Not Trivial?</b></p>
                 <p>
-                    Ask: if $\int_{1}^{\infty} \left[\frac{1}{x^2}\right] dx$ converges to a real and finite value, then will $\int_{1}^{\infty} \left[\frac{1}{x}\right] dx$ also converge? Consider the similarities:
-                    </p><ul class="untrivial"><li> Both are rational expressions in the form $p/q$ </li><li> Monotonically decreasing over $x \in [1,\infty)$</li><li>Has values in-between 0 and 1 over our domain</li><li>Mutual characteristics are graphically demonstrable:</li></ul>
+                    Ask: if $\int_{1}^{\infty} \left[\frac{1}{x^2}\right] dx$ converges to a real and finite value, then does $\int_{1}^{\infty} \left[\frac{1}{x}\right] dx$ also converge to a real, finite value? 
+                    Consider these similarities:
+                    </p><ul class="untrivial"><li> Both are rational expressions.</li>
+                        <li>Both are monotonically decreasing over $x \in [1,\infty)$</li>
+                        <li>$\lim_{x \rightarrow \infty} = 0$ and $\lim_{x \rightarrow 0} = \infty$ are true for both expressions</li>
+                        <!--<li></li>-->
+                        <li>Graphically, their shapes are very similar:</li></ul>
                 <!--</p>-->
 
                 <div id="img1-comparison">
@@ -113,7 +118,8 @@
                     
                 <div id="img1-explanation"><b>Fig. 2</b> - Plot of $f_1(x)$ and $f_2(x)$ over the domain $[1,4.5]$. Visually evident: both functions are monotonic over this domain and approach 0 as $x \rightarrow \infty$. This graphical representation does not provide any definite information about convergence.</div>
 
-                <p>Let us evaluate our continuous sum for $f(x)=\left[\frac{1}{x}\right]$ and see if we diverge or converge:</p>
+                <p>Reflecting on this page over the years, I still struggle to come up with new, "obvious" differences between these functions!
+                    Let us evaluate our continuous sum - $f(x)=\left[\frac{1}{x}\right]$:</p>
 
                 <p class="eq5">
                     $$\bbox[8px,border:1px solid black]
@@ -125,15 +131,23 @@
                         } \tag{Eq. 5}$$
                 </p>
 
-                <p>Despite similarities between the functions, $f_1(x)$ converges over $[1,\infty)$ whereas $f_2(x)$ is divergent.</p>
+                <p>Despite the lack of describable differences between tonicity, shape, and behavior at their boundaries
+                    , $f_1(x)$ converges over $[1,\infty)$ whereas $f_2(x)$ does not.</p>
             <br />
             </div> <!--Closes "solution"-->
 
             <div id="fourier">
                 <hr />
                 <p id="htitle">Evaluating Infinite Series Using Fourier Analysis</p>
-                <p class="f1">Integration of a function over $[1, \infty)$ is far more abstract as a concept than summing a list of fractions.
-                    Therefore, let us return to our discrete sum (Eq. 2) and attempt a solution using <a class="link" href="fourier-one.html" target="_blank">Fourier analysis</a>. We can relate our continous function, $f(x)$, to our discrete infinite series $S_1(n)$. <br /><ul class="fourierbullet"><li>Generally, <a class="link" href="./fourier-one.html" target="_blank">Fourier analysis</a> allows us to rewrite any continuous function--with arbitrary precision--as an infinite summation of sines, cosines and coefficients. Convenient for functions that are discontinuous (i.e. electrical signals, environmental vibrations).</li><br /><li>For a function $g(x)$ to have an associated Fourier Series, it must meet the Strong Dirichlet Conditions. Real (physical) signals will always satisfy these conditions! [Citation Required.]</li></ul>
+                <p class="f1">Integrating some function over $[1, \infty)$ is more conceptually abstract than summing a list of simple fractions.
+
+                    Without proper context and exploration, it should be difficult to convince ourselves that (Eq. 4) really is related to the solution of the Basel Problem,
+                    and just as difficult to accept that the solution to (Eq. 1) is some finite value rather than $\infty$.
+                    Therefore, let us return to our discrete sum (Eq. 2) and attempt a solution using <a class="link" href="fourier-one.html" target="_blank">Fourier analysis</a>. 
+                    We can relate our continous function, $f(x)$, to our discrete infinite series $S_1(n)$. <br /><ul class="fourierbullet"><li>Generally, <a class="link" href="./fourier-one.html" target="_blank">Fourier analysis</a> allows us to rewrite any continuous [Needs Citation] function - with arbitrary precision - as an infinite summation of sines, cosines and coefficients. 
+                        Convenient for functions that are discontinuous (i.e. electrical signals, environmental vibrations).</li>
+                        <br /><li>For a function $g(x)$ to have an associated Fourier Series, it must meet the Strong Dirichlet Conditions. 
+                            Real (physical) signals will always satisfy these conditions! [Citation Required.]</li></ul>
                 </p> <!--Maybe put a break here for the Fourier section.-->
                 
                 <p>
@@ -240,7 +254,8 @@
                     \end{align*} $$<br /><br /></p> <!--bn coefficients-->
                
                 <!--Integrand comment!-->
-                <p class="an-notes">Notice that $a_0$ = $a_n$ = 0 in this case because of the integrand's symmetry about the origin; $g(x)=x$ is an odd function: $g(-x)=-g(x)$. <br /><br />Graphically, it is clear why $a_0 = a_n = 0$ while $b_n \not= 0:$</p>
+                <p class="an-notes">Notice that $a_0$ = $a_n$ = 0 in this case because of the integrand's symmetry about the origin. Here, $g(x)=x$ is an odd function ($g(-x)=-g(x)$). Symmetry is often leveraged to simplify, or make trivial many integral computations.<br />
+                    <br />Graphically, it is clear to see that $a_0 = a_n = 0$ while $b_n \not= 0:$.</p>
                 
                 <div id="fig3"><img src="../Index/calc/trumpet/fig3.bmp" alt="Figure 3" width="280px" height="179px" /> <!--FIGURE 1 IMG--></div>
                 <div id="fig3-2"><img src="../Index/calc/trumpet/fig3-2.bmp" alt="Figure 3-2" width="280px" height="179px" /> <!--FIGURE 1 IMG--></div>
